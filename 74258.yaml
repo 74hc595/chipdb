@@ -1,0 +1,63 @@
+---
+description:  Quad 2-input multiplexer; 3-state; inverting
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc258.pdf"
+pins:
+  - num:  1
+    sym:  S
+    desc: common data select input
+  - num:  2
+    sym:  1I__0
+    desc: data input from source 0
+  - num:  3
+    sym:  1I__1
+    desc: data input from source 1
+  - num:  4
+    sym:  1~Y
+    desc: multiplexer output
+  - num:  5
+    sym:  2I__0
+    desc: data input from source 0
+  - num:  6
+    sym:  2I__1
+    desc: data input from source 1
+  - num:  7
+    sym:  2~Y
+    desc: multiplexer output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  3~Y
+    desc: multiplexer output
+  - num:  10
+    sym:  3I__1
+    desc: data input from source 1
+  - num:  11
+    sym:  3I__0
+    desc: data input from source 0
+  - num:  12
+    sym:  4~Y
+    desc: multiplexer output
+  - num:  13
+    sym:  4I__1
+    desc: data input from source 1
+  - num:  14
+    sym:  4I__0
+    desc: data input from source 0
+  - num:  15
+    sym:  ~OE
+    desc: enable input (active low; outputs in high-impedance off state when high)
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, nI__0, nI__1 to n~Y
+    val:    9 (74HC)
+    unit:   ns
+  - param:  Propagation delay, S to n~Y
+    val:    14 (74HC)
+    unit:   ns
+...

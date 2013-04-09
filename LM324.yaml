@@ -1,0 +1,74 @@
+---
+description: "Low power quad operational amplifier"
+aliases:     [LM124, LM224]
+package:     DIP
+pincount:    14
+family:      "linear"
+datasheet:   "http://www.national.com/ds/LM/LM124.pdf"
+pins:
+  - num:  1
+    sym:  1OUT
+    desc: output 1
+  - num:  2
+    sym:  1IN-
+    desc: inverting input 1
+  - num:  3
+    sym:  1IN+
+    desc: non-inverting input 1
+  - num:  4
+    sym:  Vcc
+    desc: positive supply voltage
+  - num:  5
+    sym:  2IN+
+    desc: non-inverting input 2
+  - num:  6
+    sym:  2IN-
+    desc: inverting input 2
+  - num:  7
+    sym:  2OUT
+    desc: output 2
+  - num:  8
+    sym:  3OUT
+    desc: output 3
+  - num:  9
+    sym:  3IN-
+    desc: inverting input 3
+  - num:  10
+    sym:  3IN+
+    desc: non-inverting input 3
+  - num:  11
+    sym:  GND
+    desc: ground/negative supply voltage
+  - num:  12
+    sym:  4IN+
+    desc: non-inverting input 4
+  - num:  13
+    sym:  4IN-
+    desc: inverting input 4
+  - num:  14
+    sym:  4OUT
+    desc: output 4
+specs:
+  - param: Maximum supply voltage
+    val:   32
+    unit:  V
+  - param: Minimum supply voltage
+    val:   3
+    unit:  V
+  - param: Offset voltage
+    val:   2
+    unit:  mV
+  - param: Gain bandwidth
+    val:   1
+    unit:  MHz
+  - param: Slew rate
+    val:   0.5
+    unit:  "V/&micro;s"
+  - param: Voltage noise
+    val:   40
+    unit:  "nV/&radic;Hz"
+  - param: Supply current (per channel)
+    val:   0.18
+    unit:  mA
+...
+

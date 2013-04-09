@@ -1,0 +1,63 @@
+---
+description: "Dual synchronous BCD counter"
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4518b.pdf"
+pins:
+  - num:  1
+    sym:  1CP0
+    desc: counter 1 clock input (low-to-high triggered)
+  - num:  2
+    sym:  1~CP~1
+    desc: counter 1 clock input (high-to-low triggered)
+  - num:  3
+    sym:  1Q0
+    desc: counter 1 output
+  - num:  4
+    sym:  1Q1
+    desc: counter 1 output
+  - num:  5
+    sym:  1Q2
+    desc: counter 1 output
+  - num:  6
+    sym:  1Q3
+    desc: counter 1 output
+  - num:  7
+    sym:  1MR
+    desc: counter 1 master reset (active high)
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  2CP0
+    desc: counter 2 clock input (low-to-high triggered)
+  - num:  10
+    sym:  2~CP~1
+    desc: counter 2 clock input (high-to-low triggered)
+  - num:  11
+    sym:  2Q0
+    desc: counter 2 output
+  - num:  12
+    sym:  2Q1
+    desc: counter 2 output
+  - num:  13
+    sym:  2Q2
+    desc: counter 2 output
+  - num:  14
+    sym:  2Q3
+    desc: counter 2 output
+  - num:  15
+    sym:  2MR
+    desc: counter 2 master reset (active high)
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+notes:
+  - The 4518 counts from 0 to 9. The 4520 is identical but counts from 0 to 15.
+  - Either nCP0 or n~CP~1 may be used as the clock input; the other can be used as a clock enable input.
+  - If n~CP~1 is high, the counter advances on a low-to-high transition of nCP0.
+  - If nCP0 is low, the counter advances on a high-to-low transition of n~CP~1.
+...
+
+

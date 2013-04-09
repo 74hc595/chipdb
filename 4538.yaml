@@ -1,0 +1,77 @@
+---
+description: "Dual retriggerable precision monostable multivibrator with reset"
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4538b.pdf"
+pins:
+  - num:  1
+    sym:  1CEXT
+    desc: external capacitor connection (connect to capacitor and ground)
+  - num:  2
+    sym:  1REXT/CEXT
+    desc: external capacitor/resistor connection
+  - num:  3
+    sym:  1~CD
+    desc: clear direct input (active low)
+  - num:  4
+    sym:  1B
+    desc: input (low-to-high triggered)
+  - num:  5
+    sym:  1~A
+    desc: input (high-to-low triggered)
+  - num:  6
+    sym:  1Q
+    desc: output
+  - num:  7
+    sym:  1~Q
+    desc: complementary output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  2~Q
+    desc: complementary output
+  - num:  10
+    sym:  2Q
+    desc: output
+  - num:  11
+    sym:  2~A
+    desc: input (high-to-low triggered)
+  - num:  12
+    sym:  2B
+    desc: input (low-to-high triggered)
+  - num:  13
+    sym:  2~CD
+    desc: clear direct input (active low)
+  - num:  14
+    sym:  2REXT/CEXT
+    desc: external capacitor/resistor connection
+  - num:  15
+    sym:  2CEXT
+    desc: external capacitor connection (connect to capacitor and ground)
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param: "External timing resistor R__EXT"
+    val:   5 (min)
+    unit:  "k&Omega;"
+  - param: "External timing capacitor C__EXT"
+    val:   2000 (min)
+    unit:  pF
+  - param: "Pulse width variation, Vcc = 5V"
+    val:   "&plusmn;0.2"
+    unit:  "%"
+notes:
+  - Connect a timing capacitor C__EXT between nCEXT and nREXT/CEXT.
+  - Connect a resistor R__EXT between nREXT/CEXT and Vcc.
+  - A high-to-low transition on n~A when nB is low causes a pulse on nQ and n~Q.
+  - A low-to-high transition on nB when n~A is high causes a pulse on nQ and n~Q.
+  - Setting n~CD low inhibits pulses.
+  - "Output pulse width = R__EXT &times; C__EXT." 
+  - "(74HC4538) Output pulse width = 0.7 &times; R__EXT &times; C__EXT." 
+...
+
+
+

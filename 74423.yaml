@@ -1,0 +1,74 @@
+---
+description:  "Dual retriggerable monostable multivibrator with reset"
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc423.74hct423.pdf"
+pins:
+  - num:  1
+    sym:  1~A
+    desc: negative-edge triggered input 1
+  - num:  2
+    sym:  1B
+    desc: positive-edge triggered input 1
+  - num:  3
+    sym:  1~R~D
+    desc: direct reset (active low) 1
+  - num:  4
+    sym:  1~Q
+    desc: active low output 1
+  - num:  5
+    sym:  2Q
+    desc: active high output 2
+  - num:  6
+    sym:  2CEXT
+    desc: external capacitor connection 2
+  - num:  7
+    sym:  2REXT/CEXT
+    desc: external resistor and capacitor connection 2
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  2~A
+    desc: negative-edge triggered input 2
+  - num:  10
+    sym:  2B
+    desc: positive-edge triggered input 2
+  - num:  11
+    sym:  2~R~D
+    desc: direct reset (active low) 2
+  - num:  12
+    sym:  2~Q
+    desc: active low output 2
+  - num:  13
+    sym:  1Q
+    desc: active high output 1
+  - num:  14
+    sym:  1CEXT
+    desc: external capacitor connection 1
+  - num:  15
+    sym:  1REXT/CEXT
+    desc: external resistor and capacitor connection 1
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, n~R~D, n~A, nB to nQ or n~Q
+    val:    [25 (74HC), 26(74HCT)]
+    unit:   ns
+  - param:  Propagation delay, n~R~D to nQ or n~Q
+    val:    [20 (74HC), 22 (74HCT)]
+    unit:   ns
+  - param:  Output transition time
+    val:    [7 (74HC/HCT)]
+    unit:   ns
+  - param:  Retrigger time n~A, nB
+    val:    [110 (74HC/HCT)]
+    unit:   ns
+  - param:  External timing resistor
+    val:    [2 (min), 1000 (max)]
+    unit:   k&Omega;
+notes:
+  - The 74423 is identical to the 74123, except it cannot be triggered via the reset input.
+...

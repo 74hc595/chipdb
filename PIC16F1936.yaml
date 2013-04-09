@@ -1,0 +1,109 @@
+---
+description: "8-Bit CMOS Microcontrollers with LCD Driver with nano Watt XLPTM Technology"
+aliases:     []
+package:     DIP
+pincount:    28
+family:      "Microchip 16F"
+datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/41364C.pdf"
+pins:
+  - num:  1
+    sym:  VPP/~MCLR~/RE3    
+    desc: Programming voltage, Master Clear, General purpose input
+  - num:  2
+    sym:  SEG12/VCAP/~SS~/SRNQ/C2OUT/C12IN0-/AN0/RA0
+    desc: LCD Analog output, Filter capacitor, Slave Select input, SR Latch inverting output, Comparator C2 output, Comparator C1 or C2 negative input, A/D Channel 0 input, General purpose I/O
+  - num:  3
+    sym:  SEG7/C12IN1-/AN1/RA1
+    desc: LCD Analog output, Comparator C1 or C2 negative input, A/D Channel 1 input, General purpose I/O
+  - num:  4
+    sym:  COM2/DACOUT/VREF-/C2IN+/AN2/RA2
+    desc: LCD Analog output, Comparator Voltage Reference output, A/D Negative Voltage Reference input, Comparator C2 positive input, A/D Channel 2 input, General purpose I/O
+  - num:  5
+    sym:  SEG15/COM3/VREF+/C1IN+/AN3/RA3
+    desc: LCD Analog output, LCD Analog output, A/D Voltage Reference input, Comparator C1 positive input, A/D Channel 3 input, General purpose I/O
+  - num:  6
+    sym:  SEG4/CCP5/SRQ/T0CKI/CPS6/C1OUT/RA4
+    desc: LCD Analog output, Capture/Compare/PWM5, SR Latch non-inverting output, Timer0 clock input, Capacitive sensing input 6, Comparator C1 output, General purpose I/O
+  - num:  7
+    sym:  SEG5/VCAP/~SS~/SRNQ/CPS7/C2OUT/AN4/RA5
+    desc: LCD Analog output, Filter capacitor, Slave Select input, SR Latch inverting output, Capacitive sensing input 7, Comparator C2 output, A/D Channel 4 input, General purpose I/O
+  - num:  8
+    sym:  GND
+    desc: Ground reference
+  - num:  9
+    sym:  SEG2/CLKIN/OSC1/RA7
+    desc: LCD Analog output, External clock input, Crystal/Resonator, General purpose I/O
+  - num:  10
+    sym:  SEG1/VCAP/CLKOUT/OSC2/RA6
+    desc: LCD Analog output, Filter capacitor, FOSC/4 output, Crystal/Resonator, General purpose I/O
+  - num:  11
+    sym:  P2B/T1CKI/T1OSO/RC0
+    desc: PWM output, Timer1 clock input, Timer1 oscillator connection, General purpose I/O
+  - num:  12
+    sym:  P2A/CCP2/T1OSI/RC1
+    desc: PWM output, Capture/Compare/PWM2, Timer1 oscillator connection, General purpose I/O
+  - num:  13
+    sym:  SEG3/P1A/CCP1/RC2
+    desc: LCD Analog output, PWM output, Capture/Compare/PWM1, General purpose I/O
+  - num:  14
+    sym:  SEG6/SCL/SCK/RC3
+    desc: LCD Analog output, I2C clock, SPI clock, General purpose I/O
+  - num:  15
+    sym:  RC4/SDI/SDA/T1G/SEG11
+    desc: General purpose I/O, SPI data input, I2C data input/output, Timer1 Gate input, LCD Analog output, 
+  - num:  16
+    sym:  RC5/SDO/SEG10
+    desc: General purpose I/O, SPI data output, LCD Analog output
+  - num:  17
+    sym:  RC6/TX/CK/CCP3/P3A/SEG9
+    desc: General purpose I/O, USART asynchronous transmit, USART synchronous clock, Capture/Compare/PWM3, PWM output, LCD Analog output
+  - num:  18
+    sym:  RC7/RX/DT/P3B/SEG8
+    desc: General purpose I/O, USART asynchronous input, USART synchronous data, PWM output, LCD Analog output
+  - num:  19
+    sym:  GND
+    desc: Ground reference
+  - num:  20
+    sym:  VCC
+    desc: Positive supply
+  - num:  21
+    sym:  RB0/AN12/CPS0/CCP4/SRI/INT/SEG0
+    desc: General purpose I/O, A/D Channel 12 input, Capacitive sensing input 0, Capture/Compare/PWM4, SR Latch input, External interrupt, LCD analog output
+  - num:  22
+    sym:  RB1/AN10/C12IN3-/CPS1/P1C/VLCD1
+    desc: General purpose I/O, A/D Channel 10 input, Comparator C1 or C2 negative input, Capacitive sensing input 1, PWM output, LCD analog input
+  - num:  23
+    sym:  RB2/AN8/CPS2/P1B/VLCD2
+    desc: General purpose I/O, A/D Channel 8 input, Capacitive sensing input 2, PWM output
+  - num:  24
+    sym:  RB3/AN9/C12IN2-/CPS3/CCP2/P2A/VLCD3
+    desc: General purpose I/O, A/D Channel 9 input, Comparator C1 or C2 negative input, Capacitive sensing input 3, Capture/Compare/PWM2, PWM output, LCD analog input
+  - num:  25
+    sym:  RB4/AN11/CPS4/P1D/COM0
+    desc: General purpose I/O, A/D Channel 11 input, Capacitive sensing input 4, PWM output, LCD Analog output
+  - num:  26
+    sym:  RB5/AN13/CPS5/P2B/CCP3/P3A/T1G/COM1
+    desc: General purpose I/O, A/D Channel 13 input, Capacitive sensing input 5, PWM output, Capture/Compare/PWM3, PWM output, Timer1 Gate input, LCD Analog output
+  - num:  27
+    sym:  RB6/ICSPCLK/ICDCLK/SEG14
+    desc: General purpose I/O, Serial Programming Clock, In-Circuit Debug Clock, LCD Analog output
+  - num:  28
+    sym:  RB7/ICSPDAT/ICDDAT/SEG13
+    desc: General purpose I/O, ICSP Data I/O, In-Circuit Data I/O, LCD Analog output
+specs:
+  - param: "Program Memory"
+    val:   14
+    unit:  KB
+  - param: "CPU Speed"
+    val:   8
+    unit:  MIPS
+  - param: "RAM"
+    val:   512
+    unit:  Bytes
+  - param: "Data EEPROM"
+    val:   256
+    unit:  Bytes
+notes:
+  - Internal 32MHz oscillator, 60 LCD segment drive support, Integrated Capacitive mTouch Sensing Module
+...
+

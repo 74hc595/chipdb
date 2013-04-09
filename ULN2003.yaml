@@ -1,0 +1,76 @@
+---
+description: Seven darlington array
+aliases:     [ULN2002, ULN2004]
+package:     DIP
+pincount:    16
+family:      "TI"
+datasheet:   "http://focus.ti.com/lit/ds/symlink/uln2003a.pdf"
+pins:
+  - num:  1
+    sym:  1B
+    desc: base 1
+  - num:  2
+    sym:  2B
+    desc: base 2
+  - num:  3
+    sym:  3B
+    desc: base 3
+  - num:  4
+    sym:  4B
+    desc: base 4
+  - num:  5
+    sym:  5B
+    desc: base 5
+  - num:  6
+    sym:  6B
+    desc: base 6
+  - num:  7
+    sym:  7B
+    desc: base 7
+  - num:  8
+    sym:  E
+    desc: common emitter (ground)
+  - num:  9
+    sym:  COM
+    desc: common
+  - num:  10
+    sym:  7C
+    desc: collector 7
+  - num:  11
+    sym:  6C
+    desc: collector 6
+  - num:  12
+    sym:  5C
+    desc: collector 5
+  - num:  13
+    sym:  4C
+    desc: collector 4
+  - num:  14
+    sym:  3C
+    desc: collector 3
+  - num:  15
+    sym:  2C
+    desc: collector 2
+  - num:  16
+    sym:  1C
+    desc: collector 1
+specs:
+  - param: Series resistance at bases
+    val:   [n/a (ULN2002), 2.7 (ULN2003), 10.5 (ULN2004)]
+    unit:  "k&Omega;"
+  - param: Maximum collector-emitter voltage
+    val:   50
+    unit:  V
+  - param: Maximum input voltage
+    val:   30
+    unit:  V
+  - param: Maximum peak collector current
+    val:   500
+    unit:  mA
+notes:
+  - ULN2002 is designed for use with 14V to 25V PMOS devices.
+  - ULN2003 is designed for use with 5V TTL/CMOS devices.
+  - ULN2004 is designed for use with 6V to 15V CMOS devices.
+...
+
+

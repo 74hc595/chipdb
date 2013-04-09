@@ -1,0 +1,111 @@
+---
+name:         ATmega168
+description:  8-bit AVR&reg; microcontroller
+aliases:      [ATmega48, ATmega88, ATmega328P]
+package:      DIP
+pincount:     28
+family:       Atmel
+datasheet:    "http://www.atmel.com/dyn/resources/prod_documents/doc2545.pdf"
+pins:
+  - num:  1
+    sym:  (PCINT14/~RESET) PC6
+    desc: reset (active low); port C
+  - num:  2
+    sym:  (PCINT16/RXD) PD0
+    desc: port D
+  - num:  3
+    sym:  (PCINT17/TXD) PD1
+    desc: port D
+  - num:  4
+    sym:  (PCINT18/INT0) PD2
+    desc: external interrupt 0; port D
+  - num:  5
+    sym:  (PCINT19/OC2B/INT1) PD3
+    desc: external interrupt 1; port D
+  - num:  6
+    sym:  (PCINT20/XCK/T0) PD4
+    desc: port D
+  - num:  7
+    sym:  Vcc
+    desc: supply voltage
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  (PCINT6/XTAL1/TOSC1) PB6
+    desc: clock oscillator pin 1; port B
+  - num:  10
+    sym:  (PCINT17/XTAL2/TOSC2) PB7
+    desc: clock oscillator pin 2; port B
+  - num:  11
+    sym:  (PCINT21/OC0B/T1) PD5
+    desc: port D
+  - num:  12
+    sym:  (PCINT22/OC0A/AIN0) PD6
+    desc: port D
+  - num:  13
+    sym:  (PCINT23/AIN1) PD7
+    desc: port D
+  - num:  14
+    sym:  (PCINT0/CLKO/ICP1) PB0
+    desc: clock output; port B
+  - num:  15
+    sym:  PB1 (OC1A/PCINT1)
+    desc: port B
+  - num:  16
+    sym:  PB2 (~SS/OC1B/PCINT2)
+    desc: SPI slave select; port B
+  - num:  17
+    sym:  PB3 (MOSI/OC2A/PCINT3)
+    desc: SPI master output/slave input; port B
+  - num:  18
+    sym:  PB4 (MISO/PCINT4)
+    desc: SPI master input/slave output; port B
+  - num:  19
+    sym:  PB5 (SCK/PCINT5)
+    desc: SPI master clock; port B
+  - num:  20
+    sym:  AVcc
+    desc: A/D converter supply voltage
+  - num:  21
+    sym:  AREF
+    desc: analog reference for A/D converter
+  - num:  22
+    sym:  GND
+    desc: ground
+  - num:  23
+    sym:  PC0 (ADC0/PCINT8)
+    desc: port C
+  - num:  24
+    sym:  PC1 (ADC1/PCINT9)
+    desc: port C
+  - num:  25
+    sym:  PC2 (ADC2/PCINT10)
+    desc: port C
+  - num:  26
+    sym:  PC3 (ADC3/PCINT11)
+    desc: port C
+  - num:  27
+    sym:  PC4 (ADC4/SDA/PCINT12)
+    desc: I2C Data pin; port C
+  - num:  28
+    sym:  PC5 (ADC5/SCL/PCINT13)
+    desc: I2C Clock pin; port C
+specs:
+  - param:  Flash memory
+    val:    [4K (ATmega48), 8K (ATmega88), 16K (ATmega168), 32K (ATmega328P)]
+    unit:   bytes
+  - param:  Internal SRAM
+    val:    [512 (ATmega48), 1K (ATmega88), 1K (ATmega168), 2K (ATmega328P)]
+    unit:   bytes
+  - param:  EEPROM
+    val:    [256 (ATmega48), 512 (ATmega88), 512 (ATmega168), 1K (ATmega328P)]
+    unit:   bytes
+  - param:  Programmable I/O lines
+    val:    23
+  - param:  Maximum clock frequency
+    val:    20
+    unit:   MHz
+...
+
+

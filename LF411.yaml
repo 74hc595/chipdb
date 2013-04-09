@@ -1,0 +1,53 @@
+---
+description: Low-offset, low-drift JFET-input operational amplifier
+package:     DIP
+pincount:    8
+family:      "linear"
+datasheet:   "http://www.national.com/ds/LF/LF411.pdf"
+pins:
+  - num:  1
+    sym:  BAL
+    desc: balance
+  - num:  2
+    sym:  IN-
+    desc: inverting input
+  - num:  3
+    sym:  IN+
+    desc: non-inverting input
+  - num:  4
+    sym:  Vss
+    desc: negative supply voltage
+  - num:  5
+    sym:  BAL
+    desc: balance
+  - num:  6
+    sym:  OUT
+    desc: output
+  - num:  7
+    sym:  Vcc
+    desc: positive supply voltage
+  - num:  8
+    sym:  NC
+    desc: no connection
+specs:
+  - param: Maximum supply voltage
+    val:   "&plusmn;18"
+    unit:  V
+  - param: Offset voltage
+    val:   0.5
+    unit:  mV
+  - param: Gain bandwidth
+    val:   4
+    unit:  MHz
+  - param: Slew rate
+    val:   15
+    unit:  "V/&micro;s"
+  - param: Voltage noise
+    val:   25
+    unit:  "nV/&radic;Hz"
+  - param: Supply current
+    val:   1.8
+    unit:  mA
+...
+
+

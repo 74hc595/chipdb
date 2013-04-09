@@ -1,0 +1,103 @@
+---
+description: "Programmable interval timer"
+aliases:     [82C54]
+package:     DIP
+pincount:    24
+family:      "Intel"
+datasheet:   "http://www.scs.stanford.edu/10wi-cs140/pintos/specs/8254.pdf"
+pins:
+  - num:  1
+    sym:  D7
+    desc: data bus
+  - num:  2
+    sym:  D6
+    desc: data bus
+  - num:  3
+    sym:  D5
+    desc: data bus
+  - num:  4
+    sym:  D4
+    desc: data bus
+  - num:  5
+    sym:  D3
+    desc: data bus
+  - num:  6
+    sym:  D2
+    desc: data bus
+  - num:  7
+    sym:  D1
+    desc: data bus
+  - num:  8
+    sym:  D0
+    desc: data bus
+  - num:  9
+    sym:  CLK 0
+    desc: counter 0 clock input
+  - num:  10
+    sym:  OUT 0
+    desc: counter 0 output
+  - num:  11
+    sym:  GATE 0
+    desc: counter 0 gate input
+  - num:  12
+    sym:  GND
+    desc: ground
+  - num:  13
+    sym:  OUT 1
+    desc: counter 1 output
+  - num:  14
+    sym:  GATE 1
+    desc: counter 1 gate input
+  - num:  15
+    sym:  CLK 1
+    desc: counter 1 clock input
+  - num:  16
+    sym:  GATE 2
+    desc: counter 2 gate input
+  - num:  17
+    sym:  OUT 2
+    desc: counter 2 output
+  - num:  18
+    sym:  CLK 2
+    desc: counter 2 clock input
+  - num:  19
+    sym:  A0
+    desc: address bus
+  - num:  20
+    sym:  A1
+    desc: address bus
+  - num:  21
+    sym:  ~CS
+    desc: chip select (active low)
+  - num:  22
+    sym:  ~RD
+    desc: read enable (active low)
+  - num:  23
+    sym:  ~WR
+    desc: write enable (active low)
+  - num:  24
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param: "Maximum clock input frequency"
+    val:   ["8 (8254)", "10 (8254-2)"]
+    unit:  MHz
+notes:
+  - "Register 00: counter 0 value"
+  - "Register 01: counter 1 value"
+  - "Register 10: counter 2 value"
+  - "Register 11: control word"
+  - "Control word:
+<table>
+<tr><td>Bit 0</td><td>0=binary (16 bits), 1=BCD (4 decades)</td></tr>
+<tr><td>Bits 1-3</td><td>mode select</td></tr>
+<tr><td>Bits 4-5</td><td>read/write mode</td></tr>
+<tr><td>Bits 6-7</td><td>select counter/read-back mode</td></tr>
+</table><br/>"
+  - "Mode 0: interrupt on terminal count"
+  - "Mode 1: hardware retriggerable one-shot"
+  - "Mode 2: rate generator"
+  - "Mode 3: square wave"
+  - "Mode 4: software triggered strobe"
+  - "Mode 5: hardware triggered strobe (retriggerable)"
+

@@ -1,0 +1,51 @@
+---
+name:        ATtiny85
+description: "8-bit AVR&reg; microcontroller"
+aliases:     [ATtiny25, ATtiny45]
+package:     DIP
+pincount:    8
+family:      "Atmel"
+datasheet:   "http://www.atmel.com/dyn/resources/prod_documents/doc2586.pdf"
+pins:
+  - num:  1
+    sym:  (PCINT5/~RESET~/ADC0/dW) PB5
+    desc: reset (active low); port B
+  - num:  2
+    sym:  (PCINT3/XTAL1/CLKI/~OC1B~/ADC3) PB3
+    desc: crystal connection; external clock input; port B
+  - num:  3
+    sym:  (PCINT4/XTAL2/CLKO/OC1B/ADC2) PB4
+    desc: crystal connection; clock output; port B
+  - num:  4
+    sym:  GND
+    desc: ground
+  - num:  5
+    sym:  PB0 (MOSI/DI/SDA/AIN0/OC0A/~OC1A~/AREF/PCINT0)
+    desc: SPI master output/slave input; 2-wire data; ADC reference; port B
+  - num:  6
+    sym:  PB1 (MISO/DO/AIN1/OC0B/OC1A/PCINT1)
+    desc: SPI master input/slave output; port B
+  - num:  7
+    sym:  PB2 (SCK/USCK/SCL/ADC1/T0/INT0/PCINT2)
+    desc: SPI master clock; 2-wire clock; external interrupt 0; port B
+  - num:  8
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param: Flash memory
+    val:   [2K (ATtiny25), 4K (ATtiny45), 8K (ATtiny85)]
+    unit:  bytes
+  - param: Internal SRAM
+    val:   [128 (ATtiny25), 256 (ATtiny45), 512 (ATtiny85)]
+    unit:  bytes
+  - param: EEPROM
+    val:   [128 (ATtiny25), 256 (ATtiny45), 512 (ATtiny85)]
+    unit:  bytes
+  - param: Programmable I/O lines
+    val:   6
+  - param: Maximum clock frequency
+    val:   20
+    unit:  MHz
+...
+
+

@@ -1,0 +1,37 @@
+---
+description: "PWM fan speed controller"
+aliases:     []
+package:     DIP
+pincount:    8
+family:      "Microchip"
+datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/21449c.pdf"
+pins:
+  - num:  1
+    sym:  V__IN
+    desc: temperature sensor; voltage range of 1.25V to 2.65V (typical)
+  - num:  2
+    sym:  C__F
+    desc: positive terminal for PWM ramp generator timing capacitor; 1 &micro;F for 30 Hz PWM
+  - num:  3
+    sym:  V__AS
+    desc: auto-shutdown voltage; auto-shutdown occurs when V__IN <= V__AS
+  - num:  4
+    sym:  GND
+    desc: ground
+  - num:  5
+    sym:  SENSE
+    desc: fan rotation pulses; absense of pulses indicates a fault
+  - num:  6
+    sym:  ~FAULT~
+    desc: goes low to indicate a fault condition
+  - num:  7
+    sym:  V__OUT
+    desc: active high complimentary output that drives the fan motor through an NPN transistor or N-channel MOSFET
+  - num:  8
+    sym:  V__DD
+    desc: power supply
+specs:
+  - param: "supply voltage"
+    val:   6
+    unit:  V
+

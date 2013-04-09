@@ -1,0 +1,146 @@
+---
+name:        ATmega644P
+description: "8-bit AVR&reg; microcontroller"
+aliases:     [ATmega164P, ATmega324P, ATmega1284P]
+package:     DIP
+pincount:    40
+family:      Atmel
+datasheet:   "http://www.atmel.com/dyn/resources/prod_documents/doc8011.pdf"
+pins:
+  - num:  1
+    sym:  (PCINT8/XCK0/T0) PB0
+    desc: port B
+  - num:  2
+    sym:  (PCINT9/CLKO/T1) PB1
+    desc: clock output; port B
+  - num:  3
+    sym:  (PCINT10/INT2/AIN0) PB2
+    desc: external interrupt 2; port B
+  - num:  4
+    sym:  (PCINT11/OC0A/AIN1) PB3
+    desc: port B
+  - num:  5
+    sym:  (PCINT12/OC0B/~SS~) PB4
+    desc: SPI slave select; port B
+  - num:  6
+    sym:  (PCINT13/ICP3*/MOSI) PB5
+    desc: SPI master output/slave input; port B
+  - num:  7
+    sym:  (PCINT14/OC3A*/MISO) PB6
+    desc: SPI master input/slave output; port B
+  - num:  8
+    sym:  (PCINT15/OC3B*/SCK) PB7
+    desc: SPI master clock; port B
+  - num:  9
+    sym:  ~RESET
+    desc: reset (active low)
+  - num:  10
+    sym:  Vcc
+    desc: supply voltage
+  - num:  11
+    sym:  GND
+    desc: ground
+  - num:  12
+    sym:  XTAL2
+    desc: clock oscillator pin 2
+  - num:  13
+    sym:  XTAL1
+    desc: clock oscillator pin 1
+  - num:  14
+    sym:  (PCINT24/RXD0) PD0
+    desc: port D
+  - num:  15
+    sym:  (PCINT25/TXD0) PD1
+    desc: port D
+  - num:  16
+    sym:  (PCINT26/RXD1/INT0) PD2
+    desc: external interrupt 0; port D
+  - num:  17
+    sym:  (PCINT27/TXD1/INT1) PD3
+    desc: external interrupt 1; port D
+  - num:  18
+    sym:  (PCINT28/XCK1/OC1B) PD4
+    desc: port D
+  - num:  19
+    sym:  (PCINT29/OC1A) PD5
+    desc: port D
+  - num:  20
+    sym:  (PCINT30/OC2B/ICP) PD6
+    desc: port D
+  - num:  21
+    sym:  PD7 (OC2A/PCINT31)
+    desc: port D
+  - num:  22
+    sym:  PC0 (SCL/PCINT16)
+    desc: 2-wire clock line; port C
+  - num:  23
+    sym:  PC1 (SDA/PCINT17)
+    desc: 2-wire data line; port C
+  - num:  24
+    sym:  PC2 (TCK/PCINT18)
+    desc: JTAG test clock; port C
+  - num:  25
+    sym:  PC3 (TMS/PCINT19)
+    desc: JTAG test mode select; port C
+  - num:  26
+    sym:  PC4 (TDO/PCINT20)
+    desc: JTAG test data output; port C
+  - num:  27
+    sym:  PC5 (TDI/PCINT21)
+    desc: JTAG test data input; port C
+  - num:  28
+    sym:  PC6 (TOSC1/PCINT22)
+    desc: timer oscillator pin 1; port C
+  - num:  29
+    sym:  PC7 (TOSC2/PCINT23)
+    desc: timer oscillator pin 2; port C
+  - num:  30
+    sym:  AVcc
+    desc: A/D converter supply voltage
+  - num:  31
+    sym:  GND
+    desc: ground
+  - num:  32
+    sym:  AREF
+    desc: analog reference for A/D converter
+  - num:  33
+    sym:  PA7 (ADC7/PCINT7)
+    desc: port A
+  - num:  34
+    sym:  PA6 (ADC6/PCINT6)
+    desc: port A
+  - num:  35
+    sym:  PA5 (ADC5/PCINT5)
+    desc: port A
+  - num:  36
+    sym:  PA4 (ADC4/PCINT4)
+    desc: port A
+  - num:  37
+    sym:  PA3 (ADC3/PCINT3)
+    desc: port A
+  - num:  38
+    sym:  PA2 (ADC2/PCINT2)
+    desc: port A
+  - num:  39
+    sym:  PA1 (ADC1/PCINT1)
+    desc: port A
+  - num:  40
+    sym:  PA0 (ADC0/PCINT0)
+    desc: port A
+specs:
+  - param: Flash memory
+    val:   [16K (ATmega164P), 32K (ATmega324P), 64K (ATmega644P), 128K (ATmega1284P)]
+    unit:  bytes
+  - param: Internal SRAM
+    val:   [1K (ATmega164P), 2K (ATmega324P), 4K (ATmega644P), 16K (ATmega1284P)]
+    unit:  bytes
+  - param: EEPROM
+    val:   [512 (ATmega164P), 1K (ATmega324P), 2K (ATmega644P), 4K (ATmega1284P)]
+    unit:  bytes
+  - param: Programmable I/O lines
+    val:   32
+notes:
+  - * ICP3, OC3A, OC3B present on ATmega1284P only
+...
+
+

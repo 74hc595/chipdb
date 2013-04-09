@@ -1,0 +1,51 @@
+---
+description: 7-stage binary ripple counter
+package:     DIP
+pincount:    14
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4024b.pdf"
+pins:
+  - num:  1
+    sym:  ~CP
+    desc: clock input (high-to-low edge-triggered)
+  - num:  2
+    sym:  MR
+    desc: master reset
+  - num:  3
+    sym:  Q6
+    desc: buffered parallel output
+  - num:  4
+    sym:  Q5
+    desc: buffered parallel output
+  - num:  5
+    sym:  Q4
+    desc: buffered parallel output
+  - num:  6
+    sym:  Q3
+    desc: buffered parallel output
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  NC
+    desc: no connection
+  - num:  9
+    sym:  Q2
+    desc: buffered parallel output
+  - num:  10
+    sym:  NC
+    desc: no connection
+  - num:  11
+    sym:  Q1
+    desc: buffered parallel output
+  - num:  12
+    sym:  Q0
+    desc: buffered parallel output
+  - num:  13
+    sym:  NC
+    desc: no connection
+  - num:  14
+    sym:  Vcc
+    desc: supply voltage
+...
+

@@ -1,0 +1,79 @@
+---
+description: "Remote 8-bit I/O expander for I2C bus"
+aliases:     [PCF8574P]
+package:     DIP
+pincount:    16
+family:      "Philips"
+datasheet:   "http://www.nxp.com/acrobat_download/datasheets/PCF8574_4.pdf"
+pins:
+  - num:  1
+    sym:  A0
+    desc: address input 0
+  - num:  2
+    sym:  A1
+    desc: address input 1
+  - num:  3
+    sym:  A2
+    desc: address input 2
+  - num:  4
+    sym:  P0
+    desc: quasi-bidirectional I/O 0
+  - num:  5
+    sym:  P1
+    desc: quasi-bidirectional I/O 1
+  - num:  6
+    sym:  P2
+    desc: quasi-bidirectional I/O 2
+  - num:  7
+    sym:  P3
+    desc: quasi-bidirectional I/O 3
+  - num:  8
+    sym:  GND
+    desc: supply ground
+  - num:  9
+    sym:  P4
+    desc: quasi-bidirectional I/O 4
+  - num:  10
+    sym:  P5
+    desc: quasi-bidirectional I/O 5
+  - num:  11
+    sym:  P6
+    desc: quasi-bidirectional I/O 6
+  - num:  12
+    sym:  P7
+    desc: quasi-bidirectional I/O 7
+  - num:  13
+    sym:  ~INT
+    desc: interrupt output (active LOW)
+  - num:  14
+    sym:  SCL
+    desc: serial clock line
+  - num:  15
+    sym:  SDA
+    desc: serial data line
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param: "Minimum supply voltage"
+    val:   2.5
+    unit:  V
+  - param: "Maximum supply voltage"
+    val:   6.0
+    unit:  V
+  - param: "LOW level output current, minimum"
+    val:   10
+    unit:  mA
+  - param: "LOW level output current, typical"
+    val:   25
+    unit:  mA
+  - param: "HIGH level output current, minimum"
+    val:   10
+    unit:  "&micro;A"
+  - param: "HIGH level output current, maximum"
+    val:   300
+    unit:  "&micro;A"
+notes:
+  - "I2C address range: 0x40-0x4e (7-bit address range: 0x20-0x27)"
+...
+

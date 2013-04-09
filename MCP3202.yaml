@@ -1,0 +1,58 @@
+---
+name:        MCP3202
+description: "12-Bit 2-Channel SPI interface A/D Converter"
+aliases:     []
+package:     DIP
+pincount:    8
+family:      "Microchip"
+datasheet:   "http://ww1.microchip.com/downloads/aen/DeviceDoc/21034e.pdf"
+pins:
+  - num:  1
+    sym:  ~CS~/SHDN
+    desc: Chip select/Shutdown
+  - num:  2
+    sym:  CH0
+    desc: Channel 1 analog input
+  - num:  3
+    sym:  CH1
+    desc: Channel 2 analog input
+  - num:  4
+    sym:  V__SS
+    desc: Ground
+  - num:  5
+    sym:  D__IN
+    desc: SPI data input
+  - num:  6
+    sym:  D__OUT
+    desc: SPI data output
+  - num:  7
+    sym:  CLK
+    desc: SPI clock
+  - num:  8
+    sym:  V__DD/V__REF
+    desc: Supply voltage/analog reference voltage
+specs:
+  - param: Resolution
+    val:   12
+    unit:  bits
+  - param: Maximum sample rate (V__DD = 5V)
+    val:   100
+    unit:  ksps
+  - param: Maximum sample rate (V__DD = 2.7V)
+    val:   50
+    unit:  ksps
+  - param: Minimum operating voltage
+    val:   2.7
+    unit:  V
+  - param: Maximum operating voltage (nominal)
+    val:   5.5
+    unit:  V
+  - param: Maximum operating voltage (absolute maximum rating)
+    val:   7.0
+    unit:  V
+  - param: Maximum active current (V__DD = 5V)
+    val:   550
+    unit:  "&micro;a"
+notes:
+  - Also available with 1 channel (MCP3201), 4 channels (MCP3204) and 8 channels (MCP3208)
+

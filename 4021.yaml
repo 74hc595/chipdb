@@ -1,0 +1,58 @@
+---
+description: 8-bit static shift register
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4021b.pdf"
+pins:
+  - num:  1
+    sym:  D7
+    desc: parallel data input
+  - num:  2
+    sym:  Q5
+    desc: output
+  - num:  3
+    sym:  Q7
+    desc: output
+  - num:  4
+    sym:  D3
+    desc: parallel data input
+  - num:  5
+    sym:  D2
+    desc: parallel data input
+  - num:  6
+    sym:  D1
+    desc: parallel data input
+  - num:  7
+    sym:  D0
+    desc: parallel data input
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  PL
+    desc: parallel load
+  - num:  10
+    sym:  CP
+    desc: clock input (low-to-high edge-triggered)
+  - num:  11
+    sym:  DS
+    desc: serial data input
+  - num:  12
+    sym:  Q6
+    desc: output
+  - num:  13
+    sym:  D4
+    desc: parallel data input
+  - num:  14
+    sym:  D5
+    desc: parallel data input
+  - num:  15
+    sym:  D6
+    desc: parallel data input
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+...
+
+

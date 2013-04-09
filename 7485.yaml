@@ -1,0 +1,73 @@
+---
+description:  4-bit magnitude comparator
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc85.74hct85.pdf" 
+pins:
+  - num:  1
+    sym:  B__3
+    desc: word B input
+  - num:  2
+    sym:  I__A&lt;B
+    desc: A &lt; B expansion input
+  - num:  3
+    sym:  I__A=B
+    desc: A = B expansion input
+  - num:  4
+    sym:  I__A&gt;B
+    desc: A &gt; B expansion input
+  - num:  5
+    sym:  Q__A&gt;B
+    desc: A &gt; B output
+  - num:  6
+    sym:  Q__A=B
+    desc: A = B output
+  - num:  7
+    sym:  Q__A&lt;B
+    desc: A &lt; B output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  B__0
+    desc: word B input
+  - num:  10
+    sym:  A__0
+    desc: word A input
+  - num:  11
+    sym:  B__1
+    desc: word B input
+  - num:  12
+    sym:  A__1
+    desc: word A input
+  - num:  13
+    sym:  A__2
+    desc: word A input
+  - num:  14
+    sym:  B__2
+    desc: word B input
+  - num:  15
+    sym:  A__3
+    desc: word A input
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, A__n, B__n to Q__A&gt;B, Q__A&lt;B
+    val:    [20 (74HC), 22 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, A__n, B__n to Q__A=B
+    val:    [18 (74HC), 20 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, I__A&lt;B, I__A=B, I__A&gt;B to Q__A&lt;B, Q__A&gt;B
+    val:    [15 (74HC), 15 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, I__A=B to Q__A=B
+    val:    [11 (74HC), 15 (74HCT)]
+    unit:   ns
+notes:
+  - The least significant (or only) comparator in a chain should have I__A&lt;B and I__A&gt;B tied low and I__A=B tied high.
+  - To compare more than 4 bits, connect the outputs to the expansion inputs of the next significant comparator.
+...
+

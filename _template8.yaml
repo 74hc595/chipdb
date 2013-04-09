@@ -1,0 +1,31 @@
+---
+description:  
+package:      DIP
+pincount:     8
+datasheet:    
+pins:
+  - num:  1
+    sym:  
+    desc: 
+  - num:  2
+    sym:  
+    desc: 
+  - num:  3
+    sym:  
+    desc: 
+  - num:  4
+    sym:  
+    desc: 
+  - num:  5
+    sym:  
+    desc: 
+  - num:  6
+    sym:  
+    desc: 
+  - num:  7
+    sym:  
+    desc: 
+  - num:  8
+    sym:  
+    desc: 
+...

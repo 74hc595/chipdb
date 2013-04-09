@@ -1,0 +1,75 @@
+---
+description:  Octal D-type flip-flop; positive-edge trigger; 3-state; non-inverting
+package:      DIP
+pincount:     20
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc574.74hct574.pdf"
+pins:
+  - num:  1
+    sym:  ~OE
+    desc: output enable (active low)
+  - num:  2
+    sym:  D__0
+    desc: data input
+  - num:  3
+    sym:  D__1
+    desc: data input
+  - num:  4
+    sym:  D__2
+    desc: data input
+  - num:  5
+    sym:  D__3
+    desc: data input
+  - num:  6
+    sym:  D__4
+    desc: data input
+  - num:  7
+    sym:  D__5
+    desc: data input
+  - num:  8
+    sym:  D__6
+    desc: data input
+  - num:  9
+    sym:  D__7
+    desc: data input
+  - num:  10
+    sym:  GND
+    desc: ground
+  - num:  11
+    sym:  CP
+    desc: clock input (low-to-high, edge-triggered)
+  - num:  12
+    sym:  Q__7
+    desc: flip-flop output 
+  - num:  13
+    sym:  Q__6
+    desc: flip-flop output
+  - num:  14
+    sym:  Q__5
+    desc: flip-flop output
+  - num:  15
+    sym:  Q__4
+    desc: flip-flop output
+  - num:  16
+    sym:  Q__3
+    desc: flip-flop output
+  - num:  17
+    sym:  Q__2
+    desc: flip-flop output
+  - num:  18
+    sym:  Q__1
+    desc: flip-flop output
+  - num:  19
+    sym:  Q__0
+    desc: flip-flop output
+  - num:  20
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, CP to Q__n
+    val:    [14 (74HC), 15 (74HCT)]
+    unit:   ns
+  - param:  Maximum clock frequency
+    val:    [123 (74HC), 76 (74HCT)]
+    unit:   MHz
+...

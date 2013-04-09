@@ -1,0 +1,138 @@
+---
+description: "Sound Interface Device (SID)"
+aliases:     [SID]
+package:     DIP
+pincount:    28
+family:      "MOS Technology"
+datasheet:   "http://www.waitingforfriday.com/index.php/Commodore_SID_6581_Datasheet"
+pins:
+  - num:  1
+    sym:  CAP1A
+    desc: capacitor C1 connection
+  - num:  2
+    sym:  CAP1B
+    desc: capacitor C1 connection
+  - num:  3
+    sym:  CAP2A
+    desc: capacitor C2 connection
+  - num:  4
+    sym:  CAP2B
+    desc: capacitor C2 connection
+  - num:  5
+    sym:  ~RES
+    desc: master reset
+  - num:  6
+    sym:  "&empty;2"
+    desc: master clock
+  - num:  7
+    sym:  R/~W
+    desc: read/write select
+  - num:  8
+    sym:  ~CS
+    desc: chip select (active low)
+  - num:  9
+    sym:  A0
+    desc: address bus (register select)
+  - num:  10
+    sym:  A1
+    desc: address bus (register select)
+  - num:  11
+    sym:  A2
+    desc: address bus (register select)
+  - num:  12
+    sym:  A3
+    desc: address bus (register select)
+  - num:  13
+    sym:  A4
+    desc: address bus (register select)
+  - num:  14
+    sym:  GND
+    desc: ground
+  - num:  15
+    sym:  D0
+    desc: data bus
+  - num:  16
+    sym:  D1
+    desc: data bus
+  - num:  17
+    sym:  D2
+    desc: data bus
+  - num:  18
+    sym:  D3
+    desc: data bus
+  - num:  19
+    sym:  D4
+    desc: data bus
+  - num:  20
+    sym:  D5
+    desc: data bus
+  - num:  21
+    sym:  D6
+    desc: data bus
+  - num:  22
+    sym:  D7
+    desc: data bus
+  - num:  23
+    sym:  POTY
+    desc: Y-axis potentiometer input
+  - num:  24
+    sym:  POTX
+    desc: X-axis potentiometer input
+  - num:  25
+    sym:  Vcc
+    desc: "+5VDC supply"
+  - num:  26
+    sym:  EXT IN
+    desc: external audio input
+  - num:  27
+    sym:  AUDIO OUT
+    desc: audio output
+  - num:  28
+    sym:  Vdd
+    desc: "+12VDC supply"
+specs:
+  - param: "Minimum clock cycle time"
+    val:   1
+    unit:  "&micro;s"
+notes:
+  - C1 and C2 are integrating capacitors for the filter; polystyrene capacitors are preferred. 
+  - C1 and C2 should have the same value. 2200 pF gives good operation over the audio range (30Hz-12kHz).
+  - "Filter cutoff frequency is approx. 2.6&times;10<sup>-5</sup>/C (where C is the value of C1 or C2)."
+  - "POTX and POTY pins must be connected to RC networks; the time constant RC should be 4.7&times;10<sup>-4</sup>. Recommended capacitor value is 1000 pF, recommended potentiometer value is 470 k&Omega;."
+  - "Maximum audio output level is approx. 3V p-p at a 6V DC level. A 1k&Omega; resistor should be connected from AUDIO OUT to ground, and a 1-10&micro;F electrolytic capacitor should be used for AC coupling."
+  - "Registers:
+<table>
+<tr><td>$00</td><td>Voice 1 frequency low byte</td></tr>
+<tr><td>$01</td><td>Voice 1 frequency high byte</td></tr>
+<tr><td>$02</td><td>Voice 1 pulse width low byte</td></tr>
+<tr><td>$03</td><td>Voice 1 pulse width high byte (bits 3-0)</td></tr>
+<tr><td>$04</td><td>Voice 1 control (gate, sync, ring mod, waveform)</td></tr>
+<tr><td>$05</td><td>Voice 1 attack/decay rates</td></tr>
+<tr><td>$06</td><td>Voice 1 sustain level/release rate</td></tr>
+<tr><td>$07</td><td>Voice 2 frequency low byte</td></tr>
+<tr><td>$08</td><td>Voice 2 frequency high byte</td></tr>
+<tr><td>$09</td><td>Voice 2 pulse width low byte</td></tr>
+<tr><td>$0A</td><td>Voice 2 pulse width high byte (bits 3-0)</td></tr>
+<tr><td>$0B</td><td>Voice 2 control (gate, sync, ring mod, waveform)</td></tr>
+<tr><td>$0C</td><td>Voice 2 attack/decay rates</td></tr>
+<tr><td>$0D</td><td>Voice 2 sustain level/release rate</td></tr>
+<tr><td>$0E</td><td>Voice 3 frequency low byte</td></tr>
+<tr><td>$0F</td><td>Voice 3 frequency high byte</td></tr>
+<tr><td>$10</td><td>Voice 3 pulse width low byte</td></tr>
+<tr><td>$11</td><td>Voice 3 pulse width high byte (bits 3-0)</td></tr>
+<tr><td>$12</td><td>Voice 3 control (gate, sync, ring mod, waveform)</td></tr>
+<tr><td>$13</td><td>Voice 3 attack/decay rates</td></tr>
+<tr><td>$14</td><td>Voice 3 sustain level/release rate</td></tr>
+<tr><td>$15</td><td>Filter cutoff frequency low byte</td></tr>
+<tr><td>$16</td><td>Filter cutoff frequency high byte (bits 2-0)</td></tr>
+<tr><td>$17</td><td>Filter resonance/control</td></tr>
+<tr><td>$18</td><td>Filter mode/volume control</td></tr>
+<tr><td>$19</td><td>POTX value (0-255), updated every 512 clock cycles</td></tr>
+<tr><td>$1A</td><td>POTY value (0-255), updated every 512 clock cycles</td></tr>
+<tr><td>$1B</td><td>Upper 8 bits of Oscillator 3 value (random number if noise waveform is selected)</td></tr>
+<tr><td>$1C</td><td>Upper 8 bits of Voice 3 envelope generator value</td></tr>
+</table>"
+  - "Oscillator frequency = (Fn &times; Fclk/16777216) Hz"
+  - "Pulse width = (PWn/40.95) %"
+...
+

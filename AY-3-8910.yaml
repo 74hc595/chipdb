@@ -1,0 +1,169 @@
+---
+description: "Programmable sound generator"
+aliases:     ["YM2149"]
+package:     DIP
+pincount:    40
+family:      "General Instrument"
+datasheet:   "http://www.ym2149.com/ay8910.pdf"
+pins:
+  - num:  1
+    sym:  GND
+    desc: ground
+  - num:  2
+    sym:  NC
+    desc: no connection
+  - num:  3
+    sym:  ANALOG B
+    desc: analog output, channel B
+  - num:  4
+    sym:  ANALOG A
+    desc: analog output, channel A
+  - num:  5
+    sym:  NC
+    desc: no connection
+  - num:  6
+    sym:  IOB7
+    desc: I/O port B
+  - num:  7
+    sym:  IOB6
+    desc: I/O port B
+  - num:  8
+    sym:  IOB5
+    desc: I/O port B
+  - num:  9
+    sym:  IOB4
+    desc: I/O port B
+  - num:  10
+    sym:  IOB3
+    desc: I/O port B
+  - num:  11
+    sym:  IOB2
+    desc: I/O port B
+  - num:  12
+    sym:  IOB1
+    desc: I/O port B
+  - num:  13
+    sym:  IOB0
+    desc: I/O port B
+  - num:  14
+    sym:  IOA7
+    desc: I/O port A
+  - num:  15
+    sym:  IOA6
+    desc: I/O port A
+  - num:  16
+    sym:  IOA5
+    desc: I/O port A
+  - num:  17
+    sym:  IOA4
+    desc: I/O port A
+  - num:  18
+    sym:  IOA3
+    desc: I/O port A
+  - num:  19
+    sym:  IOA2
+    desc: I/O port A
+  - num:  20
+    sym:  IOA1
+    desc: I/O port A
+  - num:  21
+    sym:  IOA0
+    desc: I/O port A
+  - num:  22
+    sym:  CLOCK
+    desc: clock input
+  - num:  23
+    sym:  ~RESET
+    desc: master reset (active low)
+  - num:  24
+    sym:  ~A9
+    desc: chip select
+  - num:  25
+    sym:  A8
+    desc: chip select
+  - num:  26
+    sym:  TEST 2/~SEL
+    desc: test pin (do not connect)
+  - num:  27
+    sym:  BDIR
+    desc: bus direction
+  - num:  28
+    sym:  BC2
+    desc: bus control
+  - num:  29
+    sym:  BC1
+    desc: bus control
+  - num:  30
+    sym:  DA7
+    desc: data/address bus
+  - num:  31
+    sym:  DA6
+    desc: data/address bus
+  - num:  32
+    sym:  DA5
+    desc: data/address bus
+  - num:  33
+    sym:  DA4
+    desc: data/address bus
+  - num:  34
+    sym:  DA3
+    desc: data/address bus
+  - num:  35
+    sym:  DA2
+    desc: data/address bus
+  - num:  36
+    sym:  DA1
+    desc: data/address bus
+  - num:  37
+    sym:  DA0
+    desc: data/address bus
+  - num:  38
+    sym:  ANALOG C
+    desc: analog output, channel C
+  - num:  39
+    sym:  TEST 1
+    desc: test pin (do not connect)
+  - num:  40
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param: "Minimum clock frequency"
+    val:   1
+    unit:  MHz
+  - param: "Maximum clock frequency"
+    val:   ["2.5 (AY-3-8910)", "4 (YM2149)"]
+    unit:  MHz
+notes:
+  - Chip is only active when ~A9 is low, A8 is high, and address bits DA7-DA4 are low.
+  - Address bits DA3-DA0 select one of the 16 control registers.
+  - For YM2149, connecting pin 26 to ground divides CLOCK by 2.
+  - "BDIR=0, BC2=0, BC1=0: inactive, DA7-DA0 high impedance"
+  - "BDIR=0, BC2=0, BC1=1: latch address, DA7-DA0 are inputs"
+  - "BDIR=0, BC2=1, BC1=0: inactive, DA7-DA0 high impedance"
+  - "BDIR=0, BC2=1, BC1=1: read, DA7-DA0 are outputs"
+  - "BDIR=1, BC2=0, BC1=0: latch address, DA7-DA0 are inputs"
+  - "BDIR=1, BC2=0, BC1=1: inactive, DA7-DA0 high impedance"
+  - "BDIR=1, BC2=1, BC1=0: write, DA7-DA0 are inputs"
+  - "BDIR=1, BC2=1, BC1=1: latch address, DA7-DA0 are inputs"
+  - "Control registers:
+<table>
+<tr><td>$00</td><td>tone generator A frequency, low 8 bits</td></tr>
+<tr><td>$01</td><td>tone generator A frequency, high 4 bits</td></tr>
+<tr><td>$02</td><td>tone generator B frequency, low 8 bits</td></tr>
+<tr><td>$03</td><td>tone generator B frequency, high 4 bits</td></tr>
+<tr><td>$04</td><td>tone generator C frequency, low 8 bits</td></tr>
+<tr><td>$05</td><td>tone generator C frequency, high 4 bits</td></tr>
+<tr><td>$06</td><td>noise generator frequency, low 5 bits</td></tr>
+<tr><td>$07</td><td>I/O port and mixer control</td></tr>
+<tr><td>$08</td><td>channel A amplitude/envelope enable</td></tr>
+<tr><td>$09</td><td>channel B amplitude/envelope enable</td></tr>
+<tr><td>$0A</td><td>channel C amplitude/envelope enable</td></tr>
+<tr><td>$0B</td><td>envelope frequency, low 8 bits</td></tr>
+<tr><td>$0C</td><td>envelope frequency, high 8 bits</td></tr>
+<tr><td>$0D</td><td>envelope shape</td></tr>
+<tr><td>$0E</td><td>I/O port A data</td></tr>
+<tr><td>$0F</td><td>I/O port B data</td></tr>
+</table>"
+... 
+
+

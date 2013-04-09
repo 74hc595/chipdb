@@ -1,0 +1,40 @@
+---
+description: "Step up/down inverting switching regulator"
+package:     DIP
+pincount:    8
+family:      "power"
+datasheet:   "http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF"
+pins:
+  - num:  1
+    sym:  SW C
+    desc: switch collector
+  - num:  2
+    sym:  SW E
+    desc: switch emitter
+  - num:  3
+    sym:  CAP
+    desc: timing capacitor
+  - num:  4
+    sym:  GND
+    desc: ground
+  - num:  5
+    sym:  COMP IN
+    desc: comparator inverting input
+  - num:  6
+    sym:  Vcc
+    desc: supply voltage
+  - num:  7
+    sym:  I__pk SENSE
+    desc: I__pk sense
+  - num:  8
+    sym:  DRIVER C
+    desc: driver collector
+specs:
+  - param: Supply voltage
+    val:   [3 (min), 40 (max)]
+    unit:  V
+  - param: Output switch current
+    val:   1.5
+    unit:  A
+...
+

@@ -1,0 +1,57 @@
+---
+description: "Hex gate (four inverters, one 2-input NOR gate, one 2-input NAND gate)"
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://focus.ti.com/lit/ds/symlink/cd4572ub.pdf"
+pins:
+  - num:  1
+    sym:  ~A
+    desc: inverter 1 output
+  - num:  2
+    sym:  A
+    desc: inverter 1 input
+  - num:  3
+    sym:  ~B
+    desc: inverter 2 output
+  - num:  4
+    sym:  B
+    desc: inverter 2 input
+  - num:  5
+    sym:  C NOR D
+    desc: NOR gate output
+  - num:  6
+    sym:  C
+    desc: NOR gate input
+  - num:  7
+    sym:  D
+    desc: NOR gate input
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  ~E
+    desc: inverter 3 output
+  - num:  10
+    sym:  E
+    desc: inverter 3 input
+  - num:  11
+    sym:  ~F
+    desc: inverter 4 output
+  - num:  12
+    sym:  F
+    desc: inverter 4 input
+  - num:  13
+    sym:  G NAND H
+    desc: NAND gate output
+  - num:  14
+    sym:  G
+    desc: NAND gate input
+  - num:  15
+    sym:  H
+    desc: NAND gate input
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+...
+

@@ -1,0 +1,63 @@
+---
+description:  Presettable synchronous 4-bit binary up/down counter
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc191.74hct191.pdf"
+pins:
+  - num:  1
+    sym:  D__1
+    desc: data input
+  - num:  2
+    sym:  Q__1
+    desc: counter output
+  - num:  3
+    sym:  Q__0
+    desc: counter output
+  - num:  4
+    sym:  ~CE
+    desc: count enable input (active low)
+  - num:  5
+    sym:  ~U~/D
+    desc: up/down input
+  - num:  6
+    sym:  Q__2
+    desc: counter output
+  - num:  7
+    sym:  Q__3
+    desc: counter output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  D__3
+    desc: data input
+  - num:  10
+    sym:  D__2
+    desc: data input
+  - num:  11
+    sym:  ~PL
+    desc: parallel load input (active low)
+  - num:  12
+    sym:  TC
+    desc: terminal count output
+  - num:  13
+    sym:  ~RC
+    desc: ripple clock output (active low)
+  - num:  14
+    sym:  CP
+    desc: clock input (low-to-high, edge-triggered)
+  - num:  15
+    sym:  D__0
+    desc: data input
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, CP to Q__n
+    val:    22 (74HC/74HCT)
+    unit:   ns
+  - param:  Maximum clock frequency
+    val:    36 (74HC/74HCT)
+    unit:   MHz
+...

@@ -1,0 +1,63 @@
+---
+description:  Dual 2-to-4 line decoder/demultiplexer
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc139.74hct139.pdf"
+pins:
+  - num:  1
+    sym:  1~E
+    desc: enable input (active low)
+  - num:  2
+    sym:  1A__0
+    desc: address input
+  - num:  3
+    sym:  1A__1
+    desc: address input
+  - num:  4
+    sym:  1~Y~__0
+    desc: output (active low)
+  - num:  5
+    sym:  1~Y~__1
+    desc: output (active low)
+  - num:  6
+    sym:  1~Y~__2
+    desc: output (active low)
+  - num:  7
+    sym:  1~Y~__3
+    desc: output (active low)
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  2~Y~__3
+    desc: output (active low)
+  - num:  10
+    sym:  2~Y~__2
+    desc: output (active low)
+  - num:  11
+    sym:  2~Y~__1
+    desc: output (active low)
+  - num:  12
+    sym:  2~Y~__0
+    desc: output (active low)
+  - num:  13
+    sym:  2A__1
+    desc: address input
+  - num:  14
+    sym:  2A__0
+    desc: address input
+  - num:  15
+    sym:  2~E
+    desc: enable input (active low)
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param: Propagation delay, nA__n to n~Y~__n
+    val:  [11 (74HC), 13 (74HCT)]
+    unit: ns
+  - param: Propagation delay, n~E to n~Y~__n
+    val:  [10 (74HC), 13 (74HCT)]
+    unit: ns
+...

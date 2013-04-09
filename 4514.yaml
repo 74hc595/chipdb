@@ -1,0 +1,84 @@
+---
+description: "1-of-16 decoder/demultiplexer with input latches"
+package:     DIP
+pincount:    24
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4514b.pdf"
+pins:
+  - num:  1
+    sym:  LE
+    desc: latch enable (active high)
+  - num:  2
+    sym:  A0
+    desc: address input
+  - num:  3
+    sym:  A1
+    desc: address input
+  - num:  4
+    sym:  Q7
+    desc: output
+  - num:  5
+    sym:  Q6
+    desc: output
+  - num:  6
+    sym:  Q5
+    desc: output
+  - num:  7
+    sym:  Q4
+    desc: output
+  - num:  8
+    sym:  Q3
+    desc: output
+  - num:  9
+    sym:  Q1
+    desc: output
+  - num:  10
+    sym:  Q2
+    desc: output
+  - num:  11
+    sym:  Q0
+    desc: output
+  - num:  12
+    sym:  GND
+    desc: ground
+  - num:  13
+    sym:  Q13
+    desc: output
+  - num:  14
+    sym:  Q12
+    desc: output
+  - num:  15
+    sym:  Q15
+    desc: output
+  - num:  16
+    sym:  Q14
+    desc: output
+  - num:  17
+    sym:  Q9
+    desc: output
+  - num:  18
+    sym:  Q8
+    desc: output
+  - num:  19
+    sym:  Q11
+    desc: output
+  - num:  20
+    sym:  Q10
+    desc: output
+  - num:  21
+    sym:  A2
+    desc: address input
+  - num:  22
+    sym:  A3
+    desc: address input
+  - num:  23
+    sym:  ~E
+    desc: enable (active low)
+  - num:  24
+    sym:  Vcc
+    desc: supply voltage
+notes:
+  - Outputs are mutually exclusive active high.
+  - When ~E is high, all outputs are low.
+...
+

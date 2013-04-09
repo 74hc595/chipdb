@@ -1,0 +1,52 @@
+---
+description: "Triple 3-input AND gate"
+package:     DIP
+pincount:    14
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4073b.pdf"
+pins:
+  - num:  1
+    sym:  2A
+    desc: data input
+  - num:  2
+    sym:  2B
+    desc: data input
+  - num:  3
+    sym:  1A
+    desc: data input
+  - num:  4
+    sym:  1B
+    desc: data input
+  - num:  5
+    sym:  1C
+    desc: data input
+  - num:  6
+    sym:  1Y
+    desc: data output
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  2C
+    desc: data input
+  - num:  9
+    sym:  2Y
+    desc: data output
+  - num:  10
+    sym:  3Y
+    desc: data output
+  - num:  11
+    sym:  3A
+    desc: data input
+  - num:  12
+    sym:  3B
+    desc: data input
+  - num:  13
+    sym:  3C
+    desc: data input
+  - num:  14
+    sym:  Vcc
+    desc: supply voltage
+...
+
+

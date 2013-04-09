@@ -1,0 +1,36 @@
+---
+description:  64 x 8, serial, I2C real-time clock
+package:      DIP
+pincount:     8
+family:       Maxim
+datasheet:    "http://datasheets.maxim-ic.com/en/ds/DS1307.pdf"
+pins:
+  - num:  1
+    sym:  X1
+    desc: 32.768kHz crystal connection
+  - num:  2
+    sym:  X2
+    desc: 32.768kHz crystal connection
+  - num:  3
+    sym:  V__BAT
+    desc: backup supply voltage (e.g. 3V lithium coin cell)
+  - num:  4
+    sym:  GND
+    desc: ground
+  - num:  5
+    sym:  SDA
+    desc: serial data input/output
+  - num:  6
+    sym:  SCL
+    desc: serial clock input
+  - num:  7
+    sym:  SQW/OUT
+    desc: square wave output
+  - num:  8
+    sym:  Vcc
+    desc: primary supply voltage
+notes:
+  - A lithium battery with 48 mAh or greater will back up the DS1307 for more than 10 years.
+  - Square wave output can be 1Hz, 4.096kHz, 8.192kHz, or 32.768kHz.
+  - Reads/writes are inhibited when Vcc falls below 1.25 x V__BAT.
+...

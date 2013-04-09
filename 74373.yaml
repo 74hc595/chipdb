@@ -1,0 +1,75 @@
+---
+description:  Octal D-type transparent latch; 3-state
+package:      DIP
+pincount:     20
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc373.74hct373.pdf"
+pins:
+  - num:  1
+    sym:  ~OE
+    desc: output enable (active low)
+  - num:  2
+    sym:  Q0
+    desc: latch output
+  - num:  3
+    sym:  D0
+    desc: data input
+  - num:  4
+    sym:  D1
+    desc: data input
+  - num:  5
+    sym:  Q1
+    desc: latch output
+  - num:  6
+    sym:  Q2
+    desc: latch output
+  - num:  7
+    sym:  D2
+    desc: data input
+  - num:  8
+    sym:  D3
+    desc: data input
+  - num:  9
+    sym:  Q3
+    desc: latch output
+  - num:  10
+    sym:  GND
+    desc: ground
+  - num:  11
+    sym:  LE
+    desc: latch enable (active high)
+  - num:  12
+    sym:  Q4
+    desc: latch output
+  - num:  13
+    sym:  D4
+    desc: data input
+  - num:  14
+    sym:  D5
+    desc: data input
+  - num:  15
+    sym:  Q5
+    desc: latch output
+  - num:  16
+    sym:  Q6
+    desc: latch output
+  - num:  17
+    sym:  D6
+    desc: data input
+  - num:  18
+    sym:  D7
+    desc: data input
+  - num:  19
+    sym:  Q7
+    desc: latch output
+  - num:  20
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, Dn to Qn
+    val:    [12 (74HC), 14 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, LE to Qn
+    val:    [15 (74HC), 13 (74HCT)]
+    unit:   ns
+...

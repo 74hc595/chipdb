@@ -1,0 +1,63 @@
+---
+description:  8-bit serial-in/parallel-out shift register
+package:      DIP
+pincount:     14
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc164.74hct164.pdf"
+pins:
+  - num:  1
+    sym:  DSA
+    desc: data input
+  - num:  2
+    sym:  DSB
+    desc: data input
+  - num:  3
+    sym:  Q0
+    desc: output
+  - num:  4
+    sym:  Q1
+    desc: output
+  - num:  5
+    sym:  Q2
+    desc: output 
+  - num:  6
+    sym:  Q3
+    desc: output
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  CP
+    desc: clock input (low-to-high, edge-triggered)
+  - num:  9
+    sym:  ~MR
+    desc: master reset input (active low)
+  - num:  10
+    sym:  Q4
+    desc: output
+  - num:  11
+    sym:  Q5
+    desc: output
+  - num:  12
+    sym:  Q6
+    desc: output
+  - num:  13
+    sym:  Q7
+    desc: output
+  - num:  14
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, CP to Qn
+    val:    [12 (74HC), 14 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, ~MR to Qn
+    val:    [11 (74HC), 16 (74HCT)]
+    unit:   ns
+  - param:  Maximum clock frequency
+    val:    [78 (74HC), 61 (74HCT)]
+    unit:   MHz
+notes:
+  - Either DSA or DSB can be used as an active high enable for data entry through the other input.
+  - Otherwise, Both inputs must be connected together or an unused input must be tied high.
+...

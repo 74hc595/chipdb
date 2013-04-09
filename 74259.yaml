@@ -1,0 +1,66 @@
+---
+description:  8-bit addressable latch
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc259.74hct259.pdf"
+pins:
+  - num:  1
+    sym:  A0
+    desc: address input
+  - num:  2
+    sym:  A1
+    desc: address input
+  - num:  3
+    sym:  A2
+    desc: address input
+  - num:  4
+    sym:  Q0
+    desc: latch output
+  - num:  5
+    sym:  Q1
+    desc: latch output
+  - num:  6
+    sym:  Q2
+    desc: latch output
+  - num:  7
+    sym:  Q3
+    desc: latch output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  Q4
+    desc: latch output
+  - num:  10
+    sym:  Q5
+    desc: latch output
+  - num:  11
+    sym:  Q6
+    desc: latch output
+  - num:  12
+    sym:  Q7
+    desc: latch output
+  - num:  13
+    sym:  D
+    desc: data input
+  - num:  14
+    sym:  ~LE
+    desc: latch enable input (active low)
+  - num:  15
+    sym:  ~MR
+    desc: conditional reset input (active low)
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, D to Qn
+    val:    [18 (74HC), 20 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, An to Qn
+    val:    [17 (74HC), 20 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, ~LE to Qn
+    val:    [17 (74HC), 20 (74HCT)]
+    unit:   ns
+...

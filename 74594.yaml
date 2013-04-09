@@ -1,0 +1,66 @@
+---
+description:  8-bit shift register with output register
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc594.74hct594.pdf"
+pins:
+  - num:  1
+    sym:  Q1
+    desc: parallel data output
+  - num:  2
+    sym:  Q2
+    desc: parallel data output
+  - num:  3
+    sym:  Q3
+    desc: parallel data output
+  - num:  4
+    sym:  Q4
+    desc: parallel data output
+  - num:  5
+    sym:  Q5
+    desc: parallel data output
+  - num:  6
+    sym:  Q6
+    desc: parallel data output
+  - num:  7
+    sym:  Q7
+    desc: parallel data output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  Q7S
+    desc: serial data output
+  - num:  10
+    sym:  ~SHR
+    desc: shift register reset (active low)
+  - num:  11
+    sym:  SHCP
+    desc: shift register clock input
+  - num:  12
+    sym:  STCP
+    desc: storage register clock input
+  - num:  13
+    sym:  ~STR
+    desc: storage register reset (active low)
+  - num:  14
+    sym:  DS
+    desc: serial data input
+  - num:  15
+    sym:  Q0
+    desc: parallel data output
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, SHCP to Q7S
+    val:    [13 (74HC), 15 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, STCP to Qn
+    val:    [13 (74HC), 15 (74HCT)]
+    unit:   ns
+  - param:  Maximum frequency, SHCP or STCP
+    val:    [100 (74HC/74HCT)]
+    unit:   MHz
+...

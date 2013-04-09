@@ -1,0 +1,53 @@
+---
+description: "Dual 2-wide 2-input AND-OR-INVERT gate"
+package:     DIP
+pincount:    14
+family:      "4000"
+datasheet:   "http://focus.ti.com/lit/ds/symlink/cd4085b.pdf"
+pins:
+  - num:  1
+    sym:  A1
+    desc: data input
+  - num:  2
+    sym:  B1
+    desc: data input
+  - num:  3
+    sym:  Q1
+    desc: data output (see note)
+  - num:  4
+    sym:  Q2
+    desc: data output (see note)
+  - num:  5
+    sym:  A2
+    desc: data input
+  - num:  6
+    sym:  B2
+    desc: data input
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  C2
+    desc: data input
+  - num:  9
+    sym:  D2
+    desc: data input
+  - num:  10
+    sym:  INH1
+    desc: inhibit
+  - num:  11
+    sym:  INH2
+    desc: inhibit
+  - num:  12
+    sym:  C1
+    desc: data input
+  - num:  13
+    sym:  D1
+    desc: data input
+  - num:  14
+    sym:  Vcc
+    desc: supply voltage
+notes:
+  - Q = <span class='neg'>INH OR (A AND B) OR (C AND D)</span>
+...
+

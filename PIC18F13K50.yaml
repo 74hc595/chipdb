@@ -1,0 +1,86 @@
+---
+description: "20-Pin USB Flash Microcontrollers with nanoWatt XLP&trade; Technology"
+aliases:     [PIC18F14K50]
+package:     DIP
+pincount:    20
+family:      "Microchip 18F"
+datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/41350C.pdf"
+pins:
+  - num:  1
+    sym:  VCC
+    desc: Positive supply for logic and I/O pins
+  - num:  2
+    sym:  RA5/OSC1/CLKIN
+    desc: Digital I/O, Oscillator crystal input or external clock input, External clock source input.
+  - num:  3
+    sym:  RA4/AN3/OSC2/CLKOUT
+    desc: Digital I/O, ADC channel 3, Oscillator crystal output., In RC mode, OSC2 pin outputs CLKOUT
+  - num:  4
+    sym:  RA3/~MCLR~/VPP
+    desc: Digital input, Active-low Master Clear with internal pull-up, High voltage programming input
+  - num:  5
+    sym:  RC5/CCP1/P1A/T0CKI
+    desc: Digital I/O, Capture 1 input/Compare 1 output/PWM 1 output, Enhanced CCP1 PWM output, Timer0 external clock input
+  - num:  6
+    sym:  RC4/P1B/C12OUT/SRQ
+    desc: Digital I/O, Enhanced CCP1 PWM output, Comparator C1 and C2 output, SR Latch output
+  - num:  7
+    sym:  RC3/AN7/P1C/C12IN3-/PGM
+    desc: Digital I/O, ADC channel 7, Enhanced CCP1 PWM output, Comparator C1 and C2 inverting input, Low-Voltage ICSP Programming enable pin
+  - num:  8
+    sym:  RC6/AN8/~SS~/T13CKI/T1OSCI
+    desc: Digital I/O, ADC channel 8, SPI slave select input, Timer0 and Timer3 external clock input, Timer1 oscillator input
+  - num:  9
+    sym:  RC7/AN9/SDO/T1OSCO
+    desc: Digital I/O, ADC channel 9, SPI data out, Timer1 oscillator output
+  - num:  10
+    sym:  RB7/TX/CK
+    desc: Digital I/O, EUSART asynchronous transmit, EUSART synchronous clock (see related RX/DT)
+  - num:  11
+    sym:  RB6/SCK/SCI
+    desc: Digital I/O, Synchronous serial clock input/output for SPI mode, Synchronous serial clock input/output for I2C mode
+  - num:  12
+    sym:  RB5/AN11/RX/DT
+    desc: Digital I/O, ADC channel 11, EUSART asynchronous receive, EUSART synchronous data (see related RX/TX)
+  - num:  13
+    sym:  RB4/AN10/SDI/SDA
+    desc: Digital I/O, ADC channel 10, SPI data in, I2C data I/O
+  - num:  14
+    sym:  RC2/AN6/P1D/C12IN2-/CVREF/INT2
+    desc: Digital I/O, ADC channel 6, Enhanced CCP1 PWM output, Comparator C1 and C2 inverting input, Comparator reference voltage output, External, interrupt 0
+  - num:  15
+    sym:  RC1/AN5/C12IN-/INT1/VREF-
+    desc: Digital I/O, ADC channel 5, Comparator C1 and C2 non-inverting input, External interrupt 0, Comparator reference voltage (low) input
+  - num:  16
+    sym:  RC0/AN4/C12IN+/INT0/VREF+
+    desc: Digital I/O, ADC channel 4, Comparator C1 and C2 non-inverting input, External interrupt 0, Comparator reference voltage (high) input
+  - num:  17
+    sym:  VUSB
+    desc: Positive supply for USB transceiver
+  - num:  18
+    sym:  RA1/D-/PGC
+    desc: Digital input, USB differential minus line (input/output), ICSP programming clock pin
+  - num:  19
+    sym:  RA0/D+/PGD
+    desc: Digital input, USB differential plus line (input/output), ICSP programming data pin
+  - num:  20
+    sym:  GND
+    desc: Ground reference for logic and I/O pins
+specs:
+  - param: "Program Memory"
+    val:   8
+    unit:  KB
+  - param: "CPU Speed"
+    val:   12
+    unit:  MIPS
+  - param: "RAM"
+    val:   512
+    unit:  Bytes
+  - param: "Data EEPROM"
+    val:   256
+    unit:  Bytes
+notes:
+  - High Performance PIC18 Core, USB v2.0 compliant interface 
+...
+
+

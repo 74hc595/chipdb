@@ -1,0 +1,53 @@
+---
+description: "Dual operational amplifier"
+aliases:     []
+package:     DIP
+pincount:    8
+family:      "Fairchild"
+datasheet:   "http://www.fairchildsemi.com/ds/NE/NE5532.pdf"
+pins:
+  - num:  1
+    sym:  1OUT
+    desc: Output 1
+  - num:  2
+    sym:  1IN-
+    desc: Inverting input 1
+  - num:  3
+    sym:  1IN+
+    desc: Non-inverting input 1
+  - num:  4
+    sym:  GND
+    desc: Ground
+  - num:  5
+    sym:  2IN+
+    desc: Non-inverting input 2
+  - num:  6
+    sym:  2IN-
+    desc: Inverting input 2
+  - num:  7
+    sym:  2OUT
+    desc: Output 2
+  - num:  8
+    sym:  Vcc
+    desc: Supply voltage
+specs:
+  - param: "Supply voltage"
+    val:   "&plusmn;22"
+    unit:  V
+  - param: "Differential input voltage"
+    val:   "&plusmn;13"
+    unit:  V
+  - param: "Input voltage"
+    val:   "Supply voltage"
+    unit:  V  
+  - param: "Power dissipation (8-DIP)"
+    val:   1100
+    unit:  mW
+  - param: "Power dissipation (8-SOP)"
+    val:   500
+    unit:  mW
+  - param: "Operating temperature range"
+    val:   "0~70"
+    unit:  "&deg;C"
+...
+

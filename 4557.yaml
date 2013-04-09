@@ -1,0 +1,62 @@
+---
+description: "1-to-64 bit variable length shift register"
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4557b.pdf"
+pins:
+  - num:  1
+    sym:  L__2
+    desc: length control input
+  - num:  2
+    sym:  L__1
+    desc: length control input
+  - num:  3
+    sym:  MR
+    desc: asynchronous master reset
+  - num:  4
+    sym:  CP__0 
+    desc: clock input (low-to-high edge-triggered)
+  - num:  5
+    sym:  ~CP~__1
+    desc: clock input (high-to-low edge-triggered)
+  - num:  6
+    sym:  D__B
+    desc: data input
+  - num:  7
+    sym:  D__A
+    desc: data input
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  A/~B
+    desc: select data input
+  - num:  10
+    sym:  Q
+    desc: output
+  - num:  11
+    sym:  ~Q
+    desc: complementary output
+  - num:  12
+    sym:  L__32
+    desc: length input
+  - num:  13
+    sym:  L__16
+    desc: length input
+  - num:  14
+    sym:  L__8
+    desc: length input
+  - num:  15
+    sym:  L__4
+    desc: length input
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+notes:
+  - The length of the shift register is determined by the sum of the length inputs (L__1, L__2, L__4, L__8, L__16, L__32) plus one.
+  - Data is shifted in on the low-to-high transition of CP__0 when ~CP~__1 is low, or the high-to-low transition of ~CP~__1 when CP__0 is high.
+  - When A/~B is high, a clock pulse shifts in data from D__A. When low, a clock pulse shifts in data from D__B.
+  - When MR is high, the register is reset, Q is forced low, and ~Q is forced high.
+...
+

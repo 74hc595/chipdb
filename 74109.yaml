@@ -1,0 +1,69 @@
+---
+description:  Dual J-K flip-flop with set and reset; positive-edge trigger
+package:      DIP
+pincount:     16
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc109.74hct109.pdf"
+pins:
+  - num:  1
+    sym:  1~R~__D
+    desc: asynchronous reset; direct input (active low)
+  - num:  2
+    sym:  1J
+    desc: synchronous input
+  - num:  3
+    sym:  1~K
+    desc: synchronous input
+  - num:  4
+    sym:  1CP
+    desc: clock input (low-to-high, edge-triggered)
+  - num:  5
+    sym:  1~S~__D
+    desc: asynchronous set; direct input (active low)
+  - num:  6
+    sym:  1Q
+    desc: true output
+  - num:  7
+    sym:  1~Q
+    desc: complement output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  2~Q
+    desc: complement output
+  - num:  10
+    sym:  2Q
+    desc: true output
+  - num:  11
+    sym:  2~S~__D
+    desc: asynchronous set; direct input (active low)
+  - num:  12
+    sym:  2CP
+    desc: clock input (low-to-high, active low)
+  - num:  13
+    sym:  2~K
+    desc: synchronous input
+  - num:  14
+    sym:  2J
+    desc: synchronous input
+  - num:  15
+    sym:  2~R~__D
+    desc: asynchronous reset; direct input (active low)
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, nCP to nQ, n~Q
+    val:    [15 (74HC), 17 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, n~S~__D to nQ, n~Q
+    val:    [12 (74HC), 14 (74HCT)]
+    unit:   ns
+  - param:  Propagation delay, n~R~__D to nQ, n~Q
+    val:    [12 (74HC), 15 (74HCT)]
+    unit:   ns
+  - param:  Maximum clock frequency
+    val:    [75 (74HC), 61 (74HCT)]
+    unit:   MHz
+...

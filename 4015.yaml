@@ -1,0 +1,57 @@
+---
+description: "Dual 4-bit serial-in/parallel-out shift register"
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4015b.pdf"
+pins:
+  - num:  1
+    sym:  2CP
+    desc: clock input (low-to-high edge-triggered)
+  - num:  2
+    sym:  2Q3
+    desc: parallel output
+  - num:  3
+    sym:  1Q2
+    desc: parallel output
+  - num:  4
+    sym:  1Q1
+    desc: parallel output
+  - num:  5
+    sym:  1Q0
+    desc: parallel output
+  - num:  6
+    sym:  1MR
+    desc: master reset
+  - num:  7
+    sym:  1D
+    desc: serial data input
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  1CP
+    desc: clock input (low-to-high edge-triggered)
+  - num:  10
+    sym:  1Q3
+    desc: parallel output
+  - num:  11
+    sym:  2Q2
+    desc: parallel output
+  - num:  12
+    sym:  2Q1
+    desc: parallel output
+  - num:  13
+    sym:  2Q0
+    desc: parallel output
+  - num:  14
+    sym:  2MR
+    desc: master reset
+  - num:  15
+    sym:  2D
+    desc: serial data input
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+...
+

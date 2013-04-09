@@ -1,0 +1,142 @@
+---
+description: "CDP1802 CMOS 8-bit microprocessor"
+aliases:     [ "CDP1802A", "CDP1802AC", "CDP1802BC" ]
+package:     DIP
+pincount:    40
+family:      "RCA"
+datasheet:   "pdf_datasheet_url"
+pins:
+  - num:  1
+    sym:  CLOCK
+    desc: input for externally generated single-phase clock
+  - num:  2
+    sym:  ~WAIT~
+    desc: control line
+  - num:  3
+    sym:  ~CLEAR~
+    desc: control line
+  - num:  4
+    sym:  Q
+    desc: general output
+  - num:  5
+    sym:  SC1
+    desc: state code
+  - num:  6
+    sym:  SC0
+    desc: state code
+  - num:  7
+    sym:  ~MRD~
+    desc: read pulse
+  - num:  8
+    sym:  BUS 7
+    desc: data bus
+  - num:  9
+    sym:  BUS 6
+    desc: data bus
+  - num:  10
+    sym:  BUS 5
+    desc: data bus
+  - num:  11
+    sym:  BUS 4
+    desc: data bus
+  - num:  12
+    sym:  BUS 3
+    desc: data bus
+  - num:  13
+    sym:  BUS 2
+    desc: data bus
+  - num:  14
+    sym:  BUS 1
+    desc: data bus
+  - num:  15
+    sym:  BUS 0
+    desc: data bus
+  - num:  16
+    sym:  V__CC
+    desc: I/O voltage supply
+  - num:  17
+    sym:  N2
+    desc: I/O control line
+  - num:  18
+    sym:  N1
+    desc: I/O control line
+  - num:  19
+    sym:  N0
+    desc: I/O control line
+  - num:  20
+    sym:  V__SS
+    desc: ground
+  - num:  21
+    sym:  ~EF4~
+    desc: I/O flag
+  - num:  22
+    sym:  ~EF3~
+    desc: I/O flag
+  - num:  23
+    sym:  ~EF2~
+    desc: I/O flag
+  - num:  24
+    sym:  ~EF1~
+    desc: I/O flag
+  - num:  25
+    sym:  MA0
+    desc: memory address
+  - num:  26
+    sym:  MA1
+    desc: memory address
+  - num:  27
+    sym:  MA2
+    desc: memory address
+  - num:  28
+    sym:  MA3
+    desc: memory address
+  - num:  29
+    sym:  MA4
+    desc: memory address
+  - num:  30
+    sym:  MA5
+    desc: memory address
+  - num:  31
+    sym:  MA6
+    desc: memory address
+  - num:  32
+    sym:  MA7
+    desc: memory address
+  - num:  33
+    sym:  TPB
+    desc: timing pulse
+  - num:  34
+    sym:  TPA
+    desc: timing pulse
+  - num:  35
+    sym:  ~MWR~
+    desc: write pulse
+  - num:  36
+    sym:  ~INTERRUPT~
+    desc: interrupt
+  - num:  37
+    sym:  ~DMA_OUT~
+    desc: DMA out
+  - num:  38
+    sym:  ~DMA_IN~
+    desc: DMA in
+  - num:  39
+    sym:  ~XTAL~
+    desc: crystal input, for on-chip oscillator
+  - num:  40
+    sym:  V__DD
+    desc: internal voltage supply
+specs:
+  - param: "Maximum input clock maximum frequency at 5V"
+    val:   3.2
+    unit:  MHz
+  - param: "Maximum input clock maximum frequency at 10V"
+    val:   6.4
+    unit:  MHz
+  - param: "Minimum instruction fetch-execute time at 5V"
+    val:   5.0
+    unit:  "&micro;s"
+notes:
+...
+
+

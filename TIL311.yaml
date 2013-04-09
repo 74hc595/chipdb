@@ -1,0 +1,53 @@
+---
+description:  Hexadecimal display with logic
+package:      DIP
+pincount:     14
+family:       "LED"
+datasheet:    "http://focus.ti.com/lit/ds/symlink/til311.pdf"
+pins:
+  - num:  1
+    sym:  V__LED
+    desc: LED supply voltage
+  - num:  2
+    sym:  B
+    desc: Latch data input B
+  - num:  3
+    sym:  A
+    desc: Latch data input A
+  - num:  4
+    sym:  DP__L
+    desc: Left decimal point cathode
+  - num:  5
+    sym:  ~STROBE
+    desc: Latch strobe input (active low)
+  - num:  6
+    sym:  ""
+    desc: no pin
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  BLANK
+    desc: Display blanking input (active high)
+  - num:  9
+    sym:  ""
+    desc: no pin
+  - num:  10
+    sym:  DP__R
+    desc: Right decimal point cathode
+  - num:  11
+    sym:  ""
+    desc: no pin
+  - num:  12
+    sym:  D
+    desc: Latch data input D
+  - num:  13
+    sym:  C
+    desc: Latch data input C
+  - num:  14
+    sym:  Vcc
+    desc: Logic supply voltage
+notes:
+  - "Decimal points are driven independently and current-limiting resistors (typically 1k&Omega;) are required."
+...
+

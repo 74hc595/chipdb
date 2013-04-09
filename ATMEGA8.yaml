@@ -1,0 +1,109 @@
+---
+name:         ATmega8
+description:  8-bit AVR&reg; microcontroller
+package:      DIP
+pincount:     28
+family:       Atmel
+datasheet:    "http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf"
+pins:
+  - num:  1
+    sym:  (~RESET) PC6
+    desc: reset (active low); port C
+  - num:  2
+    sym:  (RXD) PD0
+    desc: UART receive; port D
+  - num:  3
+    sym:  (TXD) PD1
+    desc: UART transmit; port D
+  - num:  4
+    sym:  (INT0) PD2
+    desc: external interrupt 0; port D
+  - num:  5
+    sym:  (INT1) PD3
+    desc: external interrupt 1; port D
+  - num:  6
+    sym:  (XCK/T0) PD4
+    desc: port D
+  - num:  7
+    sym:  Vcc
+    desc: supply voltage
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  (XTAL1/TOSC1) PB6
+    desc: clock oscillator pin 1; port B
+  - num:  10
+    sym:  (XTAL2/TOSC2) PB7
+    desc: clock oscillator pin 2; port B
+  - num:  11
+    sym:  (T1) PD5
+    desc: port D
+  - num:  12
+    sym:  (AIN0) PD6
+    desc: port D
+  - num:  13
+    sym:  (AIN1) PD7
+    desc: port D
+  - num:  14
+    sym:  (ICP1) PB0
+    desc: port B
+  - num:  15
+    sym:  PB1 (OC1A)
+    desc: port B
+  - num:  16
+    sym:  PB2 (SS/OC1B)
+    desc: SPI slave select; port B
+  - num:  17
+    sym:  PB3 (MOSI/OC2)
+    desc: SPI master output/slave input; port B
+  - num:  18
+    sym:  PB4 (MISO)
+    desc: SPI master input/slave output; port B
+  - num:  19
+    sym:  PB5 (SCK)
+    desc: SPI master clock; port B
+  - num:  20
+    sym:  AVcc
+    desc: A/D converter supply voltage
+  - num:  21
+    sym:  AREF
+    desc: analog reference for A/D converter
+  - num:  22
+    sym:  GND
+    desc: ground
+  - num:  23
+    sym:  PC0 (ADC0)
+    desc: port C
+  - num:  24
+    sym:  PC1 (ADC1)
+    desc: port C
+  - num:  25
+    sym:  PC2 (ADC2)
+    desc: port C
+  - num:  26
+    sym:  PC3 (ADC3)
+    desc: port C
+  - num:  27
+    sym:  PC4 (ADC4/SCL)
+    desc: 2-wire clock; port C
+  - num:  28
+    sym:  PC5 (ADC5/SDA)
+    desc: 2-wire data; port C
+specs:
+  - param:  Flash memory
+    val:    8K
+    unit:   bytes
+  - param:  Internal SRAM
+    val:    1K
+    unit:   bytes
+  - param:  EEPROM
+    val:    512
+    unit:   bytes
+  - param:  Programmable I/O lines
+    val:    23
+  - param:  Maximum clock frequency
+    val:    16
+    unit:   MHz
+...
+

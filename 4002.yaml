@@ -1,0 +1,51 @@
+---
+description: Dual 4-input NOR gate
+package:     DIP
+pincount:    14
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4002b.pdf"
+pins:
+  - num:  1
+    sym:  1Y
+    desc: data output
+  - num:  2
+    sym:  1A
+    desc: data input
+  - num:  3
+    sym:  1B
+    desc: data input
+  - num:  4
+    sym:  1C
+    desc: data input
+  - num:  5
+    sym:  1D
+    desc: data input
+  - num:  6
+    sym:  NC
+    desc: no connection
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  NC
+    desc: no connection
+  - num:  9
+    sym:  2A
+    desc: data input
+  - num:  10
+    sym:  2B
+    desc: data input
+  - num:  11
+    sym:  2C
+    desc: data input
+  - num:  12
+    sym:  2D
+    desc: data input
+  - num:  13
+    sym:  2Y
+    desc: data output
+  - num:  14
+    sym:  Vcc
+    desc: supply voltage
+...
+

@@ -1,0 +1,49 @@
+---
+description: "8-Pin Flash-Based, 8-Bit CMOS Microcontrollers with nanoWatt Technology"
+aliases:     []
+package:     DIP
+pincount:    8
+family:      "Microchip"
+datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/41211D_.pdf"
+pins:
+  - num:  1
+    sym:  VDD
+    desc: Positive supply
+  - num:  2
+    sym:  GP5/T1CKI/OSC1/CLKIN
+    desc: GPIO 5, Timer1 clock, Crystal/Resonator, External clock input
+  - num:  3
+    sym:  GP4/AN3/~T1G~/OSC2/CLKOUT
+    desc: GPIO 4, A/D Channel 3 input, Timer1 gate, Crystal/Resonator, FOSC/4 output
+  - num:  4
+    sym:  GP3/~MCLR~/VPP
+    desc: GPIO 3, Master Clear, Programming voltage
+  - num:  5
+    sym:  GP2/AN2/T0CKI/INT/COUT/CCP1
+    desc: GPIO 2, A/D Channel 2 input, Timer0 clock input, External Interrupt, Comparator 1 output, Capture input/Compare output/PWM output
+  - num:  6
+    sym:  GP1/AN1/CIN-/VREF/ICSPCLK
+    desc: GPIO 1, A/D Channel 1 input, Comparator 1 input, External Voltage Reference, Serial Programming Clock 
+  - num:  7
+    sym:  GP0/AN0/CIN+/ICSPDAT/ULPWU
+    desc: GPIO 0, Comparator 1 input, Serial Programming Data I/O, Ultra Low-Power Wake-up input
+  - num:  8
+    sym:  VSS
+    desc: Ground reference
+specs:
+  - param: "Program Memory"
+    val:   3.5
+    unit:  KB
+  - param: "CPU Speed"
+    val:   5
+    unit:  MIPS
+  - param: "RAM"
+    val:   128
+    unit:  Bytes
+  - param: "Data EEPROM"
+    val:   256
+    unit:  Bytes
+notes:
+  - The Low Pin-count (8) PIC&reg; Flash microcontroller products offer all of the advantages of the well recognized mid-range x14 architecture with standardized features including a wide operating voltage of 2.0-5.5 volts, on-board EEPROM Data Memory, and nanoWatt Technology. Standard analog peripherals include up to 4 channels of 10-bit A/D, an analog comparator module with a single comparator, programmable on-chip voltage reference and a Standard Capture/Compare/PWM (CCP) module.
+...
+

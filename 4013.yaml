@@ -1,0 +1,51 @@
+---
+description: Dual D-type flip-flop with set and clear
+package:     DIP
+pincount:    14
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4013b.pdf"
+pins:
+  - num:  1
+    sym:  1Q
+    desc: true output
+  - num:  2
+    sym:  1~Q
+    desc: complement output
+  - num:  3
+    sym:  1CP
+    desc: clock input (low-to-high edge-triggered)
+  - num:  4
+    sym:  1CD
+    desc: asynchronous clear-direct input
+  - num:  5
+    sym:  1D
+    desc: data input
+  - num:  6
+    sym:  1SD
+    desc: asynchronous set-direct input
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  2SD
+    desc: asynchronous set-direct input
+  - num:  9
+    sym:  2D
+    desc: data input
+  - num:  10
+    sym:  2CD
+    desc: asynchronous clear-direct input
+  - num:  11
+    sym:  2CP
+    desc: clock input (low-to-high edge-triggered)
+  - num:  12
+    sym:  2~Q
+    desc: complement output
+  - num:  13
+    sym:  2Q
+    desc: true output
+  - num:  14
+    sym:  Vcc
+    desc: supply voltage
+...
+

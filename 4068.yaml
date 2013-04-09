@@ -1,0 +1,51 @@
+---
+description: "8-input NAND gate"
+package:     DIP
+pincount:    14
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4068b.pdf"
+pins:
+  - num:  1
+    sym:  NC
+    desc: no connection
+  - num:  2
+    sym:  I__0
+    desc: data input
+  - num:  3
+    sym:  I__1
+    desc: data input
+  - num:  4
+    sym:  I__2
+    desc: data input
+  - num:  5
+    sym:  I__3
+    desc: data input
+  - num:  6
+    sym:  NC
+    desc: no connection
+  - num:  7
+    sym:  GND
+    desc: ground
+  - num:  8
+    sym:  NC
+    desc: no connection
+  - num:  9
+    sym:  I__4
+    desc: data input
+  - num:  10
+    sym:  I__5
+    desc: data input
+  - num:  11
+    sym:  I__6
+    desc: data input
+  - num:  12
+    sym:  I__7
+    desc: data input
+  - num:  13
+    sym:  Y
+    desc: data output
+  - num:  14
+    sym:  Vcc
+    desc: supply voltage
+...
+

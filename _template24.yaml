@@ -1,0 +1,84 @@
+---
+description:  
+package:      DIP
+pincount:     24
+family:       "7400"
+datasheet:    
+pins:
+  - num:  1
+    sym:  
+    desc: 
+  - num:  2
+    sym:  
+    desc: 
+  - num:  3
+    sym:  
+    desc: 
+  - num:  4
+    sym:  
+    desc: 
+  - num:  5
+    sym:  
+    desc: 
+  - num:  6
+    sym:  
+    desc: 
+  - num:  7
+    sym:  
+    desc: 
+  - num:  8
+    sym:  
+    desc: 
+  - num:  9
+    sym:  
+    desc: 
+  - num:  10
+    sym:  
+    desc: 
+  - num:  11
+    sym:  
+    desc: 
+  - num:  12
+    sym:  
+    desc: 
+  - num:  13
+    sym:  
+    desc: 
+  - num:  14
+    sym:  
+    desc: 
+  - num:  15
+    sym:  
+    desc: 
+  - num:  16
+    sym:  
+    desc: 
+  - num:  17
+    sym:  
+    desc: 
+  - num:  18
+    sym:  
+    desc: 
+  - num:  19
+    sym:  
+    desc: 
+  - num:  20
+    sym:  
+    desc: 
+  - num:  21
+    sym:  
+    desc: 
+  - num:  22
+    sym:  
+    desc: 
+  - num:  23
+    sym:  
+    desc: 
+  - num:  24
+    sym:  
+    desc: 
+specs:
+  - param:  Propagation delay,
+    val:    [0 (74HC), 0 (74HCT)]
+    unit:   ns
+...

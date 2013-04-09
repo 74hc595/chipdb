@@ -1,0 +1,57 @@
+---
+description: "14-stage ripple-carry binary counter/divider and oscillator"
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4060b.pdf"
+pins:
+  - num:  1
+    sym:  Q11
+    desc: counter output
+  - num:  2
+    sym:  Q12
+    desc: counter output
+  - num:  3
+    sym:  Q13
+    desc: counter output
+  - num:  4
+    sym:  Q5
+    desc: counter output
+  - num:  5
+    sym:  Q4
+    desc: counter output
+  - num:  6
+    sym:  Q6
+    desc: counter output
+  - num:  7
+    sym:  Q3
+    desc: counter output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  C__TC
+    desc: external capacitor connection
+  - num:  10
+    sym:  R__TC
+    desc: oscillator pin
+  - num:  11
+    sym:  RS
+    desc: clock input/oscillator pin (high-to-low edge-triggered)
+  - num:  12
+    sym:  MR
+    desc: master reset (active high)
+  - num:  13
+    sym:  Q__8
+    desc: counter output
+  - num:  14
+    sym:  Q__7
+    desc: counter output
+  - num:  15
+    sym:  Q__9
+    desc: counter output
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+...
+

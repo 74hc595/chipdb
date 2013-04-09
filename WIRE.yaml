@@ -1,0 +1,16 @@
+---
+description:  A piece of wire
+package:      DIP
+pincount:     2
+pins:
+  - num:  1
+    sym:  W1
+    desc: one end of the wire
+  - num:  2
+    sym:  W2
+    desc: the other end of the wire
+notes:
+  - "It's pretty handy for connecting stuff."
+  - Resistance is usually pretty low.
+  - It bends!
+...

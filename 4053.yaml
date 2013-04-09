@@ -1,0 +1,61 @@
+---
+description: Triple 2-channel analog multiplexer/demultiplexer (triple SPDT analog switch)
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4053b.pdf"
+pins:
+  - num:  1
+    sym:  Y__1B
+    desc: independent input/output
+  - num:  2
+    sym:  Y__0B
+    desc: independent input/output
+  - num:  3
+    sym:  Y__1C
+    desc: independent input/output
+  - num:  4
+    sym:  Z__C
+    desc: common input/output
+  - num:  5
+    sym:  Y__0C
+    desc: independent input/output
+  - num:  6
+    sym:  ~E
+    desc: enable input (active low)
+  - num:  7
+    sym:  V__EE
+    desc: switch negative supply voltage
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  S__C
+    desc: select input
+  - num:  10
+    sym:  S__B
+    desc: select input
+  - num:  11
+    sym:  S__A
+    desc: select input
+  - num:  12
+    sym:  Y__0A
+    desc: independent input/output
+  - num:  13
+    sym:  Y__1A
+    desc: independent input/output
+  - num:  14
+    sym:  Z__A
+    desc: common input/output
+  - num:  15
+    sym:  Z__B
+    desc: common input/output
+  - num:  16
+    sym:  V__CC
+    desc: supply voltage
+notes:
+  - Each multiplexer/demultiplexer contains two bidirectional analog switches.
+  - The analog inputs/outputs can swing between V__CC and V__EE.
+  - When E is high, all switches are in a high-impedance off state.
+...
+

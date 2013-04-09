@@ -1,0 +1,75 @@
+---
+description:  8-bit magnitude comparator
+package:      DIP
+pincount:     20
+family:       "7400"
+datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc688.74hct688.pdf"
+pins:
+  - num:  1
+    sym:  ~E
+    desc: enable (active low)
+  - num:  2
+    sym:  P__0
+    desc: word input
+  - num:  3
+    sym:  Q__0
+    desc: word input
+  - num:  4
+    sym:  P__1
+    desc: word input
+  - num:  5
+    sym:  Q__1
+    desc: word input
+  - num:  6
+    sym:  P__2
+    desc: word input
+  - num:  7
+    sym:  Q__2
+    desc: word input
+  - num:  8
+    sym:  P__3
+    desc: word input
+  - num:  9
+    sym:  Q__3
+    desc: word input
+  - num:  10
+    sym:  GND
+    desc: ground
+  - num:  11
+    sym:  P__4
+    desc: word input
+  - num:  12
+    sym:  Q__4
+    desc: word input
+  - num:  13
+    sym:  P__5
+    desc: word input
+  - num:  14
+    sym:  Q__5
+    desc: word input
+  - num:  15
+    sym:  P__6
+    desc: word input
+  - num:  16
+    sym:  Q__6
+    desc: word input
+  - num:  17
+    sym:  P__7
+    desc: word input
+  - num:  18
+    sym:  Q__7
+    desc: word input
+  - num:  19
+    sym:  ~P=Q~
+    desc: equal-to output (low when P = Q)
+  - num:  20
+    sym:  Vcc
+    desc: supply voltage
+specs:
+  - param:  Propagation delay, P__n, Q__n to ~P=Q~
+    val:    17 (74HC/HCT)
+    unit:   ns
+  - param:  Propagation delay, ~E to ~P=Q~
+    val:    [8 (74HC), 12 (74HCT)]
+    unit:   ns
+...

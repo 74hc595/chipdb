@@ -1,0 +1,144 @@
+---
+name:        ATmega32
+description: "8-bit AVR&reg; microcontroller"
+aliases:     [ATmega16]
+package:     DIP
+pincount:    40
+family:      Atmel
+datasheet:   "http://www.atmel.com/dyn/resources/prod_documents/doc8155.pdf"
+pins:
+  - num:  1
+    sym:  (XCK0/T0) PB0
+    desc: port B
+  - num:  2
+    sym:  (T1) PB1
+    desc: port B
+  - num:  3
+    sym:  (INT2/AIN0) PB2
+    desc: external interrupt 2; port B
+  - num:  4
+    sym:  (OC0/AIN1) PB3
+    desc: port B
+  - num:  5
+    sym:  (~SS~) PB4
+    desc: SPI slave select; port B
+  - num:  6
+    sym:  (MOSI) PB5
+    desc: SPI master output/slave input; port B
+  - num:  7
+    sym:  (MISO) PB6
+    desc: SPI master input/slave output; port B
+  - num:  8
+    sym:  (SCK) PB7
+    desc: SPI master clock; port B
+  - num:  9
+    sym:  ~RESET
+    desc: reset (active low)
+  - num:  10
+    sym:  Vcc
+    desc: supply voltage
+  - num:  11
+    sym:  GND
+    desc: ground
+  - num:  12
+    sym:  XTAL2
+    desc: clock oscillator pin 2
+  - num:  13
+    sym:  XTAL1
+    desc: clock oscillator pin 1
+  - num:  14
+    sym:  (RXD) PD0
+    desc: UART receive; port D
+  - num:  15
+    sym:  (TXD) PD1
+    desc: UART transmit; port D
+  - num:  16
+    sym:  (INT0) PD2
+    desc: external interrupt 0; port D
+  - num:  17
+    sym:  (INT1) PD3
+    desc: external interrupt 1; port D
+  - num:  18
+    sym:  (OC1B) PD4
+    desc: port D
+  - num:  19
+    sym:  (OC1A) PD5
+    desc: port D
+  - num:  20
+    sym:  (ICP1) PD6
+    desc: port D
+  - num:  21
+    sym:  PD7 (OC2)
+    desc: port D
+  - num:  22
+    sym:  PC0 (SCL)
+    desc: 2-wire clock line; port C
+  - num:  23
+    sym:  PC1 (SDA)
+    desc: 2-wire data line; port C
+  - num:  24
+    sym:  PC2 (TCK)
+    desc: JTAG test clock; port C
+  - num:  25
+    sym:  PC3 (TMS)
+    desc: JTAG test mode select; port C
+  - num:  26
+    sym:  PC4 (TDO)
+    desc: JTAG test data output; port C
+  - num:  27
+    sym:  PC5 (TDI)
+    desc: JTAG test data input; port C
+  - num:  28
+    sym:  PC6 (TOSC1)
+    desc: timer oscillator pin 1; port C
+  - num:  29
+    sym:  PC7 (TOSC2)
+    desc: timer oscillator pin 2; port C
+  - num:  30
+    sym:  AVcc
+    desc: A/D converter supply voltage
+  - num:  31
+    sym:  GND
+    desc: ground
+  - num:  32
+    sym:  AREF
+    desc: analog reference for A/D converter
+  - num:  33
+    sym:  PA7 (ADC7)
+    desc: port A
+  - num:  34
+    sym:  PA6 (ADC6)
+    desc: port A
+  - num:  35
+    sym:  PA5 (ADC5)
+    desc: port A
+  - num:  36
+    sym:  PA4 (ADC4)
+    desc: port A
+  - num:  37
+    sym:  PA3 (ADC3)
+    desc: port A
+  - num:  38
+    sym:  PA2 (ADC2)
+    desc: port A
+  - num:  39
+    sym:  PA1 (ADC1)
+    desc: port A
+  - num:  40
+    sym:  PA0 (ADC0)
+    desc: port A
+specs:
+  - param: Flash memory
+    val:   [16K (ATmega16), 32K (ATmega32)]
+    unit:  bytes
+  - param: Internal SRAM
+    val:   [1K (ATmega16), 2K (ATmega32)]
+    unit:  bytes
+  - param: EEPROM
+    val:   [512 (ATmega16), 1K (ATmega32)]
+    unit:  bytes
+  - param: Programmable I/O lines
+    val:   32
+...
+
+

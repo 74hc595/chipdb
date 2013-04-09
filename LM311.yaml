@@ -1,0 +1,47 @@
+---
+description: "Voltage comparator"
+aliases:     [LM111]
+package:     DIP
+pincount:    8
+family:      "linear"
+datasheet:   "http://www.national.com/ds/LM/LM111.pdf"
+pins:
+  - num:  1
+    sym:  GND
+    desc: ground
+  - num:  2
+    sym:  IN+
+    desc: non-inverting input
+  - num:  3
+    sym:  IN-
+    desc: inverting input
+  - num:  4
+    sym:  Vss
+    desc: negative supply voltage
+  - num:  5
+    sym:  BAL
+    desc: balance
+  - num:  6
+    sym:  BAL/STROBE
+    desc: balance/strobe
+  - num:  7
+    sym:  OUT
+    desc: output
+  - num:  8
+    sym:  Vcc
+    desc: positive supply voltage
+specs:
+  - param: Maximum supply voltage
+    val:   36
+    unit:  V
+  - param: Offset voltage
+    val:   [3 (LM111), 7.5 (LM311)]
+    unit:  mV
+  - param: Response time
+    val:   200
+    unit:  ns
+  - param: Supply current
+    val:   5.1
+    unit:  mA
+...
+

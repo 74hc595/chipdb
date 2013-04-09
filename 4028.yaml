@@ -1,0 +1,60 @@
+---
+description: BCD to decimal decoder
+package:     DIP
+pincount:    16
+family:      "4000"
+datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4028b.pdf"
+pins:
+  - num:  1
+    sym:  Y4
+    desc: output
+  - num:  2
+    sym:  Y2
+    desc: output
+  - num:  3
+    sym:  Y0
+    desc: output
+  - num:  4
+    sym:  Y7
+    desc: output
+  - num:  5
+    sym:  Y9
+    desc: output
+  - num:  6
+    sym:  Y5
+    desc: output
+  - num:  7
+    sym:  Y6
+    desc: output
+  - num:  8
+    sym:  GND
+    desc: ground
+  - num:  9
+    sym:  Y8
+    desc: output
+  - num:  10
+    sym:  A0
+    desc: BCD input
+  - num:  11
+    sym:  A3
+    desc: BCD input
+  - num:  12
+    sym:  A2
+    desc: BCD input
+  - num:  13
+    sym:  A1
+    desc: BCD input
+  - num:  14
+    sym:  Y1
+    desc: output
+  - num:  15
+    sym:  Y3
+    desc: output
+  - num:  16
+    sym:  Vcc
+    desc: supply voltage
+notes:
+  - Outputs are active high.
+  - All outputs are low for BCD inputs greater than 9.
+...
+
