@@ -12,9 +12,9 @@ The data set includes pinouts for the most common 7400 series, 4000 series, and 
 
 ## News
 
-#### April 8, 2013
+#### April 9, 2013
 
-This is an initial commit of the data set. The web site is still using its own database, it is not pulling changes from Git yet. I intend to set up a post-receive hook so that [msarnoff.org/chipdb](ChipDB) is kept up to date with the latest changes in this repository.
+[msarnoff.org/chipdb](ChipDB) is now using this repository as its data backend. Feel free to submit pull requests!
 
 ## Disclaimer/License
 
