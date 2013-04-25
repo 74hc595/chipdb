@@ -76,7 +76,7 @@ The `specs` array can be used to define a small table of basic specifications. E
 
 Required. Parameter name, such as `"Supply voltage"` or `"Slew rate"`.
 
-#### `value`
+#### `val`
 
 Required. Parameter value. An array can be used to specify multiple values, like a minimum and maximum, e.g. `[8 (min), 36 (max)]`
 
