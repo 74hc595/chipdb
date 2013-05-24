@@ -109,10 +109,10 @@ There are some rules for better maintanence.
 - File starts with `---`, ends with an empty line after `...`.
 - Line ends with CRLF.
 - Indentation depth is 2 (space only).
-- Use line-by-line dictionary and array format, not JSON-like `{...}` and `[...]`. This is for human readability. `aliases` is the only exception.
+- Use line-by-line dictionary and array format, not JSON-like `{...}` and `[...]`. This makes the code good for both human readability and merging with difftools. `aliases` is the only exception because it is an array of just strings.
 - If a value is neither a dictionary or an array, avoid using multiple lines with block literals(`|` or `>`) even if it exceeds the limit of your editor software.
 - `name` field is recommended.
-- Avoid quoted strings. `datasheet` field is the only exception.
+- Avoid quoted strings. `datasheet` field might be an exception if it causes error.
 - Top keys are aligned by 14 characters.
 - Keys under `pins` definition is aligned by 6 characters.
 - Keys under `specs` definition is aligned by 8 characters.
