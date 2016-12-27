@@ -87,7 +87,7 @@ See example below [ATtiny85](http://www.atmel.com/Images/atmel-2586-avr-8-bit-mi
 **Ball Grid Array:**
 
 All pins can be defined by a column (letter) and a row (number).
-The first pin `A1` is in the upper left corner (while viewing on top of chip).
+The first pin `A1` is in the upper left corner (TOP VIEW).
 
 The pins are defined in a dictionary with the position as key and the pin as value.
 
