@@ -1,72 +1,38 @@
 description: '8-bit binary counter with output register; 3-state'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc590.pdf'
 pins:
-  -
-    num: '1'
-    sym: Q1
+  Q1:
     desc: 'parallel data output'
-  -
-    num: '2'
-    sym: Q2
+  Q2:
     desc: 'parallel data output'
-  -
-    num: '3'
-    sym: Q3
+  Q3:
     desc: 'parallel data output'
-  -
-    num: '4'
-    sym: Q4
+  Q4:
     desc: 'parallel data output'
-  -
-    num: '5'
-    sym: Q5
+  Q5:
     desc: 'parallel data output'
-  -
-    num: '6'
-    sym: Q6
+  Q6:
     desc: 'parallel data output'
-  -
-    num: '7'
-    sym: Q7
+  Q7:
     desc: 'parallel data output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '&#126;RCO'
+  '&#126;RCO':
     desc: 'ripple carry output (active low)'
-  -
-    num: '10'
-    sym: '&#126;MRC'
+  '&#126;MRC':
     desc: 'master reset (active low)'
-  -
-    num: '11'
-    sym: CPC
+  CPC:
     desc: 'counter clock input (active high)'
-  -
-    num: '12'
-    sym: '&#126;CE'
+  '&#126;CE':
     desc: 'count enable (active low)'
-  -
-    num: '13'
-    sym: CPR
+  CPR:
     desc: 'register clock input (active high)'
-  -
-    num: '14'
-    sym: '&#126;OE'
+  '&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '15'
-    sym: Q0
+  Q0:
     desc: 'parallel data output'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -81,3 +47,21 @@ specs:
     param: 'Maximum frequency, CPC and CPR'
     val: '52 (74HC)'
     unit: MHz
+packages:
+  DIP:
+    - Q1
+    - Q2
+    - Q3
+    - Q4
+    - Q5
+    - Q6
+    - Q7
+    - GND
+    - '&#126;RCO'
+    - '&#126;MRC'
+    - CPC
+    - '&#126;CE'
+    - CPR
+    - '&#126;OE'
+    - Q0
+    - Vcc

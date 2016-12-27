@@ -1,169 +1,87 @@
 description: 'Z-80 Microprocessor'
 aliases: {  }
-package: DIP
-pincount: '40'
 family: Zilog
 datasheet: 'http://www.z80.info/zip/z80.pdf'
 pins:
-  -
-    num: '1'
-    sym: A11
+  A11:
     desc: 'Address Line 11 Output'
-  -
-    num: '2'
-    sym: A12
+  A12:
     desc: 'Address Line 12 Output'
-  -
-    num: '3'
-    sym: A13
+  A13:
     desc: 'Address Line 13 Output'
-  -
-    num: '4'
-    sym: A14
+  A14:
     desc: 'Address Line 14 Output'
-  -
-    num: '5'
-    sym: A15
+  A15:
     desc: 'Address Line 15 Output'
-  -
-    num: '6'
-    sym: CLK
+  CLK:
     desc: 'Clock Input'
-  -
-    num: '7'
-    sym: D4
+  D4:
     desc: 'Data Line 4'
-  -
-    num: '8'
-    sym: D5
+  D5:
     desc: 'Data Line 5'
-  -
-    num: '9'
-    sym: D3
+  D3:
     desc: 'Data Line 3'
-  -
-    num: '10'
-    sym: D6
+  D6:
     desc: 'Data Line 6'
-  -
-    num: '11'
-    sym: Vcc
+  Vcc:
     desc: 'Power +5V'
-  -
-    num: '12'
-    sym: D2
+  D2:
     desc: 'Data Line 2'
-  -
-    num: '13'
-    sym: D7
+  D7:
     desc: 'Data Line 7'
-  -
-    num: '14'
-    sym: D0
+  D0:
     desc: 'Data Line 0'
-  -
-    num: '15'
-    sym: D1
+  D1:
     desc: 'Data Line 1'
-  -
-    num: '16'
-    sym: '&#126;INT&#126;'
+  '&#126;INT&#126;':
     desc: 'Maskable Interrupt Input (Active Low)'
-  -
-    num: '17'
-    sym: '&#126;NMI&#126;'
+  '&#126;NMI&#126;':
     desc: 'Non-Maskable Interrupt Input (Active Low)'
-  -
-    num: '18'
-    sym: '&#126;HALT&#126;'
+  '&#126;HALT&#126;':
     desc: 'Halt State Output (Active Low)'
-  -
-    num: '19'
-    sym: '&#126;MREQ&#126;'
+  '&#126;MREQ&#126;':
     desc: 'Memory Request Output (Active Low)'
-  -
-    num: '20'
-    sym: '&#126;IORQ&#126;'
+  '&#126;IORQ&#126;':
     desc: 'Input/Output Request Output (Active Low)'
-  -
-    num: '21'
-    sym: '&#126;RD&#126;'
+  '&#126;RD&#126;':
     desc: 'Read Request Output (Active Low)'
-  -
-    num: '22'
-    sym: '&#126;WR&#126;'
+  '&#126;WR&#126;':
     desc: 'Write Request Output (Active Low)'
-  -
-    num: '23'
-    sym: '&#126;BUSACK&#126;'
+  '&#126;BUSACK&#126;':
     desc: 'Acknowledge Bus Request for DMA Output (Active Low)'
-  -
-    num: '24'
-    sym: '&#126;WAIT&#126;'
+  '&#126;WAIT&#126;':
     desc: 'Wait Request Input (Active Low)'
-  -
-    num: '25'
-    sym: '&#126;BUSREQ&#126;'
+  '&#126;BUSREQ&#126;':
     desc: 'Bus Request Input (Active Low)'
-  -
-    num: '26'
-    sym: '&#126;RESET&#126;'
+  '&#126;RESET&#126;':
     desc: 'Reset Input (Active Low)'
-  -
-    num: '27'
-    sym: '&#126;M1&#126;'
+  '&#126;M1&#126;':
     desc: 'Machine Cycle 1 Output (Active Low)'
-  -
-    num: '28'
-    sym: '&#126;RFSH&#126;'
+  '&#126;RFSH&#126;':
     desc: 'Dynamic Memory Refresh Output (Active Low)'
-  -
-    num: '29'
-    sym: GND
+  GND:
     desc: 'Power Ground'
-  -
-    num: '30'
-    sym: A0
+  A0:
     desc: 'Address Line 1 Output'
-  -
-    num: '31'
-    sym: A1
+  A1:
     desc: 'Address Line 1 Output'
-  -
-    num: '32'
-    sym: A2
+  A2:
     desc: 'Address Line 2 Output'
-  -
-    num: '33'
-    sym: A3
+  A3:
     desc: 'Address Line 3 Output'
-  -
-    num: '34'
-    sym: A4
+  A4:
     desc: 'Address Line 4 Output'
-  -
-    num: '35'
-    sym: A5
+  A5:
     desc: 'Address Line 5 Output'
-  -
-    num: '36'
-    sym: A6
+  A6:
     desc: 'Address Line 6 Output'
-  -
-    num: '37'
-    sym: A7
+  A7:
     desc: 'Address Line 7 Output'
-  -
-    num: '38'
-    sym: A8
+  A8:
     desc: 'Address Line 8 Output'
-  -
-    num: '39'
-    sym: A9
+  A9:
     desc: 'Address Line 9 Output'
-  -
-    num: '40'
-    sym: A10
+  A10:
     desc: 'Address Line 10 Output'
 specs:
   -
@@ -177,3 +95,45 @@ specs:
 notes:
   - 'Registers:&NewLine;<table>&NewLine;<tr><td>A</td><td>Accumulator</td></tr>&NewLine;<tr><td>F</td><td>Condition Flags</td></tr>&NewLine;<tr><td>B & C</td><td>General Purpose 8-bit registers (may be used together as a 16-bit register)</td></tr>&NewLine;<tr><td>D & E</td><td>General Purpose 8-bit registers (may be used together as a 16-bit register)</td></tr>&NewLine;<tr><td>H & L</td><td>High & Low bytes of 16-bit Address Pointer Register</td></tr>&NewLine;<tr><td>I</td><td>Interrupt Register - Holds upper 8 bits of memory address for vectored interrupt processing</td></tr>&NewLine;<tr><td>R</td><td>Refresh Register - Automatically incremented for Dynamic Memory Refresh (read only)</td></tr>&NewLine;<tr><td>IX & IY</td><td>16-bit Index Registers</td></tr>&NewLine;<tr><td>SP</td><td>16-bit Stack Pointer Register</td></tr>&NewLine;<tr><td>PC</td><td>A16-bit Program Counter Register</td></tr>&NewLine;<tr><td>IFF</td><td>Interrupt Flip Flop Flag</td></tr>&NewLine;</table>'
   - 'All general-purpose registers are duplicated in the prime set (A'', F'',B'', C'', D'', E'', H'', L'')'
+packages:
+  DIP:
+    - A11
+    - A12
+    - A13
+    - A14
+    - A15
+    - CLK
+    - D4
+    - D5
+    - D3
+    - D6
+    - Vcc
+    - D2
+    - D7
+    - D0
+    - D1
+    - '&#126;INT&#126;'
+    - '&#126;NMI&#126;'
+    - '&#126;HALT&#126;'
+    - '&#126;MREQ&#126;'
+    - '&#126;IORQ&#126;'
+    - '&#126;RD&#126;'
+    - '&#126;WR&#126;'
+    - '&#126;BUSACK&#126;'
+    - '&#126;WAIT&#126;'
+    - '&#126;BUSREQ&#126;'
+    - '&#126;RESET&#126;'
+    - '&#126;M1&#126;'
+    - '&#126;RFSH&#126;'
+    - GND
+    - A0
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5
+    - A6
+    - A7
+    - A8
+    - A9
+    - A10

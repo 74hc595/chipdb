@@ -1,88 +1,46 @@
 description: 'Octal D-type flip-flop; positive-edge trigger; 3-state; inverting'
-package: DIP
-pincount: '20'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc564.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;OE'
+  '&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '2'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'data input'
-  -
-    num: '3'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'data input'
-  -
-    num: '4'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'data input'
-  -
-    num: '5'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'data input'
-  -
-    num: '6'
-    sym: 'D&#95;&#95;4'
+  'D&#95;&#95;4':
     desc: 'data input'
-  -
-    num: '7'
-    sym: 'D&#95;&#95;5'
+  'D&#95;&#95;5':
     desc: 'data input'
-  -
-    num: '8'
-    sym: 'D&#95;&#95;6'
+  'D&#95;&#95;6':
     desc: 'data input'
-  -
-    num: '9'
-    sym: 'D&#95;&#95;7'
+  'D&#95;&#95;7':
     desc: 'data input'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '12'
-    sym: '&#126;Q&#126;&#95;&#95;7'
+  '&#126;Q&#126;&#95;&#95;7':
     desc: 'flip-flop output'
-  -
-    num: '13'
-    sym: '&#126;Q&#126;&#95;&#95;6'
+  '&#126;Q&#126;&#95;&#95;6':
     desc: 'flip-flop output'
-  -
-    num: '14'
-    sym: '&#126;Q&#126;&#95;&#95;5'
+  '&#126;Q&#126;&#95;&#95;5':
     desc: 'flip-flop output'
-  -
-    num: '15'
-    sym: '&#126;Q&#126;&#95;&#95;4'
+  '&#126;Q&#126;&#95;&#95;4':
     desc: 'flip-flop output'
-  -
-    num: '16'
-    sym: '&#126;Q&#126;&#95;&#95;3'
+  '&#126;Q&#126;&#95;&#95;3':
     desc: 'flip-flop output'
-  -
-    num: '17'
-    sym: '&#126;Q&#126;&#95;&#95;2'
+  '&#126;Q&#126;&#95;&#95;2':
     desc: 'flip-flop output'
-  -
-    num: '18'
-    sym: '&#126;Q&#126;&#95;&#95;1'
+  '&#126;Q&#126;&#95;&#95;1':
     desc: 'flip-flop output'
-  -
-    num: '19'
-    sym: '&#126;Q&#126;&#95;&#95;0'
+  '&#126;Q&#126;&#95;&#95;0':
     desc: 'flip-flop output'
-  -
-    num: '20'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -93,3 +51,25 @@ specs:
     param: 'Maximum clock frequency'
     val: '127 (74HC)'
     unit: MHz
+packages:
+  DIP:
+    - '&#126;OE'
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;4'
+    - 'D&#95;&#95;5'
+    - 'D&#95;&#95;6'
+    - 'D&#95;&#95;7'
+    - GND
+    - CP
+    - '&#126;Q&#126;&#95;&#95;7'
+    - '&#126;Q&#126;&#95;&#95;6'
+    - '&#126;Q&#126;&#95;&#95;5'
+    - '&#126;Q&#126;&#95;&#95;4'
+    - '&#126;Q&#126;&#95;&#95;3'
+    - '&#126;Q&#126;&#95;&#95;2'
+    - '&#126;Q&#126;&#95;&#95;1'
+    - '&#126;Q&#126;&#95;&#95;0'
+    - Vcc

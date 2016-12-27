@@ -2,42 +2,24 @@ description: 'Operational amplifier'
 aliases:
   - LM101A
   - LM201A
-package: DIP
-pincount: '8'
 family: linear
 datasheet: 'http://www.national.com/ds/LM/LM101A.pdf'
 pins:
-  -
-    num: '1'
-    sym: BAL/COMP
+  BAL/COMP:
     desc: balance/compensation
-  -
-    num: '2'
-    sym: IN-
+  IN-:
     desc: 'inverting input'
-  -
-    num: '3'
-    sym: IN+
+  IN+:
     desc: 'non-inverting input'
-  -
-    num: '4'
-    sym: Vss
+  Vss:
     desc: 'negative supply voltage'
-  -
-    num: '5'
-    sym: BAL
+  BAL:
     desc: balance
-  -
-    num: '6'
-    sym: OUT
+  OUT:
     desc: output
-  -
-    num: '7'
-    sym: Vcc
+  Vcc:
     desc: 'positive supply voltage'
-  -
-    num: '8'
-    sym: COMP
+  COMP:
     desc: compensation
 specs:
   -
@@ -72,3 +54,13 @@ specs:
     param: 'Supply current'
     val: '1.8'
     unit: mA
+packages:
+  DIP:
+    - BAL/COMP
+    - IN-
+    - IN+
+    - Vss
+    - BAL
+    - OUT
+    - Vcc
+    - COMP

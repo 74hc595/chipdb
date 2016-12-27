@@ -1,72 +1,38 @@
 description: 'Dual retriggerable precision monostable multivibrator with reset'
-package: DIP
-pincount: '16'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4538b.pdf'
 pins:
-  -
-    num: '1'
-    sym: 1CEXT
+  1CEXT:
     desc: 'external capacitor connection (connect to capacitor and ground)'
-  -
-    num: '2'
-    sym: 1REXT/CEXT
+  1REXT/CEXT:
     desc: 'external capacitor/resistor connection'
-  -
-    num: '3'
-    sym: '1&#126;CD'
+  '1&#126;CD':
     desc: 'clear direct input (active low)'
-  -
-    num: '4'
-    sym: 1B
+  1B:
     desc: 'input (low-to-high triggered)'
-  -
-    num: '5'
-    sym: '1&#126;A'
+  '1&#126;A':
     desc: 'input (high-to-low triggered)'
-  -
-    num: '6'
-    sym: 1Q
+  1Q:
     desc: output
-  -
-    num: '7'
-    sym: '1&#126;Q'
+  '1&#126;Q':
     desc: 'complementary output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '2&#126;Q'
+  '2&#126;Q':
     desc: 'complementary output'
-  -
-    num: '10'
-    sym: 2Q
+  2Q:
     desc: output
-  -
-    num: '11'
-    sym: '2&#126;A'
+  '2&#126;A':
     desc: 'input (high-to-low triggered)'
-  -
-    num: '12'
-    sym: 2B
+  2B:
     desc: 'input (low-to-high triggered)'
-  -
-    num: '13'
-    sym: '2&#126;CD'
+  '2&#126;CD':
     desc: 'clear direct input (active low)'
-  -
-    num: '14'
-    sym: 2REXT/CEXT
+  2REXT/CEXT:
     desc: 'external capacitor/resistor connection'
-  -
-    num: '15'
-    sym: 2CEXT
+  2CEXT:
     desc: 'external capacitor connection (connect to capacitor and ground)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -89,3 +55,21 @@ notes:
   - 'Setting n&#126;CD low inhibits pulses.'
   - 'Output pulse width = R&#95;&#95;EXT &times; C&#95;&#95;EXT.'
   - '(74HC4538) Output pulse width = 0.7 &times; R&#95;&#95;EXT &times; C&#95;&#95;EXT.'
+packages:
+  DIP:
+    - 1CEXT
+    - 1REXT/CEXT
+    - '1&#126;CD'
+    - 1B
+    - '1&#126;A'
+    - 1Q
+    - '1&#126;Q'
+    - GND
+    - '2&#126;Q'
+    - 2Q
+    - '2&#126;A'
+    - 2B
+    - '2&#126;CD'
+    - 2REXT/CEXT
+    - 2CEXT
+    - Vcc

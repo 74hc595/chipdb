@@ -1,42 +1,24 @@
 name: MCP3202
 description: '12-Bit 2-Channel SPI interface A/D Converter'
 aliases: {  }
-package: DIP
-pincount: '8'
 family: Microchip
 datasheet: 'http://ww1.microchip.com/downloads/aen/DeviceDoc/21034e.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;CS&#126;/SHDN'
+  '&#126;CS&#126;/SHDN':
     desc: 'Chip select/Shutdown'
-  -
-    num: '2'
-    sym: CH0
+  CH0:
     desc: 'Channel 1 analog input'
-  -
-    num: '3'
-    sym: CH1
+  CH1:
     desc: 'Channel 2 analog input'
-  -
-    num: '4'
-    sym: 'V&#95;&#95;SS'
+  'V&#95;&#95;SS':
     desc: Ground
-  -
-    num: '5'
-    sym: 'D&#95;&#95;IN'
+  'D&#95;&#95;IN':
     desc: 'SPI data input'
-  -
-    num: '6'
-    sym: 'D&#95;&#95;OUT'
+  'D&#95;&#95;OUT':
     desc: 'SPI data output'
-  -
-    num: '7'
-    sym: CLK
+  CLK:
     desc: 'SPI clock'
-  -
-    num: '8'
-    sym: 'V&#95;&#95;DD/V&#95;&#95;REF'
+  'V&#95;&#95;DD/V&#95;&#95;REF':
     desc: 'Supply voltage/analog reference voltage'
 specs:
   -
@@ -69,3 +51,13 @@ specs:
     unit: '&micro;a'
 notes:
   - 'Also available with 1 channel (MCP3201), 4 channels (MCP3204) and 8 channels (MCP3208)'
+packages:
+  DIP:
+    - '&#126;CS&#126;/SHDN'
+    - CH0
+    - CH1
+    - 'V&#95;&#95;SS'
+    - 'D&#95;&#95;IN'
+    - 'D&#95;&#95;OUT'
+    - CLK
+    - 'V&#95;&#95;DD/V&#95;&#95;REF'

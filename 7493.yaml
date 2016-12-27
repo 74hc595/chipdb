@@ -1,64 +1,26 @@
 description: '4-bit binary ripple counter'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc93.74hct93.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;CP&#126;&#95;&#95;1'
+  '&#126;CP&#126;&#95;&#95;1':
     desc: 'clock input, 2nd, 3rd and 4th section (high-to-low edge-triggered)'
-  -
-    num: '2'
-    sym: 'MR&#95;&#95;1'
+  'MR&#95;&#95;1':
     desc: 'asynchronous master reset'
-  -
-    num: '3'
-    sym: 'MR&#95;&#95;2'
+  'MR&#95;&#95;2':
     desc: 'asynchronous master reset'
-  -
-    num: '4'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '5'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
-  -
-    num: '6'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '7'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '8'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: 'counter output'
-  -
-    num: '9'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: 'counter output'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: 'counter output'
-  -
-    num: '12'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: 'counter output'
-  -
-    num: '13'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '14'
-    sym: '&#126;CP&#126;&#95;&#95;0'
+  '&#126;CP&#126;&#95;&#95;0':
     desc: 'clock input, 1st section (high-to-low edge-triggered)'
 specs:
   -
@@ -78,3 +40,19 @@ notes:
   - 'Setting both MR&#95;&#95;1 and MR&#95;&#95;2 high resets the counter to zero.'
   - 'For a 4-bit counter, connect Q&#95;&#95;0 to &#126;CP&#126;&#95;&#95;1, and apply count pulses to &#126;CP&#126;&#95;&#95;0.'
   - 'For a 3-bit counter, apply count pulses to &#126;CP&#126;&#95;&#95;1.'
+packages:
+  DIP:
+    - '&#126;CP&#126;&#95;&#95;1'
+    - 'MR&#95;&#95;1'
+    - 'MR&#95;&#95;2'
+    - NC
+    - Vcc
+    - NC
+    - NC
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;1'
+    - GND
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;0'
+    - NC
+    - '&#126;CP&#126;&#95;&#95;0'

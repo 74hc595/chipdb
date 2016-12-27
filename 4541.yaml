@@ -1,64 +1,30 @@
 description: 'Programmable timer'
-package: DIP
-pincount: '14'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4541b.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'R&#95;&#95;TC'
+  'R&#95;&#95;TC':
     desc: 'external resistor connection (R&#95;&#95;t)'
-  -
-    num: '2'
-    sym: 'C&#95;&#95;TC'
+  'C&#95;&#95;TC':
     desc: 'external capacitor connection (C&#95;&#95;t)'
-  -
-    num: '3'
-    sym: RS
+  RS:
     desc: 'external resistor connection (R&#95;&#95;S) or external clock input'
-  -
-    num: '4'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '5'
-    sym: '&#126;AR'
+  '&#126;AR':
     desc: 'auto reset input (active low)'
-  -
-    num: '6'
-    sym: MR
+  MR:
     desc: 'master reset input (active high)'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: O
+  O:
     desc: output
-  -
-    num: '9'
-    sym: PH
+  PH:
     desc: 'phase input'
-  -
-    num: '10'
-    sym: MODE
+  MODE:
     desc: 'mode select (single cycle or continuous)'
-  -
-    num: '11'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '12'
-    sym: A0
+  A0:
     desc: 'divider input'
-  -
-    num: '13'
-    sym: A1
+  A1:
     desc: 'divider input'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -85,3 +51,19 @@ notes:
   - 'PH specifies the state of the output after reset (high or low).'
   - 'When MODE is high, the output oscillates continuously.'
   - 'When MODE is low, the output changes only once, after a single cycle.'
+packages:
+  DIP:
+    - 'R&#95;&#95;TC'
+    - 'C&#95;&#95;TC'
+    - RS
+    - NC
+    - '&#126;AR'
+    - MR
+    - GND
+    - O
+    - PH
+    - MODE
+    - NC
+    - A0
+    - A1
+    - Vcc

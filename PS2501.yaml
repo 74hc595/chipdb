@@ -1,72 +1,38 @@
 description: '4-channel optoisolator'
-package: DIP
-pincount: '16'
 family: CEL
 datasheet: 'http://www.cel.com/pdf/datasheets/ps2501.pdf'
 pins:
-  -
-    num: '1'
-    sym: '+1'
+  '+1':
     desc: 'anode 1'
-  -
-    num: '2'
-    sym: '-1'
+  -1:
     desc: 'cathode 1'
-  -
-    num: '3'
-    sym: '+2'
+  '+2':
     desc: 'anode 2'
-  -
-    num: '4'
-    sym: '-2'
+  -2:
     desc: 'cathode 2'
-  -
-    num: '5'
-    sym: '+3'
+  '+3':
     desc: 'anode 3'
-  -
-    num: '6'
-    sym: '-3'
+  -3:
     desc: 'cathode 3'
-  -
-    num: '7'
-    sym: '+4'
+  '+4':
     desc: 'anode 4'
-  -
-    num: '8'
-    sym: '-4'
+  -4:
     desc: 'cathode 4'
-  -
-    num: '9'
-    sym: E4
+  E4:
     desc: 'emitter 4'
-  -
-    num: '10'
-    sym: C4
+  C4:
     desc: 'collector 4'
-  -
-    num: '11'
-    sym: E3
+  E3:
     desc: 'emitter 3'
-  -
-    num: '12'
-    sym: C3
+  C3:
     desc: 'collector 3'
-  -
-    num: '13'
-    sym: E2
+  E2:
     desc: 'emitter 2'
-  -
-    num: '14'
-    sym: C2
+  C2:
     desc: 'collector 2'
-  -
-    num: '15'
-    sym: E1
+  E1:
     desc: 'emitter 1'
-  -
-    num: '16'
-    sym: C1
+  C1:
     desc: 'collector 1'
 specs:
   -
@@ -83,3 +49,21 @@ specs:
       - '3 (rising)'
       - '5 (falling)'
     unit: '&micro;s'
+packages:
+  DIP:
+    - '+1'
+    - '-1'
+    - '+2'
+    - '-2'
+    - '+3'
+    - '-3'
+    - '+4'
+    - '-4'
+    - E4
+    - C4
+    - E3
+    - C3
+    - E2
+    - C2
+    - E1
+    - C1

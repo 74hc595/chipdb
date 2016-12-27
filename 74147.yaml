@@ -1,72 +1,36 @@
 description: '10-to-4 line priority encoder'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc147.74hct147.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;A&#126;&#95;&#95;3'
+  '&#126;A&#126;&#95;&#95;3':
     desc: 'decimal data input (active low)'
-  -
-    num: '2'
-    sym: '&#126;A&#126;&#95;&#95;4'
+  '&#126;A&#126;&#95;&#95;4':
     desc: 'decimal data input (active low)'
-  -
-    num: '3'
-    sym: '&#126;A&#126;&#95;&#95;5'
+  '&#126;A&#126;&#95;&#95;5':
     desc: 'decimal data input (active low)'
-  -
-    num: '4'
-    sym: '&#126;A&#126;&#95;&#95;6'
+  '&#126;A&#126;&#95;&#95;6':
     desc: 'decimal data input (active low)'
-  -
-    num: '5'
-    sym: '&#126;A&#126;&#95;&#95;7'
+  '&#126;A&#126;&#95;&#95;7':
     desc: 'decimal data input (active low)'
-  -
-    num: '6'
-    sym: '&#126;Y&#126;&#95;&#95;2'
+  '&#126;Y&#126;&#95;&#95;2':
     desc: 'BCD address output (active low)'
-  -
-    num: '7'
-    sym: '&#126;Y&#126;&#95;&#95;1'
+  '&#126;Y&#126;&#95;&#95;1':
     desc: 'BCD address output (active low)'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '&#126;Y&#126;&#95;&#95;0'
+  '&#126;Y&#126;&#95;&#95;0':
     desc: 'BCD address output (active low)'
-  -
-    num: '10'
-    sym: '&#126;A&#126;&#95;&#95;8'
+  '&#126;A&#126;&#95;&#95;8':
     desc: 'decimal data input (active low)'
-  -
-    num: '11'
-    sym: '&#126;A&#126;&#95;&#95;0'
+  '&#126;A&#126;&#95;&#95;0':
     desc: 'decimal data input (active low)'
-  -
-    num: '12'
-    sym: '&#126;A&#126;&#95;&#95;1'
+  '&#126;A&#126;&#95;&#95;1':
     desc: 'decimal data input (active low)'
-  -
-    num: '13'
-    sym: '&#126;A&#126;&#95;&#95;2'
+  '&#126;A&#126;&#95;&#95;2':
     desc: 'decimal data input (active low)'
-  -
-    num: '14'
-    sym: '&#126;Y&#126;&#95;&#95;3'
+  '&#126;Y&#126;&#95;&#95;3':
     desc: 'BCD address output (active low)'
-  -
-    num: '15'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -79,3 +43,21 @@ notes:
   - 'When two or more inputs are simultaneously active, the input with the highest priority is represented on the output.'
   - '&#126;A&#126;&#95;&#95;8 has the highest priority.'
   - 'When all nine data inputs are high, all four outputs are high. (BCD zero)'
+packages:
+  DIP:
+    - '&#126;A&#126;&#95;&#95;3'
+    - '&#126;A&#126;&#95;&#95;4'
+    - '&#126;A&#126;&#95;&#95;5'
+    - '&#126;A&#126;&#95;&#95;6'
+    - '&#126;A&#126;&#95;&#95;7'
+    - '&#126;Y&#126;&#95;&#95;2'
+    - '&#126;Y&#126;&#95;&#95;1'
+    - GND
+    - '&#126;Y&#126;&#95;&#95;0'
+    - '&#126;A&#126;&#95;&#95;8'
+    - '&#126;A&#126;&#95;&#95;0'
+    - '&#126;A&#126;&#95;&#95;1'
+    - '&#126;A&#126;&#95;&#95;2'
+    - '&#126;Y&#126;&#95;&#95;3'
+    - NC
+    - Vcc

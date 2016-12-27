@@ -1,65 +1,25 @@
 description: 'Nuclear event detector'
 aliases: {  }
-package: DIP
-pincount: '14'
 family: Maxwell
 datasheet: 'http://www.maxwell.com/products/microelectronics/docs/HSN1000&#95;REV3.PDF'
 pins:
-  -
-    num: '1'
-    sym: 'V&#95;&#95;L'
+  'V&#95;&#95;L':
     desc: 'load voltage'
-  -
-    num: '2'
-    sym: '&#126;NED'
+  '&#126;NED':
     desc: 'nuclear event detection (active low)'
-  -
-    num: '3'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '4'
-    sym: CAP1
+  CAP1:
     desc: 'external capacitor'
-  -
-    num: '5'
-    sym: CAP2
+  CAP2:
     desc: 'external capacitor'
-  -
-    num: '6'
-    sym: BIT
+  BIT:
     desc: 'built-in test'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: 'package ground and case'
-  -
-    num: '8'
-    sym: 'V&#95;&#95;B'
+  'V&#95;&#95;B':
     desc: 'pin diode bias'
-  -
-    num: '9'
-    sym: 'THR&#95;ADJ'
+  'THR&#95;ADJ':
     desc: 'threshold adjust'
-  -
-    num: '10'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '11'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '12'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '13'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '14'
-    sym: 'V&#95;&#95;H'
+  'V&#95;&#95;H':
     desc: 'hardened supply voltage'
 specs:
   -
@@ -92,3 +52,19 @@ specs:
     unit: rad(Si)/s
 notes:
   - 'Less than a 30% variation in detection threshold can be expected over the entire operating temperature range.'
+packages:
+  DIP:
+    - 'V&#95;&#95;L'
+    - '&#126;NED'
+    - NC
+    - CAP1
+    - CAP2
+    - BIT
+    - GND
+    - 'V&#95;&#95;B'
+    - 'THR&#95;ADJ'
+    - NC
+    - NC
+    - NC
+    - NC
+    - 'V&#95;&#95;H'

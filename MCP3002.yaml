@@ -1,40 +1,22 @@
 description: 'Dual channel 10-bit ADC with SPI interface'
-package: DIP
-pincount: '8'
 family: Microchip
 datasheet: 'http://ww1.microchip.com/downloads/en/DeviceDoc/21294d.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;CS&#126;/SHDN'
+  '&#126;CS&#126;/SHDN':
     desc: 'chip select/shutdown'
-  -
-    num: '2'
-    sym: CH0
+  CH0:
     desc: 'channel 0 analog input'
-  -
-    num: '3'
-    sym: CH1
+  CH1:
     desc: 'channel 1 analog input'
-  -
-    num: '4'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '5'
-    sym: 'D&#95;&#95;IN'
+  'D&#95;&#95;IN':
     desc: 'serial data in'
-  -
-    num: '6'
-    sym: 'D&#95;&#95;OUT'
+  'D&#95;&#95;OUT':
     desc: 'serial data out'
-  -
-    num: '7'
-    sym: CLK
+  CLK:
     desc: 'serial clock'
-  -
-    num: '8'
-    sym: 'V&#95;&#95;CC/V&#95;&#95;REF'
+  'V&#95;&#95;CC/V&#95;&#95;REF':
     desc: '+2.7V to 5.5V supply/reference voltage'
 specs:
   -
@@ -55,3 +37,13 @@ specs:
     param: 'Typical active current'
     val: '375'
     unit: '&micro;A'
+packages:
+  DIP:
+    - '&#126;CS&#126;/SHDN'
+    - CH0
+    - CH1
+    - GND
+    - 'D&#95;&#95;IN'
+    - 'D&#95;&#95;OUT'
+    - CLK
+    - 'V&#95;&#95;CC/V&#95;&#95;REF'

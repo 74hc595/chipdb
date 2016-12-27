@@ -1,72 +1,38 @@
 description: '8-bit shift register with output register'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc594.74hct594.pdf'
 pins:
-  -
-    num: '1'
-    sym: Q1
+  Q1:
     desc: 'parallel data output'
-  -
-    num: '2'
-    sym: Q2
+  Q2:
     desc: 'parallel data output'
-  -
-    num: '3'
-    sym: Q3
+  Q3:
     desc: 'parallel data output'
-  -
-    num: '4'
-    sym: Q4
+  Q4:
     desc: 'parallel data output'
-  -
-    num: '5'
-    sym: Q5
+  Q5:
     desc: 'parallel data output'
-  -
-    num: '6'
-    sym: Q6
+  Q6:
     desc: 'parallel data output'
-  -
-    num: '7'
-    sym: Q7
+  Q7:
     desc: 'parallel data output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: Q7S
+  Q7S:
     desc: 'serial data output'
-  -
-    num: '10'
-    sym: '&#126;SHR'
+  '&#126;SHR':
     desc: 'shift register reset (active low)'
-  -
-    num: '11'
-    sym: SHCP
+  SHCP:
     desc: 'shift register clock input'
-  -
-    num: '12'
-    sym: STCP
+  STCP:
     desc: 'storage register clock input'
-  -
-    num: '13'
-    sym: '&#126;STR'
+  '&#126;STR':
     desc: 'storage register reset (active low)'
-  -
-    num: '14'
-    sym: DS
+  DS:
     desc: 'serial data input'
-  -
-    num: '15'
-    sym: Q0
+  Q0:
     desc: 'parallel data output'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -86,3 +52,21 @@ specs:
     val:
       - '100 (74HC/74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - Q1
+    - Q2
+    - Q3
+    - Q4
+    - Q5
+    - Q6
+    - Q7
+    - GND
+    - Q7S
+    - '&#126;SHR'
+    - SHCP
+    - STCP
+    - '&#126;STR'
+    - DS
+    - Q0
+    - Vcc

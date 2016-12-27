@@ -1,104 +1,54 @@
 description: '4-to-16 line decoder/demultiplexer'
-package: DIP
-pincount: '24'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc154.74hct154.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;Y&#126;0'
+  '&#126;Y&#126;0':
     desc: 'data output (active low)'
-  -
-    num: '2'
-    sym: '&#126;Y&#126;1'
+  '&#126;Y&#126;1':
     desc: 'data output (active low)'
-  -
-    num: '3'
-    sym: '&#126;Y&#126;2'
+  '&#126;Y&#126;2':
     desc: 'data output (active low)'
-  -
-    num: '4'
-    sym: '&#126;Y&#126;3'
+  '&#126;Y&#126;3':
     desc: 'data output (active low)'
-  -
-    num: '5'
-    sym: '&#126;Y&#126;4'
+  '&#126;Y&#126;4':
     desc: 'data output (active low)'
-  -
-    num: '6'
-    sym: '&#126;Y&#126;5'
+  '&#126;Y&#126;5':
     desc: 'data output (active low)'
-  -
-    num: '7'
-    sym: '&#126;Y&#126;6'
+  '&#126;Y&#126;6':
     desc: 'data output (active low)'
-  -
-    num: '8'
-    sym: '&#126;Y&#126;7'
+  '&#126;Y&#126;7':
     desc: 'data output (active low)'
-  -
-    num: '9'
-    sym: '&#126;Y&#126;8'
+  '&#126;Y&#126;8':
     desc: 'data output (active low)'
-  -
-    num: '10'
-    sym: '&#126;Y&#126;9'
+  '&#126;Y&#126;9':
     desc: 'data output (active low)'
-  -
-    num: '11'
-    sym: '&#126;Y&#126;10'
+  '&#126;Y&#126;10':
     desc: 'data output (active low)'
-  -
-    num: '12'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '13'
-    sym: '&#126;Y&#126;11'
+  '&#126;Y&#126;11':
     desc: 'data output (active low)'
-  -
-    num: '14'
-    sym: '&#126;Y&#126;12'
+  '&#126;Y&#126;12':
     desc: 'data output (active low)'
-  -
-    num: '15'
-    sym: '&#126;Y&#126;13'
+  '&#126;Y&#126;13':
     desc: 'data output (active low)'
-  -
-    num: '16'
-    sym: '&#126;Y&#126;14'
+  '&#126;Y&#126;14':
     desc: 'data output (active low)'
-  -
-    num: '17'
-    sym: '&#126;Y&#126;15'
+  '&#126;Y&#126;15':
     desc: 'data output (active low)'
-  -
-    num: '18'
-    sym: '&#126;E&#126;0'
+  '&#126;E&#126;0':
     desc: 'enable input (active low)'
-  -
-    num: '19'
-    sym: '&#126;E&#126;1'
+  '&#126;E&#126;1':
     desc: 'enable input (active low)'
-  -
-    num: '20'
-    sym: A3
+  A3:
     desc: 'address input'
-  -
-    num: '21'
-    sym: A2
+  A2:
     desc: 'address input'
-  -
-    num: '22'
-    sym: A1
+  A1:
     desc: 'address input'
-  -
-    num: '23'
-    sym: A0
+  A0:
     desc: 'address input'
-  -
-    num: '24'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -113,3 +63,29 @@ specs:
       - '11 (74HC)'
       - '13 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - '&#126;Y&#126;0'
+    - '&#126;Y&#126;1'
+    - '&#126;Y&#126;2'
+    - '&#126;Y&#126;3'
+    - '&#126;Y&#126;4'
+    - '&#126;Y&#126;5'
+    - '&#126;Y&#126;6'
+    - '&#126;Y&#126;7'
+    - '&#126;Y&#126;8'
+    - '&#126;Y&#126;9'
+    - '&#126;Y&#126;10'
+    - GND
+    - '&#126;Y&#126;11'
+    - '&#126;Y&#126;12'
+    - '&#126;Y&#126;13'
+    - '&#126;Y&#126;14'
+    - '&#126;Y&#126;15'
+    - '&#126;E&#126;0'
+    - '&#126;E&#126;1'
+    - A3
+    - A2
+    - A1
+    - A0
+    - Vcc

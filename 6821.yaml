@@ -2,170 +2,88 @@ description: 'Peripheral interface adapter'
 aliases:
   - 68A21
   - 68B21
-package: DIP
-pincount: '40'
 family: Motorola
 datasheet: 'http://www.jameco.com/Jameco/Products/ProdDS/43596MOT.pdf'
 pins:
-  -
-    num: '1'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '2'
-    sym: PA0
+  PA0:
     desc: 'port A'
-  -
-    num: '3'
-    sym: PA1
+  PA1:
     desc: 'port A'
-  -
-    num: '4'
-    sym: PA2
+  PA2:
     desc: 'port A'
-  -
-    num: '5'
-    sym: PA3
+  PA3:
     desc: 'port A'
-  -
-    num: '6'
-    sym: PA4
+  PA4:
     desc: 'port A'
-  -
-    num: '7'
-    sym: PA5
+  PA5:
     desc: 'port A'
-  -
-    num: '8'
-    sym: PA6
+  PA6:
     desc: 'port A'
-  -
-    num: '9'
-    sym: PA7
+  PA7:
     desc: 'port A'
-  -
-    num: '10'
-    sym: PB0
+  PB0:
     desc: 'port B'
-  -
-    num: '11'
-    sym: PB1
+  PB1:
     desc: 'port B'
-  -
-    num: '12'
-    sym: PB2
+  PB2:
     desc: 'port B'
-  -
-    num: '13'
-    sym: PB3
+  PB3:
     desc: 'port B'
-  -
-    num: '14'
-    sym: PB4
+  PB4:
     desc: 'port B'
-  -
-    num: '15'
-    sym: PB5
+  PB5:
     desc: 'port B'
-  -
-    num: '16'
-    sym: PB6
+  PB6:
     desc: 'port B'
-  -
-    num: '17'
-    sym: PB7
+  PB7:
     desc: 'port B'
-  -
-    num: '18'
-    sym: CB1
+  CB1:
     desc: 'peripheral control (port B)'
-  -
-    num: '19'
-    sym: CB2
+  CB2:
     desc: 'peripheral control (port B)'
-  -
-    num: '20'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
-  -
-    num: '21'
-    sym: 'R/&#126;W'
+  'R/&#126;W':
     desc: read/write
-  -
-    num: '22'
-    sym: CS0
+  CS0:
     desc: 'chip select (active high)'
-  -
-    num: '23'
-    sym: '&#126;CS2'
+  '&#126;CS2':
     desc: 'chip select (active low)'
-  -
-    num: '24'
-    sym: CS1
+  CS1:
     desc: 'chip select (active high)'
-  -
-    num: '25'
-    sym: E
+  E:
     desc: clock
-  -
-    num: '26'
-    sym: D7
+  D7:
     desc: 'data bus'
-  -
-    num: '27'
-    sym: D6
+  D6:
     desc: 'data bus'
-  -
-    num: '28'
-    sym: D5
+  D5:
     desc: 'data bus'
-  -
-    num: '29'
-    sym: D4
+  D4:
     desc: 'data bus'
-  -
-    num: '30'
-    sym: D3
+  D3:
     desc: 'data bus'
-  -
-    num: '31'
-    sym: D2
+  D2:
     desc: 'data bus'
-  -
-    num: '32'
-    sym: D1
+  D1:
     desc: 'data bus'
-  -
-    num: '33'
-    sym: D0
+  D0:
     desc: 'data bus'
-  -
-    num: '34'
-    sym: '&#126;RESET'
+  '&#126;RESET':
     desc: 'master reset (active low)'
-  -
-    num: '35'
-    sym: RS1
+  RS1:
     desc: 'register select (address bus)'
-  -
-    num: '36'
-    sym: RS0
+  RS0:
     desc: 'register select (address bus)'
-  -
-    num: '37'
-    sym: '&#126;IRQB'
+  '&#126;IRQB':
     desc: 'interrupt output (active low)'
-  -
-    num: '38'
-    sym: '&#126;IRQA'
+  '&#126;IRQA':
     desc: 'interrupt output (active low)'
-  -
-    num: '39'
-    sym: CA2
+  CA2:
     desc: 'peripheral control (port A)'
-  -
-    num: '40'
-    sym: CA1
+  CA1:
     desc: 'peripheral control (port A)'
 specs:
   -
@@ -205,3 +123,45 @@ notes:
   - 'RS=10, bit 2 of control register B=1: peripheral register B'
   - 'RS=10, bit 2 of control register B=0: data direction register B'
   - 'RS=11: control register B'
+packages:
+  DIP:
+    - GND
+    - PA0
+    - PA1
+    - PA2
+    - PA3
+    - PA4
+    - PA5
+    - PA6
+    - PA7
+    - PB0
+    - PB1
+    - PB2
+    - PB3
+    - PB4
+    - PB5
+    - PB6
+    - PB7
+    - CB1
+    - CB2
+    - Vcc
+    - 'R/&#126;W'
+    - CS0
+    - '&#126;CS2'
+    - CS1
+    - E
+    - D7
+    - D6
+    - D5
+    - D4
+    - D3
+    - D2
+    - D1
+    - D0
+    - '&#126;RESET'
+    - RS1
+    - RS0
+    - '&#126;IRQB'
+    - '&#126;IRQA'
+    - CA2
+    - CA1

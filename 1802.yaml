@@ -3,170 +3,88 @@ aliases:
   - CDP1802A
   - CDP1802AC
   - CDP1802BC
-package: DIP
-pincount: '40'
 family: RCA
 datasheet: 'pdf&#95;datasheet&#95;url'
 pins:
-  -
-    num: '1'
-    sym: CLOCK
+  CLOCK:
     desc: 'input for externally generated single-phase clock'
-  -
-    num: '2'
-    sym: '&#126;WAIT&#126;'
+  '&#126;WAIT&#126;':
     desc: 'control line'
-  -
-    num: '3'
-    sym: '&#126;CLEAR&#126;'
+  '&#126;CLEAR&#126;':
     desc: 'control line'
-  -
-    num: '4'
-    sym: Q
+  Q:
     desc: 'general output'
-  -
-    num: '5'
-    sym: SC1
+  SC1:
     desc: 'state code'
-  -
-    num: '6'
-    sym: SC0
+  SC0:
     desc: 'state code'
-  -
-    num: '7'
-    sym: '&#126;MRD&#126;'
+  '&#126;MRD&#126;':
     desc: 'read pulse'
-  -
-    num: '8'
-    sym: 'BUS 7'
+  'BUS 7':
     desc: 'data bus'
-  -
-    num: '9'
-    sym: 'BUS 6'
+  'BUS 6':
     desc: 'data bus'
-  -
-    num: '10'
-    sym: 'BUS 5'
+  'BUS 5':
     desc: 'data bus'
-  -
-    num: '11'
-    sym: 'BUS 4'
+  'BUS 4':
     desc: 'data bus'
-  -
-    num: '12'
-    sym: 'BUS 3'
+  'BUS 3':
     desc: 'data bus'
-  -
-    num: '13'
-    sym: 'BUS 2'
+  'BUS 2':
     desc: 'data bus'
-  -
-    num: '14'
-    sym: 'BUS 1'
+  'BUS 1':
     desc: 'data bus'
-  -
-    num: '15'
-    sym: 'BUS 0'
+  'BUS 0':
     desc: 'data bus'
-  -
-    num: '16'
-    sym: 'V&#95;&#95;CC'
+  'V&#95;&#95;CC':
     desc: 'I/O voltage supply'
-  -
-    num: '17'
-    sym: N2
+  N2:
     desc: 'I/O control line'
-  -
-    num: '18'
-    sym: N1
+  N1:
     desc: 'I/O control line'
-  -
-    num: '19'
-    sym: N0
+  N0:
     desc: 'I/O control line'
-  -
-    num: '20'
-    sym: 'V&#95;&#95;SS'
+  'V&#95;&#95;SS':
     desc: ground
-  -
-    num: '21'
-    sym: '&#126;EF4&#126;'
+  '&#126;EF4&#126;':
     desc: 'I/O flag'
-  -
-    num: '22'
-    sym: '&#126;EF3&#126;'
+  '&#126;EF3&#126;':
     desc: 'I/O flag'
-  -
-    num: '23'
-    sym: '&#126;EF2&#126;'
+  '&#126;EF2&#126;':
     desc: 'I/O flag'
-  -
-    num: '24'
-    sym: '&#126;EF1&#126;'
+  '&#126;EF1&#126;':
     desc: 'I/O flag'
-  -
-    num: '25'
-    sym: MA0
+  MA0:
     desc: 'memory address'
-  -
-    num: '26'
-    sym: MA1
+  MA1:
     desc: 'memory address'
-  -
-    num: '27'
-    sym: MA2
+  MA2:
     desc: 'memory address'
-  -
-    num: '28'
-    sym: MA3
+  MA3:
     desc: 'memory address'
-  -
-    num: '29'
-    sym: MA4
+  MA4:
     desc: 'memory address'
-  -
-    num: '30'
-    sym: MA5
+  MA5:
     desc: 'memory address'
-  -
-    num: '31'
-    sym: MA6
+  MA6:
     desc: 'memory address'
-  -
-    num: '32'
-    sym: MA7
+  MA7:
     desc: 'memory address'
-  -
-    num: '33'
-    sym: TPB
+  TPB:
     desc: 'timing pulse'
-  -
-    num: '34'
-    sym: TPA
+  TPA:
     desc: 'timing pulse'
-  -
-    num: '35'
-    sym: '&#126;MWR&#126;'
+  '&#126;MWR&#126;':
     desc: 'write pulse'
-  -
-    num: '36'
-    sym: '&#126;INTERRUPT&#126;'
+  '&#126;INTERRUPT&#126;':
     desc: interrupt
-  -
-    num: '37'
-    sym: '&#126;DMA&#95;OUT&#126;'
+  '&#126;DMA&#95;OUT&#126;':
     desc: 'DMA out'
-  -
-    num: '38'
-    sym: '&#126;DMA&#95;IN&#126;'
+  '&#126;DMA&#95;IN&#126;':
     desc: 'DMA in'
-  -
-    num: '39'
-    sym: '&#126;XTAL&#126;'
+  '&#126;XTAL&#126;':
     desc: 'crystal input, for on-chip oscillator'
-  -
-    num: '40'
-    sym: 'V&#95;&#95;DD'
+  'V&#95;&#95;DD':
     desc: 'internal voltage supply'
 specs:
   -
@@ -182,3 +100,45 @@ specs:
     val: '5'
     unit: '&micro;s'
 notes: {  }
+packages:
+  DIP:
+    - CLOCK
+    - '&#126;WAIT&#126;'
+    - '&#126;CLEAR&#126;'
+    - Q
+    - SC1
+    - SC0
+    - '&#126;MRD&#126;'
+    - 'BUS 7'
+    - 'BUS 6'
+    - 'BUS 5'
+    - 'BUS 4'
+    - 'BUS 3'
+    - 'BUS 2'
+    - 'BUS 1'
+    - 'BUS 0'
+    - 'V&#95;&#95;CC'
+    - N2
+    - N1
+    - N0
+    - 'V&#95;&#95;SS'
+    - '&#126;EF4&#126;'
+    - '&#126;EF3&#126;'
+    - '&#126;EF2&#126;'
+    - '&#126;EF1&#126;'
+    - MA0
+    - MA1
+    - MA2
+    - MA3
+    - MA4
+    - MA5
+    - MA6
+    - MA7
+    - TPB
+    - TPA
+    - '&#126;MWR&#126;'
+    - '&#126;INTERRUPT&#126;'
+    - '&#126;DMA&#95;OUT&#126;'
+    - '&#126;DMA&#95;IN&#126;'
+    - '&#126;XTAL&#126;'
+    - 'V&#95;&#95;DD'

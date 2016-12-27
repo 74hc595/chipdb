@@ -1,106 +1,56 @@
 description: 'Programmable interval timer'
 aliases:
   - 82C54
-package: DIP
-pincount: '24'
 family: Intel
 datasheet: 'http://www.scs.stanford.edu/10wi-cs140/pintos/specs/8254.pdf'
 pins:
-  -
-    num: '1'
-    sym: D7
+  D7:
     desc: 'data bus'
-  -
-    num: '2'
-    sym: D6
+  D6:
     desc: 'data bus'
-  -
-    num: '3'
-    sym: D5
+  D5:
     desc: 'data bus'
-  -
-    num: '4'
-    sym: D4
+  D4:
     desc: 'data bus'
-  -
-    num: '5'
-    sym: D3
+  D3:
     desc: 'data bus'
-  -
-    num: '6'
-    sym: D2
+  D2:
     desc: 'data bus'
-  -
-    num: '7'
-    sym: D1
+  D1:
     desc: 'data bus'
-  -
-    num: '8'
-    sym: D0
+  D0:
     desc: 'data bus'
-  -
-    num: '9'
-    sym: 'CLK 0'
+  'CLK 0':
     desc: 'counter 0 clock input'
-  -
-    num: '10'
-    sym: 'OUT 0'
+  'OUT 0':
     desc: 'counter 0 output'
-  -
-    num: '11'
-    sym: 'GATE 0'
+  'GATE 0':
     desc: 'counter 0 gate input'
-  -
-    num: '12'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '13'
-    sym: 'OUT 1'
+  'OUT 1':
     desc: 'counter 1 output'
-  -
-    num: '14'
-    sym: 'GATE 1'
+  'GATE 1':
     desc: 'counter 1 gate input'
-  -
-    num: '15'
-    sym: 'CLK 1'
+  'CLK 1':
     desc: 'counter 1 clock input'
-  -
-    num: '16'
-    sym: 'GATE 2'
+  'GATE 2':
     desc: 'counter 2 gate input'
-  -
-    num: '17'
-    sym: 'OUT 2'
+  'OUT 2':
     desc: 'counter 2 output'
-  -
-    num: '18'
-    sym: 'CLK 2'
+  'CLK 2':
     desc: 'counter 2 clock input'
-  -
-    num: '19'
-    sym: A0
+  A0:
     desc: 'address bus'
-  -
-    num: '20'
-    sym: A1
+  A1:
     desc: 'address bus'
-  -
-    num: '21'
-    sym: '&#126;CS'
+  '&#126;CS':
     desc: 'chip select (active low)'
-  -
-    num: '22'
-    sym: '&#126;RD'
+  '&#126;RD':
     desc: 'read enable (active low)'
-  -
-    num: '23'
-    sym: '&#126;WR'
+  '&#126;WR':
     desc: 'write enable (active low)'
-  -
-    num: '24'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -121,3 +71,29 @@ notes:
   - 'Mode 3: square wave'
   - 'Mode 4: software triggered strobe'
   - 'Mode 5: hardware triggered strobe (retriggerable)'
+packages:
+  DIP:
+    - D7
+    - D6
+    - D5
+    - D4
+    - D3
+    - D2
+    - D1
+    - D0
+    - 'CLK 0'
+    - 'OUT 0'
+    - 'GATE 0'
+    - GND
+    - 'OUT 1'
+    - 'GATE 1'
+    - 'CLK 1'
+    - 'GATE 2'
+    - 'OUT 2'
+    - 'CLK 2'
+    - A0
+    - A1
+    - '&#126;CS'
+    - '&#126;RD'
+    - '&#126;WR'
+    - Vcc

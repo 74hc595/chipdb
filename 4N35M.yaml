@@ -11,34 +11,18 @@ aliases:
   - H11A3M
   - H11A4M
   - H11A5M
-package: DIP
-pincount: '6'
 family: Fairchild
 datasheet: 'http://www.fairchildsemi.com/ds/4N/4N35-M.pdf'
 pins:
-  -
-    num: '1'
-    sym: A
+  A:
     desc: anode
-  -
-    num: '2'
-    sym: K
+  K:
     desc: cathode
-  -
-    num: '3'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '4'
-    sym: E
+  E:
     desc: emitter
-  -
-    num: '5'
-    sym: C
+  C:
     desc: collector
-  -
-    num: '6'
-    sym: B
+  B:
     desc: base
 specs:
   -
@@ -69,3 +53,11 @@ specs:
       - 4N28M
       - H11A4M)
     unit: ''
+packages:
+  DIP:
+    - A
+    - K
+    - NC
+    - E
+    - C
+    - B

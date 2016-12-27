@@ -1,88 +1,46 @@
 description: '8-bit universal shift register; 3-state'
-package: DIP
-pincount: '20'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc299.74hct299.pdf'
 pins:
-  -
-    num: '1'
-    sym: S0
+  S0:
     desc: 'mode select input'
-  -
-    num: '2'
-    sym: '&#126;OE&#126;1'
+  '&#126;OE&#126;1':
     desc: 'output enable (active low)'
-  -
-    num: '3'
-    sym: '&#126;OE&#126;2'
+  '&#126;OE&#126;2':
     desc: 'output enable (active low)'
-  -
-    num: '4'
-    sym: I/O6
+  I/O6:
     desc: 'parallel data input/output'
-  -
-    num: '5'
-    sym: I/O4
+  I/O4:
     desc: 'parallel data input/output'
-  -
-    num: '6'
-    sym: I/O2
+  I/O2:
     desc: 'parallel data input/output'
-  -
-    num: '7'
-    sym: I/O0
+  I/O0:
     desc: 'parallel data input/output'
-  -
-    num: '8'
-    sym: Q0
+  Q0:
     desc: 'serial output (standard output)'
-  -
-    num: '9'
-    sym: '&#126;MR'
+  '&#126;MR':
     desc: 'asynchronous master reset (active low)'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: DSR
+  DSR:
     desc: 'serial data shift-right input'
-  -
-    num: '12'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '13'
-    sym: I/O1
+  I/O1:
     desc: 'parallel data input/output'
-  -
-    num: '14'
-    sym: I/O3
+  I/O3:
     desc: 'parallel data input/output'
-  -
-    num: '15'
-    sym: I/O5
+  I/O5:
     desc: 'parallel data input/output'
-  -
-    num: '16'
-    sym: I/O7
+  I/O7:
     desc: 'parallel data input/output'
-  -
-    num: '17'
-    sym: Q7
+  Q7:
     desc: 'serial output (standard output)'
-  -
-    num: '18'
-    sym: DSL
+  DSL:
     desc: 'serial data shift-left input'
-  -
-    num: '19'
-    sym: S1
+  S1:
     desc: 'mode select input'
-  -
-    num: '20'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -114,3 +72,25 @@ notes:
   - 'S1 is high and S0 is low; shift left (DSL &srarr; Q7, Q7 &srarr; Q6...)'
   - 'S1 is low and S0 is high; shift right (DSR &srarr; Q0, Q0 &srarr; Q1...)'
   - 'S1 and S0 are high; parallel load (I/On &srarr; Qn)'
+packages:
+  DIP:
+    - S0
+    - '&#126;OE&#126;1'
+    - '&#126;OE&#126;2'
+    - I/O6
+    - I/O4
+    - I/O2
+    - I/O0
+    - Q0
+    - '&#126;MR'
+    - GND
+    - DSR
+    - CP
+    - I/O1
+    - I/O3
+    - I/O5
+    - I/O7
+    - Q7
+    - DSL
+    - S1
+    - Vcc

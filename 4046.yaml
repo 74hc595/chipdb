@@ -1,70 +1,54 @@
 description: 'Phase-locked loop'
-package: DIP
-pincount: '16'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4046b.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'PCP&#95;&#95;OUT'
+  'PCP&#95;&#95;OUT':
     desc: 'phase comparator pulse output'
-  -
-    num: '2'
-    sym: 'PC1&#95;&#95;OUT'
+  'PC1&#95;&#95;OUT':
     desc: 'phase comparator 1 output'
-  -
-    num: '3'
-    sym: 'COMP&#95;&#95;IN'
+  'COMP&#95;&#95;IN':
     desc: 'comparator input'
-  -
-    num: '4'
-    sym: 'VCO&#95;&#95;OUT'
+  'VCO&#95;&#95;OUT':
     desc: 'VCO output'
-  -
-    num: '5'
-    sym: INH
+  INH:
     desc: inhibit
-  -
-    num: '6'
-    sym: 'C1&#95;&#95;A'
+  'C1&#95;&#95;A':
     desc: 'capacitor C1 connection A'
-  -
-    num: '7'
-    sym: 'C1&#95;&#95;B'
+  'C1&#95;&#95;B':
     desc: 'capacitor C1 Connection B'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'VCO&#95;&#95;IN'
+  'VCO&#95;&#95;IN':
     desc: 'VCO input'
-  -
-    num: '10'
-    sym: 'SF&#95;&#95;OUT'
+  'SF&#95;&#95;OUT':
     desc: 'source-follower output'
-  -
-    num: '11'
-    sym: 'R&#95;&#95;1'
+  'R&#95;&#95;1':
     desc: 'resistor R1 connection'
-  -
-    num: '12'
-    sym: 'R&#95;&#95;2'
+  'R&#95;&#95;2':
     desc: 'resistor R2 connection'
-  -
-    num: '13'
-    sym: 'PC2&#95;&#95;OUT'
+  'PC2&#95;&#95;OUT':
     desc: 'phase comparator 2 output'
-  -
-    num: '14'
-    sym: 'SIGN&#95;&#95;IN'
+  'SIGN&#95;&#95;IN':
     desc: 'signal input'
-  -
-    num: '15'
-    sym: ZENER
+  ZENER:
     desc: 'zener diode input for regulated supply'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
+packages:
+  DIP:
+    - 'PCP&#95;&#95;OUT'
+    - 'PC1&#95;&#95;OUT'
+    - 'COMP&#95;&#95;IN'
+    - 'VCO&#95;&#95;OUT'
+    - INH
+    - 'C1&#95;&#95;A'
+    - 'C1&#95;&#95;B'
+    - GND
+    - 'VCO&#95;&#95;IN'
+    - 'SF&#95;&#95;OUT'
+    - 'R&#95;&#95;1'
+    - 'R&#95;&#95;2'
+    - 'PC2&#95;&#95;OUT'
+    - 'SIGN&#95;&#95;IN'
+    - ZENER
+    - Vcc

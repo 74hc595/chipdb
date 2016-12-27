@@ -1,64 +1,34 @@
 description: 'Dual D-type flip-flop with set and reset; positive-edge trigger'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc74.74hct74.pdf'
 pins:
-  -
-    num: '1'
-    sym: '1&#126;R&#126;D'
+  '1&#126;R&#126;D':
     desc: 'asynchronous reset-direct input (active low)'
-  -
-    num: '2'
-    sym: 1D
+  1D:
     desc: 'data input'
-  -
-    num: '3'
-    sym: 1CP
+  1CP:
     desc: 'clock input (low-to-high edge-triggered)'
-  -
-    num: '4'
-    sym: '1&#126;S&#126;D'
+  '1&#126;S&#126;D':
     desc: 'asynchronous set-direct input (active low)'
-  -
-    num: '5'
-    sym: 1Q
+  1Q:
     desc: 'true output'
-  -
-    num: '6'
-    sym: '1&#126;Q'
+  '1&#126;Q':
     desc: 'complement output'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: '2&#126;Q'
+  '2&#126;Q':
     desc: 'complement output'
-  -
-    num: '9'
-    sym: 2Q
+  2Q:
     desc: 'true output'
-  -
-    num: '10'
-    sym: '2&#126;S&#126;D'
+  '2&#126;S&#126;D':
     desc: 'asynchronous set-direct input (active low)'
-  -
-    num: '11'
-    sym: 2CP
+  2CP:
     desc: 'clock input (low-to-high edge-triggered)'
-  -
-    num: '12'
-    sym: 2D
+  2D:
     desc: 'data input'
-  -
-    num: '13'
-    sym: '2&#126;R&#126;D'
+  '2&#126;R&#126;D':
     desc: 'asynchronous reset-direct input (active low)'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -85,3 +55,19 @@ specs:
       - '76 (74HC)'
       - '59 (74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - '1&#126;R&#126;D'
+    - 1D
+    - 1CP
+    - '1&#126;S&#126;D'
+    - 1Q
+    - '1&#126;Q'
+    - GND
+    - '2&#126;Q'
+    - 2Q
+    - '2&#126;S&#126;D'
+    - 2CP
+    - 2D
+    - '2&#126;R&#126;D'
+    - Vcc

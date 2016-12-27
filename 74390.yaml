@@ -1,72 +1,38 @@
 description: 'Dual decade ripple counter'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc390.74hct390.pdf'
 pins:
-  -
-    num: '1'
-    sym: '1&#126;CP&#126;&#95;&#95;0'
+  '1&#126;CP&#126;&#95;&#95;0':
     desc: 'clock input, divide-by-2 section (high-to-low, edge-triggered)'
-  -
-    num: '2'
-    sym: 1MR
+  1MR:
     desc: 'asynchronous master reset (active high)'
-  -
-    num: '3'
-    sym: '1Q&#95;&#95;0'
+  '1Q&#95;&#95;0':
     desc: 'flip-flop output'
-  -
-    num: '4'
-    sym: '1&#126;CP&#126;&#95;&#95;1'
+  '1&#126;CP&#126;&#95;&#95;1':
     desc: 'clock input, divide-by-5 section (high-to-low, edge-triggered)'
-  -
-    num: '5'
-    sym: '1Q&#95;&#95;1'
+  '1Q&#95;&#95;1':
     desc: 'flip-flop output'
-  -
-    num: '6'
-    sym: '1Q&#95;&#95;2'
+  '1Q&#95;&#95;2':
     desc: 'flip-flop output'
-  -
-    num: '7'
-    sym: '1Q&#95;&#95;3'
+  '1Q&#95;&#95;3':
     desc: 'flip-flop output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '2Q&#95;&#95;3'
+  '2Q&#95;&#95;3':
     desc: 'flip-flop output'
-  -
-    num: '10'
-    sym: '2Q&#95;&#95;2'
+  '2Q&#95;&#95;2':
     desc: 'flip-flop output'
-  -
-    num: '11'
-    sym: '2Q&#95;&#95;1'
+  '2Q&#95;&#95;1':
     desc: 'flip-flop output'
-  -
-    num: '12'
-    sym: '2&#126;CP&#126;&#95;&#95;1'
+  '2&#126;CP&#126;&#95;&#95;1':
     desc: 'clock input, divide-by-5 section (high-to-low, edge-triggered)'
-  -
-    num: '13'
-    sym: '2Q&#95;&#95;0'
+  '2Q&#95;&#95;0':
     desc: 'flip-flop output'
-  -
-    num: '14'
-    sym: 2MR
+  2MR:
     desc: 'asynchronous master reset (active high)'
-  -
-    num: '15'
-    sym: '2&#126;CP&#126;&#95;&#95;0'
+  '2&#126;CP&#126;&#95;&#95;0':
     desc: 'clock input, divide-by-2 section (high-to-low, edge-triggered)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -105,3 +71,21 @@ specs:
       - '66 (74HC)'
       - '61 (74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - '1&#126;CP&#126;&#95;&#95;0'
+    - 1MR
+    - '1Q&#95;&#95;0'
+    - '1&#126;CP&#126;&#95;&#95;1'
+    - '1Q&#95;&#95;1'
+    - '1Q&#95;&#95;2'
+    - '1Q&#95;&#95;3'
+    - GND
+    - '2Q&#95;&#95;3'
+    - '2Q&#95;&#95;2'
+    - '2Q&#95;&#95;1'
+    - '2&#126;CP&#126;&#95;&#95;1'
+    - '2Q&#95;&#95;0'
+    - 2MR
+    - '2&#126;CP&#126;&#95;&#95;0'
+    - Vcc

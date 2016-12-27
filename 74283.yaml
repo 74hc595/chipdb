@@ -1,72 +1,38 @@
 description: '4-bit binary full adder with fast carry'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc283.pdf'
 pins:
-  -
-    num: '1'
-    sym: S2
+  S2:
     desc: 'sum output'
-  -
-    num: '2'
-    sym: B2
+  B2:
     desc: 'B operand input'
-  -
-    num: '3'
-    sym: A2
+  A2:
     desc: 'A operand input'
-  -
-    num: '4'
-    sym: S1
+  S1:
     desc: 'sum output'
-  -
-    num: '5'
-    sym: A1
+  A1:
     desc: 'A operand input'
-  -
-    num: '6'
-    sym: B1
+  B1:
     desc: 'B operand input'
-  -
-    num: '7'
-    sym: CIN
+  CIN:
     desc: 'carry input'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: COUT
+  COUT:
     desc: 'carry output'
-  -
-    num: '10'
-    sym: S4
+  S4:
     desc: 'sum output'
-  -
-    num: '11'
-    sym: B4
+  B4:
     desc: 'B operand input'
-  -
-    num: '12'
-    sym: A4
+  A4:
     desc: 'A operand input'
-  -
-    num: '13'
-    sym: S3
+  S3:
     desc: 'sum output'
-  -
-    num: '14'
-    sym: A3
+  A3:
     desc: 'A operand input'
-  -
-    num: '15'
-    sym: B3
+  B3:
     desc: 'B operand input'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -111,3 +77,21 @@ specs:
       - '20 (74HC)'
       - '24 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - S2
+    - B2
+    - A2
+    - S1
+    - A1
+    - B1
+    - CIN
+    - GND
+    - COUT
+    - S4
+    - B4
+    - A4
+    - S3
+    - A3
+    - B3
+    - Vcc

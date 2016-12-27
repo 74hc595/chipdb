@@ -1,72 +1,38 @@
 description: 'Presettable synchronous 4-bit binary up/down counter; separate up/down clocks'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc193.74hct193.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'data input'
-  -
-    num: '2'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: 'counter output'
-  -
-    num: '3'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: 'counter output'
-  -
-    num: '4'
-    sym: CPD
+  CPD:
     desc: 'count down clock input (low-to-high, edge-triggered)'
-  -
-    num: '5'
-    sym: CPU
+  CPU:
     desc: 'count up clock input (low-to-high, edge-triggered)'
-  -
-    num: '6'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: 'counter output'
-  -
-    num: '7'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: 'counter output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'data input'
-  -
-    num: '10'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'data input'
-  -
-    num: '11'
-    sym: '&#126;PL'
+  '&#126;PL':
     desc: 'parallel load input (active low)'
-  -
-    num: '12'
-    sym: '&#126;TCU'
+  '&#126;TCU':
     desc: 'terminal count up (carry) output (active low)'
-  -
-    num: '13'
-    sym: '&#126;TCD'
+  '&#126;TCD':
     desc: 'terminal count down (borrow) output (active low)'
-  -
-    num: '14'
-    sym: MR
+  MR:
     desc: 'asynchronous master reset (active high)'
-  -
-    num: '15'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'data input'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -123,3 +89,21 @@ specs:
       - '41 (74HC)'
       - '43 (74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - 'D&#95;&#95;1'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - CPD
+    - CPU
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;3'
+    - GND
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;2'
+    - '&#126;PL'
+    - '&#126;TCU'
+    - '&#126;TCD'
+    - MR
+    - 'D&#95;&#95;0'
+    - Vcc

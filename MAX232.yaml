@@ -1,72 +1,38 @@
 description: '+5V-powered multichannel RS-232 driver/receiver'
-package: DIP
-pincount: '16'
 family: Maxim
 datasheet: 'http://datasheets.maxim-ic.com/en/ds/MAX220-MAX249.pdf'
 pins:
-  -
-    num: '1'
-    sym: C1+
+  C1+:
     desc: 'capacitor 1 connection'
-  -
-    num: '2'
-    sym: V+
+  V+:
     desc: '+10V output'
-  -
-    num: '3'
-    sym: C1-
+  C1-:
     desc: 'capacitor 1 connection'
-  -
-    num: '4'
-    sym: C2+
+  C2+:
     desc: 'capacitor 2 connection'
-  -
-    num: '5'
-    sym: C2-
+  C2-:
     desc: 'capacitor 2 connection'
-  -
-    num: '6'
-    sym: V-
+  V-:
     desc: '-10V output'
-  -
-    num: '7'
-    sym: 'T2&#95;&#95;OUT'
+  'T2&#95;&#95;OUT':
     desc: 'TTL/CMOS output'
-  -
-    num: '8'
-    sym: 'R2&#95;&#95;IN'
+  'R2&#95;&#95;IN':
     desc: 'RS-232 input'
-  -
-    num: '9'
-    sym: 'R2&#95;&#95;OUT'
+  'R2&#95;&#95;OUT':
     desc: 'RS-232 output'
-  -
-    num: '10'
-    sym: 'T2&#95;&#95;IN'
+  'T2&#95;&#95;IN':
     desc: 'TTL/CMOS input'
-  -
-    num: '11'
-    sym: 'T1&#95;&#95;IN'
+  'T1&#95;&#95;IN':
     desc: 'TTL/CMOS input'
-  -
-    num: '12'
-    sym: 'R1&#95;&#95;OUT'
+  'R1&#95;&#95;OUT':
     desc: 'RS-232 output'
-  -
-    num: '13'
-    sym: 'R1&#95;&#95;IN'
+  'R1&#95;&#95;IN':
     desc: 'RS-232 input'
-  -
-    num: '14'
-    sym: 'T1&#95;&#95;OUT'
+  'T1&#95;&#95;OUT':
     desc: 'TTL/CMOS output'
-  -
-    num: '15'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: '+5V supply voltage'
 specs:
   -
@@ -76,3 +42,21 @@ specs:
 notes:
   - 'Use five capacitors; C1 between pins 1 and 3, C2 between pins 4 and 5, C3 between pin 2 and +5v, C4 between ground and pin 6, and C5 between +5V and ground. See datasheet for schematic.'
   - 'C1 through C5 should be 1.0 &micro;F electrolytic capacitors.'
+packages:
+  DIP:
+    - C1+
+    - V+
+    - C1-
+    - C2+
+    - C2-
+    - V-
+    - 'T2&#95;&#95;OUT'
+    - 'R2&#95;&#95;IN'
+    - 'R2&#95;&#95;OUT'
+    - 'T2&#95;&#95;IN'
+    - 'T1&#95;&#95;IN'
+    - 'R1&#95;&#95;OUT'
+    - 'R1&#95;&#95;IN'
+    - 'T1&#95;&#95;OUT'
+    - GND
+    - Vcc

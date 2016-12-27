@@ -1,41 +1,31 @@
 description: 'Switched-capacitor voltage converter'
 aliases:
   - MAX1044
-package: DIP
-pincount: '8'
 datasheet: 'http://www.intersil.com/data/fn/fn3072.pdf'
 pins:
-  -
-    num: '1'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '2'
-    sym: CAP+
+  CAP+:
     desc: 'connection to + terminal of charge-pump capacitor'
-  -
-    num: '3'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '4'
-    sym: CAP-
+  CAP-:
     desc: 'connection to - terminal of charge-pump capacitor'
-  -
-    num: '5'
-    sym: 'V&#95;&#95;OUT'
+  'V&#95;&#95;OUT':
     desc: 'negative voltage output'
-  -
-    num: '6'
-    sym: LV
+  LV:
     desc: 'low voltage; connect to ground for V+ < 3.5V'
-  -
-    num: '7'
-    sym: OSC
+  OSC:
     desc: 'oscillator control input'
-  -
-    num: '8'
-    sym: V+
+  V+:
     desc: 'positive supply voltage (1.5V to 10V)'
 notes:
   - 'Basic negative voltage converter: 10&micro;F capacitor across pins 2 and 4; 10&micro;F capacitor across pin 5 (negative lead) and ground (positive lead).'
+packages:
+  DIP:
+    - NC
+    - CAP+
+    - GND
+    - CAP-
+    - 'V&#95;&#95;OUT'
+    - LV
+    - OSC
+    - V+

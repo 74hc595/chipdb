@@ -2,43 +2,23 @@ description: 'JFET-input operational amplifier'
 aliases:
   - TL061
   - TL071
-package: DIP
-pincount: '8'
 family: linear
 datasheet: 'http://focus.ti.com/lit/ds/symlink/tl08a.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'OFFSET N1'
+  'OFFSET N1':
     desc: offset
-  -
-    num: '2'
-    sym: IN-
+  IN-:
     desc: 'inverting input'
-  -
-    num: '3'
-    sym: IN+
+  IN+:
     desc: 'non-inverting input'
-  -
-    num: '4'
-    sym: 'V&#95;&#95;CC-'
+  'V&#95;&#95;CC-':
     desc: 'negative supply voltage'
-  -
-    num: '5'
-    sym: 'OFFSET N2'
+  'OFFSET N2':
     desc: offset
-  -
-    num: '6'
-    sym: OUT
+  OUT:
     desc: output
-  -
-    num: '7'
-    sym: 'V&#95;&#95;CC+'
+  'V&#95;&#95;CC+':
     desc: 'positive supply voltage'
-  -
-    num: '8'
-    sym: NC
-    desc: 'no connection'
 specs:
   -
     param: 'Maximum supply voltage'
@@ -87,3 +67,13 @@ specs:
 notes:
   - 'The TL06x series are low-power versions of the TL08x series.'
   - 'The TL07x series are low-noise versions of the TL08x series.'
+packages:
+  DIP:
+    - 'OFFSET N1'
+    - IN-
+    - IN+
+    - 'V&#95;&#95;CC-'
+    - 'OFFSET N2'
+    - OUT
+    - 'V&#95;&#95;CC+'
+    - NC

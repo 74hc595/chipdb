@@ -1,72 +1,38 @@
 description: '4-bit magnitude comparator'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc85.74hct85.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'B&#95;&#95;3'
+  'B&#95;&#95;3':
     desc: 'word B input'
-  -
-    num: '2'
-    sym: 'I&#95;&#95;A<B'
+  'I&#95;&#95;A<B':
     desc: 'A < B expansion input'
-  -
-    num: '3'
-    sym: 'I&#95;&#95;A=B'
+  'I&#95;&#95;A=B':
     desc: 'A = B expansion input'
-  -
-    num: '4'
-    sym: 'I&#95;&#95;A>B'
+  'I&#95;&#95;A>B':
     desc: 'A > B expansion input'
-  -
-    num: '5'
-    sym: 'Q&#95;&#95;A>B'
+  'Q&#95;&#95;A>B':
     desc: 'A > B output'
-  -
-    num: '6'
-    sym: 'Q&#95;&#95;A=B'
+  'Q&#95;&#95;A=B':
     desc: 'A = B output'
-  -
-    num: '7'
-    sym: 'Q&#95;&#95;A<B'
+  'Q&#95;&#95;A<B':
     desc: 'A < B output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'B&#95;&#95;0'
+  'B&#95;&#95;0':
     desc: 'word B input'
-  -
-    num: '10'
-    sym: 'A&#95;&#95;0'
+  'A&#95;&#95;0':
     desc: 'word A input'
-  -
-    num: '11'
-    sym: 'B&#95;&#95;1'
+  'B&#95;&#95;1':
     desc: 'word B input'
-  -
-    num: '12'
-    sym: 'A&#95;&#95;1'
+  'A&#95;&#95;1':
     desc: 'word A input'
-  -
-    num: '13'
-    sym: 'A&#95;&#95;2'
+  'A&#95;&#95;2':
     desc: 'word A input'
-  -
-    num: '14'
-    sym: 'B&#95;&#95;2'
+  'B&#95;&#95;2':
     desc: 'word B input'
-  -
-    num: '15'
-    sym: 'A&#95;&#95;3'
+  'A&#95;&#95;3':
     desc: 'word A input'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -96,3 +62,21 @@ specs:
 notes:
   - 'The least significant (or only) comparator in a chain should have I&#95;&#95;A<B and I&#95;&#95;A>B tied low and I&#95;&#95;A=B tied high.'
   - 'To compare more than 4 bits, connect the outputs to the expansion inputs of the next significant comparator.'
+packages:
+  DIP:
+    - 'B&#95;&#95;3'
+    - 'I&#95;&#95;A<B'
+    - 'I&#95;&#95;A=B'
+    - 'I&#95;&#95;A>B'
+    - 'Q&#95;&#95;A>B'
+    - 'Q&#95;&#95;A=B'
+    - 'Q&#95;&#95;A<B'
+    - GND
+    - 'B&#95;&#95;0'
+    - 'A&#95;&#95;0'
+    - 'B&#95;&#95;1'
+    - 'A&#95;&#95;1'
+    - 'A&#95;&#95;2'
+    - 'B&#95;&#95;2'
+    - 'A&#95;&#95;3'
+    - Vcc

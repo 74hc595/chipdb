@@ -1,72 +1,38 @@
 description: '8-bit parallel-in/serial-out shift register'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc166.74hct166.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'D&#95;&#95;s'
+  'D&#95;&#95;s':
     desc: 'serial data input'
-  -
-    num: '2'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'parallel data input'
-  -
-    num: '3'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'parallel data input'
-  -
-    num: '4'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'parallel data input'
-  -
-    num: '5'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'parallel data input'
-  -
-    num: '6'
-    sym: '&#126;CE'
+  '&#126;CE':
     desc: 'clock enable input (active low)'
-  -
-    num: '7'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '&#126;MR'
+  '&#126;MR':
     desc: 'asynchronous master reset (active low)'
-  -
-    num: '10'
-    sym: 'D&#95;&#95;4'
+  'D&#95;&#95;4':
     desc: 'parallel data input'
-  -
-    num: '11'
-    sym: 'D&#95;&#95;5'
+  'D&#95;&#95;5':
     desc: 'parallel data input'
-  -
-    num: '12'
-    sym: 'D&#95;&#95;6'
+  'D&#95;&#95;6':
     desc: 'parallel data input'
-  -
-    num: '13'
-    sym: 'Q&#95;&#95;7'
+  'Q&#95;&#95;7':
     desc: 'serial output from the last stage'
-  -
-    num: '14'
-    sym: 'D&#95;&#95;7'
+  'D&#95;&#95;7':
     desc: 'parallel data input'
-  -
-    num: '15'
-    sym: '&#126;PE'
+  '&#126;PE':
     desc: 'parallel enable input (active low)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -90,3 +56,21 @@ specs:
 notes:
   - 'The low-to-high transition of &#126;CE should only take place while CP is high for predictable operation.'
   - 'A low on &#126;MR overrides all other inputs and clears the register asynchronously, forcing all bit positions to a low stage.'
+packages:
+  DIP:
+    - 'D&#95;&#95;s'
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - '&#126;CE'
+    - CP
+    - GND
+    - '&#126;MR'
+    - 'D&#95;&#95;4'
+    - 'D&#95;&#95;5'
+    - 'D&#95;&#95;6'
+    - 'Q&#95;&#95;7'
+    - 'D&#95;&#95;7'
+    - '&#126;PE'
+    - Vcc

@@ -1,72 +1,38 @@
 description: 'Dual 4-input multiplexer; 3-state'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc253.74hct253.pdf'
 pins:
-  -
-    num: '1'
-    sym: '1&#126;OE'
+  '1&#126;OE':
     desc: 'enable input 1 (active low)'
-  -
-    num: '2'
-    sym: 'S&#95;&#95;1'
+  'S&#95;&#95;1':
     desc: 'common data select input'
-  -
-    num: '3'
-    sym: '1I&#95;&#95;3'
+  '1I&#95;&#95;3':
     desc: 'data input from source 1'
-  -
-    num: '4'
-    sym: '1I&#95;&#95;2'
+  '1I&#95;&#95;2':
     desc: 'data input from source 1'
-  -
-    num: '5'
-    sym: '1I&#95;&#95;1'
+  '1I&#95;&#95;1':
     desc: 'data input from source 1'
-  -
-    num: '6'
-    sym: '1I&#95;&#95;0'
+  '1I&#95;&#95;0':
     desc: 'data input from source 1'
-  -
-    num: '7'
-    sym: 1Y
+  1Y:
     desc: 'multiplexer output from source 1'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 2Y
+  2Y:
     desc: 'multiplexer output from source 2'
-  -
-    num: '10'
-    sym: '2I&#95;&#95;0'
+  '2I&#95;&#95;0':
     desc: 'data input from source 2'
-  -
-    num: '11'
-    sym: '2I&#95;&#95;1'
+  '2I&#95;&#95;1':
     desc: 'data input from source 2'
-  -
-    num: '12'
-    sym: '2I&#95;&#95;2'
+  '2I&#95;&#95;2':
     desc: 'data input from source 2'
-  -
-    num: '13'
-    sym: '2I&#95;&#95;3'
+  '2I&#95;&#95;3':
     desc: 'data input from source 2'
-  -
-    num: '14'
-    sym: 'S&#95;&#95;0'
+  'S&#95;&#95;0':
     desc: 'common data select input'
-  -
-    num: '15'
-    sym: '2&#126;OE'
+  '2&#126;OE':
     desc: 'enable input 2 (active low)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -82,3 +48,21 @@ specs:
     unit: ns
 notes:
   - 'When 1&#126;OE or 2&#126;OE is high, the outputs are forced to a high-impedance off state.'
+packages:
+  DIP:
+    - '1&#126;OE'
+    - 'S&#95;&#95;1'
+    - '1I&#95;&#95;3'
+    - '1I&#95;&#95;2'
+    - '1I&#95;&#95;1'
+    - '1I&#95;&#95;0'
+    - 1Y
+    - GND
+    - 2Y
+    - '2I&#95;&#95;0'
+    - '2I&#95;&#95;1'
+    - '2I&#95;&#95;2'
+    - '2I&#95;&#95;3'
+    - 'S&#95;&#95;0'
+    - '2&#126;OE'
+    - Vcc

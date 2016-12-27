@@ -1,89 +1,39 @@
 description: 'Power logic 8-bit shift register'
-package: DIP
-pincount: '20'
 family: TI
 datasheet: 'http://focus.ti.com/lit/ds/symlink/tpic6b595.pdf'
 pins:
-  -
-    num: '1'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '2'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
-  -
-    num: '3'
-    sym: 'SER IN'
+  'SER IN':
     desc: 'serial data input'
-  -
-    num: '4'
-    sym: DRAIN0
+  DRAIN0:
     desc: 'drain output'
-  -
-    num: '5'
-    sym: DRAIN1
+  DRAIN1:
     desc: 'drain output'
-  -
-    num: '6'
-    sym: DRAIN2
+  DRAIN2:
     desc: 'drain output'
-  -
-    num: '7'
-    sym: DRAIN3
+  DRAIN3:
     desc: 'drain output'
-  -
-    num: '8'
-    sym: '&#126;SRCLR'
+  '&#126;SRCLR':
     desc: 'clear (active low)'
-  -
-    num: '9'
-    sym: '&#126;G'
+  '&#126;G':
     desc: 'output enable (active low)'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: GND
-    desc: ground
-  -
-    num: '12'
-    sym: RCK
+  RCK:
     desc: 'storage register latch input'
-  -
-    num: '13'
-    sym: SRCK
+  SRCK:
     desc: 'shift register clock input'
-  -
-    num: '14'
-    sym: DRAIN4
+  DRAIN4:
     desc: 'drain output'
-  -
-    num: '15'
-    sym: DRAIN5
+  DRAIN5:
     desc: 'drain output'
-  -
-    num: '16'
-    sym: DRAIN6
+  DRAIN6:
     desc: 'drain output'
-  -
-    num: '17'
-    sym: DRAIN7
+  DRAIN7:
     desc: 'drain output'
-  -
-    num: '18'
-    sym: 'SER OUT'
+  'SER OUT':
     desc: 'serial data output'
-  -
-    num: '19'
-    sym: GND
-    desc: ground
-  -
-    num: '20'
-    sym: NC
-    desc: 'no connection'
 specs:
   -
     param: 'Maximum continuous current (per output)'
@@ -101,3 +51,25 @@ specs:
     param: 'Drain output rise/fall time'
     val: '200'
     unit: ns
+packages:
+  DIP:
+    - NC
+    - Vcc
+    - 'SER IN'
+    - DRAIN0
+    - DRAIN1
+    - DRAIN2
+    - DRAIN3
+    - '&#126;SRCLR'
+    - '&#126;G'
+    - GND
+    - GND
+    - RCK
+    - SRCK
+    - DRAIN4
+    - DRAIN5
+    - DRAIN6
+    - DRAIN7
+    - 'SER OUT'
+    - GND
+    - NC

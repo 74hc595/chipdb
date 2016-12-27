@@ -1,64 +1,44 @@
 description: 'Hexadecimal display with logic'
-package: DIP
-pincount: '14'
 family: LED
 datasheet: 'http://focus.ti.com/lit/ds/symlink/til311.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'V&#95;&#95;LED'
+  'V&#95;&#95;LED':
     desc: 'LED supply voltage'
-  -
-    num: '2'
-    sym: B
+  B:
     desc: 'Latch data input B'
-  -
-    num: '3'
-    sym: A
+  A:
     desc: 'Latch data input A'
-  -
-    num: '4'
-    sym: 'DP&#95;&#95;L'
+  'DP&#95;&#95;L':
     desc: 'Left decimal point cathode'
-  -
-    num: '5'
-    sym: '&#126;STROBE'
+  '&#126;STROBE':
     desc: 'Latch strobe input (active low)'
-  -
-    num: '6'
-    sym: 'NOT&#95;PRESENT'
-    desc: 'no pin'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: BLANK
+  BLANK:
     desc: 'Display blanking input (active high)'
-  -
-    num: '9'
-    sym: 'NOT&#95;PRESENT'
-    desc: 'no pin'
-  -
-    num: '10'
-    sym: 'DP&#95;&#95;R'
+  'DP&#95;&#95;R':
     desc: 'Right decimal point cathode'
-  -
-    num: '11'
-    sym: 'NOT&#95;PRESENT'
-    desc: 'no pin'
-  -
-    num: '12'
-    sym: D
+  D:
     desc: 'Latch data input D'
-  -
-    num: '13'
-    sym: C
+  C:
     desc: 'Latch data input C'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'Logic supply voltage'
 notes:
   - 'Decimal points are driven independently and current-limiting resistors (typically 1k&Omega;) are required.'
+packages:
+  DIP:
+    - 'V&#95;&#95;LED'
+    - B
+    - A
+    - 'DP&#95;&#95;L'
+    - '&#126;STROBE'
+    - 'NOT&#95;PRESENT'
+    - GND
+    - BLANK
+    - 'NOT&#95;PRESENT'
+    - 'DP&#95;&#95;R'
+    - 'NOT&#95;PRESENT'
+    - D
+    - C
+    - Vcc

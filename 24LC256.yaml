@@ -2,42 +2,24 @@ description: '256K I2C CMOS serial EEPROM'
 aliases:
   - 24AA256
   - 24FC256
-package: DIP
-pincount: '8'
 family: Microchip
 datasheet: 'http://ww1.microchip.com/downloads/en/DeviceDoc/21203P.pdf'
 pins:
-  -
-    num: '1'
-    sym: A0
+  A0:
     desc: 'user-configurable chip select'
-  -
-    num: '2'
-    sym: A1
+  A1:
     desc: 'user-configurable chip select'
-  -
-    num: '3'
-    sym: A2
+  A2:
     desc: 'user-configurable chip select'
-  -
-    num: '4'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '5'
-    sym: SDA
+  SDA:
     desc: 'serial data input/output'
-  -
-    num: '6'
-    sym: SCL
+  SCL:
     desc: 'serial clock input'
-  -
-    num: '7'
-    sym: WP
+  WP:
     desc: 'write protect (active high)'
-  -
-    num: '8'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -63,3 +45,13 @@ specs:
     param: Endurance
     val: '1 000 000'
     unit: cycles
+packages:
+  DIP:
+    - A0
+    - A1
+    - A2
+    - GND
+    - SDA
+    - SCL
+    - WP
+    - Vcc

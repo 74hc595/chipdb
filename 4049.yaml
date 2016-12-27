@@ -1,70 +1,50 @@
 description: 'Hex inverting buffer'
-package: DIP
-pincount: '16'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4049b.pdf'
 pins:
-  -
-    num: '1'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
-  -
-    num: '2'
-    sym: 1Y
+  1Y:
     desc: 'data output'
-  -
-    num: '3'
-    sym: 1A
+  1A:
     desc: 'data input'
-  -
-    num: '4'
-    sym: 2Y
+  2Y:
     desc: 'data output'
-  -
-    num: '5'
-    sym: 2A
+  2A:
     desc: 'data input'
-  -
-    num: '6'
-    sym: 3Y
+  3Y:
     desc: 'data output'
-  -
-    num: '7'
-    sym: 3A
+  3A:
     desc: 'data input'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 4A
+  4A:
     desc: 'data input'
-  -
-    num: '10'
-    sym: 4Y
+  4Y:
     desc: 'data output'
-  -
-    num: '11'
-    sym: 5A
+  5A:
     desc: 'data input'
-  -
-    num: '12'
-    sym: 5Y
+  5Y:
     desc: 'data output'
-  -
-    num: '13'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '14'
-    sym: 6A
+  6A:
     desc: 'data input'
-  -
-    num: '15'
-    sym: 6Y
+  6Y:
     desc: 'data output'
-  -
-    num: '16'
-    sym: NC
-    desc: 'no connection'
+packages:
+  DIP:
+    - Vcc
+    - 1Y
+    - 1A
+    - 2Y
+    - 2A
+    - 3Y
+    - 3A
+    - GND
+    - 4A
+    - 4Y
+    - 5A
+    - 5Y
+    - NC
+    - 6A
+    - 6Y
+    - NC

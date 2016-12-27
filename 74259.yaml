@@ -1,72 +1,38 @@
 description: '8-bit addressable latch'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc259.74hct259.pdf'
 pins:
-  -
-    num: '1'
-    sym: A0
+  A0:
     desc: 'address input'
-  -
-    num: '2'
-    sym: A1
+  A1:
     desc: 'address input'
-  -
-    num: '3'
-    sym: A2
+  A2:
     desc: 'address input'
-  -
-    num: '4'
-    sym: Q0
+  Q0:
     desc: 'latch output'
-  -
-    num: '5'
-    sym: Q1
+  Q1:
     desc: 'latch output'
-  -
-    num: '6'
-    sym: Q2
+  Q2:
     desc: 'latch output'
-  -
-    num: '7'
-    sym: Q3
+  Q3:
     desc: 'latch output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: Q4
+  Q4:
     desc: 'latch output'
-  -
-    num: '10'
-    sym: Q5
+  Q5:
     desc: 'latch output'
-  -
-    num: '11'
-    sym: Q6
+  Q6:
     desc: 'latch output'
-  -
-    num: '12'
-    sym: Q7
+  Q7:
     desc: 'latch output'
-  -
-    num: '13'
-    sym: D
+  D:
     desc: 'data input'
-  -
-    num: '14'
-    sym: '&#126;LE'
+  '&#126;LE':
     desc: 'latch enable input (active low)'
-  -
-    num: '15'
-    sym: '&#126;MR'
+  '&#126;MR':
     desc: 'conditional reset input (active low)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -87,3 +53,21 @@ specs:
       - '17 (74HC)'
       - '20 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - A0
+    - A1
+    - A2
+    - Q0
+    - Q1
+    - Q2
+    - Q3
+    - GND
+    - Q4
+    - Q5
+    - Q6
+    - Q7
+    - D
+    - '&#126;LE'
+    - '&#126;MR'
+    - Vcc

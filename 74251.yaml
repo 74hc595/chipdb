@@ -1,72 +1,38 @@
 description: '8-input multiplexer; 3-state'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc251.74hct251.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'I&#95;&#95;3'
+  'I&#95;&#95;3':
     desc: 'multiplexer input'
-  -
-    num: '2'
-    sym: 'I&#95;&#95;2'
+  'I&#95;&#95;2':
     desc: 'multiplexer input'
-  -
-    num: '3'
-    sym: 'I&#95;&#95;1'
+  'I&#95;&#95;1':
     desc: 'multiplexer input'
-  -
-    num: '4'
-    sym: 'I&#95;&#95;0'
+  'I&#95;&#95;0':
     desc: 'multiplexer input'
-  -
-    num: '5'
-    sym: 'Y'
+  'Y':
     desc: 'multiplexer output'
-  -
-    num: '6'
-    sym: '&#126;Y'
+  '&#126;Y':
     desc: 'complementary multiplexer output'
-  -
-    num: '7'
-    sym: '&#126;OE'
+  '&#126;OE':
     desc: 'enable input (active low; outputs in high-impedance off state when high)'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'S&#95;&#95;2'
+  'S&#95;&#95;2':
     desc: 'select input'
-  -
-    num: '10'
-    sym: 'S&#95;&#95;1'
+  'S&#95;&#95;1':
     desc: 'select input'
-  -
-    num: '11'
-    sym: 'S&#95;&#95;0'
+  'S&#95;&#95;0':
     desc: 'select input'
-  -
-    num: '12'
-    sym: 'I&#95;&#95;7'
+  'I&#95;&#95;7':
     desc: 'multiplexer input'
-  -
-    num: '13'
-    sym: 'I&#95;&#95;6'
+  'I&#95;&#95;6':
     desc: 'multiplexer input'
-  -
-    num: '14'
-    sym: 'I&#95;&#95;5'
+  'I&#95;&#95;5':
     desc: 'multiplexer input'
-  -
-    num: '15'
-    sym: 'I&#95;&#95;4'
+  'I&#95;&#95;4':
     desc: 'multiplexer input'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -91,3 +57,21 @@ specs:
       - '21 (74HC)'
       - '21 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - 'I&#95;&#95;3'
+    - 'I&#95;&#95;2'
+    - 'I&#95;&#95;1'
+    - 'I&#95;&#95;0'
+    - 'Y'
+    - '&#126;Y'
+    - '&#126;OE'
+    - GND
+    - 'S&#95;&#95;2'
+    - 'S&#95;&#95;1'
+    - 'S&#95;&#95;0'
+    - 'I&#95;&#95;7'
+    - 'I&#95;&#95;6'
+    - 'I&#95;&#95;5'
+    - 'I&#95;&#95;4'
+    - Vcc

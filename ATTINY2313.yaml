@@ -2,90 +2,48 @@ name: ATtiny2313
 description: '8-bit AVR&reg; microcontroller'
 aliases:
   - ATtiny4313
-package: DIP
-pincount: '20'
 family: Atmel
 datasheet: 'http://www.atmel.com/dyn/resources/prod&#95;documents/DOC8246.PDF'
 pins:
-  -
-    num: '1'
-    sym: '(&#126;RESET&#126;/dW) PA2'
+  '(&#126;RESET&#126;/dW) PA2':
     desc: 'reset (active low)'
-  -
-    num: '2'
-    sym: '(RXD) PD0'
+  '(RXD) PD0':
     desc: 'UART receive; port D'
-  -
-    num: '3'
-    sym: '(TXD) PD1'
+  '(TXD) PD1':
     desc: 'UART transmit; port D'
-  -
-    num: '4'
-    sym: '(XTAL2) PA1'
+  '(XTAL2) PA1':
     desc: 'clock oscillator pin 2; port A'
-  -
-    num: '5'
-    sym: '(XTAL1) PA0'
+  '(XTAL1) PA0':
     desc: 'clock oscillator pin 1; port A'
-  -
-    num: '6'
-    sym: '(CKOUT/XCK/INT0) PD2'
+  '(CKOUT/XCK/INT0) PD2':
     desc: 'external interrupt 0; clock output; port D'
-  -
-    num: '7'
-    sym: '(INT1) PD3'
+  '(INT1) PD3':
     desc: 'external interrupt 1; port D'
-  -
-    num: '8'
-    sym: '(T0) PD4'
+  '(T0) PD4':
     desc: 'port D'
-  -
-    num: '9'
-    sym: '(OC0B/T1) PD5'
+  '(OC0B/T1) PD5':
     desc: 'port D'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: 'PD6 (ICP)'
+  'PD6 (ICP)':
     desc: 'port D'
-  -
-    num: '12'
-    sym: 'PB0 (AIN0/PCINT0)'
+  'PB0 (AIN0/PCINT0)':
     desc: 'port B'
-  -
-    num: '13'
-    sym: 'PB1 (AIN1/PCINT1)'
+  'PB1 (AIN1/PCINT1)':
     desc: 'port B'
-  -
-    num: '14'
-    sym: 'PB2 (OC0A/PCINT2)'
+  'PB2 (OC0A/PCINT2)':
     desc: 'port B'
-  -
-    num: '15'
-    sym: 'PB3 (OC1A/PCINT3)'
+  'PB3 (OC1A/PCINT3)':
     desc: 'port B'
-  -
-    num: '16'
-    sym: 'PB4 (OC1B/PCINT4)'
+  'PB4 (OC1B/PCINT4)':
     desc: 'port B'
-  -
-    num: '17'
-    sym: 'PB5 (MOSI/DI/SDA/PCINT5)'
+  'PB5 (MOSI/DI/SDA/PCINT5)':
     desc: '3-wire data input; 2-wire data; port B'
-  -
-    num: '18'
-    sym: 'PB6 (MISO/DO/PCINT6)'
+  'PB6 (MISO/DO/PCINT6)':
     desc: '3-wire data output; port B'
-  -
-    num: '19'
-    sym: 'PB7 (UCSK/SCL/PCINT7)'
+  'PB7 (UCSK/SCL/PCINT7)':
     desc: '3-wire clock; 2-wire clock; port B'
-  -
-    num: '20'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -113,3 +71,25 @@ specs:
     param: 'Maximum clock frequency'
     val: '20'
     unit: MHz
+packages:
+  DIP:
+    - '(&#126;RESET&#126;/dW) PA2'
+    - '(RXD) PD0'
+    - '(TXD) PD1'
+    - '(XTAL2) PA1'
+    - '(XTAL1) PA0'
+    - '(CKOUT/XCK/INT0) PD2'
+    - '(INT1) PD3'
+    - '(T0) PD4'
+    - '(OC0B/T1) PD5'
+    - GND
+    - 'PD6 (ICP)'
+    - 'PB0 (AIN0/PCINT0)'
+    - 'PB1 (AIN1/PCINT1)'
+    - 'PB2 (OC0A/PCINT2)'
+    - 'PB3 (OC1A/PCINT3)'
+    - 'PB4 (OC1B/PCINT4)'
+    - 'PB5 (MOSI/DI/SDA/PCINT5)'
+    - 'PB6 (MISO/DO/PCINT6)'
+    - 'PB7 (UCSK/SCL/PCINT7)'
+    - Vcc

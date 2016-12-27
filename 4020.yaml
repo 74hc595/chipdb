@@ -1,70 +1,54 @@
 description: '14-stage binary counter'
-package: DIP
-pincount: '16'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4020b.pdf'
 pins:
-  -
-    num: '1'
-    sym: Q11
+  Q11:
     desc: output
-  -
-    num: '2'
-    sym: Q12
+  Q12:
     desc: output
-  -
-    num: '3'
-    sym: Q13
+  Q13:
     desc: output
-  -
-    num: '4'
-    sym: Q5
+  Q5:
     desc: output
-  -
-    num: '5'
-    sym: Q4
+  Q4:
     desc: output
-  -
-    num: '6'
-    sym: Q6
+  Q6:
     desc: output
-  -
-    num: '7'
-    sym: Q3
+  Q3:
     desc: output
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: Q0
+  Q0:
     desc: output
-  -
-    num: '10'
-    sym: '&#126;CP'
+  '&#126;CP':
     desc: 'clock input (high-to-low edge-triggered)'
-  -
-    num: '11'
-    sym: MR
+  MR:
     desc: 'master reset'
-  -
-    num: '12'
-    sym: Q8
+  Q8:
     desc: output
-  -
-    num: '13'
-    sym: Q7
+  Q7:
     desc: output
-  -
-    num: '14'
-    sym: Q9
+  Q9:
     desc: output
-  -
-    num: '15'
-    sym: Q10
+  Q10:
     desc: output
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
+packages:
+  DIP:
+    - Q11
+    - Q12
+    - Q13
+    - Q5
+    - Q4
+    - Q6
+    - Q3
+    - GND
+    - Q0
+    - '&#126;CP'
+    - MR
+    - Q8
+    - Q7
+    - Q9
+    - Q10
+    - Vcc

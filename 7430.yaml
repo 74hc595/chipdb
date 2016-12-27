@@ -1,64 +1,28 @@
 description: '8-input NAND gate'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc30.74hct30.pdf'
 pins:
-  -
-    num: '1'
-    sym: A
+  A:
     desc: 'data input'
-  -
-    num: '2'
-    sym: B
+  B:
     desc: 'data input'
-  -
-    num: '3'
-    sym: C
+  C:
     desc: 'data input'
-  -
-    num: '4'
-    sym: D
+  D:
     desc: 'data input'
-  -
-    num: '5'
-    sym: E
+  E:
     desc: 'data input'
-  -
-    num: '6'
-    sym: F
+  F:
     desc: 'data input'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: 'Y'
+  'Y':
     desc: 'data output'
-  -
-    num: '9'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '10'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '11'
-    sym: G
+  G:
     desc: 'data input'
-  -
-    num: '12'
-    sym: H
+  H:
     desc: 'data input'
-  -
-    num: '13'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -67,3 +31,19 @@ specs:
       - '12 (74HC)'
       - '12 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - A
+    - B
+    - C
+    - D
+    - E
+    - F
+    - GND
+    - 'Y'
+    - NC
+    - NC
+    - G
+    - H
+    - NC
+    - Vcc

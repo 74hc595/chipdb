@@ -1,88 +1,46 @@
 description: '8-bit magnitude comparator'
-package: DIP
-pincount: '20'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc688.74hct688.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;E'
+  '&#126;E':
     desc: 'enable (active low)'
-  -
-    num: '2'
-    sym: 'P&#95;&#95;0'
+  'P&#95;&#95;0':
     desc: 'word input'
-  -
-    num: '3'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: 'word input'
-  -
-    num: '4'
-    sym: 'P&#95;&#95;1'
+  'P&#95;&#95;1':
     desc: 'word input'
-  -
-    num: '5'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: 'word input'
-  -
-    num: '6'
-    sym: 'P&#95;&#95;2'
+  'P&#95;&#95;2':
     desc: 'word input'
-  -
-    num: '7'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: 'word input'
-  -
-    num: '8'
-    sym: 'P&#95;&#95;3'
+  'P&#95;&#95;3':
     desc: 'word input'
-  -
-    num: '9'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: 'word input'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: 'P&#95;&#95;4'
+  'P&#95;&#95;4':
     desc: 'word input'
-  -
-    num: '12'
-    sym: 'Q&#95;&#95;4'
+  'Q&#95;&#95;4':
     desc: 'word input'
-  -
-    num: '13'
-    sym: 'P&#95;&#95;5'
+  'P&#95;&#95;5':
     desc: 'word input'
-  -
-    num: '14'
-    sym: 'Q&#95;&#95;5'
+  'Q&#95;&#95;5':
     desc: 'word input'
-  -
-    num: '15'
-    sym: 'P&#95;&#95;6'
+  'P&#95;&#95;6':
     desc: 'word input'
-  -
-    num: '16'
-    sym: 'Q&#95;&#95;6'
+  'Q&#95;&#95;6':
     desc: 'word input'
-  -
-    num: '17'
-    sym: 'P&#95;&#95;7'
+  'P&#95;&#95;7':
     desc: 'word input'
-  -
-    num: '18'
-    sym: 'Q&#95;&#95;7'
+  'Q&#95;&#95;7':
     desc: 'word input'
-  -
-    num: '19'
-    sym: '&#126;P=Q&#126;'
+  '&#126;P=Q&#126;':
     desc: 'equal-to output (low when P = Q)'
-  -
-    num: '20'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -95,3 +53,25 @@ specs:
       - '8 (74HC)'
       - '12 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - '&#126;E'
+    - 'P&#95;&#95;0'
+    - 'Q&#95;&#95;0'
+    - 'P&#95;&#95;1'
+    - 'Q&#95;&#95;1'
+    - 'P&#95;&#95;2'
+    - 'Q&#95;&#95;2'
+    - 'P&#95;&#95;3'
+    - 'Q&#95;&#95;3'
+    - GND
+    - 'P&#95;&#95;4'
+    - 'Q&#95;&#95;4'
+    - 'P&#95;&#95;5'
+    - 'Q&#95;&#95;5'
+    - 'P&#95;&#95;6'
+    - 'Q&#95;&#95;6'
+    - 'P&#95;&#95;7'
+    - 'Q&#95;&#95;7'
+    - '&#126;P=Q&#126;'
+    - Vcc

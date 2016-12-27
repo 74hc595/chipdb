@@ -1,40 +1,22 @@
 description: 'Wide bandwidth dual JFET-input operational amplifier'
-package: DIP
-pincount: '8'
 family: linear
 datasheet: 'http://www.national.com/ds/LF/LF353.pdf'
 pins:
-  -
-    num: '1'
-    sym: 1OUT
+  1OUT:
     desc: 'output 1'
-  -
-    num: '2'
-    sym: 1IN-
+  1IN-:
     desc: 'inverting input 1'
-  -
-    num: '3'
-    sym: 1IN+
+  1IN+:
     desc: 'non-inverting input 1'
-  -
-    num: '4'
-    sym: Vss
+  Vss:
     desc: 'negative supply voltage'
-  -
-    num: '5'
-    sym: 2IN+
+  2IN+:
     desc: 'non-inverting input 2'
-  -
-    num: '6'
-    sym: 2IN-
+  2IN-:
     desc: 'inverting input 2'
-  -
-    num: '7'
-    sym: 2OUT
+  2OUT:
     desc: 'output 2'
-  -
-    num: '8'
-    sym: Vcc
+  Vcc:
     desc: 'positive supply voltage'
 specs:
   -
@@ -67,3 +49,13 @@ specs:
     param: 'Supply current (per channel)'
     val: '1.8'
     unit: mA
+packages:
+  DIP:
+    - 1OUT
+    - 1IN-
+    - 1IN+
+    - Vss
+    - 2IN+
+    - 2IN-
+    - 2OUT
+    - Vcc

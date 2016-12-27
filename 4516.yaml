@@ -1,74 +1,58 @@
 description: '4-bit binary up/down counter'
-package: DIP
-pincount: '16'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4516b.pdf'
 pins:
-  -
-    num: '1'
-    sym: PL
+  PL:
     desc: 'parallel load (active high)'
-  -
-    num: '2'
-    sym: Q3
+  Q3:
     desc: 'count output'
-  -
-    num: '3'
-    sym: D3
+  D3:
     desc: 'parallel input'
-  -
-    num: '4'
-    sym: D0
+  D0:
     desc: 'parallel input'
-  -
-    num: '5'
-    sym: '&#126;CE'
+  '&#126;CE':
     desc: 'count enable (active low)'
-  -
-    num: '6'
-    sym: Q0
+  Q0:
     desc: 'count output'
-  -
-    num: '7'
-    sym: '&#126;TC'
+  '&#126;TC':
     desc: 'terminal count output (active low)'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: MR
+  MR:
     desc: 'master reset (active high)'
-  -
-    num: '10'
-    sym: 'UP/&#126;DN'
+  'UP/&#126;DN':
     desc: 'up/down count control'
-  -
-    num: '11'
-    sym: Q1
+  Q1:
     desc: 'count output'
-  -
-    num: '12'
-    sym: D1
+  D1:
     desc: 'parallel input'
-  -
-    num: '13'
-    sym: D2
+  D2:
     desc: 'parallel input'
-  -
-    num: '14'
-    sym: Q2
+  Q2:
     desc: 'count output'
-  -
-    num: '15'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high edge-triggered)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 notes:
   - 'When counting up, &#126;TC goes low when the count is 15.'
   - 'When counting down, &#126;TC goes low when the count is 0.'
   - '&#126;TC is always high when &#126;CE is high (counting is disabled).'
+packages:
+  DIP:
+    - PL
+    - Q3
+    - D3
+    - D0
+    - '&#126;CE'
+    - Q0
+    - '&#126;TC'
+    - GND
+    - MR
+    - 'UP/&#126;DN'
+    - Q1
+    - D1
+    - D2
+    - Q2
+    - CP
+    - Vcc

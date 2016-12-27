@@ -1,88 +1,46 @@
 description: 'Octal bus transceiver; 3-state'
-package: DIP
-pincount: '20'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc245.74hct245.pdf'
 pins:
-  -
-    num: '1'
-    sym: DIR
+  DIR:
     desc: 'direction control'
-  -
-    num: '2'
-    sym: A0
+  A0:
     desc: 'data input/output'
-  -
-    num: '3'
-    sym: A1
+  A1:
     desc: 'data input/output'
-  -
-    num: '4'
-    sym: A2
+  A2:
     desc: 'data input/output'
-  -
-    num: '5'
-    sym: A3
+  A3:
     desc: 'data input/output'
-  -
-    num: '6'
-    sym: A4
+  A4:
     desc: 'data input/output'
-  -
-    num: '7'
-    sym: A5
+  A5:
     desc: 'data input/output'
-  -
-    num: '8'
-    sym: A6
+  A6:
     desc: 'data input/output'
-  -
-    num: '9'
-    sym: A7
+  A7:
     desc: 'data input/output'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: B7
+  B7:
     desc: 'data input/output'
-  -
-    num: '12'
-    sym: B6
+  B6:
     desc: 'data input/output'
-  -
-    num: '13'
-    sym: B5
+  B5:
     desc: 'data input/output'
-  -
-    num: '14'
-    sym: B4
+  B4:
     desc: 'data input/output'
-  -
-    num: '15'
-    sym: B3
+  B3:
     desc: 'data input/output'
-  -
-    num: '16'
-    sym: B2
+  B2:
     desc: 'data input/output'
-  -
-    num: '17'
-    sym: B1
+  B1:
     desc: 'data input/output'
-  -
-    num: '18'
-    sym: B0
+  B0:
     desc: 'data input/output'
-  -
-    num: '19'
-    sym: '&#126;OE'
+  '&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '20'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -95,3 +53,25 @@ notes:
   - 'When DIR is high, An are inputs.'
   - 'When DIR is low, Bn are inputs.'
   - 'When &#126;OE is high, An and Bn are in a high-impedance off state.'
+packages:
+  DIP:
+    - DIR
+    - A0
+    - A1
+    - A2
+    - A3
+    - A4
+    - A5
+    - A6
+    - A7
+    - GND
+    - B7
+    - B6
+    - B5
+    - B4
+    - B3
+    - B2
+    - B1
+    - B0
+    - '&#126;OE'
+    - Vcc

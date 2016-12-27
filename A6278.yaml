@@ -1,70 +1,54 @@
 description: 'Serial-input constant-current latched LED driver (8 outputs)'
-package: DIP
-pincount: '16'
 family: Allegro
 datasheet: 'http://www.allegromicro.com/en/Products/Part&#95;Numbers/6278/6278.pdf'
 pins:
-  -
-    num: '1'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '2'
-    sym: DATA
+  DATA:
     desc: 'serial data in'
-  -
-    num: '3'
-    sym: CLOCK
+  CLOCK:
     desc: 'clock input (low-to-high triggered)'
-  -
-    num: '4'
-    sym: LATCH
+  LATCH:
     desc: 'data strobe input (active high)'
-  -
-    num: '5'
-    sym: OUT0
+  OUT0:
     desc: 'current-sinking output'
-  -
-    num: '6'
-    sym: OUT1
+  OUT1:
     desc: 'current-sinking output'
-  -
-    num: '7'
-    sym: OUT2
+  OUT2:
     desc: 'current-sinking output'
-  -
-    num: '8'
-    sym: OUT3
+  OUT3:
     desc: 'current-sinking output'
-  -
-    num: '9'
-    sym: OUT4
+  OUT4:
     desc: 'current-sinking output'
-  -
-    num: '10'
-    sym: OUT5
+  OUT5:
     desc: 'current-sinking output'
-  -
-    num: '11'
-    sym: OUT6
+  OUT6:
     desc: 'current-sinking output'
-  -
-    num: '12'
-    sym: OUT7
+  OUT7:
     desc: 'current-sinking output'
-  -
-    num: '13'
-    sym: '&#126;OE'
+  '&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '14'
-    sym: 'DATA OUT'
+  'DATA OUT':
     desc: 'serial data out, for cascading'
-  -
-    num: '15'
-    sym: REXT
+  REXT:
     desc: 'external resistor to ground (sets output current)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
+packages:
+  DIP:
+    - GND
+    - DATA
+    - CLOCK
+    - LATCH
+    - OUT0
+    - OUT1
+    - OUT2
+    - OUT3
+    - OUT4
+    - OUT5
+    - OUT6
+    - OUT7
+    - '&#126;OE'
+    - 'DATA OUT'
+    - REXT
+    - Vcc

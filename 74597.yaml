@@ -1,72 +1,38 @@
 description: '8-bit shift register with input flip-flops'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc597.74hct597.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'parallel data input'
-  -
-    num: '2'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'parallel data input'
-  -
-    num: '3'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'parallel data input'
-  -
-    num: '4'
-    sym: 'D&#95;&#95;4'
+  'D&#95;&#95;4':
     desc: 'parallel data input'
-  -
-    num: '5'
-    sym: 'D&#95;&#95;5'
+  'D&#95;&#95;5':
     desc: 'parallel data input'
-  -
-    num: '6'
-    sym: 'D&#95;&#95;6'
+  'D&#95;&#95;6':
     desc: 'parallel data input'
-  -
-    num: '7'
-    sym: 'D&#95;&#95;7'
+  'D&#95;&#95;7':
     desc: 'parallel data input'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: Q
+  Q:
     desc: 'serial data output'
-  -
-    num: '10'
-    sym: '&#126;MR'
+  '&#126;MR':
     desc: 'asynchronous master reset (active low)'
-  -
-    num: '11'
-    sym: 'SH&#95;&#95;CP'
+  'SH&#95;&#95;CP':
     desc: 'shift clock input (low-to-high, edge-triggered)'
-  -
-    num: '12'
-    sym: 'ST&#95;&#95;CP'
+  'ST&#95;&#95;CP':
     desc: 'storage clock input (low-to-high, edge-triggered)'
-  -
-    num: '13'
-    sym: '&#126;PL'
+  '&#126;PL':
     desc: 'parallel load input (active low)'
-  -
-    num: '14'
-    sym: 'D&#95;&#95;S'
+  'D&#95;&#95;S':
     desc: 'serial data input'
-  -
-    num: '15'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'parallel data input'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -93,3 +59,21 @@ specs:
       - '96 (74HC)'
       - '83 (74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;4'
+    - 'D&#95;&#95;5'
+    - 'D&#95;&#95;6'
+    - 'D&#95;&#95;7'
+    - GND
+    - Q
+    - '&#126;MR'
+    - 'SH&#95;&#95;CP'
+    - 'ST&#95;&#95;CP'
+    - '&#126;PL'
+    - 'D&#95;&#95;S'
+    - 'D&#95;&#95;0'
+    - Vcc

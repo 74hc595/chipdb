@@ -1,66 +1,16 @@
 name: DS32kHz
 description: '32.768kHz temperature-compensated crystal oscillator'
-package: DIP
-pincount: '14'
 family: Maxim
 datasheet: 'http://datasheets.maxim-ic.com/en/ds/DS32kHz.pdf'
 pins:
-  -
-    num: '1'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '2'
-    sym: 'NOT&#95;PRESENT'
-    desc: 'no pin'
-  -
-    num: '3'
-    sym: 'NOT&#95;PRESENT'
-    desc: 'no pin'
-  -
-    num: '4'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '5'
-    sym: 'V&#95;&#95;BAT'
+  'V&#95;&#95;BAT':
     desc: '+3V nominal backup supply voltage'
-  -
-    num: '6'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '7'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '8'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '9'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '10'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '11'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '12'
-    sym: 32kHz
+  32kHz:
     desc: '32.768kHz push-pull output'
-  -
-    num: '13'
-    sym: Vcc
+  Vcc:
     desc: 'primary supply voltage'
-  -
-    num: '14'
-    sym: NC
-    desc: 'no connection'
 specs:
   -
     param: 'Frequency stability, 0&deg;C to +40&deg;C'
@@ -70,3 +20,19 @@ specs:
     param: 'Frequency stability, -40&deg;C to +85&deg;C'
     val: '&plusmn;7.5'
     unit: ppm
+packages:
+  DIP:
+    - NC
+    - 'NOT&#95;PRESENT'
+    - 'NOT&#95;PRESENT'
+    - GND
+    - 'V&#95;&#95;BAT'
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - 32kHz
+    - Vcc
+    - NC

@@ -1,70 +1,54 @@
 description: 'Synchronous 4-bit up/down binary/decade counter'
-package: DIP
-pincount: '16'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4029b.pdf'
 pins:
-  -
-    num: '1'
-    sym: PL
+  PL:
     desc: 'parallel load'
-  -
-    num: '2'
-    sym: Q3
+  Q3:
     desc: 'buffered parallel output'
-  -
-    num: '3'
-    sym: P3
+  P3:
     desc: 'parallel data input'
-  -
-    num: '4'
-    sym: P0
+  P0:
     desc: 'parallel data input'
-  -
-    num: '5'
-    sym: '&#126;CE'
+  '&#126;CE':
     desc: 'count enable (active low)'
-  -
-    num: '6'
-    sym: Q0
+  Q0:
     desc: 'buffered parallel output'
-  -
-    num: '7'
-    sym: '&#126;TC'
+  '&#126;TC':
     desc: 'terminal count output (active low)'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'BIN/&#126;DEC'
+  'BIN/&#126;DEC':
     desc: 'binary/decade control input'
-  -
-    num: '10'
-    sym: 'UP/&#126;DN'
+  'UP/&#126;DN':
     desc: 'up/down control input'
-  -
-    num: '11'
-    sym: Q1
+  Q1:
     desc: 'buffered parallel output'
-  -
-    num: '12'
-    sym: P1
+  P1:
     desc: 'parallel data input'
-  -
-    num: '13'
-    sym: P2
+  P2:
     desc: 'parallel data input'
-  -
-    num: '14'
-    sym: Q2
+  Q2:
     desc: 'buffered parallel output'
-  -
-    num: '15'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high edge-triggered)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
+packages:
+  DIP:
+    - PL
+    - Q3
+    - P3
+    - P0
+    - '&#126;CE'
+    - Q0
+    - '&#126;TC'
+    - GND
+    - 'BIN/&#126;DEC'
+    - 'UP/&#126;DN'
+    - Q1
+    - P1
+    - P2
+    - Q2
+    - CP
+    - Vcc

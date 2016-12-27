@@ -1,120 +1,62 @@
 description: '+3.3V to +5V quad 10-bit DAC'
-package: DIP
-pincount: '28'
 family: 'Analog Devices'
 datasheet: 'http://www.analog.com/static/imported-files/data&#95;sheets/AD7804&#95;7805&#95;7808&#95;7809.pdf'
 pins:
-  -
-    num: '1'
-    sym: AGND
+  AGND:
     desc: 'analog ground'
-  -
-    num: '2'
-    sym: 'V&#95;&#95;OUT B'
+  'V&#95;&#95;OUT B':
     desc: 'analog output voltage'
-  -
-    num: '3'
-    sym: 'V&#95;&#95;OUT A'
+  'V&#95;&#95;OUT A':
     desc: 'analog output voltage'
-  -
-    num: '4'
-    sym: REFOUT
+  REFOUT:
     desc: 'reference output (typically 1.23V)'
-  -
-    num: '5'
-    sym: DB9
+  DB9:
     desc: 'parallel data input'
-  -
-    num: '6'
-    sym: DB8
+  DB8:
     desc: 'parallel data input'
-  -
-    num: '7'
-    sym: DB7
+  DB7:
     desc: 'parallel data input'
-  -
-    num: '8'
-    sym: DB6
+  DB6:
     desc: 'parallel data input'
-  -
-    num: '9'
-    sym: DB5
+  DB5:
     desc: 'parallel data input'
-  -
-    num: '10'
-    sym: DB4
+  DB4:
     desc: 'parallel data input'
-  -
-    num: '11'
-    sym: '&#126;LDAC'
+  '&#126;LDAC':
     desc: 'DAC register update (active low)'
-  -
-    num: '12'
-    sym: DB3
+  DB3:
     desc: 'parallel data input'
-  -
-    num: '13'
-    sym: DB2
+  DB2:
     desc: 'parallel data input'
-  -
-    num: '14'
-    sym: DGND
+  DGND:
     desc: 'digital ground'
-  -
-    num: '15'
-    sym: 'DV&#95;&#95;DD'
+  'DV&#95;&#95;DD':
     desc: 'digital power supply'
-  -
-    num: '16'
-    sym: '&#126;WR'
+  '&#126;WR':
     desc: 'write to data register (active low)'
-  -
-    num: '17'
-    sym: '&#126;CS'
+  '&#126;CS':
     desc: 'chip select (active low)'
-  -
-    num: '18'
-    sym: '&#126;CLR'
+  '&#126;CLR':
     desc: 'asynchronous clear (active low)'
-  -
-    num: '19'
-    sym: DB1
+  DB1:
     desc: 'parallel data input'
-  -
-    num: '20'
-    sym: DB0
+  DB0:
     desc: 'parallel data input'
-  -
-    num: '21'
-    sym: A1
+  A1:
     desc: 'DAC address input'
-  -
-    num: '22'
-    sym: A0
+  A0:
     desc: 'DAC address input'
-  -
-    num: '23'
-    sym: MODE
+  MODE:
     desc: 'mode input'
-  -
-    num: '24'
-    sym: REFIN
+  REFIN:
     desc: 'external reference input'
-  -
-    num: '25'
-    sym: COMP
+  COMP:
     desc: 'compensation pin'
-  -
-    num: '26'
-    sym: 'V&#95;&#95;OUT D'
+  'V&#95;&#95;OUT D':
     desc: 'analog output voltge'
-  -
-    num: '27'
-    sym: 'V&#95;&#95;OUT C'
+  'V&#95;&#95;OUT C':
     desc: 'analog output voltage'
-  -
-    num: '28'
-    sym: 'AV&#95;&#95;DD'
+  'AV&#95;&#95;DD':
     desc: 'analog power supply'
 specs:
   -
@@ -136,3 +78,33 @@ specs:
   -
     param: 'Output voltage range, offset binary coding'
     val: 'Vbias/16 to 31/16*Vbias'
+packages:
+  DIP:
+    - AGND
+    - 'V&#95;&#95;OUT B'
+    - 'V&#95;&#95;OUT A'
+    - REFOUT
+    - DB9
+    - DB8
+    - DB7
+    - DB6
+    - DB5
+    - DB4
+    - '&#126;LDAC'
+    - DB3
+    - DB2
+    - DGND
+    - 'DV&#95;&#95;DD'
+    - '&#126;WR'
+    - '&#126;CS'
+    - '&#126;CLR'
+    - DB1
+    - DB0
+    - A1
+    - A0
+    - MODE
+    - REFIN
+    - COMP
+    - 'V&#95;&#95;OUT D'
+    - 'V&#95;&#95;OUT C'
+    - 'AV&#95;&#95;DD'

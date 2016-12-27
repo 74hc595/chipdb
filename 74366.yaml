@@ -1,72 +1,38 @@
 description: 'Hex buffer/line driver; 3-state; inverting'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc366.74hct366.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;OE&#126;&#95;&#95;1'
+  '&#126;OE&#126;&#95;&#95;1':
     desc: 'output enable (active low)'
-  -
-    num: '2'
-    sym: 1A
+  1A:
     desc: 'data input'
-  -
-    num: '3'
-    sym: 1Y
+  1Y:
     desc: 'bus output'
-  -
-    num: '4'
-    sym: 2A
+  2A:
     desc: 'data input'
-  -
-    num: '5'
-    sym: 2Y
+  2Y:
     desc: 'bus output'
-  -
-    num: '6'
-    sym: 3A
+  3A:
     desc: 'data input'
-  -
-    num: '7'
-    sym: 3Y
+  3Y:
     desc: 'bus output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 4Y
+  4Y:
     desc: 'bus output'
-  -
-    num: '10'
-    sym: 4A
+  4A:
     desc: 'data input'
-  -
-    num: '11'
-    sym: 5Y
+  5Y:
     desc: 'bus output'
-  -
-    num: '12'
-    sym: 5A
+  5A:
     desc: 'data input'
-  -
-    num: '13'
-    sym: 6Y
+  6Y:
     desc: 'bus output'
-  -
-    num: '14'
-    sym: 6A
+  6A:
     desc: 'data input'
-  -
-    num: '15'
-    sym: '&#126;OE&#126;&#95;&#95;2'
+  '&#126;OE&#126;&#95;&#95;2':
     desc: 'output enable (active low)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -77,3 +43,21 @@ specs:
     unit: ns
 notes:
   - 'Setting &#126;OE&#126;&#95;&#95;1 or &#126;OE&#126;&#95;&#95;2 high causes the outputs to assume a high-impedance off state.'
+packages:
+  DIP:
+    - '&#126;OE&#126;&#95;&#95;1'
+    - 1A
+    - 1Y
+    - 2A
+    - 2Y
+    - 3A
+    - 3Y
+    - GND
+    - 4Y
+    - 4A
+    - 5Y
+    - 5A
+    - 6Y
+    - 6A
+    - '&#126;OE&#126;&#95;&#95;2'
+    - Vcc

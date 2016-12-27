@@ -2,74 +2,58 @@ description: 'BCD-to-decimal decoder/Nixie tube driver'
 aliases:
   - '7441'
   - K155ID1
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://pdf1.alldatasheet.com/datasheet-pdf/view/115763/TI/SN74141/datasheet.pdf'
 pins:
-  -
-    num: '1'
-    sym: '8'
+  8:
     desc: 'output 8'
-  -
-    num: '2'
-    sym: '9'
+  9:
     desc: 'output 9'
-  -
-    num: '3'
-    sym: A
+  A:
     desc: 'BCD input'
-  -
-    num: '4'
-    sym: D
+  D:
     desc: 'BCD input'
-  -
-    num: '5'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
-  -
-    num: '6'
-    sym: B
+  B:
     desc: 'BCD input'
-  -
-    num: '7'
-    sym: C
+  C:
     desc: 'BCD input'
-  -
-    num: '8'
-    sym: '2'
+  2:
     desc: 'output 2'
-  -
-    num: '9'
-    sym: '3'
+  3:
     desc: 'output 3'
-  -
-    num: '10'
-    sym: '7'
+  7:
     desc: 'output 7'
-  -
-    num: '11'
-    sym: '6'
+  6:
     desc: 'output 6'
-  -
-    num: '12'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '13'
-    sym: '4'
+  4:
     desc: 'output 4'
-  -
-    num: '14'
-    sym: '5'
+  5:
     desc: 'output 5'
-  -
-    num: '15'
-    sym: '1'
+  1:
     desc: 'output 1'
-  -
-    num: '16'
-    sym: '0'
+  0:
     desc: 'output 0'
 notes:
   - 'For binary inputs 10 through 15, behavior is manufacturer-specific. 7441s may enable one or more output. 74141s and K155ID1s will turn all outputs off, but the connected tube may not blank.'
+packages:
+  DIP:
+    - '8'
+    - '9'
+    - A
+    - D
+    - Vcc
+    - B
+    - C
+    - '2'
+    - '3'
+    - '7'
+    - '6'
+    - GND
+    - '4'
+    - '5'
+    - '1'
+    - '0'

@@ -1,64 +1,34 @@
 description: 'Dual AND-OR gate'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc58.pdf'
 pins:
-  -
-    num: '1'
-    sym: 1A
+  1A:
     desc: 'data input'
-  -
-    num: '2'
-    sym: 2A
+  2A:
     desc: 'data input'
-  -
-    num: '3'
-    sym: 2B
+  2B:
     desc: 'data input'
-  -
-    num: '4'
-    sym: 2C
+  2C:
     desc: 'data input'
-  -
-    num: '5'
-    sym: 2D
+  2D:
     desc: 'data input'
-  -
-    num: '6'
-    sym: 2Y
+  2Y:
     desc: 'data output (2A &CenterDot; 2B) + (2C &CenterDot; 2D)'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: 1Y
+  1Y:
     desc: 'data output (1A &CenterDot; 1B &CenterDot; 1C) + (1D &CenterDot; 1E &CenterDot; 1F)'
-  -
-    num: '9'
-    sym: 1D
+  1D:
     desc: 'data input'
-  -
-    num: '10'
-    sym: 1E
+  1E:
     desc: 'data input'
-  -
-    num: '11'
-    sym: 1F
+  1F:
     desc: 'data input'
-  -
-    num: '12'
-    sym: 1B
+  1B:
     desc: 'data input'
-  -
-    num: '13'
-    sym: 1C
+  1C:
     desc: 'data input'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -69,3 +39,19 @@ specs:
     param: 'Propagation delay, 2n to 2Y'
     val: '9 (74HC)'
     unit: ns
+packages:
+  DIP:
+    - 1A
+    - 2A
+    - 2B
+    - 2C
+    - 2D
+    - 2Y
+    - GND
+    - 1Y
+    - 1D
+    - 1E
+    - 1F
+    - 1B
+    - 1C
+    - Vcc

@@ -1,41 +1,23 @@
 name: ATtiny13
 description: '8-bit AVR&reg; microcontroller'
-package: DIP
-pincount: '8'
 family: Atmel
 datasheet: 'http://www.atmel.com/dyn/resources/prod&#95;documents/doc2535.pdf'
 pins:
-  -
-    num: '1'
-    sym: '(PCINT5/&#126;RESET&#126;/ADC0/dW) PB5'
+  '(PCINT5/&#126;RESET&#126;/ADC0/dW) PB5':
     desc: 'reset (active low); port B'
-  -
-    num: '2'
-    sym: '(PCINT3/CLKI/ADC3) PB3'
+  '(PCINT3/CLKI/ADC3) PB3':
     desc: 'external clock input; port B'
-  -
-    num: '3'
-    sym: '(PCINT4/ADC2) PB4'
+  '(PCINT4/ADC2) PB4':
     desc: 'port B'
-  -
-    num: '4'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '5'
-    sym: 'PB0 (MOSI/AIN0/OC0A/PCINT0)'
+  'PB0 (MOSI/AIN0/OC0A/PCINT0)':
     desc: 'SPI master output/slave input; port B'
-  -
-    num: '6'
-    sym: 'PB1 (MISO/AIN1/OC0B/INT0/PCINT1)'
+  'PB1 (MISO/AIN1/OC0B/INT0/PCINT1)':
     desc: 'SPI master input/slave output; port B'
-  -
-    num: '7'
-    sym: 'PB2 (SCK/ADC1/T0/PCINT2)'
+  'PB2 (SCK/ADC1/T0/PCINT2)':
     desc: 'SPI master clock; port B'
-  -
-    num: '8'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -57,3 +39,13 @@ specs:
     param: 'Maximum clock frequency'
     val: '10'
     unit: MHz
+packages:
+  DIP:
+    - '(PCINT5/&#126;RESET&#126;/ADC0/dW) PB5'
+    - '(PCINT3/CLKI/ADC3) PB3'
+    - '(PCINT4/ADC2) PB4'
+    - GND
+    - 'PB0 (MOSI/AIN0/OC0A/PCINT0)'
+    - 'PB1 (MISO/AIN1/OC0B/INT0/PCINT1)'
+    - 'PB2 (SCK/ADC1/T0/PCINT2)'
+    - Vcc

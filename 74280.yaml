@@ -1,64 +1,32 @@
 description: '9-bit odd/even parity generator/checker'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc280.74hct280.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'I&#95;&#95;6'
+  'I&#95;&#95;6':
     desc: 'data input'
-  -
-    num: '2'
-    sym: 'I&#95;&#95;7'
+  'I&#95;&#95;7':
     desc: 'data input'
-  -
-    num: '3'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '4'
-    sym: 'I&#95;&#95;8'
+  'I&#95;&#95;8':
     desc: 'data input'
-  -
-    num: '5'
-    sym: '&Sigma;&#95;&#95;E'
+  '&Sigma;&#95;&#95;E':
     desc: 'even parity output'
-  -
-    num: '6'
-    sym: '&Sigma;&#95;&#95;O'
+  '&Sigma;&#95;&#95;O':
     desc: 'odd parity output'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: 'I&#95;&#95;0'
+  'I&#95;&#95;0':
     desc: 'data input'
-  -
-    num: '9'
-    sym: 'I&#95;&#95;1'
+  'I&#95;&#95;1':
     desc: 'data input'
-  -
-    num: '10'
-    sym: 'I&#95;&#95;2'
+  'I&#95;&#95;2':
     desc: 'data input'
-  -
-    num: '11'
-    sym: 'I&#95;&#95;3'
+  'I&#95;&#95;3':
     desc: 'data input'
-  -
-    num: '12'
-    sym: 'I&#95;&#95;4'
+  'I&#95;&#95;4':
     desc: 'data input'
-  -
-    num: '13'
-    sym: 'I&#95;&#95;5'
+  'I&#95;&#95;5':
     desc: 'data input'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -73,3 +41,19 @@ specs:
       - '20 (74HC)'
       - '22 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - 'I&#95;&#95;6'
+    - 'I&#95;&#95;7'
+    - NC
+    - 'I&#95;&#95;8'
+    - '&Sigma;&#95;&#95;E'
+    - '&Sigma;&#95;&#95;O'
+    - GND
+    - 'I&#95;&#95;0'
+    - 'I&#95;&#95;1'
+    - 'I&#95;&#95;2'
+    - 'I&#95;&#95;3'
+    - 'I&#95;&#95;4'
+    - 'I&#95;&#95;5'
+    - Vcc

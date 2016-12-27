@@ -1,72 +1,38 @@
 description: '8-bit parallel-in/serial-out shift register'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc165.74hct165.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;PL'
+  '&#126;PL':
     desc: 'asynchronous parallel load input (active low)'
-  -
-    num: '2'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '3'
-    sym: D4
+  D4:
     desc: 'parallel data input'
-  -
-    num: '4'
-    sym: D5
+  D5:
     desc: 'parallel data input'
-  -
-    num: '5'
-    sym: D6
+  D6:
     desc: 'parallel data input'
-  -
-    num: '6'
-    sym: D7
+  D7:
     desc: 'parallel data input'
-  -
-    num: '7'
-    sym: '&#126;Q&#126;7'
+  '&#126;Q&#126;7':
     desc: 'complementary output from the last stage'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: Q7
+  Q7:
     desc: 'serial output from the last stage'
-  -
-    num: '10'
-    sym: DS
+  DS:
     desc: 'serial data input'
-  -
-    num: '11'
-    sym: D0
+  D0:
     desc: 'parallel data input'
-  -
-    num: '12'
-    sym: D1
+  D1:
     desc: 'parallel data input'
-  -
-    num: '13'
-    sym: D2
+  D2:
     desc: 'parallel data input'
-  -
-    num: '14'
-    sym: D3
+  D3:
     desc: 'parallel data input'
-  -
-    num: '15'
-    sym: '&#126;CE'
+  '&#126;CE':
     desc: 'clock enable input (active low)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -96,3 +62,21 @@ specs:
 notes:
   - 'The low-to-high transition of input &#126;CE should only take place while CP is high for predictable operation.'
   - 'Either CP or &#126;CE should be high before the low-to-high transition of &#126;PL to prevent shifting the data when &#126;PL is activated.'
+packages:
+  DIP:
+    - '&#126;PL'
+    - CP
+    - D4
+    - D5
+    - D6
+    - D7
+    - '&#126;Q&#126;7'
+    - GND
+    - Q7
+    - DS
+    - D0
+    - D1
+    - D2
+    - D3
+    - '&#126;CE'
+    - Vcc

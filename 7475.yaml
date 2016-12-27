@@ -1,75 +1,59 @@
 description: 'Quad bistable transparent latch'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.nxp.com/acrobat&#95;download/datasheets/74HC75&#95;3.pdf'
 pins:
-  -
-    num: '1'
-    sym: '1&#126;Q'
+  '1&#126;Q':
     desc: 'complementary latch output 1'
-  -
-    num: '2'
-    sym: 1D
+  1D:
     desc: 'data input 1'
-  -
-    num: '3'
-    sym: 2D
+  2D:
     desc: 'data input 2'
-  -
-    num: '4'
-    sym: LE34
+  LE34:
     desc: 'latch enable input for latches 3 and 4'
-  -
-    num: '5'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
-  -
-    num: '6'
-    sym: 3D
+  3D:
     desc: 'data input 3'
-  -
-    num: '7'
-    sym: 4D
+  4D:
     desc: 'data input 4'
-  -
-    num: '8'
-    sym: '4&#126;Q'
+  '4&#126;Q':
     desc: 'complementary latch output 4'
-  -
-    num: '9'
-    sym: 4Q
+  4Q:
     desc: 'latch output 4'
-  -
-    num: '10'
-    sym: 3Q
+  3Q:
     desc: 'latch output 3'
-  -
-    num: '11'
-    sym: '3&#126;Q'
+  '3&#126;Q':
     desc: 'complementary latch output 3'
-  -
-    num: '12'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '13'
-    sym: LE12
+  LE12:
     desc: 'latch enable input for latches 1 and 2'
-  -
-    num: '14'
-    sym: '2&#126;Q'
+  '2&#126;Q':
     desc: 'complementary latch output 2'
-  -
-    num: '15'
-    sym: 2Q
+  2Q:
     desc: 'latch output 2'
-  -
-    num: '16'
-    sym: 1Q
+  1Q:
     desc: 'latch output 1'
 specs:
   -
     param: 'Propagation delay'
     val: '11 (74HC)'
     unit: ns
+packages:
+  DIP:
+    - '1&#126;Q'
+    - 1D
+    - 2D
+    - LE34
+    - Vcc
+    - 3D
+    - 4D
+    - '4&#126;Q'
+    - 4Q
+    - 3Q
+    - '3&#126;Q'
+    - GND
+    - LE12
+    - '2&#126;Q'
+    - 2Q
+    - 1Q

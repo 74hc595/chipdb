@@ -1,72 +1,38 @@
 description: '3-to-8 line decoder/demultiplexer; non-inverting'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc238.74hct238.pdf'
 pins:
-  -
-    num: '1'
-    sym: A0
+  A0:
     desc: 'data input 0'
-  -
-    num: '2'
-    sym: A1
+  A1:
     desc: 'data input 1'
-  -
-    num: '3'
-    sym: A2
+  A2:
     desc: 'data input 2'
-  -
-    num: '4'
-    sym: '&#126;E&#126;1'
+  '&#126;E&#126;1':
     desc: 'enable input 1 (active low)'
-  -
-    num: '5'
-    sym: '&#126;E&#126;2'
+  '&#126;E&#126;2':
     desc: 'enable input 2 (active low)'
-  -
-    num: '6'
-    sym: E3
+  E3:
     desc: 'enable input 3 (active high)'
-  -
-    num: '7'
-    sym: Y7
+  Y7:
     desc: 'output 7'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: Y6
+  Y6:
     desc: 'output 6'
-  -
-    num: '10'
-    sym: Y5
+  Y5:
     desc: 'output 5'
-  -
-    num: '11'
-    sym: Y4
+  Y4:
     desc: 'output 4'
-  -
-    num: '12'
-    sym: Y3
+  Y3:
     desc: 'output 3'
-  -
-    num: '13'
-    sym: Y2
+  Y2:
     desc: 'output 2'
-  -
-    num: '14'
-    sym: Y1
+  Y1:
     desc: 'output 1'
-  -
-    num: '15'
-    sym: Y0
+  Y0:
     desc: 'output 0'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -87,3 +53,21 @@ specs:
       - '17 (74HC)'
       - '21 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - A0
+    - A1
+    - A2
+    - '&#126;E&#126;1'
+    - '&#126;E&#126;2'
+    - E3
+    - Y7
+    - GND
+    - Y6
+    - Y5
+    - Y4
+    - Y3
+    - Y2
+    - Y1
+    - Y0
+    - Vcc

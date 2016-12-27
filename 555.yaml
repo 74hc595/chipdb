@@ -1,39 +1,21 @@
 description: Timer
-package: DIP
-pincount: '8'
 datasheet: 'http://www.datasheetcatalog.org/datasheet/philips/NE&#95;SA&#95;SE555&#95;C&#95;2.pdf'
 pins:
-  -
-    num: '1'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '2'
-    sym: TRIG
+  TRIG:
     desc: trigger
-  -
-    num: '3'
-    sym: OUT
+  OUT:
     desc: output
-  -
-    num: '4'
-    sym: '&#126;RESET'
+  '&#126;RESET':
     desc: 'reset (active low)'
-  -
-    num: '5'
-    sym: CV
+  CV:
     desc: 'control voltage'
-  -
-    num: '6'
-    sym: THR
+  THR:
     desc: threshold
-  -
-    num: '7'
-    sym: DIS
+  DIS:
     desc: discharge
-  -
-    num: '8'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -53,3 +35,13 @@ notes:
   - 'In astable mode, frequency = 1/(0.693*C*(R1+2*R2))'
   - 'In astable mode, pulse high time = 0.693*(R1+R2)*C'
   - 'In astable mode, pulse low time = 0.693*R2*C'
+packages:
+  DIP:
+    - GND
+    - TRIG
+    - OUT
+    - '&#126;RESET'
+    - CV
+    - THR
+    - DIS
+    - Vcc

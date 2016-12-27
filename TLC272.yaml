@@ -1,42 +1,24 @@
 name: TLC272
 description: 'Precision JFET-input low-offset dual operation amplifier'
 aliases: {  }
-package: DIP
-pincount: '8'
 family: opamps
 datasheet: 'http://www.hep.upenn.edu/SNO/daq/parts/tlc272.pdf'
 pins:
-  -
-    num: '1'
-    sym: 1OUT
+  1OUT:
     desc: 'First opamp output'
-  -
-    num: '2'
-    sym: 1IN-
+  1IN-:
     desc: 'First opamp inverting input'
-  -
-    num: '3'
-    sym: 1IN+
+  1IN+:
     desc: 'First opamp non-inverting input'
-  -
-    num: '4'
-    sym: GND
+  GND:
     desc: Ground
-  -
-    num: '5'
-    sym: 2IN+
+  2IN+:
     desc: 'Second opamp non-inverting input'
-  -
-    num: '6'
-    sym: 2IN-
+  2IN-:
     desc: 'Second opamp inverting input'
-  -
-    num: '7'
-    sym: 2OUT
+  2OUT:
     desc: 'Second opamp output'
-  -
-    num: '8'
-    sym: 'V&#95;&#95;DD'
+  'V&#95;&#95;DD':
     desc: 'Supply voltage'
 specs:
   -
@@ -58,3 +40,13 @@ specs:
 notes:
   - 'Pinout LM358 compatible'
   - 'Designed for high-impedance measurement applications'
+packages:
+  DIP:
+    - 1OUT
+    - 1IN-
+    - 1IN+
+    - GND
+    - 2IN+
+    - 2IN-
+    - 2OUT
+    - 'V&#95;&#95;DD'

@@ -1,72 +1,38 @@
 description: 'Dual non-retriggerable monostable multivibrator with reset'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc221.74hct221.pdf'
 pins:
-  -
-    num: '1'
-    sym: '1&#126;A'
+  '1&#126;A':
     desc: 'negative-edge triggered input 1'
-  -
-    num: '2'
-    sym: 1B
+  1B:
     desc: 'positive-edge triggered input 1'
-  -
-    num: '3'
-    sym: '1&#126;R&#126;D'
+  '1&#126;R&#126;D':
     desc: 'direct reset (low) and positive-edge triggered input 1'
-  -
-    num: '4'
-    sym: '1&#126;Q'
+  '1&#126;Q':
     desc: 'active low output 1'
-  -
-    num: '5'
-    sym: 2Q
+  2Q:
     desc: 'active high output 2'
-  -
-    num: '6'
-    sym: 2CEXT
+  2CEXT:
     desc: 'external capacitor connection 2'
-  -
-    num: '7'
-    sym: 2REXT/CEXT
+  2REXT/CEXT:
     desc: 'external resistor and capacitor connection 2'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '2&#126;A'
+  '2&#126;A':
     desc: 'negative-edge triggered input 2'
-  -
-    num: '10'
-    sym: 2B
+  2B:
     desc: 'positive-edge triggered input 2'
-  -
-    num: '11'
-    sym: '2&#126;R&#126;D'
+  '2&#126;R&#126;D':
     desc: 'direct reset (low) and positive-edge triggered input 2'
-  -
-    num: '12'
-    sym: '2&#126;Q'
+  '2&#126;Q':
     desc: 'active low output 2'
-  -
-    num: '13'
-    sym: 1Q
+  1Q:
     desc: 'active high output 1'
-  -
-    num: '14'
-    sym: 1CEXT
+  1CEXT:
     desc: 'external capacitor connection 1'
-  -
-    num: '15'
-    sym: 1REXT/CEXT
+  1REXT/CEXT:
     desc: 'external resistor and capacitor connection 1'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -87,3 +53,21 @@ specs:
       - '2 (min)'
       - '1000 (max)'
     unit: 'k&Omega;'
+packages:
+  DIP:
+    - '1&#126;A'
+    - 1B
+    - '1&#126;R&#126;D'
+    - '1&#126;Q'
+    - 2Q
+    - 2CEXT
+    - 2REXT/CEXT
+    - GND
+    - '2&#126;A'
+    - 2B
+    - '2&#126;R&#126;D'
+    - '2&#126;Q'
+    - 1Q
+    - 1CEXT
+    - 1REXT/CEXT
+    - Vcc

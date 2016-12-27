@@ -1,75 +1,59 @@
 description: '4 by 4 register file; 3-state'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc670.74hct670.pdf'
 pins:
-  -
-    num: '1'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'data input'
-  -
-    num: '2'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'data input'
-  -
-    num: '3'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'data input'
-  -
-    num: '4'
-    sym: 'R&#95;&#95;B'
+  'R&#95;&#95;B':
     desc: 'read address input'
-  -
-    num: '5'
-    sym: 'R&#95;&#95;A'
+  'R&#95;&#95;A':
     desc: 'read address input'
-  -
-    num: '6'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: 'data output'
-  -
-    num: '7'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: 'data output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: 'data output'
-  -
-    num: '10'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: 'data output'
-  -
-    num: '11'
-    sym: '&#126;RE'
+  '&#126;RE':
     desc: '3-state output read enable (active low)'
-  -
-    num: '12'
-    sym: '&#126;WE'
+  '&#126;WE':
     desc: 'write enable (active low)'
-  -
-    num: '13'
-    sym: 'W&#95;&#95;B'
+  'W&#95;&#95;B':
     desc: 'write address input'
-  -
-    num: '14'
-    sym: 'W&#95;&#95;A'
+  'W&#95;&#95;A':
     desc: 'write address input'
-  -
-    num: '15'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'data input'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
     param: 'Propagation delay, D&#95;&#95;n to Q&#95;&#95;n'
     val: '23 (74HC/HCT]'
     unit: ns
+packages:
+  DIP:
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'R&#95;&#95;B'
+    - 'R&#95;&#95;A'
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;2'
+    - GND
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - '&#126;RE'
+    - '&#126;WE'
+    - 'W&#95;&#95;B'
+    - 'W&#95;&#95;A'
+    - 'D&#95;&#95;0'
+    - Vcc

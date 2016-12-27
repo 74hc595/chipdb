@@ -1,64 +1,18 @@
 description: '2.5W audio power amplifier'
-package: DIP
-pincount: '14'
 family: linear
 datasheet: 'http://www.national.com/ds/LM/LM380.pdf'
 pins:
-  -
-    num: '1'
-    sym: BYPASS
+  BYPASS:
     desc: bypass
-  -
-    num: '2'
-    sym: IN+
+  IN+:
     desc: 'non-inverting input'
-  -
-    num: '3'
-    sym: GND
+  GND:
     desc: 'ground (heat sink)'
-  -
-    num: '4'
-    sym: GND
-    desc: 'ground (heat sink)'
-  -
-    num: '5'
-    sym: GND
-    desc: 'ground (heat sink)'
-  -
-    num: '6'
-    sym: IN-
+  IN-:
     desc: 'inverting input'
-  -
-    num: '7'
-    sym: GND
-    desc: ground
-  -
-    num: '8'
-    sym: OUT
+  OUT:
     desc: output
-  -
-    num: '9'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '10'
-    sym: GND
-    desc: 'ground (heat sink)'
-  -
-    num: '11'
-    sym: GND
-    desc: 'ground (heat sink)'
-  -
-    num: '12'
-    sym: GND
-    desc: 'ground (heat sink)'
-  -
-    num: '13'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -93,3 +47,19 @@ specs:
     param: 'Input impedance'
     val: '150'
     unit: 'k&Omega;'
+packages:
+  DIP:
+    - BYPASS
+    - IN+
+    - GND
+    - GND
+    - GND
+    - IN-
+    - GND
+    - OUT
+    - NC
+    - GND
+    - GND
+    - GND
+    - NC
+    - Vcc

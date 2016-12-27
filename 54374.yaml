@@ -1,88 +1,46 @@
 description: 'Octal D-type edge-triggered flip-flops with 3-state outputs'
-package: DIP
-pincount: '20'
 family: '5400'
 datasheet: 'http://www.alldatasheet.com/datasheet-pdf/pdf/27731/TI/SN54ALS374A.html'
 pins:
-  -
-    num: '1'
-    sym: '&#126;OE'
+  '&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '2'
-    sym: 1Q
+  1Q:
     desc: 'flip-flop output'
-  -
-    num: '3'
-    sym: 1D
+  1D:
     desc: 'data input'
-  -
-    num: '4'
-    sym: 2D
+  2D:
     desc: 'data input'
-  -
-    num: '5'
-    sym: 2Q
+  2Q:
     desc: 'flip-flop output'
-  -
-    num: '6'
-    sym: 3Q
+  3Q:
     desc: 'flip-flop output'
-  -
-    num: '7'
-    sym: 3D
+  3D:
     desc: 'data input'
-  -
-    num: '8'
-    sym: 4D
+  4D:
     desc: 'data input'
-  -
-    num: '9'
-    sym: 4Q
+  4Q:
     desc: 'flip-flop output'
-  -
-    num: '10'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '11'
-    sym: CLK
+  CLK:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '12'
-    sym: 5Q
+  5Q:
     desc: 'flip-flop output'
-  -
-    num: '13'
-    sym: 5D
+  5D:
     desc: 'data input'
-  -
-    num: '14'
-    sym: 6D
+  6D:
     desc: 'data input'
-  -
-    num: '15'
-    sym: 6Q
+  6Q:
     desc: 'flip-flop output'
-  -
-    num: '16'
-    sym: 7Q
+  7Q:
     desc: 'flip-flop output'
-  -
-    num: '17'
-    sym: 7D
+  7D:
     desc: 'data input'
-  -
-    num: '18'
-    sym: D8D7
+  D8D7:
     desc: 'data input'
-  -
-    num: '19'
-    sym: 8Q
+  8Q:
     desc: 'flip-flop output'
-  -
-    num: '20'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -132,3 +90,25 @@ specs:
 notes:
   - '&#126;OE does not affect internal operations of the flip-flops. Old data can be retained or new data can be entered while the outputs are in the high-impedance state'
   - 'released april 1982, revised november 1999'
+packages:
+  DIP:
+    - '&#126;OE'
+    - 1Q
+    - 1D
+    - 2D
+    - 2Q
+    - 3Q
+    - 3D
+    - 4D
+    - 4Q
+    - GND
+    - CLK
+    - 5Q
+    - 5D
+    - 6D
+    - 6Q
+    - 7Q
+    - 7D
+    - D8D7
+    - 8Q
+    - Vcc

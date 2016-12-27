@@ -1,64 +1,34 @@
 description: 'Quad buffer/line driver with active low output enable; 3-state'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc125.74hct125.pdf'
 pins:
-  -
-    num: '1'
-    sym: '1&#126;OE'
+  '1&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '2'
-    sym: 1A
+  1A:
     desc: 'data input'
-  -
-    num: '3'
-    sym: 1Y
+  1Y:
     desc: 'data output'
-  -
-    num: '4'
-    sym: '2&#126;OE'
+  '2&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '5'
-    sym: 2A
+  2A:
     desc: 'data input'
-  -
-    num: '6'
-    sym: 2Y
+  2Y:
     desc: 'data output'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: 3Y
+  3Y:
     desc: 'data output'
-  -
-    num: '9'
-    sym: 3A
+  3A:
     desc: 'data input'
-  -
-    num: '10'
-    sym: '3&#126;OE'
+  '3&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '11'
-    sym: 4Y
+  4Y:
     desc: 'data output'
-  -
-    num: '12'
-    sym: 4A
+  4A:
     desc: 'data input'
-  -
-    num: '13'
-    sym: '4&#126;OE'
+  '4&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -67,3 +37,19 @@ specs:
       - '9 (74HC)'
       - '12 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - '1&#126;OE'
+    - 1A
+    - 1Y
+    - '2&#126;OE'
+    - 2A
+    - 2Y
+    - GND
+    - 3Y
+    - 3A
+    - '3&#126;OE'
+    - 4Y
+    - 4A
+    - '4&#126;OE'
+    - Vcc

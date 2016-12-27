@@ -1,64 +1,34 @@
 description: 'Quad 2-input NOR gate'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.nxp.com/acrobat&#95;download/datasheets/74HC&#95;HCT02&#95;3.pdf'
 pins:
-  -
-    num: '1'
-    sym: 1Y
+  1Y:
     desc: 'data output'
-  -
-    num: '2'
-    sym: 1A
+  1A:
     desc: 'data input'
-  -
-    num: '3'
-    sym: 1B
+  1B:
     desc: 'data input'
-  -
-    num: '4'
-    sym: 2Y
+  2Y:
     desc: 'data output'
-  -
-    num: '5'
-    sym: 2A
+  2A:
     desc: 'data input'
-  -
-    num: '6'
-    sym: 2B
+  2B:
     desc: 'data input'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: 3A
+  3A:
     desc: 'data input'
-  -
-    num: '9'
-    sym: 3B
+  3B:
     desc: 'data input'
-  -
-    num: '10'
-    sym: 3Y
+  3Y:
     desc: 'data output'
-  -
-    num: '11'
-    sym: 4A
+  4A:
     desc: 'data input'
-  -
-    num: '12'
-    sym: 4B
+  4B:
     desc: 'data input'
-  -
-    num: '13'
-    sym: 4Y
+  4Y:
     desc: 'data output'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -67,3 +37,19 @@ specs:
       - '7 (74HC)'
       - '9 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - 1Y
+    - 1A
+    - 1B
+    - 2Y
+    - 2A
+    - 2B
+    - GND
+    - 3A
+    - 3B
+    - 3Y
+    - 4A
+    - 4B
+    - 4Y
+    - Vcc

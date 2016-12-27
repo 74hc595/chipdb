@@ -1,72 +1,38 @@
 description: 'Quad D-type flip-flop; positive-edge trigger; 3-state'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc173.74hct173.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;OE&#126;&#95;&#95;1'
+  '&#126;OE&#126;&#95;&#95;1':
     desc: 'output enable input (active low)'
-  -
-    num: '2'
-    sym: '&#126;OE&#126;&#95;&#95;2'
+  '&#126;OE&#126;&#95;&#95;2':
     desc: 'output enable input (active low)'
-  -
-    num: '3'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: '3-state flip-flop output'
-  -
-    num: '4'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: '3-state flip-flop output'
-  -
-    num: '5'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: '3-state flip-flop output'
-  -
-    num: '6'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: '3-state flip-flop output'
-  -
-    num: '7'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '&#126;E&#126;&#95;&#95;1'
+  '&#126;E&#126;&#95;&#95;1':
     desc: 'data enable input (active low)'
-  -
-    num: '10'
-    sym: '&#126;E&#126;&#95;&#95;2'
+  '&#126;E&#126;&#95;&#95;2':
     desc: 'data enable input (active low)'
-  -
-    num: '11'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'data input'
-  -
-    num: '12'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'data input'
-  -
-    num: '13'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'data input'
-  -
-    num: '14'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'data input'
-  -
-    num: '15'
-    sym: MR
+  MR:
     desc: 'asynchronous master reset (active high)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -86,3 +52,21 @@ specs:
     unit: MHz
 notes:
   - 'When one or both &#126;OE&#126;&#95;&#95;n inputs are high, the outputs are forced to a high-impedance off state.'
+packages:
+  DIP:
+    - '&#126;OE&#126;&#95;&#95;1'
+    - '&#126;OE&#126;&#95;&#95;2'
+    - 'Q&#95;&#95;0'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;3'
+    - CP
+    - GND
+    - '&#126;E&#126;&#95;&#95;1'
+    - '&#126;E&#126;&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;0'
+    - MR
+    - Vcc

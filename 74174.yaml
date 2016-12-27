@@ -1,72 +1,38 @@
 description: 'Hex D-type flip-flop with reset; positive-edge trigger'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc174.74hct174.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;MR'
+  '&#126;MR':
     desc: 'asynchronous master reset (active low)'
-  -
-    num: '2'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: 'flip-flop output'
-  -
-    num: '3'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'data input'
-  -
-    num: '4'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'data input'
-  -
-    num: '5'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: 'flip-flop output'
-  -
-    num: '6'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'data input'
-  -
-    num: '7'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: 'flip-flop output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '10'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: 'flip-flop output'
-  -
-    num: '11'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'data input'
-  -
-    num: '12'
-    sym: 'Q&#95;&#95;4'
+  'Q&#95;&#95;4':
     desc: 'flip-flop output'
-  -
-    num: '13'
-    sym: 'D&#95;&#95;4'
+  'D&#95;&#95;4':
     desc: 'data input'
-  -
-    num: '14'
-    sym: 'D&#95;&#95;5'
+  'D&#95;&#95;5':
     desc: 'data input'
-  -
-    num: '15'
-    sym: 'Q&#95;&#95;5'
+  'Q&#95;&#95;5':
     desc: 'flip-flop output'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -87,3 +53,21 @@ specs:
       - '99 (74HC)'
       - '69 (74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - '&#126;MR'
+    - 'Q&#95;&#95;0'
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'Q&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'Q&#95;&#95;2'
+    - GND
+    - CP
+    - 'Q&#95;&#95;3'
+    - 'D&#95;&#95;3'
+    - 'Q&#95;&#95;4'
+    - 'D&#95;&#95;4'
+    - 'D&#95;&#95;5'
+    - 'Q&#95;&#95;5'
+    - Vcc

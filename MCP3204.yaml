@@ -1,66 +1,32 @@
 name: MCP3204
 description: '4-channel 12 bit SPI A/D converter'
 aliases: {  }
-package: DIP
-pincount: '14'
 family: microchip
 datasheet: 'http://ww1.microchip.com/downloads/en/devicedoc/21298c.pdf'
 pins:
-  -
-    num: '1'
-    sym: CH0
+  CH0:
     desc: 'Analog channel 0 input'
-  -
-    num: '2'
-    sym: CH1
+  CH1:
     desc: 'Analog channel 1 input'
-  -
-    num: '3'
-    sym: CH2
+  CH2:
     desc: 'Analog channel 2 input'
-  -
-    num: '4'
-    sym: CH3
+  CH3:
     desc: 'Analog channel 3 input'
-  -
-    num: '5'
-    sym: NC
-    desc: 'Not connected'
-  -
-    num: '6'
-    sym: NC
-    desc: 'Not connected'
-  -
-    num: '7'
-    sym: DGND
+  DGND:
     desc: 'Digital ground'
-  -
-    num: '8'
-    sym: '&#126;CS&#126;/SHDN'
+  '&#126;CS&#126;/SHDN':
     desc: 'Chip select / Shutdown'
-  -
-    num: '9'
-    sym: 'D&#95;&#95;IN'
+  'D&#95;&#95;IN':
     desc: 'Serial data input'
-  -
-    num: '10'
-    sym: 'D&#95;&#95;OUT'
+  'D&#95;&#95;OUT':
     desc: 'Serial data output'
-  -
-    num: '11'
-    sym: CLK
+  CLK:
     desc: 'SPI clock'
-  -
-    num: '12'
-    sym: AGND
+  AGND:
     desc: 'Analog ground'
-  -
-    num: '13'
-    sym: 'V&#95;&#95;REF'
+  'V&#95;&#95;REF':
     desc: 'Analog reference input voltage'
-  -
-    num: '14'
-    sym: 'V&#95;&#95;DD'
+  'V&#95;&#95;DD':
     desc: '+2.7 to 5.5 V power supply'
 specs:
   -
@@ -83,3 +49,19 @@ specs:
     unit: 'clock cycles'
 notes:
   - 'Also available as one-channel (MCP3201), two-channel (MCP3202) and eight-channel (MCP3208) version'
+packages:
+  DIP:
+    - CH0
+    - CH1
+    - CH2
+    - CH3
+    - NC
+    - NC
+    - DGND
+    - '&#126;CS&#126;/SHDN'
+    - 'D&#95;&#95;IN'
+    - 'D&#95;&#95;OUT'
+    - CLK
+    - AGND
+    - 'V&#95;&#95;REF'
+    - 'V&#95;&#95;DD'

@@ -2,66 +2,36 @@ description: 'Quad JFET-input operational amplifier'
 aliases:
   - TL064
   - TL074
-package: DIP
-pincount: '14'
 family: linear
 datasheet: 'http://focus.ti.com/lit/ds/symlink/tl081a.pdf'
 pins:
-  -
-    num: '1'
-    sym: 1OUT
+  1OUT:
     desc: 'output 1'
-  -
-    num: '2'
-    sym: 1IN-
+  1IN-:
     desc: 'inverting input 1'
-  -
-    num: '3'
-    sym: 1IN+
+  1IN+:
     desc: 'non-inverting input 1'
-  -
-    num: '4'
-    sym: 'V&#95;&#95;CC+'
+  'V&#95;&#95;CC+':
     desc: 'positive supply voltage'
-  -
-    num: '5'
-    sym: 2IN+
+  2IN+:
     desc: 'non-inverting input 2'
-  -
-    num: '6'
-    sym: 2IN-
+  2IN-:
     desc: 'inverting input 2'
-  -
-    num: '7'
-    sym: 2OUT
+  2OUT:
     desc: 'output 2'
-  -
-    num: '8'
-    sym: 3OUT
+  3OUT:
     desc: 'output 3'
-  -
-    num: '9'
-    sym: 3IN-
+  3IN-:
     desc: 'inverting input 3'
-  -
-    num: '10'
-    sym: 3IN+
+  3IN+:
     desc: 'non-inverting input 3'
-  -
-    num: '11'
-    sym: 'V&#95;&#95;CC-'
+  'V&#95;&#95;CC-':
     desc: 'negative supply voltage'
-  -
-    num: '12'
-    sym: 4IN+
+  4IN+:
     desc: 'non-inverting input 4'
-  -
-    num: '13'
-    sym: 4IN-
+  4IN-:
     desc: 'inverting input 4'
-  -
-    num: '14'
-    sym: 4OUT
+  4OUT:
     desc: 'output 4'
 specs:
   -
@@ -111,3 +81,19 @@ specs:
 notes:
   - 'The TL06x series are low-power versions of the TL08x series.'
   - 'The TL07x series are low-noise versions of the TL08x series.'
+packages:
+  DIP:
+    - 1OUT
+    - 1IN-
+    - 1IN+
+    - 'V&#95;&#95;CC+'
+    - 2IN+
+    - 2IN-
+    - 2OUT
+    - 3OUT
+    - 3IN-
+    - 3IN+
+    - 'V&#95;&#95;CC-'
+    - 4IN+
+    - 4IN-
+    - 4OUT

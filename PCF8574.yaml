@@ -1,74 +1,40 @@
 description: 'Remote 8-bit I/O expander for I2C bus'
 aliases:
   - PCF8574P
-package: DIP
-pincount: '16'
 family: Philips
 datasheet: 'http://www.nxp.com/acrobat&#95;download/datasheets/PCF8574&#95;4.pdf'
 pins:
-  -
-    num: '1'
-    sym: A0
+  A0:
     desc: 'address input 0'
-  -
-    num: '2'
-    sym: A1
+  A1:
     desc: 'address input 1'
-  -
-    num: '3'
-    sym: A2
+  A2:
     desc: 'address input 2'
-  -
-    num: '4'
-    sym: P0
+  P0:
     desc: 'quasi-bidirectional I/O 0'
-  -
-    num: '5'
-    sym: P1
+  P1:
     desc: 'quasi-bidirectional I/O 1'
-  -
-    num: '6'
-    sym: P2
+  P2:
     desc: 'quasi-bidirectional I/O 2'
-  -
-    num: '7'
-    sym: P3
+  P3:
     desc: 'quasi-bidirectional I/O 3'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: 'supply ground'
-  -
-    num: '9'
-    sym: P4
+  P4:
     desc: 'quasi-bidirectional I/O 4'
-  -
-    num: '10'
-    sym: P5
+  P5:
     desc: 'quasi-bidirectional I/O 5'
-  -
-    num: '11'
-    sym: P6
+  P6:
     desc: 'quasi-bidirectional I/O 6'
-  -
-    num: '12'
-    sym: P7
+  P7:
     desc: 'quasi-bidirectional I/O 7'
-  -
-    num: '13'
-    sym: '&#126;INT'
+  '&#126;INT':
     desc: 'interrupt output (active LOW)'
-  -
-    num: '14'
-    sym: SCL
+  SCL:
     desc: 'serial clock line'
-  -
-    num: '15'
-    sym: SDA
+  SDA:
     desc: 'serial data line'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -97,3 +63,21 @@ specs:
     unit: '&micro;A'
 notes:
   - 'I2C address range: 0x40-0x4e (7-bit address range: 0x20-0x27)'
+packages:
+  DIP:
+    - A0
+    - A1
+    - A2
+    - P0
+    - P1
+    - P2
+    - P3
+    - GND
+    - P4
+    - P5
+    - P6
+    - P7
+    - '&#126;INT'
+    - SCL
+    - SDA
+    - Vcc

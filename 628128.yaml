@@ -1,139 +1,105 @@
 description: '128K x 8 static RAM'
 aliases: {  }
-package: DIP
-pincount: '32'
 family: memory
 datasheet: 'http://www.futurlec.com/Datasheet/Memory/628128.pdf'
 pins:
-  -
-    num: '1'
-    sym: NC
-    desc: 'no connection'
-  -
-    num: '2'
-    sym: 'A&#95;&#95;16'
+  'A&#95;&#95;16':
     desc: 'address input'
-  -
-    num: '3'
-    sym: 'A&#95;&#95;14'
+  'A&#95;&#95;14':
     desc: 'address input'
-  -
-    num: '4'
-    sym: 'A&#95;&#95;12'
+  'A&#95;&#95;12':
     desc: 'address input'
-  -
-    num: '5'
-    sym: 'A&#95;&#95;7'
+  'A&#95;&#95;7':
     desc: 'address input'
-  -
-    num: '6'
-    sym: 'A&#95;&#95;6'
+  'A&#95;&#95;6':
     desc: 'address input'
-  -
-    num: '7'
-    sym: 'A&#95;&#95;5'
+  'A&#95;&#95;5':
     desc: 'address input'
-  -
-    num: '8'
-    sym: 'A&#95;&#95;4'
+  'A&#95;&#95;4':
     desc: 'address input'
-  -
-    num: '9'
-    sym: 'A&#95;&#95;3'
+  'A&#95;&#95;3':
     desc: 'address input'
-  -
-    num: '10'
-    sym: 'A&#95;&#95;2'
+  'A&#95;&#95;2':
     desc: 'address input'
-  -
-    num: '11'
-    sym: 'A&#95;&#95;1'
+  'A&#95;&#95;1':
     desc: 'address input'
-  -
-    num: '12'
-    sym: 'A&#95;&#95;0'
+  'A&#95;&#95;0':
     desc: 'address input'
-  -
-    num: '13'
-    sym: 'I/O&#95;&#95;0'
+  'I/O&#95;&#95;0':
     desc: 'data input/output'
-  -
-    num: '14'
-    sym: 'I/O&#95;&#95;1'
+  'I/O&#95;&#95;1':
     desc: 'data input/output'
-  -
-    num: '15'
-    sym: 'I/O&#95;&#95;2'
+  'I/O&#95;&#95;2':
     desc: 'data input/output'
-  -
-    num: '16'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '17'
-    sym: 'I/O&#95;&#95;3'
+  'I/O&#95;&#95;3':
     desc: 'data input/output'
-  -
-    num: '18'
-    sym: 'I/O&#95;&#95;4'
+  'I/O&#95;&#95;4':
     desc: 'data input/output'
-  -
-    num: '19'
-    sym: 'I/O&#95;&#95;5'
+  'I/O&#95;&#95;5':
     desc: 'data input/output'
-  -
-    num: '20'
-    sym: 'I/O&#95;&#95;6'
+  'I/O&#95;&#95;6':
     desc: 'data input/output'
-  -
-    num: '21'
-    sym: 'I/O&#95;&#95;7'
+  'I/O&#95;&#95;7':
     desc: 'data input/output'
-  -
-    num: '22'
-    sym: '&#126;CS1'
+  '&#126;CS1':
     desc: 'chip select (active low)'
-  -
-    num: '23'
-    sym: 'A&#95;&#95;10'
+  'A&#95;&#95;10':
     desc: 'address input'
-  -
-    num: '24'
-    sym: '&#126;OE'
+  '&#126;OE':
     desc: 'output enable (active low)'
-  -
-    num: '25'
-    sym: 'A&#95;&#95;11'
+  'A&#95;&#95;11':
     desc: 'address input'
-  -
-    num: '26'
-    sym: 'A&#95;&#95;9'
+  'A&#95;&#95;9':
     desc: 'address input'
-  -
-    num: '27'
-    sym: 'A&#95;&#95;8'
+  'A&#95;&#95;8':
     desc: 'address input'
-  -
-    num: '28'
-    sym: 'A&#95;&#95;13'
+  'A&#95;&#95;13':
     desc: 'address input'
-  -
-    num: '29'
-    sym: '&#126;WE'
+  '&#126;WE':
     desc: 'write enable (active low)'
-  -
-    num: '30'
-    sym: CS2
+  CS2:
     desc: 'chip select (active high)'
-  -
-    num: '31'
-    sym: 'A&#95;&#95;15'
+  'A&#95;&#95;15':
     desc: 'address input'
-  -
-    num: '32'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 notes:
   - 'Data is written when &#126;CS1 is low, CS2 is high, and &#126;WE is low.'
   - 'Data is read when &#126;CS1 is low, CS2 is high, &#126;OE is low, and &#126;WE is high.'
   - 'The input/output pins assume a high-impedance state if &#126;CS1 is high or CS2 is low.'
+packages:
+  DIP:
+    - NC
+    - 'A&#95;&#95;16'
+    - 'A&#95;&#95;14'
+    - 'A&#95;&#95;12'
+    - 'A&#95;&#95;7'
+    - 'A&#95;&#95;6'
+    - 'A&#95;&#95;5'
+    - 'A&#95;&#95;4'
+    - 'A&#95;&#95;3'
+    - 'A&#95;&#95;2'
+    - 'A&#95;&#95;1'
+    - 'A&#95;&#95;0'
+    - 'I/O&#95;&#95;0'
+    - 'I/O&#95;&#95;1'
+    - 'I/O&#95;&#95;2'
+    - GND
+    - 'I/O&#95;&#95;3'
+    - 'I/O&#95;&#95;4'
+    - 'I/O&#95;&#95;5'
+    - 'I/O&#95;&#95;6'
+    - 'I/O&#95;&#95;7'
+    - '&#126;CS1'
+    - 'A&#95;&#95;10'
+    - '&#126;OE'
+    - 'A&#95;&#95;11'
+    - 'A&#95;&#95;9'
+    - 'A&#95;&#95;8'
+    - 'A&#95;&#95;13'
+    - '&#126;WE'
+    - CS2
+    - 'A&#95;&#95;15'
+    - Vcc

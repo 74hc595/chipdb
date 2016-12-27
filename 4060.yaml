@@ -1,70 +1,54 @@
 description: '14-stage ripple-carry binary counter/divider and oscillator'
-package: DIP
-pincount: '16'
 family: '4000'
 datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4060b.pdf'
 pins:
-  -
-    num: '1'
-    sym: Q11
+  Q11:
     desc: 'counter output'
-  -
-    num: '2'
-    sym: Q12
+  Q12:
     desc: 'counter output'
-  -
-    num: '3'
-    sym: Q13
+  Q13:
     desc: 'counter output'
-  -
-    num: '4'
-    sym: Q5
+  Q5:
     desc: 'counter output'
-  -
-    num: '5'
-    sym: Q4
+  Q4:
     desc: 'counter output'
-  -
-    num: '6'
-    sym: Q6
+  Q6:
     desc: 'counter output'
-  -
-    num: '7'
-    sym: Q3
+  Q3:
     desc: 'counter output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'C&#95;&#95;TC'
+  'C&#95;&#95;TC':
     desc: 'external capacitor connection'
-  -
-    num: '10'
-    sym: 'R&#95;&#95;TC'
+  'R&#95;&#95;TC':
     desc: 'oscillator pin'
-  -
-    num: '11'
-    sym: RS
+  RS:
     desc: 'clock input/oscillator pin (high-to-low edge-triggered)'
-  -
-    num: '12'
-    sym: MR
+  MR:
     desc: 'master reset (active high)'
-  -
-    num: '13'
-    sym: 'Q&#95;&#95;8'
+  'Q&#95;&#95;8':
     desc: 'counter output'
-  -
-    num: '14'
-    sym: 'Q&#95;&#95;7'
+  'Q&#95;&#95;7':
     desc: 'counter output'
-  -
-    num: '15'
-    sym: 'Q&#95;&#95;9'
+  'Q&#95;&#95;9':
     desc: 'counter output'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
+packages:
+  DIP:
+    - Q11
+    - Q12
+    - Q13
+    - Q5
+    - Q4
+    - Q6
+    - Q3
+    - GND
+    - 'C&#95;&#95;TC'
+    - 'R&#95;&#95;TC'
+    - RS
+    - MR
+    - 'Q&#95;&#95;8'
+    - 'Q&#95;&#95;7'
+    - 'Q&#95;&#95;9'
+    - Vcc

@@ -1,72 +1,38 @@
 description: 'Presettable synchronous BCD decade counter; asynchronous reset'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc160.74hct160.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;MR'
+  '&#126;MR':
     desc: 'asynchronous master reset (active low)'
-  -
-    num: '2'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '3'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'data input'
-  -
-    num: '4'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'data input'
-  -
-    num: '5'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'data input'
-  -
-    num: '6'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'data input'
-  -
-    num: '7'
-    sym: CEP
+  CEP:
     desc: 'count enable input'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '&#126;PE'
+  '&#126;PE':
     desc: 'parallel load enable input (active low)'
-  -
-    num: '10'
-    sym: CET
+  CET:
     desc: 'count enable carry output'
-  -
-    num: '11'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: 'counter output'
-  -
-    num: '12'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: 'counter output'
-  -
-    num: '13'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: 'counter output'
-  -
-    num: '14'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: 'counter output'
-  -
-    num: '15'
-    sym: TC
+  TC:
     desc: 'terminal count output'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -105,3 +71,21 @@ specs:
       - '61 (74HC)'
       - '31 (74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - '&#126;MR'
+    - CP
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - CEP
+    - GND
+    - '&#126;PE'
+    - CET
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - TC
+    - Vcc

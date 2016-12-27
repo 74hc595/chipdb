@@ -1,72 +1,38 @@
 description: '4-bit bidirectional universal shift register'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc194.74hct194.pdf'
 pins:
-  -
-    num: '1'
-    sym: '&#126;MR'
+  '&#126;MR':
     desc: 'asynchronous master reset (active low)'
-  -
-    num: '2'
-    sym: 'D&#95;&#95;SR'
+  'D&#95;&#95;SR':
     desc: 'serial data input (shift right)'
-  -
-    num: '3'
-    sym: 'D&#95;&#95;0'
+  'D&#95;&#95;0':
     desc: 'parallel data input'
-  -
-    num: '4'
-    sym: 'D&#95;&#95;1'
+  'D&#95;&#95;1':
     desc: 'parallel data input'
-  -
-    num: '5'
-    sym: 'D&#95;&#95;2'
+  'D&#95;&#95;2':
     desc: 'parallel data input'
-  -
-    num: '6'
-    sym: 'D&#95;&#95;3'
+  'D&#95;&#95;3':
     desc: 'parallel data input'
-  -
-    num: '7'
-    sym: 'D&#95;&#95;SL'
+  'D&#95;&#95;SL':
     desc: 'serial data input (shift left)'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: 'S&#95;&#95;0'
+  'S&#95;&#95;0':
     desc: 'mode control input'
-  -
-    num: '10'
-    sym: 'S&#95;&#95;1'
+  'S&#95;&#95;1':
     desc: 'mode control input'
-  -
-    num: '11'
-    sym: CP
+  CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '12'
-    sym: 'Q&#95;&#95;3'
+  'Q&#95;&#95;3':
     desc: 'parallel output'
-  -
-    num: '13'
-    sym: 'Q&#95;&#95;2'
+  'Q&#95;&#95;2':
     desc: 'parallel output'
-  -
-    num: '14'
-    sym: 'Q&#95;&#95;1'
+  'Q&#95;&#95;1':
     desc: 'parallel output'
-  -
-    num: '15'
-    sym: 'Q&#95;&#95;0'
+  'Q&#95;&#95;0':
     desc: 'parallel output'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -92,3 +58,21 @@ notes:
   - 'S&#95;&#95;0 low and S&#95;&#95;1 high; shift left'
   - 'S&#95;&#95;0 high and S&#95;&#95;1 low; shift right'
   - 'S&#95;&#95;0 and S&#95;&#95;1 high; parallel load'
+packages:
+  DIP:
+    - '&#126;MR'
+    - 'D&#95;&#95;SR'
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;SL'
+    - GND
+    - 'S&#95;&#95;0'
+    - 'S&#95;&#95;1'
+    - CP
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - Vcc

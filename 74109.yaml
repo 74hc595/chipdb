@@ -1,72 +1,38 @@
 description: 'Dual J-K flip-flop with set and reset; positive-edge trigger'
-package: DIP
-pincount: '16'
 family: '7400'
 datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc109.74hct109.pdf'
 pins:
-  -
-    num: '1'
-    sym: '1&#126;R&#126;&#95;&#95;D'
+  '1&#126;R&#126;&#95;&#95;D':
     desc: 'asynchronous reset; direct input (active low)'
-  -
-    num: '2'
-    sym: 1J
+  1J:
     desc: 'synchronous input'
-  -
-    num: '3'
-    sym: '1&#126;K'
+  '1&#126;K':
     desc: 'synchronous input'
-  -
-    num: '4'
-    sym: 1CP
+  1CP:
     desc: 'clock input (low-to-high, edge-triggered)'
-  -
-    num: '5'
-    sym: '1&#126;S&#126;&#95;&#95;D'
+  '1&#126;S&#126;&#95;&#95;D':
     desc: 'asynchronous set; direct input (active low)'
-  -
-    num: '6'
-    sym: 1Q
+  1Q:
     desc: 'true output'
-  -
-    num: '7'
-    sym: '1&#126;Q'
+  '1&#126;Q':
     desc: 'complement output'
-  -
-    num: '8'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '9'
-    sym: '2&#126;Q'
+  '2&#126;Q':
     desc: 'complement output'
-  -
-    num: '10'
-    sym: 2Q
+  2Q:
     desc: 'true output'
-  -
-    num: '11'
-    sym: '2&#126;S&#126;&#95;&#95;D'
+  '2&#126;S&#126;&#95;&#95;D':
     desc: 'asynchronous set; direct input (active low)'
-  -
-    num: '12'
-    sym: 2CP
+  2CP:
     desc: 'clock input (low-to-high, active low)'
-  -
-    num: '13'
-    sym: '2&#126;K'
+  '2&#126;K':
     desc: 'synchronous input'
-  -
-    num: '14'
-    sym: 2J
+  2J:
     desc: 'synchronous input'
-  -
-    num: '15'
-    sym: '2&#126;R&#126;&#95;&#95;D'
+  '2&#126;R&#126;&#95;&#95;D':
     desc: 'asynchronous reset; direct input (active low)'
-  -
-    num: '16'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -93,3 +59,21 @@ specs:
       - '75 (74HC)'
       - '61 (74HCT)'
     unit: MHz
+packages:
+  DIP:
+    - '1&#126;R&#126;&#95;&#95;D'
+    - 1J
+    - '1&#126;K'
+    - 1CP
+    - '1&#126;S&#126;&#95;&#95;D'
+    - 1Q
+    - '1&#126;Q'
+    - GND
+    - '2&#126;Q'
+    - 2Q
+    - '2&#126;S&#126;&#95;&#95;D'
+    - 2CP
+    - '2&#126;K'
+    - 2J
+    - '2&#126;R&#126;&#95;&#95;D'
+    - Vcc

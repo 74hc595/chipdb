@@ -1,64 +1,34 @@
 description: 'Triple 3-input NOR gate'
-package: DIP
-pincount: '14'
 family: '7400'
 datasheet: 'http://www.nxp.com/acrobat&#95;download/datasheets/74HC&#95;HCT27&#95;3.pdf'
 pins:
-  -
-    num: '1'
-    sym: 1A
+  1A:
     desc: 'data input'
-  -
-    num: '2'
-    sym: 1B
+  1B:
     desc: 'data input'
-  -
-    num: '3'
-    sym: 2A
+  2A:
     desc: 'data input'
-  -
-    num: '4'
-    sym: 2B
+  2B:
     desc: 'data input'
-  -
-    num: '5'
-    sym: 2C
+  2C:
     desc: 'data input'
-  -
-    num: '6'
-    sym: 2Y
+  2Y:
     desc: 'data output'
-  -
-    num: '7'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '8'
-    sym: 3Y
+  3Y:
     desc: 'data output'
-  -
-    num: '9'
-    sym: 3A
+  3A:
     desc: 'data input'
-  -
-    num: '10'
-    sym: 3B
+  3B:
     desc: 'data input'
-  -
-    num: '11'
-    sym: 3C
+  3C:
     desc: 'data input'
-  -
-    num: '12'
-    sym: 1Y
+  1Y:
     desc: 'data output'
-  -
-    num: '13'
-    sym: 1C
+  1C:
     desc: 'data input'
-  -
-    num: '14'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
 specs:
   -
@@ -67,3 +37,19 @@ specs:
       - '8 (74HC)'
       - '10 (74HCT)'
     unit: ns
+packages:
+  DIP:
+    - 1A
+    - 1B
+    - 2A
+    - 2B
+    - 2C
+    - 2Y
+    - GND
+    - 3Y
+    - 3A
+    - 3B
+    - 3C
+    - 1Y
+    - 1C
+    - Vcc

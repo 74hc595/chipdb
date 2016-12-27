@@ -1,41 +1,21 @@
 description: 'Low voltage audio power amplifier'
-package: DIP
-pincount: '8'
 family: linear
 datasheet: 'http://www.national.com/ds/LM/LM386.pdf'
 pins:
-  -
-    num: '1'
-    sym: GAIN
+  GAIN:
     desc: 'gain adjustment'
-  -
-    num: '2'
-    sym: IN-
+  IN-:
     desc: 'inverting input'
-  -
-    num: '3'
-    sym: IN+
+  IN+:
     desc: 'non-inverting input'
-  -
-    num: '4'
-    sym: GND
+  GND:
     desc: ground
-  -
-    num: '5'
-    sym: OUT
+  OUT:
     desc: output
-  -
-    num: '6'
-    sym: Vcc
+  Vcc:
     desc: 'supply voltage'
-  -
-    num: '7'
-    sym: BYPASS
+  BYPASS:
     desc: bypass
-  -
-    num: '8'
-    sym: GAIN
-    desc: 'gain adjustment'
 specs:
   -
     param: 'Supply voltage'
@@ -66,3 +46,13 @@ specs:
     unit: '%'
 notes:
   - 'The gain can be varied between 20 and 200 with a resistor in series with a capacitor across pins 1 and 8.'
+packages:
+  DIP:
+    - GAIN
+    - IN-
+    - IN+
+    - GND
+    - OUT
+    - Vcc
+    - BYPASS
+    - GAIN
