@@ -21,7 +21,24 @@ specs:
     val: '&plusmn;7.5'
     unit: ppm
 packages:
-  DIP:
+  SO:
+    - 32kHz
+    - Vcc
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - GND
+    - 'V&#95;&#95;BAT'
+    - NC
+    - NC
+  EDIP:
     - NC
     - 'NOT&#95;PRESENT'
     - 'NOT&#95;PRESENT'
@@ -36,3 +53,40 @@ packages:
     - 32kHz
     - Vcc
     - NC
+  BGA:
+    A1: GND
+    A2: GND
+    A3: GND
+    A4: V__BAT
+    A5: V__BAT
+    A6: GND
+    A7: NC
+    A8: NC
+    A9: GND
+    B1: GND
+    B2: GND
+    B3: GND
+    B4: V__BAT
+    B5: V__BAT
+    B6: GND
+    B7: NC
+    B8: NC
+    B9: GND
+    C1: GND
+    C2: Vcc
+    C3: Vcc
+    C4: 32khz
+    C5: 32khz
+    C6: GND
+    C7: NC
+    C8: NC
+    C9: GND
+    D1: GND
+    D2: Vcc
+    D3: Vcc
+    D4: 32khz
+    D5: 32khz
+    D6: GND
+    D7: NC
+    D8: NC
+    D9: GND

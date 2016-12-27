@@ -52,7 +52,7 @@ specs:
     val: '20'
     unit: MHz
 packages:
-  DIP:
+  PDIP: &DIP
     - '(PCINT5/&#126;RESET&#126;/ADC0/dW) PB5'
     - '(PCINT3/XTAL1/CLKI/&#126;OC1B&#126;/ADC3) PB3'
     - '(PCINT4/XTAL2/CLKO/OC1B/ADC2) PB4'
@@ -61,3 +61,15 @@ packages:
     - 'PB1 (MISO/DO/AIN1/OC0B/OC1A/PCINT1)'
     - 'PB2 (SCK/USCK/SCL/ADC1/T0/INT0/PCINT2)'
     - Vcc
+  SOIC: *DIP
+  TSSOP: *DIP
+  QFN:
+    1: PB5
+    2: PB3
+    5: PB4
+    8: GND
+    11: PB0
+    12: PB1
+    14: PB2
+    15: Vcc
+    BOTTOM_PLATE: GND

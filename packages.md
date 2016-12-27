@@ -23,7 +23,7 @@ _Not yet supported_
 ### Dual row
 
 + Dual Flat No-leads Package (DFN)
-+ Dual In-line Package (DIP, DIL, DIPP, CERDIP, CDIP, PDIP, SPDIP, SDIP)
++ Dual In-line Package (DIP, DIL, DIPP, CERDIP, CDIP, PDIP, SPDIP, SDIP, EDIP)
 + Flatpack (FP)
 + Small Outline Integrated Circuit (SOIC, SO, MSOIC, SOJ, SOP, SSOP, TSOP, TSSOP)
 + Zig-zag In-line Package (ZIP)
