@@ -1,46 +1,54 @@
----
-description: "Digital Thermometer and Thermostat"
-aliases:     []
-package:     DIP
-pincount:    8
-family:      "Maxim"
-datasheet:   "http://datasheets.maxim-ic.com/en/ds/DS1620.pdf"
+description: 'Digital Thermometer and Thermostat'
+aliases: {  }
+package: DIP
+pincount: '8'
+family: Maxim
+datasheet: 'http://datasheets.maxim-ic.com/en/ds/DS1620.pdf'
 pins:
-  - num:  1
-    sym:  DQ
-    desc: 3-Wire input/output
-  - num:  2
-    sym:  CLK/~CONV~
-    desc: 3-Wire clock input & stand-alone convert input
-  - num:  3
-    sym:  ~RST~
+  -
+    num: '1'
+    sym: DQ
+    desc: '3-Wire input/output'
+  -
+    num: '2'
+    sym: 'CLK/&#126;CONV&#126;'
+    desc: '3-Wire clock input & stand-alone convert input'
+  -
+    num: '3'
+    sym: '&#126;RST&#126;'
     desc: reset
-  - num:  4
-    sym:  GND
-    desc: power ground
-  - num:  5
-    sym:  T__COM
-    desc: Hi/Lo combined trigger
-  - num:  6
-    sym:  T__LOW
-    desc: low Temp trigger
-  - num:  7
-    sym:  T__HIGH
-    desc: high Temp trigger
-  - num:  8
-    sym:  V__DD
-    desc: +3V to +5V
+  -
+    num: '4'
+    sym: GND
+    desc: 'power ground'
+  -
+    num: '5'
+    sym: 'T&#95;&#95;COM'
+    desc: 'Hi/Lo combined trigger'
+  -
+    num: '6'
+    sym: 'T&#95;&#95;LOW'
+    desc: 'low Temp trigger'
+  -
+    num: '7'
+    sym: 'T&#95;&#95;HIGH'
+    desc: 'high Temp trigger'
+  -
+    num: '8'
+    sym: 'V&#95;&#95;DD'
+    desc: '+3V to +5V'
 specs:
-  - param: "Data resolution"
-    val:   9
-    unit:  Bits
-  - param: "Measurement range"
-    val:   -55 to +125
-    unit:  Deg C
-  - param: "Supply Voltage"
-    val:   3 - 5
-    unit:  Volts
+  -
+    param: 'Data resolution'
+    val: '9'
+    unit: Bits
+  -
+    param: 'Measurement range'
+    val: '-55 to +125'
+    unit: 'Deg C'
+  -
+    param: 'Supply Voltage'
+    val: '3 - 5'
+    unit: Volts
 notes:
-  - Temperature excursions beyond user defined Max / Min limits will trigger T__HIGH or T__LOW outputs for application driven temperature correction.
-...
-
+  - 'Temperature excursions beyond user defined Max / Min limits will trigger T&#95;&#95;HIGH or T&#95;&#95;LOW outputs for application driven temperature correction.'

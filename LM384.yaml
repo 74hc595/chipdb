@@ -1,77 +1,95 @@
----
-description: "5W audio power amplifier"
-package:     DIP
-pincount:    14
-family:      "linear"
-datasheet:   "http://www.national.com/ds/LM/LM384.pdf"
+description: '5W audio power amplifier'
+package: DIP
+pincount: '14'
+family: linear
+datasheet: 'http://www.national.com/ds/LM/LM384.pdf'
 pins:
-  - num:  1
-    sym:  BYPASS
+  -
+    num: '1'
+    sym: BYPASS
     desc: bypass
-  - num:  2
-    sym:  IN+
-    desc: non-inverting input
-  - num:  3
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  4
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  5
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  6
-    sym:  IN-
-    desc: inverting input
-  - num:  7
-    sym:  GND
+  -
+    num: '2'
+    sym: IN+
+    desc: 'non-inverting input'
+  -
+    num: '3'
+    sym: GND
+    desc: 'ground (heat sink)'
+  -
+    num: '4'
+    sym: GND
+    desc: 'ground (heat sink)'
+  -
+    num: '5'
+    sym: GND
+    desc: 'ground (heat sink)'
+  -
+    num: '6'
+    sym: IN-
+    desc: 'inverting input'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  OUT
+  -
+    num: '8'
+    sym: OUT
     desc: output
-  - num:  9
-    sym:  NC
-    desc: no connection
-  - num:  10
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  11
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  12
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  13
-    sym:  NC
-    desc: no connection
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '10'
+    sym: GND
+    desc: 'ground (heat sink)'
+  -
+    num: '11'
+    sym: GND
+    desc: 'ground (heat sink)'
+  -
+    num: '12'
+    sym: GND
+    desc: 'ground (heat sink)'
+  -
+    num: '13'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '14'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: Maximum supply voltage
-    val:   26
-    unit:  V
-  - param: Minimum supply voltage
-    val:   12
-    unit:  V
-  - param: Maximum peak current
-    val:   1.3
-    unit:  A
-  - param: Maximum input voltage
-    val:   "&plusmn;0.5"
-    unit:  V
-  - param: Output power
-    val:   5
-    unit:  W
-  - param: Bandwidth
-    val:   450
-    unit:  kHz
-  - param: Gain
-    val:   50
-    unit:  V/V
-  - param: Input impedance
-    val:   150
-    unit:  "k&Omega;"
-...
-
-
+  -
+    param: 'Maximum supply voltage'
+    val: '26'
+    unit: V
+  -
+    param: 'Minimum supply voltage'
+    val: '12'
+    unit: V
+  -
+    param: 'Maximum peak current'
+    val: '1.3'
+    unit: A
+  -
+    param: 'Maximum input voltage'
+    val: '&plusmn;0.5'
+    unit: V
+  -
+    param: 'Output power'
+    val: '5'
+    unit: W
+  -
+    param: Bandwidth
+    val: '450'
+    unit: kHz
+  -
+    param: Gain
+    val: '50'
+    unit: V/V
+  -
+    param: 'Input impedance'
+    val: '150'
+    unit: 'k&Omega;'

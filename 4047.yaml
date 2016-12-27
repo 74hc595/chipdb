@@ -1,51 +1,62 @@
----
-description: Monostable/astable multivibrator
-package:     DIP
-pincount:    14
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4047b.pdf"
+description: 'Monostable/astable multivibrator'
+package: DIP
+pincount: '14'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4047b.pdf'
 pins:
-  - num:  1
-    sym:  C
-    desc: capacitor connection
-  - num:  2
-    sym:  R
-    desc: resistor connection
-  - num:  3
-    sym:  RC COMMON
-    desc: resistor and capacitor common connection
-  - num:  4
-    sym:  ~ASTABLE
-    desc: astable enable (active low)
-  - num:  5
-    sym:  ASTABLE
-    desc: astable enable (active high)
-  - num:  6
-    sym:  "-TRIGGER"
-    desc: monostable negative-edge trigger
-  - num:  7
-    sym:  GND
+  -
+    num: '1'
+    sym: C
+    desc: 'capacitor connection'
+  -
+    num: '2'
+    sym: R
+    desc: 'resistor connection'
+  -
+    num: '3'
+    sym: 'RC COMMON'
+    desc: 'resistor and capacitor common connection'
+  -
+    num: '4'
+    sym: '&#126;ASTABLE'
+    desc: 'astable enable (active low)'
+  -
+    num: '5'
+    sym: ASTABLE
+    desc: 'astable enable (active high)'
+  -
+    num: '6'
+    sym: '-TRIGGER'
+    desc: 'monostable negative-edge trigger'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  "+TRIGGER"
-    desc: monostable positive-edge trigger
-  - num:  9
-    sym:  RESET
-    desc: external reset
-  - num:  10
-    sym:  Q
+  -
+    num: '8'
+    sym: +TRIGGER
+    desc: 'monostable positive-edge trigger'
+  -
+    num: '9'
+    sym: RESET
+    desc: 'external reset'
+  -
+    num: '10'
+    sym: Q
     desc: output
-  - num:  11
-    sym:  ~Q
-    desc: complement output
-  - num:  12
-    sym:  RETRIGGER
-    desc: monostable retrigger input
-  - num:  13
-    sym:  OSC OUT
-    desc: oscillator (double frequency) output
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  -
+    num: '11'
+    sym: '&#126;Q'
+    desc: 'complement output'
+  -
+    num: '12'
+    sym: RETRIGGER
+    desc: 'monostable retrigger input'
+  -
+    num: '13'
+    sym: 'OSC OUT'
+    desc: 'oscillator (double frequency) output'
+  -
+    num: '14'
+    sym: Vcc
+    desc: 'supply voltage'

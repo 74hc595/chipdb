@@ -1,63 +1,87 @@
----
-description:  Dual D-type flip-flop with set and reset; positive-edge trigger
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc74.74hct74.pdf"
+description: 'Dual D-type flip-flop with set and reset; positive-edge trigger'
+package: DIP
+pincount: '14'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc74.74hct74.pdf'
 pins:
-  - num:  1
-    sym:  1~R~D
-    desc: asynchronous reset-direct input (active low)
-  - num:  2
-    sym:  1D
-    desc: data input
-  - num:  3
-    sym:  1CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  4
-    sym:  1~S~D
-    desc: asynchronous set-direct input (active low)
-  - num:  5
-    sym:  1Q
-    desc: true output
-  - num:  6
-    sym:  1~Q
-    desc: complement output
-  - num:  7
-    sym:  GND
+  -
+    num: '1'
+    sym: '1&#126;R&#126;D'
+    desc: 'asynchronous reset-direct input (active low)'
+  -
+    num: '2'
+    sym: 1D
+    desc: 'data input'
+  -
+    num: '3'
+    sym: 1CP
+    desc: 'clock input (low-to-high edge-triggered)'
+  -
+    num: '4'
+    sym: '1&#126;S&#126;D'
+    desc: 'asynchronous set-direct input (active low)'
+  -
+    num: '5'
+    sym: 1Q
+    desc: 'true output'
+  -
+    num: '6'
+    sym: '1&#126;Q'
+    desc: 'complement output'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  2~Q
-    desc: complement output
-  - num:  9
-    sym:  2Q
-    desc: true output
-  - num:  10
-    sym:  2~S~D
-    desc: asynchronous set-direct input (active low)
-  - num:  11
-    sym:  2CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  12
-    sym:  2D
-    desc: data input
-  - num:  13
-    sym:  2~R~D
-    desc: asynchronous reset-direct input (active low)
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '8'
+    sym: '2&#126;Q'
+    desc: 'complement output'
+  -
+    num: '9'
+    sym: 2Q
+    desc: 'true output'
+  -
+    num: '10'
+    sym: '2&#126;S&#126;D'
+    desc: 'asynchronous set-direct input (active low)'
+  -
+    num: '11'
+    sym: 2CP
+    desc: 'clock input (low-to-high edge-triggered)'
+  -
+    num: '12'
+    sym: 2D
+    desc: 'data input'
+  -
+    num: '13'
+    sym: '2&#126;R&#126;D'
+    desc: 'asynchronous reset-direct input (active low)'
+  -
+    num: '14'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, nCP to nQ, n~Q
-    val:    [14 (74HC), 15 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, n~S~D to nQ, n~Q
-    val:    [15 (74HC), 18 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, n~R~D to nQ, n~Q
-    val:    [16 (74HC), 18 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [76 (74HC), 59 (74HCT)]
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, nCP to nQ, n&#126;Q'
+    val:
+      - '14 (74HC)'
+      - '15 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, n&#126;S&#126;D to nQ, n&#126;Q'
+    val:
+      - '15 (74HC)'
+      - '18 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, n&#126;R&#126;D to nQ, n&#126;Q'
+    val:
+      - '16 (74HC)'
+      - '18 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '76 (74HC)'
+      - '59 (74HCT)'
+    unit: MHz

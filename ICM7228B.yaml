@@ -1,119 +1,155 @@
----
-description:  8-digit LED display decoder/driver, common cathode
-package:      DIP
-pincount:     28
-family:       "Intersil"
-datasheet:    "http://www.intersil.com/data/fn/fn3160.pdf"
+description: '8-digit LED display decoder/driver, common cathode'
+package: DIP
+pincount: '28'
+family: Intersil
+datasheet: 'http://www.intersil.com/data/fn/fn3160.pdf'
 pins:
-  - num:  1
-    sym:  DIGIT 4
-    desc: digit 4 cathode
-  - num:  2
-    sym:  DIGIT 6
-    desc: digit 6 cathode
-  - num:  3
-    sym:  DIGIT 3
-    desc: digit 3 cathode
-  - num:  4
-    sym:  DIGIT 1
-    desc: digit 1 cathode
-  - num:  5
-    sym:  ID6
-    desc: data bit 6 (HEXA/~CODE-B~)
-  - num:  6
-    sym:  ID5
-    desc: data bit 5 (~DECODE~)
-  - num:  7
-    sym:  ID7
-    desc: data bit 7 (DATA COMING)
-  - num:  8
-    sym:  ~WRITE
-    desc: write (active low, low-to-high edge triggered)
-  - num:  9
-    sym:  MODE
-    desc: mode select (control or data word)
-  - num:  10
-    sym:  ID4
-    desc: data bit 4 (~SHUTDOWN~)
-  - num:  11
-    sym:  ID1
-    desc: data bit 1
-  - num:  12
-    sym:  ID0
-    desc: data bit 0
-  - num:  13
-    sym:  ID2
-    desc: data bit 2
-  - num:  14
-    sym:  ID3
-    desc: data bit 3
-  - num:  15
-    sym:  DP
-    desc: decimal point anode
-  - num:  16
-    sym:  SEG a
-    desc: segment a anode
-  - num:  17
-    sym:  SEG b
-    desc: segment b anode
-  - num:  18
-    sym:  SEG d
-    desc: segment d anode
-  - num:  19
-    sym:  Vcc
-    desc: supply voltage
-  - num:  20
-    sym:  SEG c
-    desc: segment c anode
-  - num:  21
-    sym:  SEG e
-    desc: segment e anode
-  - num:  22
-    sym:  SEG f
-    desc: segment f anode
-  - num:  23
-    sym:  SEG g
-    desc: segment g anode
-  - num:  24
-    sym:  DIGIT 8
-    desc: digit 8 cathode
-  - num:  25
-    sym:  DIGIT 2
-    desc: digit 2 cathode
-  - num:  26
-    sym:  DIGIT 5
-    desc: digit 5 cathode
-  - num:  27
-    sym:  DIGIT 7
-    desc: digit 7 cathode
-  - num:  28
-    sym:  GND
+  -
+    num: '1'
+    sym: 'DIGIT 4'
+    desc: 'digit 4 cathode'
+  -
+    num: '2'
+    sym: 'DIGIT 6'
+    desc: 'digit 6 cathode'
+  -
+    num: '3'
+    sym: 'DIGIT 3'
+    desc: 'digit 3 cathode'
+  -
+    num: '4'
+    sym: 'DIGIT 1'
+    desc: 'digit 1 cathode'
+  -
+    num: '5'
+    sym: ID6
+    desc: 'data bit 6 (HEXA/&#126;CODE-B&#126;)'
+  -
+    num: '6'
+    sym: ID5
+    desc: 'data bit 5 (&#126;DECODE&#126;)'
+  -
+    num: '7'
+    sym: ID7
+    desc: 'data bit 7 (DATA COMING)'
+  -
+    num: '8'
+    sym: '&#126;WRITE'
+    desc: 'write (active low, low-to-high edge triggered)'
+  -
+    num: '9'
+    sym: MODE
+    desc: 'mode select (control or data word)'
+  -
+    num: '10'
+    sym: ID4
+    desc: 'data bit 4 (&#126;SHUTDOWN&#126;)'
+  -
+    num: '11'
+    sym: ID1
+    desc: 'data bit 1'
+  -
+    num: '12'
+    sym: ID0
+    desc: 'data bit 0'
+  -
+    num: '13'
+    sym: ID2
+    desc: 'data bit 2'
+  -
+    num: '14'
+    sym: ID3
+    desc: 'data bit 3'
+  -
+    num: '15'
+    sym: DP
+    desc: 'decimal point anode'
+  -
+    num: '16'
+    sym: 'SEG a'
+    desc: 'segment a anode'
+  -
+    num: '17'
+    sym: 'SEG b'
+    desc: 'segment b anode'
+  -
+    num: '18'
+    sym: 'SEG d'
+    desc: 'segment d anode'
+  -
+    num: '19'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '20'
+    sym: 'SEG c'
+    desc: 'segment c anode'
+  -
+    num: '21'
+    sym: 'SEG e'
+    desc: 'segment e anode'
+  -
+    num: '22'
+    sym: 'SEG f'
+    desc: 'segment f anode'
+  -
+    num: '23'
+    sym: 'SEG g'
+    desc: 'segment g anode'
+  -
+    num: '24'
+    sym: 'DIGIT 8'
+    desc: 'digit 8 cathode'
+  -
+    num: '25'
+    sym: 'DIGIT 2'
+    desc: 'digit 2 cathode'
+  -
+    num: '26'
+    sym: 'DIGIT 5'
+    desc: 'digit 5 cathode'
+  -
+    num: '27'
+    sym: 'DIGIT 7'
+    desc: 'digit 7 cathode'
+  -
+    num: '28'
+    sym: GND
     desc: ground
 specs:
-  - param:  Display scan rate
-    val:    390
-    unit:   Hz
-  - param:  Inter-digit blanking time
-    val:    10
-    unit:   "&micro;s"
-  - param:  Write pulse width
-    val:    [100 (low), 540 (high)]
-    unit:   ns
-  - param:  Mode setup time
-    val:    150
-    unit:   ns
-  - param:  Data setup time
-    val:    160
-    unit:   ns
-  - param:  Minimum digit drive capability
-    val:    50
-    unit:   mA
-  - param:  Segment driver output impedance
-    val:    100
-    unit:   "&Omega;"
-  - param:  Peak current drive per segment
-    val:    10
-    unit:   mA
+  -
+    param: 'Display scan rate'
+    val: '390'
+    unit: Hz
+  -
+    param: 'Inter-digit blanking time'
+    val: '10'
+    unit: '&micro;s'
+  -
+    param: 'Write pulse width'
+    val:
+      - '100 (low)'
+      - '540 (high)'
+    unit: ns
+  -
+    param: 'Mode setup time'
+    val: '150'
+    unit: ns
+  -
+    param: 'Data setup time'
+    val: '160'
+    unit: ns
+  -
+    param: 'Minimum digit drive capability'
+    val: '50'
+    unit: mA
+  -
+    param: 'Segment driver output impedance'
+    val: '100'
+    unit: '&Omega;'
+  -
+    param: 'Peak current drive per segment'
+    val: '10'
+    unit: mA
 notes:
-  - When MODE is low, data is loaded into display RAM. When MODE is high, data is loaded into control register.
-...
+  - 'When MODE is low, data is loaded into display RAM. When MODE is high, data is loaded into control register.'

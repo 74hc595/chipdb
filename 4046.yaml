@@ -1,57 +1,70 @@
----
-description: "Phase-locked loop"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4046b.pdf"
+description: 'Phase-locked loop'
+package: DIP
+pincount: '16'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4046b.pdf'
 pins:
-  - num:  1
-    sym:  PCP__OUT
-    desc: phase comparator pulse output
-  - num:  2
-    sym:  PC1__OUT
-    desc: phase comparator 1 output
-  - num:  3
-    sym:  COMP__IN
-    desc: comparator input
-  - num:  4
-    sym:  VCO__OUT
-    desc: VCO output
-  - num:  5
-    sym:  INH
+  -
+    num: '1'
+    sym: 'PCP&#95;&#95;OUT'
+    desc: 'phase comparator pulse output'
+  -
+    num: '2'
+    sym: 'PC1&#95;&#95;OUT'
+    desc: 'phase comparator 1 output'
+  -
+    num: '3'
+    sym: 'COMP&#95;&#95;IN'
+    desc: 'comparator input'
+  -
+    num: '4'
+    sym: 'VCO&#95;&#95;OUT'
+    desc: 'VCO output'
+  -
+    num: '5'
+    sym: INH
     desc: inhibit
-  - num:  6
-    sym:  C1__A
-    desc: capacitor C1 connection A
-  - num:  7
-    sym:  C1__B
-    desc: capacitor C1 Connection B
-  - num:  8
-    sym:  GND
+  -
+    num: '6'
+    sym: 'C1&#95;&#95;A'
+    desc: 'capacitor C1 connection A'
+  -
+    num: '7'
+    sym: 'C1&#95;&#95;B'
+    desc: 'capacitor C1 Connection B'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  VCO__IN
-    desc: VCO input
-  - num:  10
-    sym:  SF__OUT
-    desc: source-follower output
-  - num:  11
-    sym:  R__1
-    desc: resistor R1 connection
-  - num:  12
-    sym:  R__2
-    desc: resistor R2 connection
-  - num:  13
-    sym:  PC2__OUT
-    desc: phase comparator 2 output
-  - num:  14
-    sym:  SIGN__IN
-    desc: signal input
-  - num:  15
-    sym:  ZENER
-    desc: zener diode input for regulated supply
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  -
+    num: '9'
+    sym: 'VCO&#95;&#95;IN'
+    desc: 'VCO input'
+  -
+    num: '10'
+    sym: 'SF&#95;&#95;OUT'
+    desc: 'source-follower output'
+  -
+    num: '11'
+    sym: 'R&#95;&#95;1'
+    desc: 'resistor R1 connection'
+  -
+    num: '12'
+    sym: 'R&#95;&#95;2'
+    desc: 'resistor R2 connection'
+  -
+    num: '13'
+    sym: 'PC2&#95;&#95;OUT'
+    desc: 'phase comparator 2 output'
+  -
+    num: '14'
+    sym: 'SIGN&#95;&#95;IN'
+    desc: 'signal input'
+  -
+    num: '15'
+    sym: ZENER
+    desc: 'zener diode input for regulated supply'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'

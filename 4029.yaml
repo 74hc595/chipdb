@@ -1,57 +1,70 @@
----
-description: Synchronous 4-bit up/down binary/decade counter
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4029b.pdf"
+description: 'Synchronous 4-bit up/down binary/decade counter'
+package: DIP
+pincount: '16'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4029b.pdf'
 pins:
-  - num:  1
-    sym:  PL
-    desc: parallel load
-  - num:  2
-    sym:  Q3
-    desc: buffered parallel output
-  - num:  3
-    sym:  P3
-    desc: parallel data input
-  - num:  4
-    sym:  P0
-    desc: parallel data input
-  - num:  5
-    sym:  ~CE
-    desc: count enable (active low)
-  - num:  6
-    sym:  Q0
-    desc: buffered parallel output
-  - num:  7
-    sym:  ~TC
-    desc: terminal count output (active low)
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: PL
+    desc: 'parallel load'
+  -
+    num: '2'
+    sym: Q3
+    desc: 'buffered parallel output'
+  -
+    num: '3'
+    sym: P3
+    desc: 'parallel data input'
+  -
+    num: '4'
+    sym: P0
+    desc: 'parallel data input'
+  -
+    num: '5'
+    sym: '&#126;CE'
+    desc: 'count enable (active low)'
+  -
+    num: '6'
+    sym: Q0
+    desc: 'buffered parallel output'
+  -
+    num: '7'
+    sym: '&#126;TC'
+    desc: 'terminal count output (active low)'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  BIN/~DEC
-    desc: binary/decade control input
-  - num:  10
-    sym:  UP/~DN
-    desc: up/down control input
-  - num:  11
-    sym:  Q1
-    desc: buffered parallel output
-  - num:  12
-    sym:  P1
-    desc: parallel data input
-  - num:  13
-    sym:  P2
-    desc: parallel data input
-  - num:  14
-    sym:  Q2
-    desc: buffered parallel output
-  - num:  15
-    sym:  CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  -
+    num: '9'
+    sym: 'BIN/&#126;DEC'
+    desc: 'binary/decade control input'
+  -
+    num: '10'
+    sym: 'UP/&#126;DN'
+    desc: 'up/down control input'
+  -
+    num: '11'
+    sym: Q1
+    desc: 'buffered parallel output'
+  -
+    num: '12'
+    sym: P1
+    desc: 'parallel data input'
+  -
+    num: '13'
+    sym: P2
+    desc: 'parallel data input'
+  -
+    num: '14'
+    sym: Q2
+    desc: 'buffered parallel output'
+  -
+    num: '15'
+    sym: CP
+    desc: 'clock input (low-to-high edge-triggered)'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'

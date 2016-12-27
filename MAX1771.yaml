@@ -1,43 +1,53 @@
----
-description: High-efficiency, low IQ, step-up DC-DC controller
-package:     DIP
-pincount:    8
-family:      Maxim
-datasheet:   "http://datasheets.maxim-ic.com/en/ds/MAX1771.pdf"
+description: 'High-efficiency, low IQ, step-up DC-DC controller'
+package: DIP
+pincount: '8'
+family: Maxim
+datasheet: 'http://datasheets.maxim-ic.com/en/ds/MAX1771.pdf'
 pins:
-  - num:  1
-    sym:  EXT
-    desc: gate drive for external n-channel power transistor
-  - num:  2
-    sym:  Vcc
-    desc: supply voltage
-  - num:  3
-    sym:  FB
-    desc: feedback input for adjustable output (tie to GND for fixed output)
-  - num:  4
-    sym:  SHDN
-    desc: shutdown (active high)
-  - num:  5
-    sym:  REF
-    desc: 1.5V reference output
-  - num:  6
-    sym:  AGND
-    desc: analog ground
-  - num:  7
-    sym:  GND
-    desc: output driver (high-current) ground
-  - num:  8
-    sym:  CS
-    desc: current sense amplifier input
+  -
+    num: '1'
+    sym: EXT
+    desc: 'gate drive for external n-channel power transistor'
+  -
+    num: '2'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '3'
+    sym: FB
+    desc: 'feedback input for adjustable output (tie to GND for fixed output)'
+  -
+    num: '4'
+    sym: SHDN
+    desc: 'shutdown (active high)'
+  -
+    num: '5'
+    sym: REF
+    desc: '1.5V reference output'
+  -
+    num: '6'
+    sym: AGND
+    desc: 'analog ground'
+  -
+    num: '7'
+    sym: GND
+    desc: 'output driver (high-current) ground'
+  -
+    num: '8'
+    sym: CS
+    desc: 'current sense amplifier input'
 specs:
-  - param: Input voltage
-    val:   [2 (min), 16.5 (max)]
-    unit:  V
-  - param: Output voltage (when fixed)
-    val:   12
-    unit:  V
-  - param: Maximum output power
-    val:   24
-    unit:  W
-...
-
+  -
+    param: 'Input voltage'
+    val:
+      - '2 (min)'
+      - '16.5 (max)'
+    unit: V
+  -
+    param: 'Output voltage (when fixed)'
+    val: '12'
+    unit: V
+  -
+    param: 'Maximum output power'
+    val: '24'
+    unit: W

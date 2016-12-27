@@ -1,74 +1,95 @@
----
-description:  Octal buffer/line driver; 3-state; non-inverting
-package:      DIP
-pincount:     20
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc241.74hct241.pdf"
+description: 'Octal buffer/line driver; 3-state; non-inverting'
+package: DIP
+pincount: '20'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc241.74hct241.pdf'
 pins:
-  - num:  1
-    sym:  1~OE
-    desc: output enable (active low)
-  - num:  2
-    sym:  1A0
-    desc: data input
-  - num:  3
-    sym:  2Y0
-    desc: bus output
-  - num:  4
-    sym:  1A1
-    desc: data input
-  - num:  5
-    sym:  2Y1
-    desc: bus output
-  - num:  6
-    sym:  1A2
-    desc: data input
-  - num:  7
-    sym:  2Y2
-    desc: bus output
-  - num:  8
-    sym:  1A3
-    desc: data input
-  - num:  9
-    sym:  2Y3
-    desc: bus output
-  - num:  10
-    sym:  GND
+  -
+    num: '1'
+    sym: '1&#126;OE'
+    desc: 'output enable (active low)'
+  -
+    num: '2'
+    sym: 1A0
+    desc: 'data input'
+  -
+    num: '3'
+    sym: 2Y0
+    desc: 'bus output'
+  -
+    num: '4'
+    sym: 1A1
+    desc: 'data input'
+  -
+    num: '5'
+    sym: 2Y1
+    desc: 'bus output'
+  -
+    num: '6'
+    sym: 1A2
+    desc: 'data input'
+  -
+    num: '7'
+    sym: 2Y2
+    desc: 'bus output'
+  -
+    num: '8'
+    sym: 1A3
+    desc: 'data input'
+  -
+    num: '9'
+    sym: 2Y3
+    desc: 'bus output'
+  -
+    num: '10'
+    sym: GND
     desc: ground
-  - num:  11
-    sym:  2A3
-    desc: data input
-  - num:  12
-    sym:  1Y3
-    desc: bus output
-  - num:  13
-    sym:  2A2
-    desc: data input
-  - num:  14
-    sym:  1Y2
-    desc: bus output
-  - num:  15
-    sym:  2A1
-    desc: data input
-  - num:  16
-    sym:  1Y1
-    desc: bus output
-  - num:  17
-    sym:  2A0
-    desc: data input
-  - num:  18
-    sym:  1Y0
-    desc: bus output
-  - num:  19
-    sym:  2OE
-    desc: output enable (active high)
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '11'
+    sym: 2A3
+    desc: 'data input'
+  -
+    num: '12'
+    sym: 1Y3
+    desc: 'bus output'
+  -
+    num: '13'
+    sym: 2A2
+    desc: 'data input'
+  -
+    num: '14'
+    sym: 1Y2
+    desc: 'bus output'
+  -
+    num: '15'
+    sym: 2A1
+    desc: 'data input'
+  -
+    num: '16'
+    sym: 1Y1
+    desc: 'bus output'
+  -
+    num: '17'
+    sym: 2A0
+    desc: 'data input'
+  -
+    num: '18'
+    sym: 1Y0
+    desc: 'bus output'
+  -
+    num: '19'
+    sym: 2OE
+    desc: 'output enable (active high)'
+  -
+    num: '20'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, nAn to nYn
-    val:    [7 (74HC), 11 (74HCT)]
-    unit:   ns
+  -
+    param: 'Propagation delay, nAn to nYn'
+    val:
+      - '7 (74HC)'
+      - '11 (74HCT)'
+    unit: ns
 notes:
-  - Setting 1~OE high or 2OE low causes the outputs to assume a high-impedance off state.
-...
+  - 'Setting 1&#126;OE high or 2OE low causes the outputs to assume a high-impedance off state.'

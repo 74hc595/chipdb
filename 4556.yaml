@@ -1,61 +1,73 @@
----
-description:  Dual 1-of-4 decoder/demultiplexer; inverting
-package:      DIP
-pincount:     16
-family:       "4000"
-datasheet:    "http://www.standardics.nxp.com/products/hef/datasheet/hef4556b.pdf"
+description: 'Dual 1-of-4 decoder/demultiplexer; inverting'
+package: DIP
+pincount: '16'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4556b.pdf'
 pins:
-  - num:  1
-    sym:  1~E
-    desc: enable input (active low)
-  - num:  2
-    sym:  1A__0
-    desc: address input
-  - num:  3
-    sym:  1A__1
-    desc: address input
-  - num:  4
-    sym:  1~Y~__0
+  -
+    num: '1'
+    sym: '1&#126;E'
+    desc: 'enable input (active low)'
+  -
+    num: '2'
+    sym: '1A&#95;&#95;0'
+    desc: 'address input'
+  -
+    num: '3'
+    sym: '1A&#95;&#95;1'
+    desc: 'address input'
+  -
+    num: '4'
+    sym: '1&#126;Y&#126;&#95;&#95;0'
     desc: output
-  - num:  5
-    sym:  1~Y~__1
+  -
+    num: '5'
+    sym: '1&#126;Y&#126;&#95;&#95;1'
     desc: output
-  - num:  6
-    sym:  1~Y~__2
+  -
+    num: '6'
+    sym: '1&#126;Y&#126;&#95;&#95;2'
     desc: output
-  - num:  7
-    sym:  1~Y~__3
+  -
+    num: '7'
+    sym: '1&#126;Y&#126;&#95;&#95;3'
     desc: output
-  - num:  8
-    sym:  GND
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  2~Y~__3
+  -
+    num: '9'
+    sym: '2&#126;Y&#126;&#95;&#95;3'
     desc: output
-  - num:  10
-    sym:  2~Y~__2
+  -
+    num: '10'
+    sym: '2&#126;Y&#126;&#95;&#95;2'
     desc: output
-  - num:  11
-    sym:  2~Y~__1
+  -
+    num: '11'
+    sym: '2&#126;Y&#126;&#95;&#95;1'
     desc: output
-  - num:  12
-    sym:  2~Y~__0
+  -
+    num: '12'
+    sym: '2&#126;Y&#126;&#95;&#95;0'
     desc: output
-  - num:  13
-    sym:  2A__1
-    desc: address input
-  - num:  14
-    sym:  2A__0
-    desc: address input
-  - num:  15
-    sym:  2~E
-    desc: enable input (active low)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '13'
+    sym: '2A&#95;&#95;1'
+    desc: 'address input'
+  -
+    num: '14'
+    sym: '2A&#95;&#95;0'
+    desc: 'address input'
+  -
+    num: '15'
+    sym: '2&#126;E'
+    desc: 'enable input (active low)'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 notes:
-  - Outputs are mutually exclusive, active low.
-  - When n~E is high, all outputs n~Y~ are high.
-...
-
-
+  - 'Outputs are mutually exclusive, active low.'
+  - 'When n&#126;E is high, all outputs n&#126;Y&#126; are high.'

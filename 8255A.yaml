@@ -1,150 +1,175 @@
----
-description: "Programmable peripheral interface"
-aliases:     [82C55A]
-package:     DIP
-pincount:    40
-family:      "Intel"
-datasheet:   "http://www.intersil.com/data/fn/fn2969.pdf"
+description: 'Programmable peripheral interface'
+aliases:
+  - 82C55A
+package: DIP
+pincount: '40'
+family: Intel
+datasheet: 'http://www.intersil.com/data/fn/fn2969.pdf'
 pins:
-  - num:  1
-    sym:  PA3
-    desc: port A
-  - num:  2
-    sym:  PA2
-    desc: port A
-  - num:  3
-    sym:  PA1
-    desc: port A
-  - num:  4
-    sym:  PA0
-    desc: port A
-  - num:  5
-    sym:  ~RD
-    desc: read enable (active low)
-  - num:  6
-    sym:  ~CS
-    desc: chip select (active low)
-  - num:  7
-    sym:  GND
+  -
+    num: '1'
+    sym: PA3
+    desc: 'port A'
+  -
+    num: '2'
+    sym: PA2
+    desc: 'port A'
+  -
+    num: '3'
+    sym: PA1
+    desc: 'port A'
+  -
+    num: '4'
+    sym: PA0
+    desc: 'port A'
+  -
+    num: '5'
+    sym: '&#126;RD'
+    desc: 'read enable (active low)'
+  -
+    num: '6'
+    sym: '&#126;CS'
+    desc: 'chip select (active low)'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  A1
-    desc: address input
-  - num:  9
-    sym:  A0
-    desc: address input
-  - num:  10
-    sym:  PC7
-    desc: port C
-  - num:  11
-    sym:  PC6
-    desc: port C
-  - num:  12
-    sym:  PC5
-    desc: port C
-  - num:  13
-    sym:  PC4
-    desc: port C
-  - num:  14
-    sym:  PC0
-    desc: port C
-  - num:  15
-    sym:  PC1
-    desc: port C
-  - num:  16
-    sym:  PC2
-    desc: port C
-  - num:  17
-    sym:  PC3
-    desc: port C
-  - num:  18
-    sym:  PB0
-    desc: port B
-  - num:  19
-    sym:  PB1
-    desc: port B
-  - num:  20
-    sym:  PB2
-    desc: port B
-  - num:  21
-    sym:  PB3
-    desc: port B
-  - num:  22
-    sym:  PB4
-    desc: port B
-  - num:  23
-    sym:  PB5
-    desc: port B
-  - num:  24
-    sym:  PB6
-    desc: port B
-  - num:  25
-    sym:  PB7
-    desc: port B
-  - num:  26
-    sym:  Vcc
-    desc: supply voltage
-  - num:  27
-    sym:  D7
-    desc: data bus
-  - num:  28
-    sym:  D6
-    desc: data bus
-  - num:  29
-    sym:  D5
-    desc: data bus
-  - num:  30
-    sym:  D4
-    desc: data bus
-  - num:  31
-    sym:  D3
-    desc: data bus
-  - num:  32
-    sym:  D2
-    desc: data bus
-  - num:  33
-    sym:  D1
-    desc: data bus
-  - num:  34
-    sym:  D0
-    desc: data bus
-  - num:  35
-    sym:  RESET
-    desc: reset (active high)
-  - num:  36
-    sym:  ~WR
-    desc: write enable (active low)
-  - num:  37
-    sym:  PA7
-    desc: port A
-  - num:  38
-    sym:  PA6
-    desc: port A
-  - num:  39
-    sym:  PA5
-    desc: port A
-  - num:  40
-    sym:  PA4
-    desc: port A
+  -
+    num: '8'
+    sym: A1
+    desc: 'address input'
+  -
+    num: '9'
+    sym: A0
+    desc: 'address input'
+  -
+    num: '10'
+    sym: PC7
+    desc: 'port C'
+  -
+    num: '11'
+    sym: PC6
+    desc: 'port C'
+  -
+    num: '12'
+    sym: PC5
+    desc: 'port C'
+  -
+    num: '13'
+    sym: PC4
+    desc: 'port C'
+  -
+    num: '14'
+    sym: PC0
+    desc: 'port C'
+  -
+    num: '15'
+    sym: PC1
+    desc: 'port C'
+  -
+    num: '16'
+    sym: PC2
+    desc: 'port C'
+  -
+    num: '17'
+    sym: PC3
+    desc: 'port C'
+  -
+    num: '18'
+    sym: PB0
+    desc: 'port B'
+  -
+    num: '19'
+    sym: PB1
+    desc: 'port B'
+  -
+    num: '20'
+    sym: PB2
+    desc: 'port B'
+  -
+    num: '21'
+    sym: PB3
+    desc: 'port B'
+  -
+    num: '22'
+    sym: PB4
+    desc: 'port B'
+  -
+    num: '23'
+    sym: PB5
+    desc: 'port B'
+  -
+    num: '24'
+    sym: PB6
+    desc: 'port B'
+  -
+    num: '25'
+    sym: PB7
+    desc: 'port B'
+  -
+    num: '26'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '27'
+    sym: D7
+    desc: 'data bus'
+  -
+    num: '28'
+    sym: D6
+    desc: 'data bus'
+  -
+    num: '29'
+    sym: D5
+    desc: 'data bus'
+  -
+    num: '30'
+    sym: D4
+    desc: 'data bus'
+  -
+    num: '31'
+    sym: D3
+    desc: 'data bus'
+  -
+    num: '32'
+    sym: D2
+    desc: 'data bus'
+  -
+    num: '33'
+    sym: D1
+    desc: 'data bus'
+  -
+    num: '34'
+    sym: D0
+    desc: 'data bus'
+  -
+    num: '35'
+    sym: RESET
+    desc: 'reset (active high)'
+  -
+    num: '36'
+    sym: '&#126;WR'
+    desc: 'write enable (active low)'
+  -
+    num: '37'
+    sym: PA7
+    desc: 'port A'
+  -
+    num: '38'
+    sym: PA6
+    desc: 'port A'
+  -
+    num: '39'
+    sym: PA5
+    desc: 'port A'
+  -
+    num: '40'
+    sym: PA4
+    desc: 'port A'
 notes:
-  - "Register 00: read/write port A"
-  - "Register 01: read/write port B"
-  - "Register 10: read/write port C"
-  - "Register 11: read/write control word"
-  - "Control word:
-<table>
-<tr><td>Bit 0</td><td>Port C lower bits; 1=input, 0=output</td></tr>
-<tr><td>Bit 1</td><td>Port B; 1=input, 0=output</td></tr>
-<tr><td>Bit 2</td><td>Group B mode selection</td></tr>
-<tr><td>Bit 3</td><td>Port C upper bits; 1=input, 0=output</td></tr>
-<tr><td>Bit 4</td><td>Port A; 1=input, 0=output</td></tr>
-<tr><td>Bits 5-6</td><td>Group A mode selection</td></tr>
-<tr><td>Bit 7</td><td>1=mode set, 0=bit set/reset</td></tr>
-</table><br/>"
-  - "When bit 7 of control word is set to 1, the rest of the bits have the following functions:
-<table>
-<tr><td>Bit 0</td><td>1=set bit, 0=clear bit</td></tr>
-<tr><td>Bits 1-3</td><td>specify bit to modify (0-7)</td></tr>
-</table>"
-...
-
+  - 'Register 00: read/write port A'
+  - 'Register 01: read/write port B'
+  - 'Register 10: read/write port C'
+  - 'Register 11: read/write control word'
+  - 'Control word:&NewLine;<table>&NewLine;<tr><td>Bit 0</td><td>Port C lower bits; 1=input, 0=output</td></tr>&NewLine;<tr><td>Bit 1</td><td>Port B; 1=input, 0=output</td></tr>&NewLine;<tr><td>Bit 2</td><td>Group B mode selection</td></tr>&NewLine;<tr><td>Bit 3</td><td>Port C upper bits; 1=input, 0=output</td></tr>&NewLine;<tr><td>Bit 4</td><td>Port A; 1=input, 0=output</td></tr>&NewLine;<tr><td>Bits 5-6</td><td>Group A mode selection</td></tr>&NewLine;<tr><td>Bit 7</td><td>1=mode set, 0=bit set/reset</td></tr>&NewLine;</table><br/>'
+  - 'When bit 7 of control word is set to 1, the rest of the bits have the following functions:&NewLine;<table>&NewLine;<tr><td>Bit 0</td><td>1=set bit, 0=clear bit</td></tr>&NewLine;<tr><td>Bits 1-3</td><td>specify bit to modify (0-7)</td></tr>&NewLine;</table>'

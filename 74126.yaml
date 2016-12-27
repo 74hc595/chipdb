@@ -1,54 +1,69 @@
----
-description:  Quad buffer/line driver with active high output enable; 3-state
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc126.74hct126.pdf"
+description: 'Quad buffer/line driver with active high output enable; 3-state'
+package: DIP
+pincount: '14'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc126.74hct126.pdf'
 pins:
-  - num:  1
-    sym:  1OE
-    desc: output enable (active high)
-  - num:  2
-    sym:  1A
-    desc: data input
-  - num:  3
-    sym:  1Y
-    desc: data output
-  - num:  4
-    sym:  2OE
-    desc: output enable (active high)
-  - num:  5
-    sym:  2A
-    desc: data input
-  - num:  6
-    sym:  2Y
-    desc: data output
-  - num:  7
-    sym:  GND
+  -
+    num: '1'
+    sym: 1OE
+    desc: 'output enable (active high)'
+  -
+    num: '2'
+    sym: 1A
+    desc: 'data input'
+  -
+    num: '3'
+    sym: 1Y
+    desc: 'data output'
+  -
+    num: '4'
+    sym: 2OE
+    desc: 'output enable (active high)'
+  -
+    num: '5'
+    sym: 2A
+    desc: 'data input'
+  -
+    num: '6'
+    sym: 2Y
+    desc: 'data output'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  3Y
-    desc: data output
-  - num:  9
-    sym:  3A
-    desc: data input
-  - num:  10
-    sym:  3OE
-    desc: output enable (active high)
-  - num:  11
-    sym:  4Y
-    desc: data output
-  - num:  12
-    sym:  4A
-    desc: data input
-  - num:  13
-    sym:  4OE
-    desc: output enable (active high)
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '8'
+    sym: 3Y
+    desc: 'data output'
+  -
+    num: '9'
+    sym: 3A
+    desc: 'data input'
+  -
+    num: '10'
+    sym: 3OE
+    desc: 'output enable (active high)'
+  -
+    num: '11'
+    sym: 4Y
+    desc: 'data output'
+  -
+    num: '12'
+    sym: 4A
+    desc: 'data input'
+  -
+    num: '13'
+    sym: 4OE
+    desc: 'output enable (active high)'
+  -
+    num: '14'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, nA to nY
-    val:    [9 (74HC), 11 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, nA to nY'
+    val:
+      - '9 (74HC)'
+      - '11 (74HCT)'
+    unit: ns

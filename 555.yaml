@@ -1,46 +1,55 @@
----
-description:  Timer
-package:      DIP
-pincount:     8
-datasheet:    http://www.datasheetcatalog.org/datasheet/philips/NE_SA_SE555_C_2.pdf
+description: Timer
+package: DIP
+pincount: '8'
+datasheet: 'http://www.datasheetcatalog.org/datasheet/philips/NE&#95;SA&#95;SE555&#95;C&#95;2.pdf'
 pins:
-  - num:  1
-    sym:  GND
+  -
+    num: '1'
+    sym: GND
     desc: ground
-  - num:  2
-    sym:  TRIG
+  -
+    num: '2'
+    sym: TRIG
     desc: trigger
-  - num:  3
-    sym:  OUT
+  -
+    num: '3'
+    sym: OUT
     desc: output
-  - num:  4
-    sym:  ~RESET
-    desc: reset (active low)
-  - num:  5
-    sym:  CV
-    desc: control voltage
-  - num:  6
-    sym:  THR
+  -
+    num: '4'
+    sym: '&#126;RESET'
+    desc: 'reset (active low)'
+  -
+    num: '5'
+    sym: CV
+    desc: 'control voltage'
+  -
+    num: '6'
+    sym: THR
     desc: threshold
-  - num:  7
-    sym:  DIS
+  -
+    num: '7'
+    sym: DIS
     desc: discharge
-  - num:  8
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '8'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Maximum supply voltage
-    val:    18
-    unit:   V
-  - param:  Maximum output current (NE555)
-    val:    200
-    unit:   mA
-  - param:  Power dissipation
-    val:    600
-    unit:   mW
+  -
+    param: 'Maximum supply voltage'
+    val: '18'
+    unit: V
+  -
+    param: 'Maximum output current (NE555)'
+    val: '200'
+    unit: mA
+  -
+    param: 'Power dissipation'
+    val: '600'
+    unit: mW
 notes:
-  - In monostable mode, pulse width &asymp; 1.1RC
-  - In astable mode, frequency = 1/(0.693*C*(R1+2*R2)) 
-  - In astable mode, pulse high time = 0.693*(R1+R2)*C
-  - In astable mode, pulse low time = 0.693*R2*C
-...
+  - 'In monostable mode, pulse width &approx; 1.1RC'
+  - 'In astable mode, frequency = 1/(0.693*C*(R1+2*R2))'
+  - 'In astable mode, pulse high time = 0.693*(R1+R2)*C'
+  - 'In astable mode, pulse low time = 0.693*R2*C'

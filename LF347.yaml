@@ -1,72 +1,91 @@
----
-description: Wide bandwidth quad JFET-input operational amplifier
-aliases:     [LF147]
-package:     DIP
-pincount:    14
-family:      linear
-datasheet:   "http://www.national.com/ds/LF/LF147.pdf"
+description: 'Wide bandwidth quad JFET-input operational amplifier'
+aliases:
+  - LF147
+package: DIP
+pincount: '14'
+family: linear
+datasheet: 'http://www.national.com/ds/LF/LF147.pdf'
 pins:
-  - num:  1
-    sym:  1OUT
-    desc: output 1
-  - num:  2
-    sym:  1IN-
-    desc: inverting input 1
-  - num:  3
-    sym:  1IN+
-    desc: non-inverting input 1
-  - num:  4
-    sym:  Vcc
-    desc: positive supply voltage
-  - num:  5
-    sym:  2IN+
-    desc: non-inverting input 2
-  - num:  6
-    sym:  2IN-
-    desc: inverting input 2
-  - num:  7
-    sym:  2OUT
-    desc: output 2
-  - num:  8
-    sym:  3OUT
-    desc: output 3
-  - num:  9
-    sym:  3IN-
-    desc: inverting input 3
-  - num:  10
-    sym:  3IN+
-    desc: non-inverting input 3
-  - num:  11
-    sym:  Vss
-    desc: negative supply voltage
-  - num:  12
-    sym:  4IN+
-    desc: non-inverting input 4
-  - num:  13
-    sym:  4IN-
-    desc: inverting input 4
-  - num:  14
-    sym:  4OUT
-    desc: output 4
+  -
+    num: '1'
+    sym: 1OUT
+    desc: 'output 1'
+  -
+    num: '2'
+    sym: 1IN-
+    desc: 'inverting input 1'
+  -
+    num: '3'
+    sym: 1IN+
+    desc: 'non-inverting input 1'
+  -
+    num: '4'
+    sym: Vcc
+    desc: 'positive supply voltage'
+  -
+    num: '5'
+    sym: 2IN+
+    desc: 'non-inverting input 2'
+  -
+    num: '6'
+    sym: 2IN-
+    desc: 'inverting input 2'
+  -
+    num: '7'
+    sym: 2OUT
+    desc: 'output 2'
+  -
+    num: '8'
+    sym: 3OUT
+    desc: 'output 3'
+  -
+    num: '9'
+    sym: 3IN-
+    desc: 'inverting input 3'
+  -
+    num: '10'
+    sym: 3IN+
+    desc: 'non-inverting input 3'
+  -
+    num: '11'
+    sym: Vss
+    desc: 'negative supply voltage'
+  -
+    num: '12'
+    sym: 4IN+
+    desc: 'non-inverting input 4'
+  -
+    num: '13'
+    sym: 4IN-
+    desc: 'inverting input 4'
+  -
+    num: '14'
+    sym: 4OUT
+    desc: 'output 4'
 specs:
-  - param: Supply voltage
-    val:   [8 (min), 36 (max)]
-    unit:  V
-  - param: Maximum offset voltage
-    val:   5
-    unit:  mV
-  - param: Gain bandwidth
-    val:   4
-    unit:  MHz
-  - param: Slew rate
-    val:   13
-    unit:  "V/&micro;s"
-  - param: Voltage noise
-    val:   20
-    unit:  "nV/&radic;Hz"
-  - param: "Supply current (per channel)"
-    val:   1.8
-    unit:  mA
-...
-
-
+  -
+    param: 'Supply voltage'
+    val:
+      - '8 (min)'
+      - '36 (max)'
+    unit: V
+  -
+    param: 'Maximum offset voltage'
+    val: '5'
+    unit: mV
+  -
+    param: 'Gain bandwidth'
+    val: '4'
+    unit: MHz
+  -
+    param: 'Slew rate'
+    val: '13'
+    unit: 'V/&micro;s'
+  -
+    param: 'Voltage noise'
+    val: '20'
+    unit: 'nV/&Sqrt;Hz'
+  -
+    param: 'Supply current (per channel)'
+    val: '1.8'
+    unit: mA

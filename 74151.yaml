@@ -1,69 +1,95 @@
----
-description:  8-input multiplexer
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc151.74hct151.pdf"
+description: '8-input multiplexer'
+package: DIP
+pincount: '16'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc151.74hct151.pdf'
 pins:
-  - num:  1
-    sym:  I__3
-    desc: multiplexer input
-  - num:  2
-    sym:  I__2
-    desc: multiplexer input
-  - num:  3
-    sym:  I__1
-    desc: multiplexer input
-  - num:  4
-    sym:  I__0
-    desc: multiplexer input
-  - num:  5
-    sym:  Y
-    desc: multiplexer output
-  - num:  6
-    sym:  ~Y
-    desc: complementary multiplexer output
-  - num:  7
-    sym:  ~E
-    desc: enable input (active low)
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: 'I&#95;&#95;3'
+    desc: 'multiplexer input'
+  -
+    num: '2'
+    sym: 'I&#95;&#95;2'
+    desc: 'multiplexer input'
+  -
+    num: '3'
+    sym: 'I&#95;&#95;1'
+    desc: 'multiplexer input'
+  -
+    num: '4'
+    sym: 'I&#95;&#95;0'
+    desc: 'multiplexer input'
+  -
+    num: '5'
+    sym: 'Y'
+    desc: 'multiplexer output'
+  -
+    num: '6'
+    sym: '&#126;Y'
+    desc: 'complementary multiplexer output'
+  -
+    num: '7'
+    sym: '&#126;E'
+    desc: 'enable input (active low)'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  S__2
-    desc: select input
-  - num:  10
-    sym:  S__1
-    desc: select input
-  - num:  11
-    sym:  S__0
-    desc: select input
-  - num:  12
-    sym:  I__7
-    desc: multiplexer input
-  - num:  13
-    sym:  I__6
-    desc: multiplexer input
-  - num:  14
-    sym:  I__5
-    desc: multiplexer input
-  - num:  15
-    sym:  I__4
-    desc: multiplexer input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: 'S&#95;&#95;2'
+    desc: 'select input'
+  -
+    num: '10'
+    sym: 'S&#95;&#95;1'
+    desc: 'select input'
+  -
+    num: '11'
+    sym: 'S&#95;&#95;0'
+    desc: 'select input'
+  -
+    num: '12'
+    sym: 'I&#95;&#95;7'
+    desc: 'multiplexer input'
+  -
+    num: '13'
+    sym: 'I&#95;&#95;6'
+    desc: 'multiplexer input'
+  -
+    num: '14'
+    sym: 'I&#95;&#95;5'
+    desc: 'multiplexer input'
+  -
+    num: '15'
+    sym: 'I&#95;&#95;4'
+    desc: 'multiplexer input'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, I__n to Y, ~Y
-    val:    [17 (74HC), 19 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, S__n to Y, ~Y
-    val:    [19 (74HC), 20 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~E to Y
-    val:    [12 (74HC), 13 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~E to ~Y
-    val:    [14 (74HC), 18 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, I&#95;&#95;n to Y, &#126;Y'
+    val:
+      - '17 (74HC)'
+      - '19 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, S&#95;&#95;n to Y, &#126;Y'
+    val:
+      - '19 (74HC)'
+      - '20 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;E to Y'
+    val:
+      - '12 (74HC)'
+      - '13 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;E to &#126;Y'
+    val:
+      - '14 (74HC)'
+      - '18 (74HCT)'
+    unit: ns

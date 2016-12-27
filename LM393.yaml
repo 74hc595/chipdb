@@ -1,47 +1,58 @@
----
-description: Low-power, low-offset dual comparator
-aliases:     [LM193, LM293]
-package:     DIP
-pincount:    8
-family:      "linear"
-datasheet:   "http://www.national.com/ds/LM/LM193.pdf"
+description: 'Low-power, low-offset dual comparator'
+aliases:
+  - LM193
+  - LM293
+package: DIP
+pincount: '8'
+family: linear
+datasheet: 'http://www.national.com/ds/LM/LM193.pdf'
 pins:
-  - num:  1
-    sym:  1OUT
-    desc: output 1
-  - num:  2
-    sym:  1IN-
-    desc: inverting input 1
-  - num:  3
-    sym:  1IN+
-    desc: non-inverting input 1
-  - num:  4
-    sym:  GND
+  -
+    num: '1'
+    sym: 1OUT
+    desc: 'output 1'
+  -
+    num: '2'
+    sym: 1IN-
+    desc: 'inverting input 1'
+  -
+    num: '3'
+    sym: 1IN+
+    desc: 'non-inverting input 1'
+  -
+    num: '4'
+    sym: GND
     desc: ground
-  - num:  5
-    sym:  2IN+
-    desc: non-inverting input 2
-  - num:  6
-    sym:  2IN-
-    desc: inverting input 2
-  - num:  7
-    sym:  2OUT
-    desc: output 2
-  - num:  8
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '5'
+    sym: 2IN+
+    desc: 'non-inverting input 2'
+  -
+    num: '6'
+    sym: 2IN-
+    desc: 'inverting input 2'
+  -
+    num: '7'
+    sym: 2OUT
+    desc: 'output 2'
+  -
+    num: '8'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: Maximum supply voltage
-    val:   36
-    unit:  V
-  - param: Offset voltage
-    val:   1
-    unit:  mV
-  - param: Response time
-    val:   1.3
-    unit:  "&micro;s"
-  - param: Supply current
-    val:   0.4
-    unit:  mA
-...
-
+  -
+    param: 'Maximum supply voltage'
+    val: '36'
+    unit: V
+  -
+    param: 'Offset voltage'
+    val: '1'
+    unit: mV
+  -
+    param: 'Response time'
+    val: '1.3'
+    unit: '&micro;s'
+  -
+    param: 'Supply current'
+    val: '0.4'
+    unit: mA

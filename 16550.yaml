@@ -1,144 +1,183 @@
----
-description: "Universal asynchronous receiver-transmitter with FIFOs"
-aliases:     ["16C550"]
-package:     DIP
-pincount:    40
-family:      "uart"
-datasheet:   "http://www.national.com/ds/PC/PC16550D.pdf"
+description: 'Universal asynchronous receiver-transmitter with FIFOs'
+aliases:
+  - 16C550
+package: DIP
+pincount: '40'
+family: uart
+datasheet: 'http://www.national.com/ds/PC/PC16550D.pdf'
 pins:
-  - num:  1
-    sym:  D__0
-    desc: data bus
-  - num:  2
-    sym:  D__1
-    desc: data bus
-  - num:  3
-    sym:  D__2
-    desc: data bus
-  - num:  4
-    sym:  D__3
-    desc: data bus
-  - num:  5
-    sym:  D__4
-    desc: data bus
-  - num:  6
-    sym:  D__5
-    desc: data bus
-  - num:  7
-    sym:  D__6
-    desc: data bus
-  - num:  8
-    sym:  D__7
-    desc: data bus
-  - num:  9
-    sym:  RCLK
-    desc: receiver clock input (16x baud rate)
-  - num:  10
-    sym:  RX
-    desc: serial input
-  - num:  11
-    sym:  TX
-    desc: serial output
-  - num:  12
-    sym:  CS0
-    desc: chip select (active high)
-  - num:  13
-    sym:  CS1
-    desc: chip select (active high)
-  - num:  14
-    sym:  ~CS2
-    desc: chip select (active low)
-  - num:  15
-    sym:  ~BAUDOUT
-    desc: baud rate generator output
-  - num:  16
-    sym:  XIN
-    desc: external crystal input
-  - num:  17
-    sym:  XOUT
-    desc: external crystal output
-  - num:  18
-    sym:  ~WR
-    desc: write enable (active low)
-  - num:  19
-    sym:  WR
-    desc: write enable (active high)
-  - num:  20
-    sym:  GND
+  -
+    num: '1'
+    sym: 'D&#95;&#95;0'
+    desc: 'data bus'
+  -
+    num: '2'
+    sym: 'D&#95;&#95;1'
+    desc: 'data bus'
+  -
+    num: '3'
+    sym: 'D&#95;&#95;2'
+    desc: 'data bus'
+  -
+    num: '4'
+    sym: 'D&#95;&#95;3'
+    desc: 'data bus'
+  -
+    num: '5'
+    sym: 'D&#95;&#95;4'
+    desc: 'data bus'
+  -
+    num: '6'
+    sym: 'D&#95;&#95;5'
+    desc: 'data bus'
+  -
+    num: '7'
+    sym: 'D&#95;&#95;6'
+    desc: 'data bus'
+  -
+    num: '8'
+    sym: 'D&#95;&#95;7'
+    desc: 'data bus'
+  -
+    num: '9'
+    sym: RCLK
+    desc: 'receiver clock input (16x baud rate)'
+  -
+    num: '10'
+    sym: RX
+    desc: 'serial input'
+  -
+    num: '11'
+    sym: TX
+    desc: 'serial output'
+  -
+    num: '12'
+    sym: CS0
+    desc: 'chip select (active high)'
+  -
+    num: '13'
+    sym: CS1
+    desc: 'chip select (active high)'
+  -
+    num: '14'
+    sym: '&#126;CS2'
+    desc: 'chip select (active low)'
+  -
+    num: '15'
+    sym: '&#126;BAUDOUT'
+    desc: 'baud rate generator output'
+  -
+    num: '16'
+    sym: XIN
+    desc: 'external crystal input'
+  -
+    num: '17'
+    sym: XOUT
+    desc: 'external crystal output'
+  -
+    num: '18'
+    sym: '&#126;WR'
+    desc: 'write enable (active low)'
+  -
+    num: '19'
+    sym: WR
+    desc: 'write enable (active high)'
+  -
+    num: '20'
+    sym: GND
     desc: ground
-  - num:  21
-    sym:  ~RD
-    desc: read enable (active low)
-  - num:  22
-    sym:  RD
-    desc: read enable (active high)
-  - num:  23
-    sym:  DDIS
-    desc: driver disable
-  - num:  24
-    sym:  ~TXRDY
-    desc: TX DMA signal
-  - num:  25
-    sym:  ~ADS
-    desc: address strobe input
-  - num:  26
-    sym:  A__2
-    desc: register select
-  - num:  27
-    sym:  A__1
-    desc: register select
-  - num:  28
-    sym:  A__0
-    desc: register select
-  - num:  29
-    sym:  ~RXRDY
-    desc: RX DMA signal
-  - num:  30
-    sym:  INTR
-    desc: interrupt output (active high)
-  - num:  31
-    sym:  ~OUT2
-    desc: general purpose output
-  - num:  32
-    sym:  ~RTS
-    desc: request to send (output to modem)
-  - num:  33
-    sym:  ~DTR
-    desc: data terminal ready (output to modem)
-  - num:  34
-    sym:  ~OUT1
-    desc: general purpose output
-  - num:  35
-    sym:  MR
-    desc: master reset (active high)
-  - num:  36
-    sym:  ~CTS
-    desc: clear to send (input from modem)
-  - num:  37
-    sym:  ~DSR
-    desc: data set ready (input from modem)
-  - num:  38
-    sym:  ~DCD
-    desc: data carrier detect (input from modem)
-  - num:  39
-    sym:  ~RI
-    desc: ring indicator (input from modem)
-  - num:  40
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '21'
+    sym: '&#126;RD'
+    desc: 'read enable (active low)'
+  -
+    num: '22'
+    sym: RD
+    desc: 'read enable (active high)'
+  -
+    num: '23'
+    sym: DDIS
+    desc: 'driver disable'
+  -
+    num: '24'
+    sym: '&#126;TXRDY'
+    desc: 'TX DMA signal'
+  -
+    num: '25'
+    sym: '&#126;ADS'
+    desc: 'address strobe input'
+  -
+    num: '26'
+    sym: 'A&#95;&#95;2'
+    desc: 'register select'
+  -
+    num: '27'
+    sym: 'A&#95;&#95;1'
+    desc: 'register select'
+  -
+    num: '28'
+    sym: 'A&#95;&#95;0'
+    desc: 'register select'
+  -
+    num: '29'
+    sym: '&#126;RXRDY'
+    desc: 'RX DMA signal'
+  -
+    num: '30'
+    sym: INTR
+    desc: 'interrupt output (active high)'
+  -
+    num: '31'
+    sym: '&#126;OUT2'
+    desc: 'general purpose output'
+  -
+    num: '32'
+    sym: '&#126;RTS'
+    desc: 'request to send (output to modem)'
+  -
+    num: '33'
+    sym: '&#126;DTR'
+    desc: 'data terminal ready (output to modem)'
+  -
+    num: '34'
+    sym: '&#126;OUT1'
+    desc: 'general purpose output'
+  -
+    num: '35'
+    sym: MR
+    desc: 'master reset (active high)'
+  -
+    num: '36'
+    sym: '&#126;CTS'
+    desc: 'clear to send (input from modem)'
+  -
+    num: '37'
+    sym: '&#126;DSR'
+    desc: 'data set ready (input from modem)'
+  -
+    num: '38'
+    sym: '&#126;DCD'
+    desc: 'data carrier detect (input from modem)'
+  -
+    num: '39'
+    sym: '&#126;RI'
+    desc: 'ring indicator (input from modem)'
+  -
+    num: '40'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: "maximum baud rate"
-    val:   1.5
-    unit:  Mbaud
+  -
+    param: 'maximum baud rate'
+    val: '1.5'
+    unit: Mbaud
 notes:
-  - "Register 000: receive buffer (read), transmit holding register (write)"
-  - "Register 001: interrupt enable"
-  - "Register 010: interrupt identification (read), FIFO control (write)"
-  - "Register 011: line control"
-  - "Register 100: modem control"
-  - "Register 101: line status"
-  - "Register 110: modem status"
-  - "Register 111: scratch register"
-  - "When bit 7 in the Line Control Register is set, the baud rate divisor latch is enabled. (register 000=LSB, register 001=MSB)"
-...
-
+  - 'Register 000: receive buffer (read), transmit holding register (write)'
+  - 'Register 001: interrupt enable'
+  - 'Register 010: interrupt identification (read), FIFO control (write)'
+  - 'Register 011: line control'
+  - 'Register 100: modem control'
+  - 'Register 101: line status'
+  - 'Register 110: modem status'
+  - 'Register 111: scratch register'
+  - 'When bit 7 in the Line Control Register is set, the baud rate divisor latch is enabled. (register 000=LSB, register 001=MSB)'

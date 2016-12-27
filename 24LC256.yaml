@@ -1,47 +1,65 @@
----
-description: "256K I2C CMOS serial EEPROM"
-aliases:     [24AA256, 24FC256]
-package:     DIP
-pincount:    8
-family:      Microchip
-datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/21203P.pdf"
+description: '256K I2C CMOS serial EEPROM'
+aliases:
+  - 24AA256
+  - 24FC256
+package: DIP
+pincount: '8'
+family: Microchip
+datasheet: 'http://ww1.microchip.com/downloads/en/DeviceDoc/21203P.pdf'
 pins:
-  - num:  1
-    sym:  A0
-    desc: user-configurable chip select
-  - num:  2
-    sym:  A1
-    desc: user-configurable chip select
-  - num:  3
-    sym:  A2
-    desc: user-configurable chip select
-  - num:  4
-    sym:  GND
+  -
+    num: '1'
+    sym: A0
+    desc: 'user-configurable chip select'
+  -
+    num: '2'
+    sym: A1
+    desc: 'user-configurable chip select'
+  -
+    num: '3'
+    sym: A2
+    desc: 'user-configurable chip select'
+  -
+    num: '4'
+    sym: GND
     desc: ground
-  - num:  5
-    sym:  SDA
-    desc: serial data input/output
-  - num:  6
-    sym:  SCL
-    desc: serial clock input
-  - num:  7
-    sym:  WP
-    desc: write protect (active high)
-  - num:  8
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '5'
+    sym: SDA
+    desc: 'serial data input/output'
+  -
+    num: '6'
+    sym: SCL
+    desc: 'serial clock input'
+  -
+    num: '7'
+    sym: WP
+    desc: 'write protect (active high)'
+  -
+    num: '8'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: Minimum supply voltage
-    val:   [1.7 (24AA256), 2.5 (24LC256), 1.7 (24FC256)]
-    unit:  V
-  - param: Maximum clock frequency
-    val:   [100k (Vcc &lt; 2.5V), 400k (24AA256), 400k (24LC256), 1M (24FC256)]
-    unit:  Hz
-  - param: Maximum write cycle time
-    val:   5
-    unit:  ms
-  - param: Endurance
-    val:   1 000 000
-    unit:  cycles
-...
-
+  -
+    param: 'Minimum supply voltage'
+    val:
+      - '1.7 (24AA256)'
+      - '2.5 (24LC256)'
+      - '1.7 (24FC256)'
+    unit: V
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '100k (Vcc < 2.5V)'
+      - '400k (24AA256)'
+      - '400k (24LC256)'
+      - '1M (24FC256)'
+    unit: Hz
+  -
+    param: 'Maximum write cycle time'
+    val: '5'
+    unit: ms
+  -
+    param: Endurance
+    val: '1 000 000'
+    unit: cycles

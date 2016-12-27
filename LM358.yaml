@@ -1,50 +1,65 @@
----
-description: "Low power dual operational amplifier"
-aliases:     [LM158, LM258, LM2904]
-package:     DIP
-pincount:    8
-family:      "linear"
-datasheet:   "http://www.national.com/ds/LM/LM158.pdf"
+description: 'Low power dual operational amplifier'
+aliases:
+  - LM158
+  - LM258
+  - LM2904
+package: DIP
+pincount: '8'
+family: linear
+datasheet: 'http://www.national.com/ds/LM/LM158.pdf'
 pins:
-  - num:  1
-    sym:  1OUT
-    desc: output 1
-  - num:  2
-    sym:  1IN-
-    desc: inverting input 1
-  - num:  3
-    sym:  1IN+
-    desc: non-inverting input 1
-  - num:  4
-    sym:  GND
+  -
+    num: '1'
+    sym: 1OUT
+    desc: 'output 1'
+  -
+    num: '2'
+    sym: 1IN-
+    desc: 'inverting input 1'
+  -
+    num: '3'
+    sym: 1IN+
+    desc: 'non-inverting input 1'
+  -
+    num: '4'
+    sym: GND
     desc: ground
-  - num:  5
-    sym:  2IN+
-    desc: non-inverting input 2
-  - num:  6
-    sym:  2IN-
-    desc: inverting input 1
-  - num:  7
-    sym:  2OUT
-    desc: output 2
-  - num:  8
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '5'
+    sym: 2IN+
+    desc: 'non-inverting input 2'
+  -
+    num: '6'
+    sym: 2IN-
+    desc: 'inverting input 1'
+  -
+    num: '7'
+    sym: 2OUT
+    desc: 'output 2'
+  -
+    num: '8'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: Maximum supply voltage
-    val:   [32 (LM158/258/358), 26 (LM2904)]
-    unit:  V
-  - param: Input offset voltage
-    val:   2
-    unit:  mV
-  - param: Unity-gain bandwidth
-    val:   1
-    unit:  MHz
-  - param: dc voltage gain
-    val:   100
-    unit:  dB
-  - param: Supply current
-    val:   0.5
-    unit:  mA
-...
-
+  -
+    param: 'Maximum supply voltage'
+    val:
+      - '32 (LM158/258/358)'
+      - '26 (LM2904)'
+    unit: V
+  -
+    param: 'Input offset voltage'
+    val: '2'
+    unit: mV
+  -
+    param: 'Unity-gain bandwidth'
+    val: '1'
+    unit: MHz
+  -
+    param: 'dc voltage gain'
+    val: '100'
+    unit: dB
+  -
+    param: 'Supply current'
+    val: '0.5'
+    unit: mA

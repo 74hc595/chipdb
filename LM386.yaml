@@ -1,53 +1,68 @@
----
-description: "Low voltage audio power amplifier"
-package:     DIP
-pincount:    8
-family:      "linear"
-datasheet:   "http://www.national.com/ds/LM/LM386.pdf"
+description: 'Low voltage audio power amplifier'
+package: DIP
+pincount: '8'
+family: linear
+datasheet: 'http://www.national.com/ds/LM/LM386.pdf'
 pins:
-  - num:  1
-    sym:  GAIN
-    desc: gain adjustment
-  - num:  2
-    sym:  IN-
-    desc: inverting input
-  - num:  3
-    sym:  IN+
-    desc: non-inverting input
-  - num:  4
-    sym:  GND
+  -
+    num: '1'
+    sym: GAIN
+    desc: 'gain adjustment'
+  -
+    num: '2'
+    sym: IN-
+    desc: 'inverting input'
+  -
+    num: '3'
+    sym: IN+
+    desc: 'non-inverting input'
+  -
+    num: '4'
+    sym: GND
     desc: ground
-  - num:  5
-    sym:  OUT
+  -
+    num: '5'
+    sym: OUT
     desc: output
-  - num:  6
-    sym:  Vcc
-    desc: supply voltage
-  - num:  7
-    sym:  BYPASS
+  -
+    num: '6'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '7'
+    sym: BYPASS
     desc: bypass
-  - num:  8
-    sym:  GAIN
-    desc: gain adjustment
+  -
+    num: '8'
+    sym: GAIN
+    desc: 'gain adjustment'
 specs:
-  - param: Supply voltage
-    val:   [4 (min), 12 (max)]
-    unit:  V
-  - param: Quiescent current
-    val:   4
-    unit:  mA
-  - param: Output power
-    val:   325
-    unit:  mW
-  - param: Voltage gain
-    val:   [20 (min), 200 (max)]
-  - param: Bandwidth
-    val:   300
-    unit:  kHz
-  - param: Total harmonic distortion
-    val:   0.2
-    unit:  "%"
+  -
+    param: 'Supply voltage'
+    val:
+      - '4 (min)'
+      - '12 (max)'
+    unit: V
+  -
+    param: 'Quiescent current'
+    val: '4'
+    unit: mA
+  -
+    param: 'Output power'
+    val: '325'
+    unit: mW
+  -
+    param: 'Voltage gain'
+    val:
+      - '20 (min)'
+      - '200 (max)'
+  -
+    param: Bandwidth
+    val: '300'
+    unit: kHz
+  -
+    param: 'Total harmonic distortion'
+    val: '0.2'
+    unit: '%'
 notes:
-  - The gain can be varied between 20 and 200 with a resistor in series with a capacitor across pins 1 and 8.
-...
-
+  - 'The gain can be varied between 20 and 200 with a resistor in series with a capacitor across pins 1 and 8.'

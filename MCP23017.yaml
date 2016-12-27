@@ -1,94 +1,119 @@
----
-description: "16-Bit I/O Expander with Serial Interface"
-aliases:     []
-package:     DIP
-pincount:    28
-family:      "Microchip"
-datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf"
+description: '16-Bit I/O Expander with Serial Interface'
+aliases: {  }
+package: DIP
+pincount: '28'
+family: Microchip
+datasheet: 'http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf'
 pins:
-  - num:  1
-    sym:  GPB0
-    desc: Bidirectional I/O pin.
-  - num:  2
-    sym:  GPB1
-    desc: Bidirectional I/O pin.
-  - num:  3
-    sym:  GPB2
-    desc: Bidirectional I/O pin.
-  - num:  4
-    sym:  GPB3
-    desc: Bidirectional I/O pin.
-  - num:  5
-    sym:  GPB4
-    desc: Bidirectional I/O pin.
-  - num:  6
-    sym:  GPB5
-    desc: Bidirectional I/O pin.
-  - num:  7
-    sym:  GPB6
-    desc: Bidirectional I/O pin.
-  - num:  8
-    sym:  GPB7
-    desc: Bidirectional I/O pin.
-  - num:  9
-    sym:  V__DD
+  -
+    num: '1'
+    sym: GPB0
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '2'
+    sym: GPB1
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '3'
+    sym: GPB2
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '4'
+    sym: GPB3
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '5'
+    sym: GPB4
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '6'
+    sym: GPB5
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '7'
+    sym: GPB6
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '8'
+    sym: GPB7
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '9'
+    sym: 'V&#95;&#95;DD'
     desc: Power
-  - num:  10
-    sym:  V__SS
+  -
+    num: '10'
+    sym: 'V&#95;&#95;SS'
     desc: Ground
-  - num:  11
-    sym:  NC
-    desc: Not connected
-  - num:  12
-    sym:  SCL
-    desc: Serial clock input
-  - num:  13
-    sym:  SDA
-    desc: Serial data I/O
-  - num:  14
-    sym:  NC
-    desc: Not connected
-  - num:  15
-    sym:  A0
-    desc: Hardware address pin. Must be externally biased.
-  - num:  16
-    sym:  A1
-    desc: Hardware address pin. Must be externally biased.
-  - num:  17
-    sym:  A2
-    desc: Hardware address pin. Must be externally biased.
-  - num:  18
-    sym:  ~RESET
-    desc: Hardware reset. Must be externally biased.
-  - num:  19
-    sym:  INTB
-    desc: Interrupt output for PORTB. Can be configured as active-high, active-low or open-drain.
-  - num:  20
-    sym:  INTA
-    desc: Interrupt output for PORTB. Can be configured as active-high, active-low or open-drain.
-  - num:  21
-    sym:  GPA0
-    desc: Bidirectional I/O pin.
-  - num:  22
-    sym:  GPA1
-    desc: Bidirectional I/O pin.
-  - num:  23
-    sym:  GPA2
-    desc: Bidirectional I/O pin.
-  - num:  24
-    sym:  GPA3
-    desc: Bidirectional I/O pin.
-  - num:  25
-    sym:  GPA4
-    desc: Bidirectional I/O pin.
-  - num:  26
-    sym:  GPA5
-    desc: Bidirectional I/O pin.
-  - num:  27
-    sym:  GPA6
-    desc: Bidirectional I/O pin.
-  - num:  28
-    sym:  GPA7
-    desc: Bidirectional I/O pin.
-...
-
+  -
+    num: '11'
+    sym: NC
+    desc: 'Not connected'
+  -
+    num: '12'
+    sym: SCL
+    desc: 'Serial clock input'
+  -
+    num: '13'
+    sym: SDA
+    desc: 'Serial data I/O'
+  -
+    num: '14'
+    sym: NC
+    desc: 'Not connected'
+  -
+    num: '15'
+    sym: A0
+    desc: 'Hardware address pin. Must be externally biased.'
+  -
+    num: '16'
+    sym: A1
+    desc: 'Hardware address pin. Must be externally biased.'
+  -
+    num: '17'
+    sym: A2
+    desc: 'Hardware address pin. Must be externally biased.'
+  -
+    num: '18'
+    sym: '&#126;RESET'
+    desc: 'Hardware reset. Must be externally biased.'
+  -
+    num: '19'
+    sym: INTB
+    desc: 'Interrupt output for PORTB. Can be configured as active-high, active-low or open-drain.'
+  -
+    num: '20'
+    sym: INTA
+    desc: 'Interrupt output for PORTB. Can be configured as active-high, active-low or open-drain.'
+  -
+    num: '21'
+    sym: GPA0
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '22'
+    sym: GPA1
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '23'
+    sym: GPA2
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '24'
+    sym: GPA3
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '25'
+    sym: GPA4
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '26'
+    sym: GPA5
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '27'
+    sym: GPA6
+    desc: 'Bidirectional I/O pin.'
+  -
+    num: '28'
+    sym: GPA7
+    desc: 'Bidirectional I/O pin.'

@@ -1,82 +1,103 @@
----
-description: "Power logic 8-bit shift register"
-package:     DIP
-pincount:    20
-family:      "TI"
-datasheet:   "http://focus.ti.com/lit/ds/symlink/tpic6b595.pdf"
+description: 'Power logic 8-bit shift register'
+package: DIP
+pincount: '20'
+family: TI
+datasheet: 'http://focus.ti.com/lit/ds/symlink/tpic6b595.pdf'
 pins:
-  - num:  1
-    sym:  NC
-    desc: no connection
-  - num:  2
-    sym:  Vcc
-    desc: supply voltage
-  - num:  3
-    sym:  SER IN
-    desc: serial data input
-  - num:  4
-    sym:  DRAIN0
-    desc: drain output
-  - num:  5
-    sym:  DRAIN1
-    desc: drain output
-  - num:  6
-    sym:  DRAIN2
-    desc: drain output
-  - num:  7
-    sym:  DRAIN3
-    desc: drain output
-  - num:  8
-    sym:  ~SRCLR
-    desc: clear (active low)
-  - num:  9
-    sym:  ~G
-    desc: output enable (active low)
-  - num:  10
-    sym:  GND
+  -
+    num: '1'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '2'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '3'
+    sym: 'SER IN'
+    desc: 'serial data input'
+  -
+    num: '4'
+    sym: DRAIN0
+    desc: 'drain output'
+  -
+    num: '5'
+    sym: DRAIN1
+    desc: 'drain output'
+  -
+    num: '6'
+    sym: DRAIN2
+    desc: 'drain output'
+  -
+    num: '7'
+    sym: DRAIN3
+    desc: 'drain output'
+  -
+    num: '8'
+    sym: '&#126;SRCLR'
+    desc: 'clear (active low)'
+  -
+    num: '9'
+    sym: '&#126;G'
+    desc: 'output enable (active low)'
+  -
+    num: '10'
+    sym: GND
     desc: ground
-  - num:  11
-    sym:  GND
+  -
+    num: '11'
+    sym: GND
     desc: ground
-  - num:  12
-    sym:  RCK
-    desc: storage register latch input
-  - num:  13
-    sym:  SRCK
-    desc: shift register clock input
-  - num:  14
-    sym:  DRAIN4
-    desc: drain output
-  - num:  15
-    sym:  DRAIN5
-    desc: drain output
-  - num:  16
-    sym:  DRAIN6
-    desc: drain output
-  - num:  17
-    sym:  DRAIN7
-    desc: drain output
-  - num:  18
-    sym:  SER OUT
-    desc: serial data output
-  - num:  19
-    sym:  GND
+  -
+    num: '12'
+    sym: RCK
+    desc: 'storage register latch input'
+  -
+    num: '13'
+    sym: SRCK
+    desc: 'shift register clock input'
+  -
+    num: '14'
+    sym: DRAIN4
+    desc: 'drain output'
+  -
+    num: '15'
+    sym: DRAIN5
+    desc: 'drain output'
+  -
+    num: '16'
+    sym: DRAIN6
+    desc: 'drain output'
+  -
+    num: '17'
+    sym: DRAIN7
+    desc: 'drain output'
+  -
+    num: '18'
+    sym: 'SER OUT'
+    desc: 'serial data output'
+  -
+    num: '19'
+    sym: GND
     desc: ground
-  - num:  20
-    sym:  NC
-    desc: no connection
+  -
+    num: '20'
+    sym: NC
+    desc: 'no connection'
 specs:
-  - param: Maximum continuous current (per output)
-    val:   150
-    unit:  mA
-  - param: Current limit (per output)
-    val:   500
-    unit:  mA
-  - param: Maximum drain-to-source voltage
-    val:   50
-    unit:  V
-  - param: Drain output rise/fall time
-    val:   200
-    unit:  ns
-...
-
+  -
+    param: 'Maximum continuous current (per output)'
+    val: '150'
+    unit: mA
+  -
+    param: 'Current limit (per output)'
+    val: '500'
+    unit: mA
+  -
+    param: 'Maximum drain-to-source voltage'
+    val: '50'
+    unit: V
+  -
+    param: 'Drain output rise/fall time'
+    val: '200'
+    unit: ns

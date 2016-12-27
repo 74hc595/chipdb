@@ -1,50 +1,60 @@
----
 name: TLC272
-description: "Precision JFET-input low-offset dual operation amplifier"
-aliases: []
+description: 'Precision JFET-input low-offset dual operation amplifier'
+aliases: {  }
 package: DIP
-pincount: 8
-family: "opamps"
-datasheet: "http://www.hep.upenn.edu/SNO/daq/parts/tlc272.pdf"
+pincount: '8'
+family: opamps
+datasheet: 'http://www.hep.upenn.edu/SNO/daq/parts/tlc272.pdf'
 pins:
-  - num: 1
+  -
+    num: '1'
     sym: 1OUT
-    desc: First opamp output
-  - num: 2
+    desc: 'First opamp output'
+  -
+    num: '2'
     sym: 1IN-
-    desc: First opamp inverting input
-  - num: 3
+    desc: 'First opamp inverting input'
+  -
+    num: '3'
     sym: 1IN+
-    desc: First opamp non-inverting input
-  - num: 4
+    desc: 'First opamp non-inverting input'
+  -
+    num: '4'
     sym: GND
     desc: Ground
-  - num: 5
+  -
+    num: '5'
     sym: 2IN+
-    desc: Second opamp non-inverting input
-  - num: 6
+    desc: 'Second opamp non-inverting input'
+  -
+    num: '6'
     sym: 2IN-
-    desc: Second opamp inverting input
-  - num: 7
+    desc: 'Second opamp inverting input'
+  -
+    num: '7'
     sym: 2OUT
-    desc: Second opamp output
-  - num: 8
-    sym: V__DD
-    desc: Supply voltage
+    desc: 'Second opamp output'
+  -
+    num: '8'
+    sym: 'V&#95;&#95;DD'
+    desc: 'Supply voltage'
 specs:
-  - param: "Maximum offset voltage (trimmed)"
-    val: 500
-    unit: "&micro;V"
-  - param: "Supply voltage (absolute maximum)"
-    val: 18
-    unit: "V"
-  - param: "Slew rate at unity gain (V__DD = 5V, V__IPP = 1V)"
-    val: 3.6
-    unit: "V/&micro;s"
-  - param: "Unity-gain bandwidth"
-    val: 1.7
-    unit: "MHz"
+  -
+    param: 'Maximum offset voltage (trimmed)'
+    val: '500'
+    unit: '&micro;V'
+  -
+    param: 'Supply voltage (absolute maximum)'
+    val: '18'
+    unit: V
+  -
+    param: 'Slew rate at unity gain (V&#95;&#95;DD = 5V, V&#95;&#95;IPP = 1V)'
+    val: '3.6'
+    unit: 'V/&micro;s'
+  -
+    param: 'Unity-gain bandwidth'
+    val: '1.7'
+    unit: MHz
 notes:
-  - "Pinout LM358 compatible"
-  - "Designed for high-impedance measurement applications"
-
+  - 'Pinout LM358 compatible'
+  - 'Designed for high-impedance measurement applications'

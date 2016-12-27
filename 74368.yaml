@@ -1,62 +1,79 @@
----
-description:  Hex buffer/line driver; 3-state; inverting
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc368.74hct368.pdf"
+description: 'Hex buffer/line driver; 3-state; inverting'
+package: DIP
+pincount: '16'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc368.74hct368.pdf'
 pins:
-  - num:  1
-    sym:  ~OE~__1
-    desc: output enable (active low)
-  - num:  2
-    sym:  1A
-    desc: data input
-  - num:  3
-    sym:  1Y
-    desc: bus output
-  - num:  4
-    sym:  2A
-    desc: data input
-  - num:  5
-    sym:  2Y
-    desc: bus output
-  - num:  6
-    sym:  3A
-    desc: data input
-  - num:  7
-    sym:  3Y
-    desc: bus output
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: '&#126;OE&#126;&#95;&#95;1'
+    desc: 'output enable (active low)'
+  -
+    num: '2'
+    sym: 1A
+    desc: 'data input'
+  -
+    num: '3'
+    sym: 1Y
+    desc: 'bus output'
+  -
+    num: '4'
+    sym: 2A
+    desc: 'data input'
+  -
+    num: '5'
+    sym: 2Y
+    desc: 'bus output'
+  -
+    num: '6'
+    sym: 3A
+    desc: 'data input'
+  -
+    num: '7'
+    sym: 3Y
+    desc: 'bus output'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  4Y
-    desc: bus output
-  - num:  10
-    sym:  4A
-    desc: data input
-  - num:  11
-    sym:  5Y
-    desc: bus output
-  - num:  12
-    sym:  5A
-    desc: data input
-  - num:  13
-    sym:  6Y
-    desc: bus output
-  - num:  14
-    sym:  6A
-    desc: data input
-  - num:  15
-    sym:  ~OE~__2
-    desc: output enable (active low)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: 4Y
+    desc: 'bus output'
+  -
+    num: '10'
+    sym: 4A
+    desc: 'data input'
+  -
+    num: '11'
+    sym: 5Y
+    desc: 'bus output'
+  -
+    num: '12'
+    sym: 5A
+    desc: 'data input'
+  -
+    num: '13'
+    sym: 6Y
+    desc: 'bus output'
+  -
+    num: '14'
+    sym: 6A
+    desc: 'data input'
+  -
+    num: '15'
+    sym: '&#126;OE&#126;&#95;&#95;2'
+    desc: 'output enable (active low)'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, nA to nY
-    val:    [9 (74HC), 11 (74HCT)]
-    unit:   ns
+  -
+    param: 'Propagation delay, nA to nY'
+    val:
+      - '9 (74HC)'
+      - '11 (74HCT)'
+    unit: ns
 notes:
-  - Setting ~OE~__1 or ~OE~__2 high causes the outputs to assume a high-impedance off state.
-...
+  - 'Setting &#126;OE&#126;&#95;&#95;1 or &#126;OE&#126;&#95;&#95;2 high causes the outputs to assume a high-impedance off state.'

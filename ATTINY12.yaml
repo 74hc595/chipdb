@@ -1,58 +1,80 @@
----
-name:             ATTiny12
-description: "8-Bit AVR&reg; microcontroller with 1 kb In-system programmable flash memory"
-aliases: [ATTiny12V-1, ATTiny12L-4, ATTiny12-8]
+name: ATTiny12
+description: '8-Bit AVR&reg; microcontroller with 1 kb In-system programmable flash memory'
+aliases:
+  - ATTiny12V-1
+  - ATTiny12L-4
+  - ATTiny12-8
 package: DIP
-pincount: 8
-family: "atmel"
-datasheet: "http://www.atmel.com/dyn/resources/prod_documents/doc1006.pdf"
+pincount: '8'
+family: atmel
+datasheet: 'http://www.atmel.com/dyn/resources/prod&#95;documents/doc1006.pdf'
 pins:
-  - num: 1
-    sym: PB5 / ~RESET~
-    desc: PB5 / chip reset (active low)
-  - num: 2
-    sym: PB3 / XTAL1
-    desc: PB3 / Inverting oscillator amplifier input
-  - num: 3
-    sym: PB4 / XTAL2
-    desc: PB4 / Inverting oscillator amplifier output
-  - num: 4
+  -
+    num: '1'
+    sym: 'PB5 / &#126;RESET&#126;'
+    desc: 'PB5 / chip reset (active low)'
+  -
+    num: '2'
+    sym: 'PB3 / XTAL1'
+    desc: 'PB3 / Inverting oscillator amplifier input'
+  -
+    num: '3'
+    sym: 'PB4 / XTAL2'
+    desc: 'PB4 / Inverting oscillator amplifier output'
+  -
+    num: '4'
     sym: GND
     desc: Ground
-  - num: 5
-    sym: PB0 / AIN0 / MOSI
-    desc: PB0 / Analog comparator positive input / Serial programming input
-  - num: 6
-    sym: PB1 / INT0 / AIN1 / MISO
-    desc: PB1 / External interrupt 0 / Analog comparator negative input / Serial programming input
-  - num: 7
-    sym: PB2 / T0 / SCK
-    desc: PB2 / Timer/Counter 0 external counter input / Serial clock
-  - num: 8
-    sym: V__CC
-    desc: Supply voltage
+  -
+    num: '5'
+    sym: 'PB0 / AIN0 / MOSI'
+    desc: 'PB0 / Analog comparator positive input / Serial programming input'
+  -
+    num: '6'
+    sym: 'PB1 / INT0 / AIN1 / MISO'
+    desc: 'PB1 / External interrupt 0 / Analog comparator negative input / Serial programming input'
+  -
+    num: '7'
+    sym: 'PB2 / T0 / SCK'
+    desc: 'PB2 / Timer/Counter 0 external counter input / Serial clock'
+  -
+    num: '8'
+    sym: 'V&#95;&#95;CC'
+    desc: 'Supply voltage'
 specs:
-  - param: "Flash program memory"
-    val: 1
-    unit: "kb"
-  - param: "EEPROM memory"
-    val: 64
-    unit: "bytes"
-  - param: "Operating voltage"
-    val: [1.8-5.5 (ATTiny12V-1), 2.7-5.5 (ATTiny12L-4), 4.0-5.5 (ATTiny12-8)]
-    unit: "V"
-  - param: "Speed grade"
-    val: [0-1.2 (ATTiny12V-1), 0-4 (ATTiny12L-4), 0-8 (ATTiny12-8)]
-    unit: "MHz"
-  - param: "Active power consumption (at 4 MHz, 3V)"
-    val: 2.2
-    unit: "mA"
-  - param: "Idle mode power consumption (at 4 MHz, 3V)"
-    val: 0.5
-    unit: "mA"
-  - param: "Power-down mode power consumption (at 4 MHz, 3V)"
-    val: < 1
-    unit: "&micro;A"
+  -
+    param: 'Flash program memory'
+    val: '1'
+    unit: kb
+  -
+    param: 'EEPROM memory'
+    val: '64'
+    unit: bytes
+  -
+    param: 'Operating voltage'
+    val:
+      - '1.8-5.5 (ATTiny12V-1)'
+      - '2.7-5.5 (ATTiny12L-4)'
+      - '4.0-5.5 (ATTiny12-8)'
+    unit: V
+  -
+    param: 'Speed grade'
+    val:
+      - '0-1.2 (ATTiny12V-1)'
+      - '0-4 (ATTiny12L-4)'
+      - '0-8 (ATTiny12-8)'
+    unit: MHz
+  -
+    param: 'Active power consumption (at 4 MHz, 3V)'
+    val: '2.2'
+    unit: mA
+  -
+    param: 'Idle mode power consumption (at 4 MHz, 3V)'
+    val: '0.5'
+    unit: mA
+  -
+    param: 'Power-down mode power consumption (at 4 MHz, 3V)'
+    val: '< 1'
+    unit: '&micro;A'
 notes:
-  - "Also availablle in SOIC package (same pinout)"
-
+  - 'Also availablle in SOIC package (same pinout)'

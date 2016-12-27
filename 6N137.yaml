@@ -1,50 +1,62 @@
----
-description: "10 MBit/s single-channel high speed logic gate output optocoupler"
-aliases:     [HCPL2601, HCPL2611]
-package:     DIP
-pincount:    8
-family:      "Fairchild"
-datasheet:   "http://www.fairchildsemi.com/ds/6N/6N137.pdf"
+description: '10 MBit/s single-channel high speed logic gate output optocoupler'
+aliases:
+  - HCPL2601
+  - HCPL2611
+package: DIP
+pincount: '8'
+family: Fairchild
+datasheet: 'http://www.fairchildsemi.com/ds/6N/6N137.pdf'
 pins:
-  - num:  1
-    sym:  N/C
-    desc: no connection
-  - num:  2
-    sym:  "V__F +"
-    desc: emitter, anode
-  - num:  3
-    sym:  "V__F -"
-    desc: emitter, cathode
-  - num:  4
-    sym:  N/C
-    desc: no connection
-  - num:  5
-    sym:  GND
-    desc: supply ground
-  - num:  6
-    sym:  V__O
+  -
+    num: '1'
+    sym: N/C
+    desc: 'no connection'
+  -
+    num: '2'
+    sym: 'V&#95;&#95;F +'
+    desc: 'emitter, anode'
+  -
+    num: '3'
+    sym: 'V&#95;&#95;F -'
+    desc: 'emitter, cathode'
+  -
+    num: '4'
+    sym: N/C
+    desc: 'no connection'
+  -
+    num: '5'
+    sym: GND
+    desc: 'supply ground'
+  -
+    num: '6'
+    sym: 'V&#95;&#95;O'
     desc: output
-  - num:  7
-    sym:  V__E
-    desc: enable input
-  - num:  8
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '7'
+    sym: 'V&#95;&#95;E'
+    desc: 'enable input'
+  -
+    num: '8'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: "Supply voltage, minimum"
-    val:   4.5
-    unit:  V
-  - param: "Supply voltage, maxmimum"
-    val:   5.5
-    unit:  V
-  - param: "Input forward voltage, typical @ 25C"
-    val:   1.4
-    unit:  V
-  - param: "Input forward voltage, typical @ 25C"
-    val:   1.4
-    unit:  V
-  - param: "Input forward voltage, max"
-    val:   1.8
-    unit:  V
-...
-
+  -
+    param: 'Supply voltage, minimum'
+    val: '4.5'
+    unit: V
+  -
+    param: 'Supply voltage, maxmimum'
+    val: '5.5'
+    unit: V
+  -
+    param: 'Input forward voltage, typical @ 25C'
+    val: '1.4'
+    unit: V
+  -
+    param: 'Input forward voltage, typical @ 25C'
+    val: '1.4'
+    unit: V
+  -
+    param: 'Input forward voltage, max'
+    val: '1.8'
+    unit: V

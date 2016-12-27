@@ -1,67 +1,85 @@
----
 name: MCP3204
-description: "4-channel 12 bit SPI A/D converter"
-aliases: []
+description: '4-channel 12 bit SPI A/D converter'
+aliases: {  }
 package: DIP
-pincount: 14
-family: "microchip"
-datasheet: "http://ww1.microchip.com/downloads/en/devicedoc/21298c.pdf"
+pincount: '14'
+family: microchip
+datasheet: 'http://ww1.microchip.com/downloads/en/devicedoc/21298c.pdf'
 pins:
-  - num: 1
+  -
+    num: '1'
     sym: CH0
-    desc: Analog channel 0 input
-  - num: 2
+    desc: 'Analog channel 0 input'
+  -
+    num: '2'
     sym: CH1
-    desc: Analog channel 1 input
-  - num: 3
+    desc: 'Analog channel 1 input'
+  -
+    num: '3'
     sym: CH2
-    desc: Analog channel 2 input
-  - num: 4
+    desc: 'Analog channel 2 input'
+  -
+    num: '4'
     sym: CH3
-    desc: Analog channel 3 input
-  - num: 5
+    desc: 'Analog channel 3 input'
+  -
+    num: '5'
     sym: NC
-    desc: Not connected
-  - num: 6
+    desc: 'Not connected'
+  -
+    num: '6'
     sym: NC
-    desc: Not connected
-  - num: 7
+    desc: 'Not connected'
+  -
+    num: '7'
     sym: DGND
-    desc: Digital ground
-  - num: 8
-    sym: ~CS~/SHDN
-    desc: Chip select / Shutdown
-  - num: 9
-    sym: D__IN
-    desc: Serial data input
-  - num: 10
-    sym: D__OUT
-    desc: Serial data output
-  - num: 11
+    desc: 'Digital ground'
+  -
+    num: '8'
+    sym: '&#126;CS&#126;/SHDN'
+    desc: 'Chip select / Shutdown'
+  -
+    num: '9'
+    sym: 'D&#95;&#95;IN'
+    desc: 'Serial data input'
+  -
+    num: '10'
+    sym: 'D&#95;&#95;OUT'
+    desc: 'Serial data output'
+  -
+    num: '11'
     sym: CLK
-    desc: SPI clock
-  - num: 12
+    desc: 'SPI clock'
+  -
+    num: '12'
     sym: AGND
-    desc: Analog ground
-  - num: 13
-    sym: V__REF
-    desc: Analog reference input voltage
-  - num: 14
-    sym: V__DD
-    desc: +2.7 to 5.5 V power supply
+    desc: 'Analog ground'
+  -
+    num: '13'
+    sym: 'V&#95;&#95;REF'
+    desc: 'Analog reference input voltage'
+  -
+    num: '14'
+    sym: 'V&#95;&#95;DD'
+    desc: '+2.7 to 5.5 V power supply'
 specs:
-  - param: "Max active current"
-    val: 400
-    unit: "&micro;A"
-  - param: "Max sampling rate"
-    val: [100 (5V supply), 50 (2.7V supply)]
-    unit: "ksps"
-  - param: "Resolution"
-    val: 12
-    unit: "bits"
-  - param: "Conversion time"
-    val: 12
-    unit: "clock cycles"
+  -
+    param: 'Max active current'
+    val: '400'
+    unit: '&micro;A'
+  -
+    param: 'Max sampling rate'
+    val:
+      - '100 (5V supply)'
+      - '50 (2.7V supply)'
+    unit: ksps
+  -
+    param: Resolution
+    val: '12'
+    unit: bits
+  -
+    param: 'Conversion time'
+    val: '12'
+    unit: 'clock cycles'
 notes:
-  - "Also available as one-channel (MCP3201), two-channel (MCP3202) and eight-channel (MCP3208) version"
-
+  - 'Also available as one-channel (MCP3201), two-channel (MCP3202) and eight-channel (MCP3208) version'

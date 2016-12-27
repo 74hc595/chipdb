@@ -1,66 +1,89 @@
----
-description:  Quad 2-input multiplexer
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc157.74hct157.pdf"
+description: 'Quad 2-input multiplexer'
+package: DIP
+pincount: '16'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc157.74hct157.pdf'
 pins:
-  - num:  1
-    sym:  S
-    desc: common data select input
-  - num:  2
-    sym:  1I__0
-    desc: data input from source 0
-  - num:  3
-    sym:  1I__1
-    desc: data input from source 1
-  - num:  4
-    sym:  1Y
-    desc: multiplexer output
-  - num:  5
-    sym:  2I__0
-    desc: data input from source 0
-  - num:  6
-    sym:  2I__1
-    desc: data input from source 1
-  - num:  7
-    sym:  2Y
-    desc: multiplexer output
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: S
+    desc: 'common data select input'
+  -
+    num: '2'
+    sym: '1I&#95;&#95;0'
+    desc: 'data input from source 0'
+  -
+    num: '3'
+    sym: '1I&#95;&#95;1'
+    desc: 'data input from source 1'
+  -
+    num: '4'
+    sym: 1Y
+    desc: 'multiplexer output'
+  -
+    num: '5'
+    sym: '2I&#95;&#95;0'
+    desc: 'data input from source 0'
+  -
+    num: '6'
+    sym: '2I&#95;&#95;1'
+    desc: 'data input from source 1'
+  -
+    num: '7'
+    sym: 2Y
+    desc: 'multiplexer output'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  3Y
-    desc: multiplexer output
-  - num:  10
-    sym:  3I__1
-    desc: data input from source 1
-  - num:  11
-    sym:  3I__0
-    desc: data input from source 0
-  - num:  12
-    sym:  4Y
-    desc: multiplexer output
-  - num:  13
-    sym:  4I__1
-    desc: data input from source 1
-  - num:  14
-    sym:  4I__0
-    desc: data input from source 0
-  - num:  15
-    sym:  ~E
-    desc: enable input (active low)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: 3Y
+    desc: 'multiplexer output'
+  -
+    num: '10'
+    sym: '3I&#95;&#95;1'
+    desc: 'data input from source 1'
+  -
+    num: '11'
+    sym: '3I&#95;&#95;0'
+    desc: 'data input from source 0'
+  -
+    num: '12'
+    sym: 4Y
+    desc: 'multiplexer output'
+  -
+    num: '13'
+    sym: '4I&#95;&#95;1'
+    desc: 'data input from source 1'
+  -
+    num: '14'
+    sym: '4I&#95;&#95;0'
+    desc: 'data input from source 0'
+  -
+    num: '15'
+    sym: '&#126;E'
+    desc: 'enable input (active low)'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, nI__0, nI__1 to nY
-    val:    [11 (74HC), 13 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~E to nY
-    val:    [11 (74HC), 12 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, S to nY
-    val:    [12 (74HC), 19 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, nI&#95;&#95;0, nI&#95;&#95;1 to nY'
+    val:
+      - '11 (74HC)'
+      - '13 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;E to nY'
+    val:
+      - '11 (74HC)'
+      - '12 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, S to nY'
+    val:
+      - '12 (74HC)'
+      - '19 (74HCT)'
+    unit: ns

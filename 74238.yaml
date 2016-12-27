@@ -1,66 +1,89 @@
----
-description:  3-to-8 line decoder/demultiplexer; non-inverting
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc238.74hct238.pdf"
+description: '3-to-8 line decoder/demultiplexer; non-inverting'
+package: DIP
+pincount: '16'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc238.74hct238.pdf'
 pins:
-  - num:  1
-    sym:  A0
-    desc: data input 0
-  - num:  2
-    sym:  A1
-    desc: data input 1
-  - num:  3
-    sym:  A2
-    desc: data input 2
-  - num:  4
-    sym:  ~E~1
-    desc: enable input 1 (active low)
-  - num:  5
-    sym:  ~E~2
-    desc: enable input 2 (active low)
-  - num:  6
-    sym:  E3
-    desc: enable input 3 (active high)
-  - num:  7
-    sym:  Y7
-    desc: output 7
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: A0
+    desc: 'data input 0'
+  -
+    num: '2'
+    sym: A1
+    desc: 'data input 1'
+  -
+    num: '3'
+    sym: A2
+    desc: 'data input 2'
+  -
+    num: '4'
+    sym: '&#126;E&#126;1'
+    desc: 'enable input 1 (active low)'
+  -
+    num: '5'
+    sym: '&#126;E&#126;2'
+    desc: 'enable input 2 (active low)'
+  -
+    num: '6'
+    sym: E3
+    desc: 'enable input 3 (active high)'
+  -
+    num: '7'
+    sym: Y7
+    desc: 'output 7'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  Y6
-    desc: output 6
-  - num:  10
-    sym:  Y5
-    desc: output 5
-  - num:  11
-    sym:  Y4
-    desc: output 4
-  - num:  12
-    sym:  Y3
-    desc: output 3
-  - num:  13
-    sym:  Y2
-    desc: output 2
-  - num:  14
-    sym:  Y1
-    desc: output 1
-  - num:  15
-    sym:  Y0
-    desc: output 0
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: Y6
+    desc: 'output 6'
+  -
+    num: '10'
+    sym: Y5
+    desc: 'output 5'
+  -
+    num: '11'
+    sym: Y4
+    desc: 'output 4'
+  -
+    num: '12'
+    sym: Y3
+    desc: 'output 3'
+  -
+    num: '13'
+    sym: Y2
+    desc: 'output 2'
+  -
+    num: '14'
+    sym: Y1
+    desc: 'output 1'
+  -
+    num: '15'
+    sym: Y0
+    desc: 'output 0'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: Propagation delay, An to Yn
-    val:  [14 (74HC), 18 (74HCT)]
+  -
+    param: 'Propagation delay, An to Yn'
+    val:
+      - '14 (74HC)'
+      - '18 (74HCT)'
     unit: ns
-  - param: Propagation delay, E3 to Yn
-    val:  [16 (74HC), 20 (74HCT)]
+  -
+    param: 'Propagation delay, E3 to Yn'
+    val:
+      - '16 (74HC)'
+      - '20 (74HCT)'
     unit: ns
-  - param: Propagation delay, ~E~n to Yn
-    val:  [17 (74HC), 21 (74HCT)]
+  -
+    param: 'Propagation delay, &#126;E&#126;n to Yn'
+    val:
+      - '17 (74HC)'
+      - '21 (74HCT)'
     unit: ns
-...

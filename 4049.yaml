@@ -1,57 +1,70 @@
----
-description: Hex inverting buffer
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4049b.pdf"
+description: 'Hex inverting buffer'
+package: DIP
+pincount: '16'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4049b.pdf'
 pins:
-  - num:  1
-    sym:  Vcc
-    desc: supply voltage
-  - num:  2
-    sym:  1Y
-    desc: data output
-  - num:  3
-    sym:  1A
-    desc: data input
-  - num:  4
-    sym:  2Y
-    desc: data output
-  - num:  5
-    sym:  2A
-    desc: data input
-  - num:  6
-    sym:  3Y
-    desc: data output
-  - num:  7
-    sym:  3A
-    desc: data input
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '2'
+    sym: 1Y
+    desc: 'data output'
+  -
+    num: '3'
+    sym: 1A
+    desc: 'data input'
+  -
+    num: '4'
+    sym: 2Y
+    desc: 'data output'
+  -
+    num: '5'
+    sym: 2A
+    desc: 'data input'
+  -
+    num: '6'
+    sym: 3Y
+    desc: 'data output'
+  -
+    num: '7'
+    sym: 3A
+    desc: 'data input'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  4A
-    desc: data input
-  - num:  10
-    sym:  4Y
-    desc: data output
-  - num:  11
-    sym:  5A
-    desc: data input
-  - num:  12
-    sym:  5Y
-    desc: data output
-  - num:  13
-    sym:  NC
-    desc: no connection
-  - num:  14
-    sym:  6A
-    desc: data input
-  - num:  15
-    sym:  6Y
-    desc: data output
-  - num:  16
-    sym:  NC
-    desc: no connection
-...
-
+  -
+    num: '9'
+    sym: 4A
+    desc: 'data input'
+  -
+    num: '10'
+    sym: 4Y
+    desc: 'data output'
+  -
+    num: '11'
+    sym: 5A
+    desc: 'data input'
+  -
+    num: '12'
+    sym: 5Y
+    desc: 'data output'
+  -
+    num: '13'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '14'
+    sym: 6A
+    desc: 'data input'
+  -
+    num: '15'
+    sym: 6Y
+    desc: 'data output'
+  -
+    num: '16'
+    sym: NC
+    desc: 'no connection'

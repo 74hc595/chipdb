@@ -1,60 +1,75 @@
----
-description:  Quad bilateral switch
-package:      DIP
-pincount:     14
-family:       "4000"
-datasheet:    "http://www.datasheetcatalog.org/datasheets/320/206765_DS.pdf"
+description: 'Quad bilateral switch'
+package: DIP
+pincount: '14'
+family: '4000'
+datasheet: 'http://www.datasheetcatalog.org/datasheets/320/206765&#95;DS.pdf'
 pins:
-  - num:  1
-    sym:  IN 1
-    desc: switch 1 input
-  - num:  2
-    sym:  OUT 1
-    desc: switch 1 output
-  - num:  3
-    sym:  OUT 2
-    desc: switch 2 output
-  - num:  4
-    sym:  IN 2
-    desc: switch 2 input
-  - num:  5
-    sym:  CONTROL 2
-    desc: switch 2 control
-  - num:  6
-    sym:  CONTROL 3
-    desc: switch 3 control
-  - num:  7
-    sym:  V__SS
-    desc: ground/negative supply voltage
-  - num:  8
-    sym:  IN 3
-    desc: switch 3 input
-  - num:  9
-    sym:  OUT 3
-    desc: switch 3 output
-  - num:  10
-    sym:  OUT 4
-    desc: switch 4 output
-  - num:  11
-    sym:  IN 4
-    desc: switch 4 input
-  - num:  12
-    sym:  CONTROL 4
-    desc: switch 4 control
-  - num:  13
-    sym:  CONTROL 1
-    desc: switch 1 control
-  - num:  14
-    sym:  V__DD
-    desc: positive supply voltage
+  -
+    num: '1'
+    sym: 'IN 1'
+    desc: 'switch 1 input'
+  -
+    num: '2'
+    sym: 'OUT 1'
+    desc: 'switch 1 output'
+  -
+    num: '3'
+    sym: 'OUT 2'
+    desc: 'switch 2 output'
+  -
+    num: '4'
+    sym: 'IN 2'
+    desc: 'switch 2 input'
+  -
+    num: '5'
+    sym: 'CONTROL 2'
+    desc: 'switch 2 control'
+  -
+    num: '6'
+    sym: 'CONTROL 3'
+    desc: 'switch 3 control'
+  -
+    num: '7'
+    sym: 'V&#95;&#95;SS'
+    desc: 'ground/negative supply voltage'
+  -
+    num: '8'
+    sym: 'IN 3'
+    desc: 'switch 3 input'
+  -
+    num: '9'
+    sym: 'OUT 3'
+    desc: 'switch 3 output'
+  -
+    num: '10'
+    sym: 'OUT 4'
+    desc: 'switch 4 output'
+  -
+    num: '11'
+    sym: 'IN 4'
+    desc: 'switch 4 input'
+  -
+    num: '12'
+    sym: 'CONTROL 4'
+    desc: 'switch 4 control'
+  -
+    num: '13'
+    sym: 'CONTROL 1'
+    desc: 'switch 1 control'
+  -
+    num: '14'
+    sym: 'V&#95;&#95;DD'
+    desc: 'positive supply voltage'
 specs:
-  - param:  Maximum switching frequency
-    val:    40
-    unit:   MHz
-  - param:  Maximum supply voltage
-    val:    18
-    unit:   V
-  - param:  Maximum switch through current
-    val:    "&plusmn; 25"
-    unit:   mA
-...
+  -
+    param: 'Maximum switching frequency'
+    val: '40'
+    unit: MHz
+  -
+    param: 'Maximum supply voltage'
+    val: '18'
+    unit: V
+  -
+    param: 'Maximum switch through current'
+    val: '&plusmn; 25'
+    unit: mA

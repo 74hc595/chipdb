@@ -1,69 +1,87 @@
----
-description: "Programmable timer"
-package:     DIP
-pincount:    14
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4541b.pdf"
+description: 'Programmable timer'
+package: DIP
+pincount: '14'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4541b.pdf'
 pins:
-  - num:  1
-    sym:  R__TC
-    desc: external resistor connection (R__t)
-  - num:  2
-    sym:  C__TC
-    desc: external capacitor connection (C__t)
-  - num:  3
-    sym:  RS
-    desc: external resistor connection (R__S) or external clock input
-  - num:  4
-    sym:  NC
-    desc: no connection
-  - num:  5
-    sym:  ~AR
-    desc: auto reset input (active low)
-  - num:  6
-    sym:  MR
-    desc: master reset input (active high)
-  - num:  7
-    sym:  GND
+  -
+    num: '1'
+    sym: 'R&#95;&#95;TC'
+    desc: 'external resistor connection (R&#95;&#95;t)'
+  -
+    num: '2'
+    sym: 'C&#95;&#95;TC'
+    desc: 'external capacitor connection (C&#95;&#95;t)'
+  -
+    num: '3'
+    sym: RS
+    desc: 'external resistor connection (R&#95;&#95;S) or external clock input'
+  -
+    num: '4'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '5'
+    sym: '&#126;AR'
+    desc: 'auto reset input (active low)'
+  -
+    num: '6'
+    sym: MR
+    desc: 'master reset input (active high)'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  O
+  -
+    num: '8'
+    sym: O
     desc: output
-  - num:  9
-    sym:  PH
-    desc: phase input
-  - num:  10
-    sym:  MODE
-    desc: mode select (single cycle or continuous)
-  - num:  11
-    sym:  NC
-    desc: no connection
-  - num:  12
-    sym:  A0
-    desc: divider input
-  - num:  13
-    sym:  A1
-    desc: divider input
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: PH
+    desc: 'phase input'
+  -
+    num: '10'
+    sym: MODE
+    desc: 'mode select (single cycle or continuous)'
+  -
+    num: '11'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '12'
+    sym: A0
+    desc: 'divider input'
+  -
+    num: '13'
+    sym: A1
+    desc: 'divider input'
+  -
+    num: '14'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: Frequency range
-    val:   [1 (min), "100k (max)"]
-    unit:  Hz
-  - param: External capacitor C__t
-    val:   100 (min)
-    unit:  pF
-  - param: External resistor R__t
-    val:   [10k (min), 1M (max)]
-    unit:  "&Omega;"
+  -
+    param: 'Frequency range'
+    val:
+      - '1 (min)'
+      - '100k (max)'
+    unit: Hz
+  -
+    param: 'External capacitor C&#95;&#95;t'
+    val: '100 (min)'
+    unit: pF
+  -
+    param: 'External resistor R&#95;&#95;t'
+    val:
+      - '10k (min)'
+      - '1M (max)'
+    unit: '&Omega;'
 notes:
-  - "The RC oscillator frequency is 1/(2.3 &times; R__t &times C__t). R__S = 2R__t."
-  - An external clock signal, connected to RS, may be used instead. The timer advances on the low-to-high transition of RS.
-  - "The input frequency is divided by a value determined by A1A0: 2<sup>13</sup> (LL), 2<sup>10</sup> (LH), 2<sup>8</sup> (HL), or 2<sup>16</sup> (HH)."
-  - Power-on reset is enabled when ~AR and MR are low. For HEF4541, Vcc should be above 8.5V for correct power-on reset.
-  - PH specifies the state of the output after reset (high or low).
-  - When MODE is high, the output oscillates continuously.
-  - When MODE is low, the output changes only once, after a single cycle.
-...
-
+  - 'The RC oscillator frequency is 1/(2.3 &times; R&#95;&#95;t &times C&#95;&#95;t). R&#95;&#95;S = 2R&#95;&#95;t.'
+  - 'An external clock signal, connected to RS, may be used instead. The timer advances on the low-to-high transition of RS.'
+  - 'The input frequency is divided by a value determined by A1A0: 2<sup>13</sup> (LL), 2<sup>10</sup> (LH), 2<sup>8</sup> (HL), or 2<sup>16</sup> (HH).'
+  - 'Power-on reset is enabled when &#126;AR and MR are low. For HEF4541, Vcc should be above 8.5V for correct power-on reset.'
+  - 'PH specifies the state of the output after reset (high or low).'
+  - 'When MODE is high, the output oscillates continuously.'
+  - 'When MODE is low, the output changes only once, after a single cycle.'

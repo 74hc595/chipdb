@@ -1,78 +1,113 @@
----
-description:  4-bit binary full adder with fast carry
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc283.pdf" 
+description: '4-bit binary full adder with fast carry'
+package: DIP
+pincount: '16'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc283.pdf'
 pins:
-  - num:  1
-    sym:  S2
-    desc: sum output
-  - num:  2
-    sym:  B2
-    desc: B operand input
-  - num:  3
-    sym:  A2
-    desc: A operand input
-  - num:  4
-    sym:  S1
-    desc: sum output
-  - num:  5
-    sym:  A1
-    desc: A operand input
-  - num:  6
-    sym:  B1
-    desc: B operand input
-  - num:  7
-    sym:  CIN
-    desc: carry input
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: S2
+    desc: 'sum output'
+  -
+    num: '2'
+    sym: B2
+    desc: 'B operand input'
+  -
+    num: '3'
+    sym: A2
+    desc: 'A operand input'
+  -
+    num: '4'
+    sym: S1
+    desc: 'sum output'
+  -
+    num: '5'
+    sym: A1
+    desc: 'A operand input'
+  -
+    num: '6'
+    sym: B1
+    desc: 'B operand input'
+  -
+    num: '7'
+    sym: CIN
+    desc: 'carry input'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  COUT
-    desc: carry output
-  - num:  10
-    sym:  S4
-    desc: sum output
-  - num:  11
-    sym:  B4
-    desc: B operand input
-  - num:  12
-    sym:  A4
-    desc: A operand input
-  - num:  13
-    sym:  S3
-    desc: sum output
-  - num:  14
-    sym:  A3
-    desc: A operand input
-  - num:  15
-    sym:  B3
-    desc: B operand input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: COUT
+    desc: 'carry output'
+  -
+    num: '10'
+    sym: S4
+    desc: 'sum output'
+  -
+    num: '11'
+    sym: B4
+    desc: 'B operand input'
+  -
+    num: '12'
+    sym: A4
+    desc: 'A operand input'
+  -
+    num: '13'
+    sym: S3
+    desc: 'sum output'
+  -
+    num: '14'
+    sym: A3
+    desc: 'A operand input'
+  -
+    num: '15'
+    sym: B3
+    desc: 'B operand input'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CIN to S1
-    val:    [16 (74HC), 15 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CIN to S2
-    val:    [18 (74HC), 21 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CIN to S3
-    val:    [20 (74HC), 23 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CIN to S4
-    val:    [23 (74HC), 27 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, An, Bn to Sn
-    val:    [21 (74HC), 25 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CIN to COUT
-    val:    [20 (74HC), 23 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, An, Bn to COUT
-    val:    [20 (74HC), 24 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, CIN to S1'
+    val:
+      - '16 (74HC)'
+      - '15 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CIN to S2'
+    val:
+      - '18 (74HC)'
+      - '21 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CIN to S3'
+    val:
+      - '20 (74HC)'
+      - '23 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CIN to S4'
+    val:
+      - '23 (74HC)'
+      - '27 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, An, Bn to Sn'
+    val:
+      - '21 (74HC)'
+      - '25 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CIN to COUT'
+    val:
+      - '20 (74HC)'
+      - '23 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, An, Bn to COUT'
+    val:
+      - '20 (74HC)'
+      - '24 (74HCT)'
+    unit: ns

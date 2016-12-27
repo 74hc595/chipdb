@@ -1,67 +1,85 @@
----
-description: "4-channel optoisolator"
-package:     DIP
-pincount:    16
-family:      CEL
-datasheet:   "http://www.cel.com/pdf/datasheets/ps2501.pdf"
+description: '4-channel optoisolator'
+package: DIP
+pincount: '16'
+family: CEL
+datasheet: 'http://www.cel.com/pdf/datasheets/ps2501.pdf'
 pins:
-  - num:  1
-    sym:  "+1"
-    desc: anode 1
-  - num:  2
-    sym:  "-1"
-    desc: cathode 1
-  - num:  3
-    sym:  "+2"
-    desc: anode 2
-  - num:  4
-    sym:  "-2"
-    desc: cathode 2
-  - num:  5
-    sym:  "+3"
-    desc: anode 3
-  - num:  6
-    sym:  "-3"
-    desc: cathode 3
-  - num:  7
-    sym:  "+4"
-    desc: anode 4
-  - num:  8
-    sym:  "-4"
-    desc: cathode 4
-  - num:  9
-    sym:  E4
-    desc: emitter 4
-  - num:  10
-    sym:  C4
-    desc: collector 4
-  - num:  11
-    sym:  E3
-    desc: emitter 3
-  - num:  12
-    sym:  C3
-    desc: collector 3
-  - num:  13
-    sym:  E2
-    desc: emitter 2
-  - num:  14
-    sym:  C2
-    desc: collector 2
-  - num:  15
-    sym:  E1
-    desc: emitter 1
-  - num:  16
-    sym:  C1
-    desc: collector 1
+  -
+    num: '1'
+    sym: '+1'
+    desc: 'anode 1'
+  -
+    num: '2'
+    sym: '-1'
+    desc: 'cathode 1'
+  -
+    num: '3'
+    sym: '+2'
+    desc: 'anode 2'
+  -
+    num: '4'
+    sym: '-2'
+    desc: 'cathode 2'
+  -
+    num: '5'
+    sym: '+3'
+    desc: 'anode 3'
+  -
+    num: '6'
+    sym: '-3'
+    desc: 'cathode 3'
+  -
+    num: '7'
+    sym: '+4'
+    desc: 'anode 4'
+  -
+    num: '8'
+    sym: '-4'
+    desc: 'cathode 4'
+  -
+    num: '9'
+    sym: E4
+    desc: 'emitter 4'
+  -
+    num: '10'
+    sym: C4
+    desc: 'collector 4'
+  -
+    num: '11'
+    sym: E3
+    desc: 'emitter 3'
+  -
+    num: '12'
+    sym: C3
+    desc: 'collector 3'
+  -
+    num: '13'
+    sym: E2
+    desc: 'emitter 2'
+  -
+    num: '14'
+    sym: C2
+    desc: 'collector 2'
+  -
+    num: '15'
+    sym: E1
+    desc: 'emitter 1'
+  -
+    num: '16'
+    sym: C1
+    desc: 'collector 1'
 specs:
-  - param: Isolation voltage
-    val:   5000
-    unit:  Vrms
-  - param: Maximum collector-emitter voltage
-    val:   80
-    unit:  V
-  - param: Switching time
-    val:   [3 (rising), 5 (falling)]
-    unit:  "&micro;s"
-...
-
+  -
+    param: 'Isolation voltage'
+    val: '5000'
+    unit: Vrms
+  -
+    param: 'Maximum collector-emitter voltage'
+    val: '80'
+    unit: V
+  -
+    param: 'Switching time'
+    val:
+      - '3 (rising)'
+      - '5 (falling)'
+    unit: '&micro;s'

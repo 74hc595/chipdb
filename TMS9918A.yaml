@@ -1,172 +1,200 @@
----
-description: "Video Display Processor (composite output)"
-aliases:     []
-package:     DIP
-pincount:    40
-family:      "Texas Instruments"
-datasheet:   "http://www.cs.columbia.edu/~sedwards/papers/TMS9918.pdf"
+description: 'Video Display Processor (composite output)'
+aliases: {  }
+package: DIP
+pincount: '40'
+family: 'Texas Instruments'
+datasheet: 'http://www.cs.columbia.edu/&#126;sedwards/papers/TMS9918.pdf'
 pins:
-  - num:  1
-    sym:  ~RAS
-    desc: VRAM row address strobe
-  - num:  2
-    sym:  ~CAS
-    desc: VRAM column address strobe
-  - num:  3
-    sym:  AD7
-    desc: VRAM address/data bus (least significant bit)
-  - num:  4
-    sym:  AD6
-    desc: VRAM address/data bus
-  - num:  5
-    sym:  AD5
-    desc: VRAM address/data bus
-  - num:  6
-    sym:  AD4
-    desc: VRAM address/data bus
-  - num:  7
-    sym:  AD3
-    desc: VRAM address/data bus
-  - num:  8
-    sym:  AD2
-    desc: VRAM address/data bus
-  - num:  9
-    sym:  AD1
-    desc: VRAM address/data bus
-  - num:  10
-    sym:  AD0
-    desc: VRAM address/data bus (most significant bit)
-  - num:  11
-    sym:  R/~W
-    desc: VRAM write strobe
-  - num:  12
-    sym:  GND
+  -
+    num: '1'
+    sym: '&#126;RAS'
+    desc: 'VRAM row address strobe'
+  -
+    num: '2'
+    sym: '&#126;CAS'
+    desc: 'VRAM column address strobe'
+  -
+    num: '3'
+    sym: AD7
+    desc: 'VRAM address/data bus (least significant bit)'
+  -
+    num: '4'
+    sym: AD6
+    desc: 'VRAM address/data bus'
+  -
+    num: '5'
+    sym: AD5
+    desc: 'VRAM address/data bus'
+  -
+    num: '6'
+    sym: AD4
+    desc: 'VRAM address/data bus'
+  -
+    num: '7'
+    sym: AD3
+    desc: 'VRAM address/data bus'
+  -
+    num: '8'
+    sym: AD2
+    desc: 'VRAM address/data bus'
+  -
+    num: '9'
+    sym: AD1
+    desc: 'VRAM address/data bus'
+  -
+    num: '10'
+    sym: AD0
+    desc: 'VRAM address/data bus (most significant bit)'
+  -
+    num: '11'
+    sym: 'R/&#126;W'
+    desc: 'VRAM write strobe'
+  -
+    num: '12'
+    sym: GND
     desc: ground
-  - num:  13
-    sym:  MODE
-    desc: CPU interface mode select (usu. a CPU address line)
-  - num:  14
-    sym:  ~CSW
-    desc: CPU-VDP write strobe
-  - num:  15
-    sym:  ~CSR
-    desc: CPU-VDP read strobe
-  - num:  16
-    sym:  ~INT
-    desc: CPU interrupt output
-  - num:  17
-    sym:  CD7
-    desc: CPU data bus (least significant bit)
-  - num:  18
-    sym:  CD6
-    desc: CPU data bus
-  - num:  19
-    sym:  CD5
-    desc: CPU data bus
-  - num:  20
-    sym:  CD4
-    desc: CPU data bus
-  - num:  21
-    sym:  CD3
-    desc: CPU data bus
-  - num:  22
-    sym:  CD2
-    desc: CPU data bus
-  - num:  23
-    sym:  CD1
-    desc: CPU data bus
-  - num:  24
-    sym:  CD0
-    desc: CPU data bus (most significant bit)
-  - num:  25
-    sym:  RD7
-    desc: VRAM read data bus (least significant bit)
-  - num:  26
-    sym:  RD6
-    desc: VRAM read data bus
-  - num:  27
-    sym:  RD5
-    desc: VRAM read data bus
-  - num:  28
-    sym:  RD4
-    desc: VRAM read data bus
-  - num:  29
-    sym:  RD3
-    desc: VRAM read data bus
-  - num:  30
-    sym:  RD2
-    desc: VRAM read data bus
-  - num:  31
-    sym:  RD1
-    desc: VRAM read data bus
-  - num:  32
-    sym:  RD0
-    desc: VRAM read data bus (most significant bit)
-  - num:  33
-    sym:  Vcc
-    desc: supply voltage
-  - num:  34
-    sym:  ~RESET~/SYNC
-    desc: reset (active low; when above +9V, sync input for ext. video)
-  - num:  35
-    sym:  EXTVDP
-    desc: external VDP input
-  - num:  36
-    sym:  COMVID
-    desc: composite video output
-  - num:  37
-    sym:  GROMCLK
-    desc: VDP output clock; XTAL/24
-  - num:  38
-    sym:  CPUCLK
-    desc: VDP color burst frequency clock
-  - num:  39
-    sym:  XTAL1
-    desc: crystal input
-  - num:  40
-    sym:  XTAL2
-    desc: crystal input
+  -
+    num: '13'
+    sym: MODE
+    desc: 'CPU interface mode select (usu. a CPU address line)'
+  -
+    num: '14'
+    sym: '&#126;CSW'
+    desc: 'CPU-VDP write strobe'
+  -
+    num: '15'
+    sym: '&#126;CSR'
+    desc: 'CPU-VDP read strobe'
+  -
+    num: '16'
+    sym: '&#126;INT'
+    desc: 'CPU interrupt output'
+  -
+    num: '17'
+    sym: CD7
+    desc: 'CPU data bus (least significant bit)'
+  -
+    num: '18'
+    sym: CD6
+    desc: 'CPU data bus'
+  -
+    num: '19'
+    sym: CD5
+    desc: 'CPU data bus'
+  -
+    num: '20'
+    sym: CD4
+    desc: 'CPU data bus'
+  -
+    num: '21'
+    sym: CD3
+    desc: 'CPU data bus'
+  -
+    num: '22'
+    sym: CD2
+    desc: 'CPU data bus'
+  -
+    num: '23'
+    sym: CD1
+    desc: 'CPU data bus'
+  -
+    num: '24'
+    sym: CD0
+    desc: 'CPU data bus (most significant bit)'
+  -
+    num: '25'
+    sym: RD7
+    desc: 'VRAM read data bus (least significant bit)'
+  -
+    num: '26'
+    sym: RD6
+    desc: 'VRAM read data bus'
+  -
+    num: '27'
+    sym: RD5
+    desc: 'VRAM read data bus'
+  -
+    num: '28'
+    sym: RD4
+    desc: 'VRAM read data bus'
+  -
+    num: '29'
+    sym: RD3
+    desc: 'VRAM read data bus'
+  -
+    num: '30'
+    sym: RD2
+    desc: 'VRAM read data bus'
+  -
+    num: '31'
+    sym: RD1
+    desc: 'VRAM read data bus'
+  -
+    num: '32'
+    sym: RD0
+    desc: 'VRAM read data bus (most significant bit)'
+  -
+    num: '33'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '34'
+    sym: '&#126;RESET&#126;/SYNC'
+    desc: 'reset (active low; when above +9V, sync input for ext. video)'
+  -
+    num: '35'
+    sym: EXTVDP
+    desc: 'external VDP input'
+  -
+    num: '36'
+    sym: COMVID
+    desc: 'composite video output'
+  -
+    num: '37'
+    sym: GROMCLK
+    desc: 'VDP output clock; XTAL/24'
+  -
+    num: '38'
+    sym: CPUCLK
+    desc: 'VDP color burst frequency clock'
+  -
+    num: '39'
+    sym: XTAL1
+    desc: 'crystal input'
+  -
+    num: '40'
+    sym: XTAL2
+    desc: 'crystal input'
 specs:
-  - param:  XTAL frequency
-    val:    "10.738635 &plusmn; 0.05%"
-    unit:   MHz
-  - param:  XTAL load capacitors
-    val:    [15 (min), 39 (max)]
-    unit:   pF
-  - param:  VRAM size
-    val:    4 or 16
-    unit:   KB
-  - param:  Number of colors
-    val:    15 plus transparent
-  - param:  Number of sprites
-    val:    32
-  - param:  Sprites per line
-    val:    4
+  -
+    param: 'XTAL frequency'
+    val: '10.738635 &plusmn; 0.05%'
+    unit: MHz
+  -
+    param: 'XTAL load capacitors'
+    val:
+      - '15 (min)'
+      - '39 (max)'
+    unit: pF
+  -
+    param: 'VRAM size'
+    val: '4 or 16'
+    unit: KB
+  -
+    param: 'Number of colors'
+    val: '15 plus transparent'
+  -
+    param: 'Number of sprites'
+    val: '32'
+  -
+    param: 'Sprites per line'
+    val: '4'
 notes:
-  - Bit order numbering is backwards. 0 is the MSB and 7 is the LSB.
-  - "Write to control register: set MODE high, write data byte, write destination register in the format 10000RRR."
-  - "Write to VRAM: set MODE high, write lower address bits, write upper address bits (with highest bits set to 01), set MODE low, write data bytes. Address autoincrements."
-  - "Read from status register: set MODE high, read byte."
-  - "Read from VRAM: write lower address bits, write upper address bits (with highest bits set to 00), set MODE low, read data bytes. Address autoincrements."
-  - MODE determines the source or destination of a CPU read/write data transfer.
-  - "Control registers:
-<table>
-<tr><td>0</td><td>VDP option control bits (mode, external VDP enable)</td></tr>
-<tr><td>1</td><td>VDP option control bits (4/16K RAM, BLANK, interrupt enable, mode, sprite size, magnification)</td></tr>
-<tr><td>2</td><td>Name table base address (0-15)</td></tr>
-<tr><td>3</td><td>Color table base address (0-255)</td></tr>
-<tr><td>4</td><td>Pattern generator base address (0-7)</td></tr>
-<tr><td>5</td><td>Sprite attribute table base address (0-127)</td></tr>
-<tr><td>6</td><td>Sprite pattern generator base address (0-7)</td></tr>
-<tr><td>7</td><td>Text color, backdrop color</td></tr>
-</table>"
-  - "Graphics modes:
-<table>
-<tr><td>Text mode</td><td>40x24 text positions, 6x8-pixel patterns, two colors, no sprites</td></tr>
-<tr><td>Graphics I mode</td><td>32x24 tile positions, 8x8-pixel patterns, 256 possible patterns with 2 colors per pattern, sprites</td></tr>
-<tr><td>Graphics II mode</td><td>32x24 tile positions, 8x8-pixel patterns, 768 possible patterns with 2 colors per row, sprites</td></tr>
-<tr><td>Multicolor mode</td><td>64x48 solid 4x4-pixel blocks of any color, sprites</td></tr>
-</table>"
-...
-
-
+  - 'Bit order numbering is backwards. 0 is the MSB and 7 is the LSB.'
+  - 'Write to control register: set MODE high, write data byte, write destination register in the format 10000RRR.'
+  - 'Write to VRAM: set MODE high, write lower address bits, write upper address bits (with highest bits set to 01), set MODE low, write data bytes. Address autoincrements.'
+  - 'Read from status register: set MODE high, read byte.'
+  - 'Read from VRAM: write lower address bits, write upper address bits (with highest bits set to 00), set MODE low, read data bytes. Address autoincrements.'
+  - 'MODE determines the source or destination of a CPU read/write data transfer.'
+  - 'Control registers:&NewLine;<table>&NewLine;<tr><td>0</td><td>VDP option control bits (mode, external VDP enable)</td></tr>&NewLine;<tr><td>1</td><td>VDP option control bits (4/16K RAM, BLANK, interrupt enable, mode, sprite size, magnification)</td></tr>&NewLine;<tr><td>2</td><td>Name table base address (0-15)</td></tr>&NewLine;<tr><td>3</td><td>Color table base address (0-255)</td></tr>&NewLine;<tr><td>4</td><td>Pattern generator base address (0-7)</td></tr>&NewLine;<tr><td>5</td><td>Sprite attribute table base address (0-127)</td></tr>&NewLine;<tr><td>6</td><td>Sprite pattern generator base address (0-7)</td></tr>&NewLine;<tr><td>7</td><td>Text color, backdrop color</td></tr>&NewLine;</table>'
+  - 'Graphics modes:&NewLine;<table>&NewLine;<tr><td>Text mode</td><td>40x24 text positions, 6x8-pixel patterns, two colors, no sprites</td></tr>&NewLine;<tr><td>Graphics I mode</td><td>32x24 tile positions, 8x8-pixel patterns, 256 possible patterns with 2 colors per pattern, sprites</td></tr>&NewLine;<tr><td>Graphics II mode</td><td>32x24 tile positions, 8x8-pixel patterns, 768 possible patterns with 2 colors per row, sprites</td></tr>&NewLine;<tr><td>Multicolor mode</td><td>64x48 solid 4x4-pixel blocks of any color, sprites</td></tr>&NewLine;</table>'

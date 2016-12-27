@@ -1,155 +1,207 @@
----
-description: "Peripheral interface adapter"
-aliases:     [68A21, 68B21]
-package:     DIP
-pincount:    40
-family:      "Motorola"
-datasheet:   "http://www.jameco.com/Jameco/Products/ProdDS/43596MOT.pdf"
+description: 'Peripheral interface adapter'
+aliases:
+  - 68A21
+  - 68B21
+package: DIP
+pincount: '40'
+family: Motorola
+datasheet: 'http://www.jameco.com/Jameco/Products/ProdDS/43596MOT.pdf'
 pins:
-  - num:  1
-    sym:  GND
+  -
+    num: '1'
+    sym: GND
     desc: ground
-  - num:  2
-    sym:  PA0
-    desc: port A
-  - num:  3
-    sym:  PA1
-    desc: port A
-  - num:  4
-    sym:  PA2
-    desc: port A
-  - num:  5
-    sym:  PA3
-    desc: port A
-  - num:  6
-    sym:  PA4
-    desc: port A
-  - num:  7
-    sym:  PA5
-    desc: port A
-  - num:  8
-    sym:  PA6
-    desc: port A
-  - num:  9
-    sym:  PA7
-    desc: port A
-  - num:  10
-    sym:  PB0
-    desc: port B
-  - num:  11
-    sym:  PB1
-    desc: port B
-  - num:  12
-    sym:  PB2
-    desc: port B
-  - num:  13
-    sym:  PB3
-    desc: port B
-  - num:  14
-    sym:  PB4
-    desc: port B
-  - num:  15
-    sym:  PB5
-    desc: port B
-  - num:  16
-    sym:  PB6
-    desc: port B
-  - num:  17
-    sym:  PB7
-    desc: port B
-  - num:  18
-    sym:  CB1
-    desc: peripheral control (port B)
-  - num:  19
-    sym:  CB2
-    desc: peripheral control (port B)
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
-  - num:  21
-    sym:  R/~W
+  -
+    num: '2'
+    sym: PA0
+    desc: 'port A'
+  -
+    num: '3'
+    sym: PA1
+    desc: 'port A'
+  -
+    num: '4'
+    sym: PA2
+    desc: 'port A'
+  -
+    num: '5'
+    sym: PA3
+    desc: 'port A'
+  -
+    num: '6'
+    sym: PA4
+    desc: 'port A'
+  -
+    num: '7'
+    sym: PA5
+    desc: 'port A'
+  -
+    num: '8'
+    sym: PA6
+    desc: 'port A'
+  -
+    num: '9'
+    sym: PA7
+    desc: 'port A'
+  -
+    num: '10'
+    sym: PB0
+    desc: 'port B'
+  -
+    num: '11'
+    sym: PB1
+    desc: 'port B'
+  -
+    num: '12'
+    sym: PB2
+    desc: 'port B'
+  -
+    num: '13'
+    sym: PB3
+    desc: 'port B'
+  -
+    num: '14'
+    sym: PB4
+    desc: 'port B'
+  -
+    num: '15'
+    sym: PB5
+    desc: 'port B'
+  -
+    num: '16'
+    sym: PB6
+    desc: 'port B'
+  -
+    num: '17'
+    sym: PB7
+    desc: 'port B'
+  -
+    num: '18'
+    sym: CB1
+    desc: 'peripheral control (port B)'
+  -
+    num: '19'
+    sym: CB2
+    desc: 'peripheral control (port B)'
+  -
+    num: '20'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '21'
+    sym: 'R/&#126;W'
     desc: read/write
-  - num:  22
-    sym:  CS0
-    desc: chip select (active high)
-  - num:  23
-    sym:  ~CS2
-    desc: chip select (active low)
-  - num:  24
-    sym:  CS1
-    desc: chip select (active high)
-  - num:  25
-    sym:  E
+  -
+    num: '22'
+    sym: CS0
+    desc: 'chip select (active high)'
+  -
+    num: '23'
+    sym: '&#126;CS2'
+    desc: 'chip select (active low)'
+  -
+    num: '24'
+    sym: CS1
+    desc: 'chip select (active high)'
+  -
+    num: '25'
+    sym: E
     desc: clock
-  - num:  26
-    sym:  D7
-    desc: data bus
-  - num:  27
-    sym:  D6
-    desc: data bus
-  - num:  28
-    sym:  D5
-    desc: data bus
-  - num:  29
-    sym:  D4
-    desc: data bus
-  - num:  30
-    sym:  D3
-    desc: data bus
-  - num:  31
-    sym:  D2
-    desc: data bus
-  - num:  32
-    sym:  D1
-    desc: data bus
-  - num:  33
-    sym:  D0
-    desc: data bus
-  - num:  34
-    sym:  ~RESET
-    desc: master reset (active low)
-  - num:  35
-    sym:  RS1
-    desc: register select (address bus)
-  - num:  36
-    sym:  RS0
-    desc: register select (address bus)
-  - num:  37
-    sym:  ~IRQB
-    desc: interrupt output (active low)
-  - num:  38
-    sym:  ~IRQA
-    desc: interrupt output (active low)
-  - num:  39
-    sym:  CA2
-    desc: peripheral control (port A)
-  - num:  40
-    sym:  CA1
-    desc: peripheral control (port A)
+  -
+    num: '26'
+    sym: D7
+    desc: 'data bus'
+  -
+    num: '27'
+    sym: D6
+    desc: 'data bus'
+  -
+    num: '28'
+    sym: D5
+    desc: 'data bus'
+  -
+    num: '29'
+    sym: D4
+    desc: 'data bus'
+  -
+    num: '30'
+    sym: D3
+    desc: 'data bus'
+  -
+    num: '31'
+    sym: D2
+    desc: 'data bus'
+  -
+    num: '32'
+    sym: D1
+    desc: 'data bus'
+  -
+    num: '33'
+    sym: D0
+    desc: 'data bus'
+  -
+    num: '34'
+    sym: '&#126;RESET'
+    desc: 'master reset (active low)'
+  -
+    num: '35'
+    sym: RS1
+    desc: 'register select (address bus)'
+  -
+    num: '36'
+    sym: RS0
+    desc: 'register select (address bus)'
+  -
+    num: '37'
+    sym: '&#126;IRQB'
+    desc: 'interrupt output (active low)'
+  -
+    num: '38'
+    sym: '&#126;IRQA'
+    desc: 'interrupt output (active low)'
+  -
+    num: '39'
+    sym: CA2
+    desc: 'peripheral control (port A)'
+  -
+    num: '40'
+    sym: CA1
+    desc: 'peripheral control (port A)'
 specs:
-  - param: "Max. clock frequency"
-    val:   [1 (6821), 1.5 (68A21), 2 (68B21)]
-    unit:  MHz
-  - param: "Pulse width, E low"
-    val:   [430 (6821), 280 (68A21), 210 (68B21)]
-    unit:  ns
-  - param: "Pulse width, E high"
-    val:   [450 (6821), 280 (68A21), 220 (68B21)]
-    unit:  ns
-  - param: "Min. ~RESET pulse length"
-    val:   1
-    unit:  "&micro;s"
+  -
+    param: 'Max. clock frequency'
+    val:
+      - '1 (6821)'
+      - '1.5 (68A21)'
+      - '2 (68B21)'
+    unit: MHz
+  -
+    param: 'Pulse width, E low'
+    val:
+      - '430 (6821)'
+      - '280 (68A21)'
+      - '210 (68B21)'
+    unit: ns
+  -
+    param: 'Pulse width, E high'
+    val:
+      - '450 (6821)'
+      - '280 (68A21)'
+      - '220 (68B21)'
+    unit: ns
+  -
+    param: 'Min. &#126;RESET pulse length'
+    val: '1'
+    unit: '&micro;s'
 notes:
-  - Port A is designed to drive CMOS logic to normal 30%/70% levels.
-  - Port B uses three-state NMOS buffers and requires external resistors to pull up to CMOS levels.
-  - Port B is capable of driving Darlingtons.
-  - When in output mode, a read of Port A returns the actual pin states.
-  - When in output mode, a read of Port B returns the contents of the output latch.
-  - "RS=00, bit 2 of control register A=1: peripheral register A"
-  - "RS=00, bit 2 of control register A=0: data direction register A"
-  - "RS=01: control register A"
-  - "RS=10, bit 2 of control register B=1: peripheral register B"
-  - "RS=10, bit 2 of control register B=0: data direction register B"
-  - "RS=11: control register B"
-...
-
+  - 'Port A is designed to drive CMOS logic to normal 30%/70% levels.'
+  - 'Port B uses three-state NMOS buffers and requires external resistors to pull up to CMOS levels.'
+  - 'Port B is capable of driving Darlingtons.'
+  - 'When in output mode, a read of Port A returns the actual pin states.'
+  - 'When in output mode, a read of Port B returns the contents of the output latch.'
+  - 'RS=00, bit 2 of control register A=1: peripheral register A'
+  - 'RS=00, bit 2 of control register A=0: data direction register A'
+  - 'RS=01: control register A'
+  - 'RS=10, bit 2 of control register B=1: peripheral register B'
+  - 'RS=10, bit 2 of control register B=0: data direction register B'
+  - 'RS=11: control register B'

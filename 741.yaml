@@ -1,51 +1,63 @@
----
-description: Operational amplifier
-package:     DIP
-pincount:    8
-family:      "linear"
-datasheet:   "http://www.national.com/ds/LM/LM741.pdf"
+description: 'Operational amplifier'
+package: DIP
+pincount: '8'
+family: linear
+datasheet: 'http://www.national.com/ds/LM/LM741.pdf'
 pins:
-  - num:  1
-    sym:  OFFSET NULL
-    desc: offset null
-  - num:  2
-    sym:  IN-
-    desc: inverting input
-  - num:  3
-    sym:  IN+
-    desc: non-inverting input
-  - num:  4
-    sym:  Vss
-    desc: negative supply voltage
-  - num:  5
-    sym:  OFFSET NULL
-    desc: offset null
-  - num:  6
-    sym:  OUT
+  -
+    num: '1'
+    sym: 'OFFSET NULL'
+    desc: 'offset null'
+  -
+    num: '2'
+    sym: IN-
+    desc: 'inverting input'
+  -
+    num: '3'
+    sym: IN+
+    desc: 'non-inverting input'
+  -
+    num: '4'
+    sym: Vss
+    desc: 'negative supply voltage'
+  -
+    num: '5'
+    sym: 'OFFSET NULL'
+    desc: 'offset null'
+  -
+    num: '6'
+    sym: OUT
     desc: output
-  - num:  7
-    sym:  Vcc
-    desc: positive supply voltage
-  - num:  8
-    sym:  NC
-    desc: no connection
+  -
+    num: '7'
+    sym: Vcc
+    desc: 'positive supply voltage'
+  -
+    num: '8'
+    sym: NC
+    desc: 'no connection'
 specs:
-  - param: Supply voltage
-    val:   ["&plusmn;10 (min)", "&plusmn;22 (max)"]
-    unit:  V
-  - param: Maximum input voltage
-    val:   "&plusmn;15"
-    unit:  V
-  - param: Gain bandwidth
-    val:   1
-    unit:  MHz
-  - param: Slew rate
-    val:   0.5
-    unit:  "V/&micro;s"
-  - param: Supply current
-    val:   1.7
-    unit:  mA
+  -
+    param: 'Supply voltage'
+    val:
+      - '&plusmn;10 (min)'
+      - '&plusmn;22 (max)'
+    unit: V
+  -
+    param: 'Maximum input voltage'
+    val: '&plusmn;15'
+    unit: V
+  -
+    param: 'Gain bandwidth'
+    val: '1'
+    unit: MHz
+  -
+    param: 'Slew rate'
+    val: '0.5'
+    unit: 'V/&micro;s'
+  -
+    param: 'Supply current'
+    val: '1.7'
+    unit: mA
 notes:
-  - "A 10 k&Omega; potentiometer connected to pins 1 and 5 can be used to null any offset voltage."
-...
-
+  - 'A 10 k&Omega; potentiometer connected to pins 1 and 5 can be used to null any offset voltage.'

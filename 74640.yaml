@@ -1,75 +1,97 @@
----
-description:  Octal bus transceiver; 3-state; inverting
-package:      DIP
-pincount:     20
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc640.74hct640.pdf"
+description: 'Octal bus transceiver; 3-state; inverting'
+package: DIP
+pincount: '20'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc640.74hct640.pdf'
 pins:
-  - num:  1
-    sym:  DIR
-    desc: direction control
-  - num:  2
-    sym:  A__0
-    desc: data input/output
-  - num:  3
-    sym:  A__1
-    desc: data input/output
-  - num:  4
-    sym:  A__2
-    desc: data input/output
-  - num:  5
-    sym:  A__3
-    desc: data input/output
-  - num:  6
-    sym:  A__4
-    desc: data input/output
-  - num:  7
-    sym:  A__5
-    desc: data input/output
-  - num:  8
-    sym:  A__6
-    desc: data input/output
-  - num:  9
-    sym:  A__7
-    desc: data input/output
-  - num:  10
-    sym:  GND
+  -
+    num: '1'
+    sym: DIR
+    desc: 'direction control'
+  -
+    num: '2'
+    sym: 'A&#95;&#95;0'
+    desc: 'data input/output'
+  -
+    num: '3'
+    sym: 'A&#95;&#95;1'
+    desc: 'data input/output'
+  -
+    num: '4'
+    sym: 'A&#95;&#95;2'
+    desc: 'data input/output'
+  -
+    num: '5'
+    sym: 'A&#95;&#95;3'
+    desc: 'data input/output'
+  -
+    num: '6'
+    sym: 'A&#95;&#95;4'
+    desc: 'data input/output'
+  -
+    num: '7'
+    sym: 'A&#95;&#95;5'
+    desc: 'data input/output'
+  -
+    num: '8'
+    sym: 'A&#95;&#95;6'
+    desc: 'data input/output'
+  -
+    num: '9'
+    sym: 'A&#95;&#95;7'
+    desc: 'data input/output'
+  -
+    num: '10'
+    sym: GND
     desc: ground
-  - num:  11
-    sym:  B__7
-    desc: data input/output
-  - num:  12
-    sym:  B__6
-    desc: data input/output
-  - num:  13
-    sym:  B__5
-    desc: data input/output
-  - num:  14
-    sym:  B__4
-    desc: data input/output
-  - num:  15
-    sym:  B__3
-    desc: data input/output
-  - num:  16
-    sym:  B__2
-    desc: data input/output
-  - num:  17
-    sym:  B__1
-    desc: data input/output
-  - num:  18
-    sym:  B__0
-    desc: data input/output
-  - num:  19
-    sym:  ~OE
-    desc: output enable (active low)
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '11'
+    sym: 'B&#95;&#95;7'
+    desc: 'data input/output'
+  -
+    num: '12'
+    sym: 'B&#95;&#95;6'
+    desc: 'data input/output'
+  -
+    num: '13'
+    sym: 'B&#95;&#95;5'
+    desc: 'data input/output'
+  -
+    num: '14'
+    sym: 'B&#95;&#95;4'
+    desc: 'data input/output'
+  -
+    num: '15'
+    sym: 'B&#95;&#95;3'
+    desc: 'data input/output'
+  -
+    num: '16'
+    sym: 'B&#95;&#95;2'
+    desc: 'data input/output'
+  -
+    num: '17'
+    sym: 'B&#95;&#95;1'
+    desc: 'data input/output'
+  -
+    num: '18'
+    sym: 'B&#95;&#95;0'
+    desc: 'data input/output'
+  -
+    num: '19'
+    sym: '&#126;OE'
+    desc: 'output enable (active low)'
+  -
+    num: '20'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, A__n to B__n
-    val:    11 (74HC/HCT)
-    unit:   ns
-  - param:  Propagation delay, B__n to A__n
-    val:    [9 (74HC), 11 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, A&#95;&#95;n to B&#95;&#95;n'
+    val: '11 (74HC/HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, B&#95;&#95;n to A&#95;&#95;n'
+    val:
+      - '9 (74HC)'
+      - '11 (74HCT)'
+    unit: ns

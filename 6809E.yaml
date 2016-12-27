@@ -1,182 +1,182 @@
----
-description: "8-bit microprocessor"
-aliases:     [68A09E, 68B09E]
-package:     DIP
-pincount:    40
-family:      "Motorola"
-datasheet:   "http://www.classiccmp.org/dunfield/r/6809e.pdf"
+description: '8-bit microprocessor'
+aliases:
+  - 68A09E
+  - 68B09E
+package: DIP
+pincount: '40'
+family: Motorola
+datasheet: 'http://www.classiccmp.org/dunfield/r/6809e.pdf'
 pins:
-  - num:  1
-    sym:  Vss
+  -
+    num: '1'
+    sym: Vss
     desc: ground
-  - num:  2
-    sym:  ~NMI
-    desc: non-maskable interrupt (active low)
-  - num:  3
-    sym:  ~IRQ
-    desc: interrupt request (active low)
-  - num:  4
-    sym:  ~FIRQ
-    desc: fast interrupt request (active low)
-  - num:  5
-    sym:  BS
-    desc: bus status output
-  - num:  6
-    sym:  BA
-    desc: bus available output
-  - num:  7
-    sym:  Vcc
-    desc: supply voltage
-  - num:  8
-    sym:  A0
-    desc: address bus
-  - num:  9
-    sym:  A1
-    desc: address bus
-  - num:  10
-    sym:  A2
-    desc: address bus
-  - num:  11
-    sym:  A3
-    desc: address bus
-  - num:  12
-    sym:  A4
-    desc: address bus
-  - num:  13
-    sym:  A5
-    desc: address bus
-  - num:  14
-    sym:  A6
-    desc: address bus
-  - num:  15
-    sym:  A7
-    desc: address bus
-  - num:  16
-    sym:  A8
-    desc: address bus
-  - num:  17
-    sym:  A9
-    desc: address bus
-  - num:  18
-    sym:  A10
-    desc: address bus
-  - num:  19
-    sym:  A11
-    desc: address bus
-  - num:  20
-    sym:  A12
-    desc: address bus
-  - num:  21
-    sym:  A13
-    desc: address bus
-  - num:  22
-    sym:  A14
-    desc: address bus
-  - num:  23
-    sym:  A15
-    desc: address bus
-  - num:  24
-    sym:  D7
-    desc: data bus
-  - num:  25
-    sym:  D6
-    desc: data bus
-  - num:  26
-    sym:  D5
-    desc: data bus
-  - num:  27
-    sym:  D4
-    desc: data bus
-  - num:  28
-    sym:  D3
-    desc: data bus
-  - num:  29
-    sym:  D2
-    desc: data bus
-  - num:  30
-    sym:  D1
-    desc: data bus
-  - num:  31
-    sym:  D0
-    desc: data bus
-  - num:  32
-    sym:  R/~W
-    desc: bus read/write
-  - num:  33
-    sym:  BUSY
-    desc: busy status
-  - num:  34
-    sym:  E
-    desc: clock input
-  - num:  35
-    sym:  Q
-    desc: quadrature clock input
-  - num:  36
-    sym:  AVMA
-    desc: advanced VMA signal (indicates bus will be used in the next cycle)
-  - num:  37
-    sym:  ~RESET
-    desc: reset (active low)
-  - num:  38
-    sym:  LIC
-    desc: last instruction cycle (high during last cycle of instruction)
-  - num:  39
-    sym:  TSC
-    desc: three-state control (active high; tri-states address, data, R/~W~)
-  - num:  40
-    sym:  ~HALT
-    desc: halt (active low)
+  -
+    num: '2'
+    sym: '&#126;NMI'
+    desc: 'non-maskable interrupt (active low)'
+  -
+    num: '3'
+    sym: '&#126;IRQ'
+    desc: 'interrupt request (active low)'
+  -
+    num: '4'
+    sym: '&#126;FIRQ'
+    desc: 'fast interrupt request (active low)'
+  -
+    num: '5'
+    sym: BS
+    desc: 'bus status output'
+  -
+    num: '6'
+    sym: BA
+    desc: 'bus available output'
+  -
+    num: '7'
+    sym: Vcc
+    desc: 'supply voltage'
+  -
+    num: '8'
+    sym: A0
+    desc: 'address bus'
+  -
+    num: '9'
+    sym: A1
+    desc: 'address bus'
+  -
+    num: '10'
+    sym: A2
+    desc: 'address bus'
+  -
+    num: '11'
+    sym: A3
+    desc: 'address bus'
+  -
+    num: '12'
+    sym: A4
+    desc: 'address bus'
+  -
+    num: '13'
+    sym: A5
+    desc: 'address bus'
+  -
+    num: '14'
+    sym: A6
+    desc: 'address bus'
+  -
+    num: '15'
+    sym: A7
+    desc: 'address bus'
+  -
+    num: '16'
+    sym: A8
+    desc: 'address bus'
+  -
+    num: '17'
+    sym: A9
+    desc: 'address bus'
+  -
+    num: '18'
+    sym: A10
+    desc: 'address bus'
+  -
+    num: '19'
+    sym: A11
+    desc: 'address bus'
+  -
+    num: '20'
+    sym: A12
+    desc: 'address bus'
+  -
+    num: '21'
+    sym: A13
+    desc: 'address bus'
+  -
+    num: '22'
+    sym: A14
+    desc: 'address bus'
+  -
+    num: '23'
+    sym: A15
+    desc: 'address bus'
+  -
+    num: '24'
+    sym: D7
+    desc: 'data bus'
+  -
+    num: '25'
+    sym: D6
+    desc: 'data bus'
+  -
+    num: '26'
+    sym: D5
+    desc: 'data bus'
+  -
+    num: '27'
+    sym: D4
+    desc: 'data bus'
+  -
+    num: '28'
+    sym: D3
+    desc: 'data bus'
+  -
+    num: '29'
+    sym: D2
+    desc: 'data bus'
+  -
+    num: '30'
+    sym: D1
+    desc: 'data bus'
+  -
+    num: '31'
+    sym: D0
+    desc: 'data bus'
+  -
+    num: '32'
+    sym: 'R/&#126;W'
+    desc: 'bus read/write'
+  -
+    num: '33'
+    sym: BUSY
+    desc: 'busy status'
+  -
+    num: '34'
+    sym: E
+    desc: 'clock input'
+  -
+    num: '35'
+    sym: Q
+    desc: 'quadrature clock input'
+  -
+    num: '36'
+    sym: AVMA
+    desc: 'advanced VMA signal (indicates bus will be used in the next cycle)'
+  -
+    num: '37'
+    sym: '&#126;RESET'
+    desc: 'reset (active low)'
+  -
+    num: '38'
+    sym: LIC
+    desc: 'last instruction cycle (high during last cycle of instruction)'
+  -
+    num: '39'
+    sym: TSC
+    desc: 'three-state control (active high; tri-states address, data, R/&#126;W&#126;)'
+  -
+    num: '40'
+    sym: '&#126;HALT'
+    desc: 'halt (active low)'
 specs:
-  - param: "Clock speed"
-    val:   [1 (6809E), 1.5 (68A09E), 2 (68B09E)]
-    unit:  MHz
+  -
+    param: 'Clock speed'
+    val:
+      - '1 (6809E)'
+      - '1.5 (68A09E)'
+      - '2 (68B09E)'
+    unit: MHz
 notes:
-  - "Registers:
-<table>
-<tr><td>A, B</td><td>8-bit Accumulators (can be combined into 16-bit accumulator, D)</td></tr>
-<tr><td>X</td><td>16-bit Index Register</td></tr>
-<tr><td>Y</td><td>16-bit Index Register</td></tr>
-<tr><td>U</td><td>16-bit User Stack Pointer</td></tr>
-<tr><td>S</td><td>16-bit Hardware Stack Pointer</td></tr>
-<tr><td>PC</td><td>16-bit Program Counter</td></tr>
-<tr><td>DP</td><td>8-bit Direct Page Register</td></tr>
-<tr><td>CC</td><td>8-bit Condition Code Register</td></tr>
-</table><br/>"
-  - "Condition code bits: EFHINZVC
-<table>
-<tr><td>E</td><td>(bit 7)</td><td>Entire machine state was stacked</td></tr>
-<tr><td>F</td><td>(bit 6)</td><td>~FIRQ inhibit flag</td></tr>
-<tr><td>H</td><td>(bit 5)</td><td>Half-carry flag (valid only after ADC or ADD instructions)</td></tr>
-<tr><td>I</td><td>(bit 4)</td><td>~IRQ inhibit flag</td></tr>
-<tr><td>N</td><td>(bit 3)</td><td>Negative flag (most significant bit of previous result)</td></tr>
-<tr><td>Z</td><td>(bit 2)</td><td>Zero flag</td></tr>
-<tr><td>V</td><td>(bit 1)</td><td>Signed two's complement overflow flag</td></tr>
-<tr><td>C</td><td>(bit 0)</td><td>Carry flag</td></tr>
-</table><br/>"
-  - "Register stacking order:
-<table>
-<tr><td>CC</td><td>(pulled first, pushed last)</td></tr>
-<tr><td>A</td><td></td></tr>
-<tr><td>B</td><td></td></tr>
-<tr><td>DP</td><td></td></tr>
-<tr><td>X msb</td><td></td></tr>
-<tr><td>X lsb</td><td></td></tr>
-<tr><td>Y msb</td><td></td></tr>
-<tr><td>Y lsb</td><td></td></tr>
-<tr><td>U/S msb</td><td></td></tr>
-<tr><td>U/S lsb</td><td></td></tr>
-<tr><td>PC msb</td><td></td></tr>
-<tr><td>PC lsb</td><td>(pulled last, pushed first)</td></tr>
-</table><br/>"
-  - "Interrupt vectors:
-<table>
-<tr><td>FFFE-FFFF</td><td>~RESET</td></tr>
-<tr><td>FFFC-FFFD</td><td>~NMI</td></tr>
-<tr><td>FFFA-FFFB</td><td>SWI</td></tr>
-<tr><td>FFF8-FFF9</td><td>~IRQ</td></tr>
-<tr><td>FFF6-FFF7</td><td>~FIRQ</td></tr>
-<tr><td>FFF4-FFF5</td><td>SWI2</td></tr>
-<tr><td>FFF2-FFF3</td><td>SWI3</td></tr>
-<tr><td>FFF1-FFF1</td><td>Reserved</td></tr>
-</table>"
-
+  - 'Registers:&NewLine;<table>&NewLine;<tr><td>A, B</td><td>8-bit Accumulators (can be combined into 16-bit accumulator, D)</td></tr>&NewLine;<tr><td>X</td><td>16-bit Index Register</td></tr>&NewLine;<tr><td>Y</td><td>16-bit Index Register</td></tr>&NewLine;<tr><td>U</td><td>16-bit User Stack Pointer</td></tr>&NewLine;<tr><td>S</td><td>16-bit Hardware Stack Pointer</td></tr>&NewLine;<tr><td>PC</td><td>16-bit Program Counter</td></tr>&NewLine;<tr><td>DP</td><td>8-bit Direct Page Register</td></tr>&NewLine;<tr><td>CC</td><td>8-bit Condition Code Register</td></tr>&NewLine;</table><br/>'
+  - 'Condition code bits: EFHINZVC&NewLine;<table>&NewLine;<tr><td>E</td><td>(bit 7)</td><td>Entire machine state was stacked</td></tr>&NewLine;<tr><td>F</td><td>(bit 6)</td><td>&#126;FIRQ inhibit flag</td></tr>&NewLine;<tr><td>H</td><td>(bit 5)</td><td>Half-carry flag (valid only after ADC or ADD instructions)</td></tr>&NewLine;<tr><td>I</td><td>(bit 4)</td><td>&#126;IRQ inhibit flag</td></tr>&NewLine;<tr><td>N</td><td>(bit 3)</td><td>Negative flag (most significant bit of previous result)</td></tr>&NewLine;<tr><td>Z</td><td>(bit 2)</td><td>Zero flag</td></tr>&NewLine;<tr><td>V</td><td>(bit 1)</td><td>Signed two''s complement overflow flag</td></tr>&NewLine;<tr><td>C</td><td>(bit 0)</td><td>Carry flag</td></tr>&NewLine;</table><br/>'
+  - 'Register stacking order:&NewLine;<table>&NewLine;<tr><td>CC</td><td>(pulled first, pushed last)</td></tr>&NewLine;<tr><td>A</td><td></td></tr>&NewLine;<tr><td>B</td><td></td></tr>&NewLine;<tr><td>DP</td><td></td></tr>&NewLine;<tr><td>X msb</td><td></td></tr>&NewLine;<tr><td>X lsb</td><td></td></tr>&NewLine;<tr><td>Y msb</td><td></td></tr>&NewLine;<tr><td>Y lsb</td><td></td></tr>&NewLine;<tr><td>U/S msb</td><td></td></tr>&NewLine;<tr><td>U/S lsb</td><td></td></tr>&NewLine;<tr><td>PC msb</td><td></td></tr>&NewLine;<tr><td>PC lsb</td><td>(pulled last, pushed first)</td></tr>&NewLine;</table><br/>'
+  - 'Interrupt vectors:&NewLine;<table>&NewLine;<tr><td>FFFE-FFFF</td><td>&#126;RESET</td></tr>&NewLine;<tr><td>FFFC-FFFD</td><td>&#126;NMI</td></tr>&NewLine;<tr><td>FFFA-FFFB</td><td>SWI</td></tr>&NewLine;<tr><td>FFF8-FFF9</td><td>&#126;IRQ</td></tr>&NewLine;<tr><td>FFF6-FFF7</td><td>&#126;FIRQ</td></tr>&NewLine;<tr><td>FFF4-FFF5</td><td>SWI2</td></tr>&NewLine;<tr><td>FFF2-FFF3</td><td>SWI3</td></tr>&NewLine;<tr><td>FFF1-FFF1</td><td>Reserved</td></tr>&NewLine;</table>'

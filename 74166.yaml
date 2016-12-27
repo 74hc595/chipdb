@@ -1,69 +1,92 @@
----
-description:  8-bit parallel-in/serial-out shift register
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc166.74hct166.pdf"
+description: '8-bit parallel-in/serial-out shift register'
+package: DIP
+pincount: '16'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc166.74hct166.pdf'
 pins:
-  - num:  1
-    sym:  D__s
-    desc: serial data input
-  - num:  2
-    sym:  D__0
-    desc: parallel data input
-  - num:  3
-    sym:  D__1
-    desc: parallel data input
-  - num:  4
-    sym:  D__2
-    desc: parallel data input
-  - num:  5
-    sym:  D__3
-    desc: parallel data input
-  - num:  6
-    sym:  ~CE
-    desc: clock enable input (active low)
-  - num:  7
-    sym:  CP
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: 'D&#95;&#95;s'
+    desc: 'serial data input'
+  -
+    num: '2'
+    sym: 'D&#95;&#95;0'
+    desc: 'parallel data input'
+  -
+    num: '3'
+    sym: 'D&#95;&#95;1'
+    desc: 'parallel data input'
+  -
+    num: '4'
+    sym: 'D&#95;&#95;2'
+    desc: 'parallel data input'
+  -
+    num: '5'
+    sym: 'D&#95;&#95;3'
+    desc: 'parallel data input'
+  -
+    num: '6'
+    sym: '&#126;CE'
+    desc: 'clock enable input (active low)'
+  -
+    num: '7'
+    sym: CP
+    desc: 'clock input (low-to-high, edge-triggered)'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  ~MR
-    desc: asynchronous master reset (active low)
-  - num:  10
-    sym:  D__4
-    desc: parallel data input
-  - num:  11
-    sym:  D__5
-    desc: parallel data input
-  - num:  12
-    sym:  D__6
-    desc: parallel data input
-  - num:  13
-    sym:  Q__7
-    desc: serial output from the last stage
-  - num:  14
-    sym:  D__7
-    desc: parallel data input
-  - num:  15
-    sym:  ~PE
-    desc: parallel enable input (active low)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '9'
+    sym: '&#126;MR'
+    desc: 'asynchronous master reset (active low)'
+  -
+    num: '10'
+    sym: 'D&#95;&#95;4'
+    desc: 'parallel data input'
+  -
+    num: '11'
+    sym: 'D&#95;&#95;5'
+    desc: 'parallel data input'
+  -
+    num: '12'
+    sym: 'D&#95;&#95;6'
+    desc: 'parallel data input'
+  -
+    num: '13'
+    sym: 'Q&#95;&#95;7'
+    desc: 'serial output from the last stage'
+  -
+    num: '14'
+    sym: 'D&#95;&#95;7'
+    desc: 'parallel data input'
+  -
+    num: '15'
+    sym: '&#126;PE'
+    desc: 'parallel enable input (active low)'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CP to Q__7
-    val:    [15 (74HC), 20 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~MR to Q__7
-    val:    [14 (74HC), 19 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [63 (74HC), 50 (74HCT)]
-    unit:   MHz
+  -
+    param: 'Propagation delay, CP to Q&#95;&#95;7'
+    val:
+      - '15 (74HC)'
+      - '20 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;MR to Q&#95;&#95;7'
+    val:
+      - '14 (74HC)'
+      - '19 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '63 (74HC)'
+      - '50 (74HCT)'
+    unit: MHz
 notes:
-  - The low-to-high transition of ~CE should only take place while CP is high for predictable operation.
-  - A low on ~MR overrides all other inputs and clears the register asynchronously, forcing all bit positions to a low stage.
-...
+  - 'The low-to-high transition of &#126;CE should only take place while CP is high for predictable operation.'
+  - 'A low on &#126;MR overrides all other inputs and clears the register asynchronously, forcing all bit positions to a low stage.'

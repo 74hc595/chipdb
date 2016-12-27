@@ -1,85 +1,106 @@
----
-description: "16-channel analog multiplexer/demultiplexer"
-package:     DIP
-pincount:    24
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4067b.pdf"
+description: '16-channel analog multiplexer/demultiplexer'
+package: DIP
+pincount: '24'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4067b.pdf'
 pins:
-  - num:  1
-    sym:  Z
-    desc: common input/output
-  - num:  2
-    sym:  Y7
-    desc: independent input/output
-  - num:  3
-    sym:  Y6
-    desc: independent input/output
-  - num:  4
-    sym:  Y5
-    desc: independent input/output
-  - num:  5
-    sym:  Y4
-    desc: independent input/output
-  - num:  6
-    sym:  Y3
-    desc: independent input/output
-  - num:  7
-    sym:  Y2
-    desc: independent input/output
-  - num:  8
-    sym:  Y1
-    desc: independent input/output
-  - num:  9
-    sym:  Y0
-    desc: independent input/output
-  - num:  10
-    sym:  A0
-    desc: address input
-  - num:  11
-    sym:  A1
-    desc: address input
-  - num:  12
-    sym:  GND
+  -
+    num: '1'
+    sym: Z
+    desc: 'common input/output'
+  -
+    num: '2'
+    sym: Y7
+    desc: 'independent input/output'
+  -
+    num: '3'
+    sym: Y6
+    desc: 'independent input/output'
+  -
+    num: '4'
+    sym: Y5
+    desc: 'independent input/output'
+  -
+    num: '5'
+    sym: Y4
+    desc: 'independent input/output'
+  -
+    num: '6'
+    sym: Y3
+    desc: 'independent input/output'
+  -
+    num: '7'
+    sym: Y2
+    desc: 'independent input/output'
+  -
+    num: '8'
+    sym: Y1
+    desc: 'independent input/output'
+  -
+    num: '9'
+    sym: Y0
+    desc: 'independent input/output'
+  -
+    num: '10'
+    sym: A0
+    desc: 'address input'
+  -
+    num: '11'
+    sym: A1
+    desc: 'address input'
+  -
+    num: '12'
+    sym: GND
     desc: ground
-  - num:  13
-    sym:  A3
-    desc: address input
-  - num:  14
-    sym:  A2
-    desc: address input
-  - num:  15
-    sym:  ~E
-    desc: enable input (active low)
-  - num:  16
-    sym:  Y15
-    desc: independent input/output
-  - num:  17
-    sym:  Y14
-    desc: independent input/output
-  - num:  18
-    sym:  Y13
-    desc: independent input/output
-  - num:  19
-    sym:  Y12
-    desc: independent input/output
-  - num:  20
-    sym:  Y11
-    desc: independent input/output
-  - num:  21
-    sym:  Y10
-    desc: independent input/output
-  - num:  22
-    sym:  Y9
-    desc: independent input/output
-  - num:  23
-    sym:  Y8
-    desc: independent input/output
-  - num:  24
-    sym:  V__CC
-    desc: supply voltage
+  -
+    num: '13'
+    sym: A3
+    desc: 'address input'
+  -
+    num: '14'
+    sym: A2
+    desc: 'address input'
+  -
+    num: '15'
+    sym: '&#126;E'
+    desc: 'enable input (active low)'
+  -
+    num: '16'
+    sym: Y15
+    desc: 'independent input/output'
+  -
+    num: '17'
+    sym: Y14
+    desc: 'independent input/output'
+  -
+    num: '18'
+    sym: Y13
+    desc: 'independent input/output'
+  -
+    num: '19'
+    sym: Y12
+    desc: 'independent input/output'
+  -
+    num: '20'
+    sym: Y11
+    desc: 'independent input/output'
+  -
+    num: '21'
+    sym: Y10
+    desc: 'independent input/output'
+  -
+    num: '22'
+    sym: Y9
+    desc: 'independent input/output'
+  -
+    num: '23'
+    sym: Y8
+    desc: 'independent input/output'
+  -
+    num: '24'
+    sym: 'V&#95;&#95;CC'
+    desc: 'supply voltage'
 notes:
-  - The device contains sixteen bidirectional analog switches.
-  - The analog inputs/outputs can swing between V__CC and GND.
-  - When ~E is high, all switches are in a high-impedance off state.
-...
-
+  - 'The device contains sixteen bidirectional analog switches.'
+  - 'The analog inputs/outputs can swing between V&#95;&#95;CC and GND.'
+  - 'When &#126;E is high, all switches are in a high-impedance off state.'

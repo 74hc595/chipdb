@@ -1,57 +1,70 @@
----
-description: "8-bit addressable latch"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://focus.ti.com/lit/ds/symlink/cd4099b.pdf"
+description: '8-bit addressable latch'
+package: DIP
+pincount: '16'
+family: '4000'
+datasheet: 'http://focus.ti.com/lit/ds/symlink/cd4099b.pdf'
 pins:
-  - num:  1
-    sym:  Q7
-    desc: latch output
-  - num:  2
-    sym:  RESET
-    desc: master reset (all bits to 0; active high)
-  - num:  3
-    sym:  DATA
-    desc: data input
-  - num:  4
-    sym:  ~WRITE
-    desc: write enable (active low)
-  - num:  5
-    sym:  A0
-    desc: address input
-  - num:  6
-    sym:  A1
-    desc: address input
-  - num:  7
-    sym:  A2
-    desc: address input
-  - num:  8
-    sym:  GND
+  -
+    num: '1'
+    sym: Q7
+    desc: 'latch output'
+  -
+    num: '2'
+    sym: RESET
+    desc: 'master reset (all bits to 0; active high)'
+  -
+    num: '3'
+    sym: DATA
+    desc: 'data input'
+  -
+    num: '4'
+    sym: '&#126;WRITE'
+    desc: 'write enable (active low)'
+  -
+    num: '5'
+    sym: A0
+    desc: 'address input'
+  -
+    num: '6'
+    sym: A1
+    desc: 'address input'
+  -
+    num: '7'
+    sym: A2
+    desc: 'address input'
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  Q0
-    desc: latch output
-  - num:  10
-    sym:  Q1
-    desc: latch output
-  - num:  11
-    sym:  Q2
-    desc: latch output
-  - num:  12
-    sym:  Q3
-    desc: latch output
-  - num:  13
-    sym:  Q4
-    desc: latch output
-  - num:  14
-    sym:  Q5
-    desc: latch output
-  - num:  15
-    sym:  Q6
-    desc: latch output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  -
+    num: '9'
+    sym: Q0
+    desc: 'latch output'
+  -
+    num: '10'
+    sym: Q1
+    desc: 'latch output'
+  -
+    num: '11'
+    sym: Q2
+    desc: 'latch output'
+  -
+    num: '12'
+    sym: Q3
+    desc: 'latch output'
+  -
+    num: '13'
+    sym: Q4
+    desc: 'latch output'
+  -
+    num: '14'
+    sym: Q5
+    desc: 'latch output'
+  -
+    num: '15'
+    sym: Q6
+    desc: 'latch output'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'

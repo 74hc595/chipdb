@@ -1,61 +1,77 @@
----
-description:  "Decade counter/divider with 10 decoded outputs"
-package:      DIP
-pincount:     16
-family:       "4000"
-datasheet:    "http://www.national.com/ds/CD/CD4017BC.pdf"
+description: 'Decade counter/divider with 10 decoded outputs'
+package: DIP
+pincount: '16'
+family: '4000'
+datasheet: 'http://www.national.com/ds/CD/CD4017BC.pdf'
 pins:
-  - num:  1
-    sym:  Q5
+  -
+    num: '1'
+    sym: Q5
     desc: output
-  - num:  2
-    sym:  Q1
+  -
+    num: '2'
+    sym: Q1
     desc: output
-  - num:  3
-    sym:  Q0
+  -
+    num: '3'
+    sym: Q0
     desc: output
-  - num:  4
-    sym:  Q2
+  -
+    num: '4'
+    sym: Q2
     desc: output
-  - num:  5
-    sym:  Q6
+  -
+    num: '5'
+    sym: Q6
     desc: output
-  - num:  6
-    sym:  Q7
+  -
+    num: '6'
+    sym: Q7
     desc: output
-  - num:  7
-    sym:  Q3
+  -
+    num: '7'
+    sym: Q3
     desc: output
-  - num:  8
-    sym:  GND
+  -
+    num: '8'
+    sym: GND
     desc: ground
-  - num:  9
-    sym:  Q8
+  -
+    num: '9'
+    sym: Q8
     desc: output
-  - num:  10
-    sym:  Q4
+  -
+    num: '10'
+    sym: Q4
     desc: output
-  - num:  11
-    sym:  Q9
+  -
+    num: '11'
+    sym: Q9
     desc: output
-  - num:  12
-    sym:  CARRY
-    desc: carry output
-  - num:  13
-    sym:  ~CE
-    desc: clock enable (active low)
-  - num:  14
-    sym:  CLOCK
-    desc: clock input (low-to-high, positive edge triggered)
-  - num:  15
-    sym:  RESET
-    desc: reset (active high)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '12'
+    sym: CARRY
+    desc: 'carry output'
+  -
+    num: '13'
+    sym: '&#126;CE'
+    desc: 'clock enable (active low)'
+  -
+    num: '14'
+    sym: CLOCK
+    desc: 'clock input (low-to-high, positive edge triggered)'
+  -
+    num: '15'
+    sym: RESET
+    desc: 'reset (active high)'
+  -
+    num: '16'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Maximum clock frequency
-    val:    [2 (CD4017), 77 (74HC4017)]
-    unit:   MHz
-...
-
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '2 (CD4017)'
+      - '77 (74HC4017)'
+    unit: MHz

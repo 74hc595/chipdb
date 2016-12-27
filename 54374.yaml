@@ -1,97 +1,134 @@
----
-description:  Octal D-type edge-triggered flip-flops with 3-state outputs
-package:      DIP
-pincount:     20
-family:       "5400"
-datasheet:    "http://www.alldatasheet.com/datasheet-pdf/pdf/27731/TI/SN54ALS374A.html"
+description: 'Octal D-type edge-triggered flip-flops with 3-state outputs'
+package: DIP
+pincount: '20'
+family: '5400'
+datasheet: 'http://www.alldatasheet.com/datasheet-pdf/pdf/27731/TI/SN54ALS374A.html'
 pins:
-  - num:  1
-    sym:  ~OE
-    desc: output enable (active low)
-  - num:  2
-    sym:  1Q
-    desc: flip-flop output
-  - num:  3
-    sym:  1D
-    desc: data input
-  - num:  4
-    sym:  2D
-    desc: data input
-  - num:  5
-    sym:  2Q
-    desc: flip-flop output
-  - num:  6
-    sym:  3Q
-    desc: flip-flop output
-  - num:  7
-    sym:  3D
-    desc: data input
-  - num:  8
-    sym:  4D
-    desc: data input
-  - num:  9
-    sym:  4Q
-    desc: flip-flop output
-  - num:  10
-    sym:  GND
+  -
+    num: '1'
+    sym: '&#126;OE'
+    desc: 'output enable (active low)'
+  -
+    num: '2'
+    sym: 1Q
+    desc: 'flip-flop output'
+  -
+    num: '3'
+    sym: 1D
+    desc: 'data input'
+  -
+    num: '4'
+    sym: 2D
+    desc: 'data input'
+  -
+    num: '5'
+    sym: 2Q
+    desc: 'flip-flop output'
+  -
+    num: '6'
+    sym: 3Q
+    desc: 'flip-flop output'
+  -
+    num: '7'
+    sym: 3D
+    desc: 'data input'
+  -
+    num: '8'
+    sym: 4D
+    desc: 'data input'
+  -
+    num: '9'
+    sym: 4Q
+    desc: 'flip-flop output'
+  -
+    num: '10'
+    sym: GND
     desc: ground
-  - num:  11
-    sym:  CLK
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  12
-    sym:  5Q
-    desc: flip-flop output
-  - num:  13
-    sym:  5D
-    desc: data input
-  - num:  14
-    sym:  6D
-    desc: data input
-  - num:  15
-    sym:  6Q
-    desc: flip-flop output
-  - num:  16
-    sym:  7Q
-    desc: flip-flop output
-  - num:  17
-    sym:  7D
-    desc: data input
-  - num:  18
-    sym:  D8D7
-    desc: data input
-  - num:  19
-    sym:  8Q
-    desc: flip-flop output
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '11'
+    sym: CLK
+    desc: 'clock input (low-to-high, edge-triggered)'
+  -
+    num: '12'
+    sym: 5Q
+    desc: 'flip-flop output'
+  -
+    num: '13'
+    sym: 5D
+    desc: 'data input'
+  -
+    num: '14'
+    sym: 6D
+    desc: 'data input'
+  -
+    num: '15'
+    sym: 6Q
+    desc: 'flip-flop output'
+  -
+    num: '16'
+    sym: 7Q
+    desc: 'flip-flop output'
+  -
+    num: '17'
+    sym: 7D
+    desc: 'data input'
+  -
+    num: '18'
+    sym: D8D7
+    desc: 'data input'
+  -
+    num: '19'
+    sym: 8Q
+    desc: 'flip-flop output'
+  -
+    num: '20'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Supply Voltage range
-    val:    [-0.5 to 7]
-    unit:   V
-  - param:  Input Voltage range
-    val:    [-0.5 to 7]
-    unit:   V
-  - param:  Recommended Voltage range
-    val:    [4.5 to 5.5]
-    unit:   V
-  - param:  High level input voltage  
-    val:    [2]
-    unit:   V
-  - param:  Low-level input voltage
-    val:    [0.7 (54AL), 0.8 (74AL)]
-    unit:   V
-  - param:  High-level output current
-    val:    [-1 (54AL), -2.6 (74AL)]
-    unit:   mA
-  - param:  Low-level output current
-    val:    [12 (54AL), 24 (74AL)]
-    unit:   mA
-  - param:  Operating Temp
-    val:    [-55 to +125 (54AL), 0 to +70 (74AL)]
-    unit:   degC  
+  -
+    param: 'Supply Voltage range'
+    val:
+      - '-0.5 to 7'
+    unit: V
+  -
+    param: 'Input Voltage range'
+    val:
+      - '-0.5 to 7'
+    unit: V
+  -
+    param: 'Recommended Voltage range'
+    val:
+      - '4.5 to 5.5'
+    unit: V
+  -
+    param: 'High level input voltage'
+    val:
+      - '2'
+    unit: V
+  -
+    param: 'Low-level input voltage'
+    val:
+      - '0.7 (54AL)'
+      - '0.8 (74AL)'
+    unit: V
+  -
+    param: 'High-level output current'
+    val:
+      - '-1 (54AL)'
+      - '-2.6 (74AL)'
+    unit: mA
+  -
+    param: 'Low-level output current'
+    val:
+      - '12 (54AL)'
+      - '24 (74AL)'
+    unit: mA
+  -
+    param: 'Operating Temp'
+    val:
+      - '-55 to +125 (54AL)'
+      - '0 to +70 (74AL)'
+    unit: degC
 notes:
-  - ~OE does not affect internal operations of the flip-flops. Old data can be retained or new data can be entered while the outputs are in the high-impedance state
-  - released april 1982, revised november 1999
-...
-
+  - '&#126;OE does not affect internal operations of the flip-flops. Old data can be retained or new data can be entered while the outputs are in the high-impedance state'
+  - 'released april 1982, revised november 1999'

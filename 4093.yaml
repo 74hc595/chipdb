@@ -1,51 +1,62 @@
----
-description: Quad 2-input NAND Schmitt trigger
-package:     DIP
-pincount:    14
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4093b.pdf"
+description: 'Quad 2-input NAND Schmitt trigger'
+package: DIP
+pincount: '14'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4093b.pdf'
 pins:
-  - num:  1
-    sym:  1A
-    desc: data input
-  - num:  2
-    sym:  1B
-    desc: data input
-  - num:  3
-    sym:  1Y
-    desc: data output
-  - num:  4
-    sym:  2Y
-    desc: data output
-  - num:  5
-    sym:  2A
-    desc: data input
-  - num:  6
-    sym:  2B
-    desc: data input
-  - num:  7
-    sym:  GND
+  -
+    num: '1'
+    sym: 1A
+    desc: 'data input'
+  -
+    num: '2'
+    sym: 1B
+    desc: 'data input'
+  -
+    num: '3'
+    sym: 1Y
+    desc: 'data output'
+  -
+    num: '4'
+    sym: 2Y
+    desc: 'data output'
+  -
+    num: '5'
+    sym: 2A
+    desc: 'data input'
+  -
+    num: '6'
+    sym: 2B
+    desc: 'data input'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  3A
-    desc: data input
-  - num:  9
-    sym:  3B
-    desc: data input
-  - num:  10
-    sym:  3Y
-    desc: data output
-  - num:  11
-    sym:  4Y
-    desc: data output
-  - num:  12
-    sym:  4A
-    desc: data input
-  - num:  13
-    sym:  4B
-    desc: data input
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  -
+    num: '8'
+    sym: 3A
+    desc: 'data input'
+  -
+    num: '9'
+    sym: 3B
+    desc: 'data input'
+  -
+    num: '10'
+    sym: 3Y
+    desc: 'data output'
+  -
+    num: '11'
+    sym: 4Y
+    desc: 'data output'
+  -
+    num: '12'
+    sym: 4A
+    desc: 'data input'
+  -
+    num: '13'
+    sym: 4B
+    desc: 'data input'
+  -
+    num: '14'
+    sym: Vcc
+    desc: 'supply voltage'

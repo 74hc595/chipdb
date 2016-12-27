@@ -1,54 +1,69 @@
----
-description:  8-input NAND gate
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc30.74hct30.pdf"
+description: '8-input NAND gate'
+package: DIP
+pincount: '14'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc30.74hct30.pdf'
 pins:
-  - num:  1
-    sym:  A
-    desc: data input
-  - num:  2
-    sym:  B
-    desc: data input
-  - num:  3
-    sym:  C
-    desc: data input
-  - num:  4
-    sym:  D
-    desc: data input
-  - num:  5
-    sym:  E
-    desc: data input
-  - num:  6
-    sym:  F
-    desc: data input
-  - num:  7
-    sym:  GND
+  -
+    num: '1'
+    sym: A
+    desc: 'data input'
+  -
+    num: '2'
+    sym: B
+    desc: 'data input'
+  -
+    num: '3'
+    sym: C
+    desc: 'data input'
+  -
+    num: '4'
+    sym: D
+    desc: 'data input'
+  -
+    num: '5'
+    sym: E
+    desc: 'data input'
+  -
+    num: '6'
+    sym: F
+    desc: 'data input'
+  -
+    num: '7'
+    sym: GND
     desc: ground
-  - num:  8
-    sym:  Y
-    desc: data output
-  - num:  9
-    sym:  NC
-    desc: no connection
-  - num:  10
-    sym:  NC
-    desc: no connection
-  - num:  11
-    sym:  G
-    desc: data input
-  - num:  12
-    sym:  H
-    desc: data input
-  - num:  13
-    sym:  NC
-    desc: no connection
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '8'
+    sym: 'Y'
+    desc: 'data output'
+  -
+    num: '9'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '10'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '11'
+    sym: G
+    desc: 'data input'
+  -
+    num: '12'
+    sym: H
+    desc: 'data input'
+  -
+    num: '13'
+    sym: NC
+    desc: 'no connection'
+  -
+    num: '14'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param: Propagation delay, A, B, C, D, E, F, G, H, to Y
-    val:  [12 (74HC), 12 (74HCT)]
+  -
+    param: 'Propagation delay, A, B, C, D, E, F, G, H, to Y'
+    val:
+      - '12 (74HC)'
+      - '12 (74HCT)'
     unit: ns
-...

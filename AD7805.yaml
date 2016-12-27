@@ -1,107 +1,138 @@
----
-description:  +3.3V to +5V quad 10-bit DAC
-package:      DIP
-pincount:     28
-family:       Analog Devices
-datasheet:    "http://www.analog.com/static/imported-files/data_sheets/AD7804_7805_7808_7809.pdf"
+description: '+3.3V to +5V quad 10-bit DAC'
+package: DIP
+pincount: '28'
+family: 'Analog Devices'
+datasheet: 'http://www.analog.com/static/imported-files/data&#95;sheets/AD7804&#95;7805&#95;7808&#95;7809.pdf'
 pins:
-  - num:  1
-    sym:  AGND
-    desc: analog ground
-  - num:  2
-    sym:  V__OUT B
-    desc: analog output voltage
-  - num:  3
-    sym:  V__OUT A
-    desc: analog output voltage
-  - num:  4
-    sym:  REFOUT
-    desc: reference output (typically 1.23V)
-  - num:  5
-    sym:  DB9
-    desc: parallel data input
-  - num:  6
-    sym:  DB8
-    desc: parallel data input
-  - num:  7
-    sym:  DB7
-    desc: parallel data input
-  - num:  8
-    sym:  DB6
-    desc: parallel data input
-  - num:  9
-    sym:  DB5
-    desc: parallel data input
-  - num:  10
-    sym:  DB4
-    desc: parallel data input
-  - num:  11
-    sym:  ~LDAC
-    desc: DAC register update (active low)
-  - num:  12
-    sym:  DB3
-    desc: parallel data input
-  - num:  13
-    sym:  DB2
-    desc: parallel data input
-  - num:  14
-    sym:  DGND
-    desc: digital ground
-  - num:  15
-    sym:  DV__DD
-    desc: digital power supply
-  - num:  16
-    sym:  ~WR
-    desc: write to data register (active low)
-  - num:  17
-    sym:  ~CS
-    desc: chip select (active low)
-  - num:  18
-    sym:  ~CLR
-    desc: asynchronous clear (active low)
-  - num:  19
-    sym:  DB1
-    desc: parallel data input
-  - num:  20
-    sym:  DB0
-    desc: parallel data input
-  - num:  21
-    sym:  A1
-    desc: DAC address input
-  - num:  22
-    sym:  A0
-    desc: DAC address input
-  - num:  23
-    sym:  MODE
-    desc: mode input 
-  - num:  24
-    sym:  REFIN
-    desc: external reference input
-  - num:  25
-    sym:  COMP
-    desc: compensation pin
-  - num:  26
-    sym:  V__OUT D
-    desc: analog output voltge
-  - num:  27
-    sym:  V__OUT C
-    desc: analog output voltage
-  - num:  28
-    sym:  AV__DD
-    desc: analog power supply
+  -
+    num: '1'
+    sym: AGND
+    desc: 'analog ground'
+  -
+    num: '2'
+    sym: 'V&#95;&#95;OUT B'
+    desc: 'analog output voltage'
+  -
+    num: '3'
+    sym: 'V&#95;&#95;OUT A'
+    desc: 'analog output voltage'
+  -
+    num: '4'
+    sym: REFOUT
+    desc: 'reference output (typically 1.23V)'
+  -
+    num: '5'
+    sym: DB9
+    desc: 'parallel data input'
+  -
+    num: '6'
+    sym: DB8
+    desc: 'parallel data input'
+  -
+    num: '7'
+    sym: DB7
+    desc: 'parallel data input'
+  -
+    num: '8'
+    sym: DB6
+    desc: 'parallel data input'
+  -
+    num: '9'
+    sym: DB5
+    desc: 'parallel data input'
+  -
+    num: '10'
+    sym: DB4
+    desc: 'parallel data input'
+  -
+    num: '11'
+    sym: '&#126;LDAC'
+    desc: 'DAC register update (active low)'
+  -
+    num: '12'
+    sym: DB3
+    desc: 'parallel data input'
+  -
+    num: '13'
+    sym: DB2
+    desc: 'parallel data input'
+  -
+    num: '14'
+    sym: DGND
+    desc: 'digital ground'
+  -
+    num: '15'
+    sym: 'DV&#95;&#95;DD'
+    desc: 'digital power supply'
+  -
+    num: '16'
+    sym: '&#126;WR'
+    desc: 'write to data register (active low)'
+  -
+    num: '17'
+    sym: '&#126;CS'
+    desc: 'chip select (active low)'
+  -
+    num: '18'
+    sym: '&#126;CLR'
+    desc: 'asynchronous clear (active low)'
+  -
+    num: '19'
+    sym: DB1
+    desc: 'parallel data input'
+  -
+    num: '20'
+    sym: DB0
+    desc: 'parallel data input'
+  -
+    num: '21'
+    sym: A1
+    desc: 'DAC address input'
+  -
+    num: '22'
+    sym: A0
+    desc: 'DAC address input'
+  -
+    num: '23'
+    sym: MODE
+    desc: 'mode input'
+  -
+    num: '24'
+    sym: REFIN
+    desc: 'external reference input'
+  -
+    num: '25'
+    sym: COMP
+    desc: 'compensation pin'
+  -
+    num: '26'
+    sym: 'V&#95;&#95;OUT D'
+    desc: 'analog output voltge'
+  -
+    num: '27'
+    sym: 'V&#95;&#95;OUT C'
+    desc: 'analog output voltage'
+  -
+    num: '28'
+    sym: 'AV&#95;&#95;DD'
+    desc: 'analog power supply'
 specs:
-  - param:  Slew rate
-    val:    2.5
-    unit:   V/&micro;s
-  - param:  Settling time
-    val:    1.5
-    unit:   "&micro;s"
-  - param:  Update rate
-    val:    667
-    unit:   kHz
-  - param:  Output voltage range, twos complement coding
-    val:    Vbias &plusmn; 15/16*Vbias
-    units:  V
-  - param:  Output voltage range, offset binary coding
-    val:    Vbias/16 to 31/16*Vbias
-...
+  -
+    param: 'Slew rate'
+    val: '2.5'
+    unit: 'V/&micro;s'
+  -
+    param: 'Settling time'
+    val: '1.5'
+    unit: '&micro;s'
+  -
+    param: 'Update rate'
+    val: '667'
+    unit: kHz
+  -
+    param: 'Output voltage range, twos complement coding'
+    val: 'Vbias &plusmn; 15/16*Vbias'
+    units: V
+  -
+    param: 'Output voltage range, offset binary coding'
+    val: 'Vbias/16 to 31/16*Vbias'

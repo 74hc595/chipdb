@@ -1,76 +1,97 @@
----
-description:  Octal bus transceiver; 3-state
-package:      DIP
-pincount:     20
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc245.74hct245.pdf"
+description: 'Octal bus transceiver; 3-state'
+package: DIP
+pincount: '20'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc245.74hct245.pdf'
 pins:
-  - num:  1
-    sym:  DIR
-    desc: direction control
-  - num:  2
-    sym:  A0
-    desc: data input/output
-  - num:  3
-    sym:  A1
-    desc: data input/output
-  - num:  4
-    sym:  A2
-    desc: data input/output
-  - num:  5
-    sym:  A3
-    desc: data input/output
-  - num:  6
-    sym:  A4
-    desc: data input/output
-  - num:  7
-    sym:  A5
-    desc: data input/output
-  - num:  8
-    sym:  A6
-    desc: data input/output
-  - num:  9
-    sym:  A7
-    desc: data input/output
-  - num:  10
-    sym:  GND
+  -
+    num: '1'
+    sym: DIR
+    desc: 'direction control'
+  -
+    num: '2'
+    sym: A0
+    desc: 'data input/output'
+  -
+    num: '3'
+    sym: A1
+    desc: 'data input/output'
+  -
+    num: '4'
+    sym: A2
+    desc: 'data input/output'
+  -
+    num: '5'
+    sym: A3
+    desc: 'data input/output'
+  -
+    num: '6'
+    sym: A4
+    desc: 'data input/output'
+  -
+    num: '7'
+    sym: A5
+    desc: 'data input/output'
+  -
+    num: '8'
+    sym: A6
+    desc: 'data input/output'
+  -
+    num: '9'
+    sym: A7
+    desc: 'data input/output'
+  -
+    num: '10'
+    sym: GND
     desc: ground
-  - num:  11
-    sym:  B7
-    desc: data input/output
-  - num:  12
-    sym:  B6
-    desc: data input/output
-  - num:  13
-    sym:  B5
-    desc: data input/output
-  - num:  14
-    sym:  B4
-    desc: data input/output
-  - num:  15
-    sym:  B3
-    desc: data input/output
-  - num:  16
-    sym:  B2
-    desc: data input/output
-  - num:  17
-    sym:  B1
-    desc: data input/output
-  - num:  18
-    sym:  B0
-    desc: data input/output
-  - num:  19
-    sym:  ~OE
-    desc: output enable (active low)
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
+  -
+    num: '11'
+    sym: B7
+    desc: 'data input/output'
+  -
+    num: '12'
+    sym: B6
+    desc: 'data input/output'
+  -
+    num: '13'
+    sym: B5
+    desc: 'data input/output'
+  -
+    num: '14'
+    sym: B4
+    desc: 'data input/output'
+  -
+    num: '15'
+    sym: B3
+    desc: 'data input/output'
+  -
+    num: '16'
+    sym: B2
+    desc: 'data input/output'
+  -
+    num: '17'
+    sym: B1
+    desc: 'data input/output'
+  -
+    num: '18'
+    sym: B0
+    desc: 'data input/output'
+  -
+    num: '19'
+    sym: '&#126;OE'
+    desc: 'output enable (active low)'
+  -
+    num: '20'
+    sym: Vcc
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, An to Bn or Bn to An
-    val:    [7 (74HC), 10 (74HCT)]
-    unit:   ns
+  -
+    param: 'Propagation delay, An to Bn or Bn to An'
+    val:
+      - '7 (74HC)'
+      - '10 (74HCT)'
+    unit: ns
 notes:
-  - When DIR is high, An are inputs.
-  - When DIR is low, Bn are inputs.
-  - When ~OE is high, An and Bn are in a high-impedance off state.
-...
+  - 'When DIR is high, An are inputs.'
+  - 'When DIR is low, Bn are inputs.'
+  - 'When &#126;OE is high, An and Bn are in a high-impedance off state.'
