@@ -1,69 +1,79 @@
----
-description:  8-bit serial-in, serial or parallel-out shift register with output latches; 3-state
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.nxp.com/acrobat_download/datasheets/74HC_HCT595_4.pdf"
+description: '8-bit serial-in, serial or parallel-out shift register with output latches; 3-state'
+family: '7400'
+datasheet: 'http://www.nxp.com/acrobat&#95;download/datasheets/74HC&#95;HCT595&#95;4.pdf'
 pins:
-  - num:  1
-    sym:  Q1
-    desc: parallel data output
-  - num:  2
-    sym:  Q2
-    desc: parallel data output
-  - num:  3
-    sym:  Q3
-    desc: parallel data output
-  - num:  4
-    sym:  Q4
-    desc: parallel data output
-  - num:  5
-    sym:  Q5
-    desc: parallel data output
-  - num:  6
-    sym:  Q6
-    desc: parallel data output
-  - num:  7
-    sym:  Q7
-    desc: parallel data output
-  - num:  8
-    sym:  GND
+  Q1:
+    desc: 'parallel data output'
+  Q2:
+    desc: 'parallel data output'
+  Q3:
+    desc: 'parallel data output'
+  Q4:
+    desc: 'parallel data output'
+  Q5:
+    desc: 'parallel data output'
+  Q6:
+    desc: 'parallel data output'
+  Q7:
+    desc: 'parallel data output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  "Q7'"
-    desc: serial data output
-  - num:  10
-    sym:  ~MR
-    desc: master reset (active low)
-  - num:  11
-    sym:  SCK
-    desc: shift register clock input
-  - num:  12
-    sym:  RCK
-    desc: storage register latch input
-  - num:  13
-    sym:  ~OE
-    desc: output enable (active low)
-  - num:  14
-    sym:  DS
-    desc: serial data input
-  - num:  15
-    sym:  Q0
-    desc: parallel data output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  'Q7''':
+    desc: 'serial data output'
+  '&#126;MR':
+    desc: 'master reset (active low)'
+  SCK:
+    desc: 'shift register clock input'
+  RCK:
+    desc: 'storage register latch input'
+  '&#126;OE':
+    desc: 'output enable (active low)'
+  DS:
+    desc: 'serial data input'
+  Q0:
+    desc: 'parallel data output'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  "Propagation delay, SCK to Q7'"
-    val:    [19 (74HC), 25 (74HCT)]
-    unit:   ns
-  - param:  "Propagation delay, SCK to Qn"
-    val:    [20 (74HC), 24 (74HCT)]
-    unit:   ns
-  - param:  "Propagation delay, ~MR to Q7'"
-    val:    [100 (74HC), 52 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency, SCK and RCK
-    val:    [100 (74HC), 57 (74HCT)]
-    unit:   MHz  
-...
+  -
+    param: 'Propagation delay, SCK to Q7'''
+    val:
+      - '19 (74HC)'
+      - '25 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, SCK to Qn'
+    val:
+      - '20 (74HC)'
+      - '24 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;MR to Q7'''
+    val:
+      - '100 (74HC)'
+      - '52 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency, SCK and RCK'
+    val:
+      - '100 (74HC)'
+      - '57 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - Q1
+    - Q2
+    - Q3
+    - Q4
+    - Q5
+    - Q6
+    - Q7
+    - GND
+    - 'Q7'''
+    - '&#126;MR'
+    - SCK
+    - RCK
+    - '&#126;OE'
+    - DS
+    - Q0
+    - Vcc

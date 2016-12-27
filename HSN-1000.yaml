@@ -1,73 +1,70 @@
----
-description: "Nuclear event detector"
-aliases:     []
-package:     DIP
-pincount:    14
-family:      "Maxwell"
-datasheet:   "http://www.maxwell.com/products/microelectronics/docs/HSN1000_REV3.PDF"
+description: 'Nuclear event detector'
+aliases: {  }
+family: Maxwell
+datasheet: 'http://www.maxwell.com/products/microelectronics/docs/HSN1000&#95;REV3.PDF'
 pins:
-  - num:  1
-    sym:  V__L
-    desc: load voltage
-  - num:  2
-    sym:  ~NED
-    desc: nuclear event detection (active low)
-  - num:  3
-    sym:  NC
-    desc: no connection
-  - num:  4
-    sym:  CAP1
-    desc: external capacitor
-  - num:  5
-    sym:  CAP2
-    desc: external capacitor
-  - num:  6
-    sym:  BIT
-    desc: built-in test
-  - num:  7
-    sym:  GND
-    desc: package ground and case
-  - num:  8
-    sym:  V__B
-    desc: pin diode bias
-  - num:  9
-    sym:  THR_ADJ
-    desc: threshold adjust
-  - num:  10
-    sym:  NC
-    desc: no connection
-  - num:  11
-    sym:  NC
-    desc: no connection
-  - num:  12
-    sym:  NC
-    desc: no connection
-  - num:  13
-    sym:  NC
-    desc: no connection
-  - num:  14
-    sym:  V__H
-    desc: hardened supply voltage
+  'V&#95;&#95;L':
+    desc: 'load voltage'
+  '&#126;NED':
+    desc: 'nuclear event detection (active low)'
+  CAP1:
+    desc: 'external capacitor'
+  CAP2:
+    desc: 'external capacitor'
+  BIT:
+    desc: 'built-in test'
+  GND:
+    desc: 'package ground and case'
+  'V&#95;&#95;B':
+    desc: 'pin diode bias'
+  'THR&#95;ADJ':
+    desc: 'threshold adjust'
+  'V&#95;&#95;H':
+    desc: 'hardened supply voltage'
 specs:
-  - param: "Hardened supply voltage"
-    val:   ["4.5 (min)", "5.5 (max)"]
-    unit:  V
-  - param: "Radiation propagation delay time"
-    val:   20
-    unit:  ns
-  - param: "Dose rate (operate-through)"
-    val:   "1 &times; 10<sup>12</sup>"
-    unit:  "rad(Si)/s"
-  - param: "Total dose"
-    val:   "1 &times; 10<sup>6</sup>"
-    unit:  "rad(Si)"
-  - param: "Neutron fluence"
-    val:   "5 &times; 10<sup>13</sup>"
-    unit:  "n/cm<sup>2</sup>"
-  - param: "Approximate detection range"
-    val:   ["2 &times; 10<sup>5</sup> (min)", "2 &times; 10<sup>7</sup> (max)"]
-    unit:  "rad(Si)/s"
+  -
+    param: 'Hardened supply voltage'
+    val:
+      - '4.5 (min)'
+      - '5.5 (max)'
+    unit: V
+  -
+    param: 'Radiation propagation delay time'
+    val: '20'
+    unit: ns
+  -
+    param: 'Dose rate (operate-through)'
+    val: '1 &times; 10<sup>12</sup>'
+    unit: rad(Si)/s
+  -
+    param: 'Total dose'
+    val: '1 &times; 10<sup>6</sup>'
+    unit: rad(Si)
+  -
+    param: 'Neutron fluence'
+    val: '5 &times; 10<sup>13</sup>'
+    unit: n/cm<sup>2</sup>
+  -
+    param: 'Approximate detection range'
+    val:
+      - '2 &times; 10<sup>5</sup> (min)'
+      - '2 &times; 10<sup>7</sup> (max)'
+    unit: rad(Si)/s
 notes:
-  - Less than a 30% variation in detection threshold can be expected over the entire operating temperature range.
-...
-
+  - 'Less than a 30% variation in detection threshold can be expected over the entire operating temperature range.'
+packages:
+  DIP:
+    - 'V&#95;&#95;L'
+    - '&#126;NED'
+    - NC
+    - CAP1
+    - CAP2
+    - BIT
+    - GND
+    - 'V&#95;&#95;B'
+    - 'THR&#95;ADJ'
+    - NC
+    - NC
+    - NC
+    - NC
+    - 'V&#95;&#95;H'

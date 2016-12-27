@@ -1,60 +1,57 @@
----
-description: "BCD to 7-segment latch/decoder/driver"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4511b.pdf"
+description: 'BCD to 7-segment latch/decoder/driver'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4511b.pdf'
 pins:
-  - num:  1
-    sym:  D1
-    desc: BCD input
-  - num:  2
-    sym:  D2
-    desc: BCD input
-  - num:  3
-    sym:  ~LT
-    desc: lamp test (lights all segments, active low)
-  - num:  4
-    sym:  ~BL
-    desc: blank (active low)
-  - num:  5
-    sym:  LE
-    desc: latch enable (active high)
-  - num:  6
-    sym:  D3
-    desc: BCD input
-  - num:  7
-    sym:  D0
-    desc: BCD input
-  - num:  8
-    sym:  GND
+  D1:
+    desc: 'BCD input'
+  D2:
+    desc: 'BCD input'
+  '&#126;LT':
+    desc: 'lamp test (lights all segments, active low)'
+  '&#126;BL':
+    desc: 'blank (active low)'
+  LE:
+    desc: 'latch enable (active high)'
+  D3:
+    desc: 'BCD input'
+  D0:
+    desc: 'BCD input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  Qe
-    desc: segment output
-  - num:  10
-    sym:  Qd
-    desc: segment output
-  - num:  11
-    sym:  Qc
-    desc: segment output
-  - num:  12
-    sym:  Qb
-    desc: segment output
-  - num:  13
-    sym:  Qa
-    desc: segment output
-  - num:  14
-    sym:  Qf
-    desc: segment output
-  - num:  15
-    sym:  Qg
-    desc: segment output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  Qe:
+    desc: 'segment output'
+  Qd:
+    desc: 'segment output'
+  Qc:
+    desc: 'segment output'
+  Qb:
+    desc: 'segment output'
+  Qa:
+    desc: 'segment output'
+  Qf:
+    desc: 'segment output'
+  Qg:
+    desc: 'segment output'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - Pins for lit segments are high. The 4511 can directly drive a common cathode LED display.
-  - Display is blanked for inputs greater than 9.
-...
-
+  - 'Pins for lit segments are high. The 4511 can directly drive a common cathode LED display.'
+  - 'Display is blanked for inputs greater than 9.'
+packages:
+  DIP:
+    - D1
+    - D2
+    - '&#126;LT'
+    - '&#126;BL'
+    - LE
+    - D3
+    - D0
+    - GND
+    - Qe
+    - Qd
+    - Qc
+    - Qb
+    - Qa
+    - Qf
+    - Qg
+    - Vcc

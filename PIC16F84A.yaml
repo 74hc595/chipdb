@@ -1,80 +1,75 @@
----
-description: "PIC16F84A Microcontroller"
-package:     DIP
-pincount:    18
-family:      "Microchip"
-datasheet:   "http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1335&dDocName=en010230"
+description: 'PIC16F84A Microcontroller'
+family: Microchip
+datasheet: 'http://www.microchip.com/stellent/idcplg?IdcService=SS&#95;GET&#95;PAGE&nodeId=1335&dDocName=en010230'
 pins:
-  - num:  1
-    sym:  RA2
-    desc: "Bi-directional I/O port"
-  - num:  2
-    sym:  RA3
-    desc: "Bi-directional I/O port"
-  - num:  3
-    sym:  RA4/T0CKI
-    desc: "Bi-directional I/O port"
-  - num:  4
-    sym:  "~MCLR"
-    desc: "Master Clear (Reset) input/programming voltage
-input. This pin is an active low RESET to the device."
-  - num:  5
-    sym:  GND
-    desc: "Ground reference for logic and I/O pins."
-  - num:  6
-    sym:  RB0/INT
-    desc: "External interrupt"
-  - num:  7
-    sym:  RB1
-    desc: "Bi-directional I/O port"
-  - num:  8
-    sym:  RB2
-    desc: "Bi-directional I/O port"
-  - num:  9
-    sym:  RB3
-    desc: "Bi-directional I/O port"
-  - num:  10
-    sym:  RB4
-    desc: Interrupt-on-change pin.
-  - num:  11
-    sym:  RB5
-    desc: Interrupt-on-change pin.
-  - num:  12
-    sym:  RB6
-    desc: Interrupt-on-change pin, Serial programming clock
-  - num:  13
-    sym:  RB7
-    desc: Interrupt-on-change pin, Serial programming data.
-  - num:  14
-    sym:  Vcc
-    desc: "Positive supply for logic and I/O pins."
-  - num:  15
-    sym:  OSC2/CLKIN
-    desc: "Oscillator crystal output. Connects to crystal or
-resonator in Crystal Oscillator mode. In RC mode,
-OSC2 pin outputs CLKOUT, which has 1/4 the
-frequency of OSC1 and denotes the instruction
-cycle rate."
-  - num:  16
-    sym:  OSC1/CLKOUT
-    desc: Oscillator crystal input/external clock source input
-  - num:  17
-    sym:  RA0
-    desc: "Bi-directional I/O port"
-  - num:  18
-    sym:  RA1
-    desc: "Bi-directional I/O port"
+  RA2:
+    desc: 'Bi-directional I/O port'
+  RA3:
+    desc: 'Bi-directional I/O port'
+  RA4/T0CKI:
+    desc: 'Bi-directional I/O port'
+  '&#126;MCLR':
+    desc: 'Master Clear (Reset) input/programming voltage&NewLine;input. This pin is an active low RESET to the device.'
+  GND:
+    desc: 'Ground reference for logic and I/O pins.'
+  RB0/INT:
+    desc: 'External interrupt'
+  RB1:
+    desc: 'Bi-directional I/O port'
+  RB2:
+    desc: 'Bi-directional I/O port'
+  RB3:
+    desc: 'Bi-directional I/O port'
+  RB4:
+    desc: 'Interrupt-on-change pin.'
+  RB5:
+    desc: 'Interrupt-on-change pin.'
+  RB6:
+    desc: 'Interrupt-on-change pin, Serial programming clock'
+  RB7:
+    desc: 'Interrupt-on-change pin, Serial programming data.'
+  Vcc:
+    desc: 'Positive supply for logic and I/O pins.'
+  OSC2/CLKIN:
+    desc: 'Oscillator crystal output. Connects to crystal or&NewLine;resonator in Crystal Oscillator mode. In RC mode,&NewLine;OSC2 pin outputs CLKOUT, which has 1/4 the&NewLine;frequency of OSC1 and denotes the instruction&NewLine;cycle rate.'
+  OSC1/CLKOUT:
+    desc: 'Oscillator crystal input/external clock source input'
+  RA0:
+    desc: 'Bi-directional I/O port'
+  RA1:
+    desc: 'Bi-directional I/O port'
 specs:
-  - param: "Max pin sink"
-    val:   25
-    unit:  mA
-  - param: "Max pin source"
-    val:   25
-    unit:  mA
-  - param: "Operating speed"
-    val:   20
-    unit:  MHz
+  -
+    param: 'Max pin sink'
+    val: '25'
+    unit: mA
+  -
+    param: 'Max pin source'
+    val: '25'
+    unit: mA
+  -
+    param: 'Operating speed'
+    val: '20'
+    unit: MHz
 notes:
-  - 18-pin Flash/EEPROM 8-bit Microcontroller
-...
-
+  - '18-pin Flash/EEPROM 8-bit Microcontroller'
+packages:
+  DIP:
+    - RA2
+    - RA3
+    - RA4/T0CKI
+    - '&#126;MCLR'
+    - GND
+    - RB0/INT
+    - RB1
+    - RB2
+    - RB3
+    - RB4
+    - RB5
+    - RB6
+    - RB7
+    - Vcc
+    - OSC2/CLKIN
+    - OSC1/CLKOUT
+    - RA0
+    - RA1

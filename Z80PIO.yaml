@@ -1,142 +1,143 @@
----
-description: "Z80-PIO"
-aliases:     []
-package:     DIP
-pincount:    40
-family:      "Zilog"
-datasheet:   "http://www.zilog.com/docs/z80/ps0180.pdf"
+description: Z80-PIO
+aliases: {  }
+family: Zilog
+datasheet: 'http://www.zilog.com/docs/z80/ps0180.pdf'
 pins:
-  - num:  1
-    sym:  D2
-    desc: Data Line 2 To CPU (Bi-Directional)
-  - num:  2
-    sym:  D7
-    desc: Data Line 7 To CPU (Bi-Directional)
-  - num:  3
-    sym:  D6
-    desc: Data Line 6 To CPU (Bi-Directional)
-  - num:  4
-    sym:  ~CE~
-    desc: Chip Enable Input (Active Low)
-  - num:  5
-    sym:  C/~D~
-    desc: Control/Data Select (High = Ctrl, Low = Data)
-  - num:  6
-    sym:  B/~A~
-    desc: Port A or B Select (Low = A, High = B)
-  - num:  7
-    sym:  PA7
-    desc: Peripheral Port A Line 7 (Bi-Directional)
-  - num:  8
-    sym:  PA6
-    desc: Peripheral Port A Line 6 (Bi-Directional)
-  - num:  9
-    sym:  PA5
-    desc: Peripheral Port A Line 5 (Bi-Directional)
-  - num:  10
-    sym:  PA4
-    desc: Peripheral Port A Line 4 (Bi-Directional)
-  - num:  11
-    sym:  GND
-    desc: Power Ground
-  - num:  12
-    sym:  PA3
-    desc: Peripheral Port A Line 3 (Bi-Directional)
-  - num:  13
-    sym:  PA2
-    desc: Peripheral Port A Line 2 (Bi-Directional)
-  - num:  14
-    sym:  PA1
-    desc: Peripheral Port A Line 1 (Bi-Directional)
-  - num:  15
-    sym:  PA0
-    desc: Peripheral Port A Line 0 (Bi-Directional)
-  - num:  16
-    sym:  ~ASTB~
-    desc: Port A Strobe Input from Peripheral (Active Low)
-  - num:  17
-    sym:  ~BSTB~
-    desc: Port B Strobe Input from Peripherial (Active Low)
-  - num:  18
-    sym:  ARDY
-    desc: Register A Ready Output (Active High)
-  - num:  19
-    sym:  D0
-    desc: Data Line 0 To CPU (Bi-Directional)
-  - num:  20
-    sym:  D1
-    desc: Data Line 1 To CPU (Bi-Directional)
-  - num:  21
-    sym:  BRDY
-    desc: Register B Ready Output (Active High)
-  - num:  22
-    sym:  IEO
-    desc: Interrupt Enable Output (Active High)
-  - num:  23
-    sym:  ~INT~
-    desc: Interrupt Input (Active Low)
-  - num:  24
-    sym:  IEI
-    desc: Interrupt Enable Input (Active High)
-  - num:  25
-    sym:  CLK
-    desc: System Clock Input
-  - num:  26
-    sym:  +5V
-    desc: Power 5V DC
-  - num:  27
-    sym:  PB0
-    desc: Peripheral Port A Line 0 (Bi-Directional)
-  - num:  28
-    sym:  PB1
-    desc: Peripheral Port A Line 1 (Bi-Directional)
-  - num:  29
-    sym:  PB2
-    desc: Peripheral Port A Line 2 (Bi-Directional)
-  - num:  30
-    sym:  PB3
-    desc: Peripheral Port A Line 3 (Bi-Directional)
-  - num:  31
-    sym:  PB4
-    desc: Peripheral Port A Line 4 (Bi-Directional)
-  - num:  32
-    sym:  PB5
-    desc: Peripheral Port A Line 5 (Bi-Directional)
-  - num:  33
-    sym:  PB6
-    desc: Peripheral Port A Line 6 (Bi-Directional)
-  - num:  34
-    sym:  PB7
-    desc: Peripheral Port A Line 7 (Bi-Directional)
-  - num:  35
-    sym:  ~RD~
-    desc: Read Request Input from CPU (Active Low)
-  - num:  36
-    sym:  ~IORQ~
-    desc: Input/Output Request Input from CPU (Active Low)
-  - num:  37
-    sym:  ~M1~
-    desc: Machine Cycle 1 Input from CPU (Active Low)
-  - num:  38
-    sym:  D3
-    desc: Data Line 3 To CPU (Bi-Directional)
-  - num:  39
-    sym:  D4
-    desc: Data Line 4 To CPU (Bi-Directional)
-  - num:  40
-    sym:  D5
-    desc: Data Line 5 To CPU (Bi-Directional)
+  D2:
+    desc: 'Data Line 2 To CPU (Bi-Directional)'
+  D7:
+    desc: 'Data Line 7 To CPU (Bi-Directional)'
+  D6:
+    desc: 'Data Line 6 To CPU (Bi-Directional)'
+  '&#126;CE&#126;':
+    desc: 'Chip Enable Input (Active Low)'
+  'C/&#126;D&#126;':
+    desc: 'Control/Data Select (High = Ctrl, Low = Data)'
+  'B/&#126;A&#126;':
+    desc: 'Port A or B Select (Low = A, High = B)'
+  PA7:
+    desc: 'Peripheral Port A Line 7 (Bi-Directional)'
+  PA6:
+    desc: 'Peripheral Port A Line 6 (Bi-Directional)'
+  PA5:
+    desc: 'Peripheral Port A Line 5 (Bi-Directional)'
+  PA4:
+    desc: 'Peripheral Port A Line 4 (Bi-Directional)'
+  GND:
+    desc: 'Power Ground'
+  PA3:
+    desc: 'Peripheral Port A Line 3 (Bi-Directional)'
+  PA2:
+    desc: 'Peripheral Port A Line 2 (Bi-Directional)'
+  PA1:
+    desc: 'Peripheral Port A Line 1 (Bi-Directional)'
+  PA0:
+    desc: 'Peripheral Port A Line 0 (Bi-Directional)'
+  '&#126;ASTB&#126;':
+    desc: 'Port A Strobe Input from Peripheral (Active Low)'
+  '&#126;BSTB&#126;':
+    desc: 'Port B Strobe Input from Peripherial (Active Low)'
+  ARDY:
+    desc: 'Register A Ready Output (Active High)'
+  D0:
+    desc: 'Data Line 0 To CPU (Bi-Directional)'
+  D1:
+    desc: 'Data Line 1 To CPU (Bi-Directional)'
+  BRDY:
+    desc: 'Register B Ready Output (Active High)'
+  IEO:
+    desc: 'Interrupt Enable Output (Active High)'
+  '&#126;INT&#126;':
+    desc: 'Interrupt Input (Active Low)'
+  IEI:
+    desc: 'Interrupt Enable Input (Active High)'
+  CLK:
+    desc: 'System Clock Input'
+  +5V:
+    desc: 'Power 5V DC'
+  PB0:
+    desc: 'Peripheral Port A Line 0 (Bi-Directional)'
+  PB1:
+    desc: 'Peripheral Port A Line 1 (Bi-Directional)'
+  PB2:
+    desc: 'Peripheral Port A Line 2 (Bi-Directional)'
+  PB3:
+    desc: 'Peripheral Port A Line 3 (Bi-Directional)'
+  PB4:
+    desc: 'Peripheral Port A Line 4 (Bi-Directional)'
+  PB5:
+    desc: 'Peripheral Port A Line 5 (Bi-Directional)'
+  PB6:
+    desc: 'Peripheral Port A Line 6 (Bi-Directional)'
+  PB7:
+    desc: 'Peripheral Port A Line 7 (Bi-Directional)'
+  '&#126;RD&#126;':
+    desc: 'Read Request Input from CPU (Active Low)'
+  '&#126;IORQ&#126;':
+    desc: 'Input/Output Request Input from CPU (Active Low)'
+  '&#126;M1&#126;':
+    desc: 'Machine Cycle 1 Input from CPU (Active Low)'
+  D3:
+    desc: 'Data Line 3 To CPU (Bi-Directional)'
+  D4:
+    desc: 'Data Line 4 To CPU (Bi-Directional)'
+  D5:
+    desc: 'Data Line 5 To CPU (Bi-Directional)'
 specs:
-  - param: "Maximum Voltage Vcc"
-    val:   7.0
-    unit:  VDC
-  - param: "Maximum Input Voltage"
-    val:   Vcc + 0.3
-    unit:  VDC
-  - param: "Storage Temperature"
-    val:   -65 to +150
-    unit:  Degrees C
+  -
+    param: 'Maximum Voltage Vcc'
+    val: '7'
+    unit: VDC
+  -
+    param: 'Maximum Input Voltage'
+    val: 'Vcc + 0.3'
+    unit: VDC
+  -
+    param: 'Storage Temperature'
+    val: '-65 to +150'
+    unit: 'Degrees C'
 notes:
-  - The Z8O Parallel I/O (PlO) Circuit is a programmable, two port device which provides a TTL compatible interface between peripheral devices and the Z80-GPU. The CPU can configure the Z8O-PIO to interface with a wide range of peripheral devices with no other external logic required, Typical peripheral devices that are fully compatible with the Z80-PIO include most keyboards, paper tape readers and punches, printers, PROM programmers, etc. The Z8O-PIO is packaged in a 40-pin DIP, or a 44-pin PLCC, or a 44-pin OFP. NMOS and CMOS versions are also available. Major features of the Z80-PlO include.
-  - One of the unique features of the Z80-PlO that separates it from other interface controllers is that all data transfer between the peripheral device and the CPU is accomplished under total interrupt control. The interrupt logic of the PIO permits full usage of the efficient interrupt capabilities of the Z80-CPU during I/0 transfers. All logic necessary to implement a fully nested interrupt structure is included in the PIO so that additional circuits are not required. Another unique feature of the PlO is that it can be programmed to interrupt the CPU on the occurrence of specified status conditions in the peripheral device. For example, the PlO can be programmed to interrupt if any specified peripheral alarm conditions should occur. This interrupt capability reduces the amount of time that the processor must spend in polling peripheral status.
-
+  - 'The Z8O Parallel I/O (PlO) Circuit is a programmable, two port device which provides a TTL compatible interface between peripheral devices and the Z80-GPU. The CPU can configure the Z8O-PIO to interface with a wide range of peripheral devices with no other external logic required, Typical peripheral devices that are fully compatible with the Z80-PIO include most keyboards, paper tape readers and punches, printers, PROM programmers, etc. The Z8O-PIO is packaged in a 40-pin DIP, or a 44-pin PLCC, or a 44-pin OFP. NMOS and CMOS versions are also available. Major features of the Z80-PlO include.'
+  - 'One of the unique features of the Z80-PlO that separates it from other interface controllers is that all data transfer between the peripheral device and the CPU is accomplished under total interrupt control. The interrupt logic of the PIO permits full usage of the efficient interrupt capabilities of the Z80-CPU during I/0 transfers. All logic necessary to implement a fully nested interrupt structure is included in the PIO so that additional circuits are not required. Another unique feature of the PlO is that it can be programmed to interrupt the CPU on the occurrence of specified status conditions in the peripheral device. For example, the PlO can be programmed to interrupt if any specified peripheral alarm conditions should occur. This interrupt capability reduces the amount of time that the processor must spend in polling peripheral status.'
+packages:
+  DIP:
+    - D2
+    - D7
+    - D6
+    - '&#126;CE&#126;'
+    - 'C/&#126;D&#126;'
+    - 'B/&#126;A&#126;'
+    - PA7
+    - PA6
+    - PA5
+    - PA4
+    - GND
+    - PA3
+    - PA2
+    - PA1
+    - PA0
+    - '&#126;ASTB&#126;'
+    - '&#126;BSTB&#126;'
+    - ARDY
+    - D0
+    - D1
+    - BRDY
+    - IEO
+    - '&#126;INT&#126;'
+    - IEI
+    - CLK
+    - +5V
+    - PB0
+    - PB1
+    - PB2
+    - PB3
+    - PB4
+    - PB5
+    - PB6
+    - PB7
+    - '&#126;RD&#126;'
+    - '&#126;IORQ&#126;'
+    - '&#126;M1&#126;'
+    - D3
+    - D4
+    - D5

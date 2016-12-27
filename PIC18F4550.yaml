@@ -1,134 +1,128 @@
----
-description: "PIC18F4550"
-aliases:     []
-package:     DIP
-pincount:    40
-family:      "Microchip"
-datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/39632e.pdf"
+description: PIC18F4550
+aliases: {  }
+family: Microchip
+datasheet: 'http://ww1.microchip.com/downloads/en/DeviceDoc/39632e.pdf'
 pins:
-  - num:  1
-    sym:  ~MCLR~/V__PP/RE3
+  '&#126;MCLR&#126;/V&#95;&#95;PP/RE3':
     desc: .
-  - num:  2
-    sym:  RA0/AN0
+  RA0/AN0:
     desc: .
-  - num:  3
-    sym:  RA1/AN1
+  RA1/AN1:
     desc: .
-  - num:  4
-    sym:  RA2/AN2/V__REF-/CV__REF
+  'RA2/AN2/V&#95;&#95;REF-/CV&#95;&#95;REF':
     desc: .
-  - num:  5
-    sym:  RA3/AN3/V__REF+
+  'RA3/AN3/V&#95;&#95;REF+':
     desc: .
-  - num:  6
-    sym:  RA4/T0CKI/C1OUT/RCV
+  RA4/T0CKI/C1OUT/RCV:
     desc: .
-  - num:  7
-    sym:  RA5/AN4/~SS~/HLVDIN/C2OUT
+  'RA5/AN4/&#126;SS&#126;/HLVDIN/C2OUT':
     desc: .
-  - num:  8
-    sym:  RE0/AN5/CK1SPP
+  RE0/AN5/CK1SPP:
     desc: .
-  - num:  9
-    sym:  RE1/AN6/CK2SPP
+  RE1/AN6/CK2SPP:
     desc: .
-  - num:  10
-    sym:  RE2/AN7/OESPP
+  RE2/AN7/OESPP:
     desc: .
-  - num:  11
-    sym:  V__DD
-    desc: Positive supply for logic and I/O pins.
-  - num:  12
-    sym:  V__SS
-    desc: Ground reference for logic and I/O pins.
-  - num:  13
-    sym:  OSC1/CLKI
+  'V&#95;&#95;DD':
+    desc: 'Positive supply for logic and I/O pins.'
+  'V&#95;&#95;SS':
+    desc: 'Ground reference for logic and I/O pins.'
+  OSC1/CLKI:
     desc: .
-  - num:  14
-    sym:  OSC2/CLKO/RA6
+  OSC2/CLKO/RA6:
     desc: .
-  - num:  15
-    sym:  RC0/T1OSO/T13CKI
+  RC0/T1OSO/T13CKI:
     desc: .
-  - num:  16
-    sym:  RC1/T1OSI/CPP2/~UOE~
+  'RC1/T1OSI/CPP2/&#126;UOE&#126;':
     desc: .
-  - num:  17
-    sym:  RC2/CCP1/P1A
+  RC2/CCP1/P1A:
     desc: .
-  - num:  18
-    sym:  V__USB
-    desc: Internal USB 3.3V voltage regulator.
-  - num:  19
-    sym:  RD0/SPP0
+  'V&#95;&#95;USB':
+    desc: 'Internal USB 3.3V voltage regulator.'
+  RD0/SPP0:
     desc: .
-  - num:  20
-    sym:  RD1/SPP1
+  RD1/SPP1:
     desc: .
-  - num:  21
-    sym:  RD2/SPP2
+  RD2/SPP2:
     desc: .
-  - num:  22
-    sym:  RD3/SPP3
+  RD3/SPP3:
     desc: .
-  - num:  23
-    sym:  RC4/D__-/VM
+  'RC4/D&#95;&#95;-/VM':
     desc: .
-  - num:  24
-    sym:  RC5/D__+/VP
+  'RC5/D&#95;&#95;+/VP':
     desc: .
-  - num:  25
-    sym:  RC6/TX/CK
+  RC6/TX/CK:
     desc: .
-  - num:  26
-    sym:  RC7/RX/DT/SDO
+  RC7/RX/DT/SDO:
     desc: .
-  - num:  27
-    sym:  RD4/SPP4
+  RD4/SPP4:
     desc: .
-  - num:  28
-    sym:  RD5/SPP5/P1B
+  RD5/SPP5/P1B:
     desc: .
-  - num:  29
-    sym:  RD6/SPP6/P1C
+  RD6/SPP6/P1C:
     desc: .
-  - num:  30
-    sym:  RD7/SPP7/P1D
+  RD7/SPP7/P1D:
     desc: .
-  - num:  31
-    sym:  V__SS
-    desc: Ground reference for logic and I/O pins.
-  - num:  32
-    sym:  V__DD
-    desc: Positive supply for logic and I/O pins.
-  - num:  33
-    sym:  RB0/AN12/INT0/FLT0/SDI/SDA
+  RB0/AN12/INT0/FLT0/SDI/SDA:
     desc: .
-  - num:  34
-    sym:  RB1/AN10/INT1/SCK/SCL
+  RB1/AN10/INT1/SCK/SCL:
     desc: .
-  - num:  35
-    sym:  RB2/AN8/INT2/VMO
+  RB2/AN8/INT2/VMO:
     desc: .
-  - num:  36
-    sym:  RB3/AN9/CCP2/VPO
+  RB3/AN9/CCP2/VPO:
     desc: .
-  - num:  37
-    sym:  RB4/AN11/KBI0/CSSPP
+  RB4/AN11/KBI0/CSSPP:
     desc: .
-  - num:  38
-    sym:  RB5/KBI1/PGM
+  RB5/KBI1/PGM:
     desc: .
-  - num:  39
-    sym:  RB6/KBI2/PGC
+  RB6/KBI2/PGC:
     desc: .
-  - num:  40
-    sym:  RB6/KBI3/PGD
+  RB6/KBI3/PGD:
     desc: .
 specs:
-  - param: "(optional) parameter name"
-    val:   123
-    unit:  ns
-...
-
+  -
+    param: '(optional) parameter name'
+    val: '123'
+    unit: ns
+packages:
+  DIP:
+    - '&#126;MCLR&#126;/V&#95;&#95;PP/RE3'
+    - RA0/AN0
+    - RA1/AN1
+    - 'RA2/AN2/V&#95;&#95;REF-/CV&#95;&#95;REF'
+    - 'RA3/AN3/V&#95;&#95;REF+'
+    - RA4/T0CKI/C1OUT/RCV
+    - 'RA5/AN4/&#126;SS&#126;/HLVDIN/C2OUT'
+    - RE0/AN5/CK1SPP
+    - RE1/AN6/CK2SPP
+    - RE2/AN7/OESPP
+    - 'V&#95;&#95;DD'
+    - 'V&#95;&#95;SS'
+    - OSC1/CLKI
+    - OSC2/CLKO/RA6
+    - RC0/T1OSO/T13CKI
+    - 'RC1/T1OSI/CPP2/&#126;UOE&#126;'
+    - RC2/CCP1/P1A
+    - 'V&#95;&#95;USB'
+    - RD0/SPP0
+    - RD1/SPP1
+    - RD2/SPP2
+    - RD3/SPP3
+    - 'RC4/D&#95;&#95;-/VM'
+    - 'RC5/D&#95;&#95;+/VP'
+    - RC6/TX/CK
+    - RC7/RX/DT/SDO
+    - RD4/SPP4
+    - RD5/SPP5/P1B
+    - RD6/SPP6/P1C
+    - RD7/SPP7/P1D
+    - 'V&#95;&#95;SS'
+    - 'V&#95;&#95;DD'
+    - RB0/AN12/INT0/FLT0/SDI/SDA
+    - RB1/AN10/INT1/SCK/SCL
+    - RB2/AN8/INT2/VMO
+    - RB3/AN9/CCP2/VPO
+    - RB4/AN11/KBI0/CSSPP
+    - RB5/KBI1/PGM
+    - RB6/KBI2/PGC
+    - RB6/KBI3/PGD

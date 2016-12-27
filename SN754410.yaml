@@ -1,66 +1,61 @@
----
-description: "Quadruple half-H driver"
-package:     DIP
-pincount:    16
-family:      TI
-datasheet:   "http://focus.ti.com/lit/ds/symlink/sn754410.pdf"
+description: 'Quadruple half-H driver'
+family: TI
+datasheet: 'http://focus.ti.com/lit/ds/symlink/sn754410.pdf'
 pins:
-  - num:  1
-    sym:  1,2EN
-    desc: enable (drivers 1 and 2)
-  - num:  2
-    sym:  1A
-    desc: input 1
-  - num:  3
-    sym:  1Y
-    desc: driver 1 output
-  - num:  4
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  5
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  6
-    sym:  2Y
-    desc: driver 2 output
-  - num:  7
-    sym:  2A
-    desc: input 2
-  - num:  8
-    sym:  V__CC2
-    desc: output supply voltage
-  - num:  9
-    sym:  3,4EN
-    desc: enable (drivers 3 and 4)
-  - num:  10
-    sym:  3A
-    desc: input 3
-  - num:  11
-    sym:  3Y
-    desc: driver 3 output
-  - num:  12
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  13
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  14
-    sym:  4Y
-    desc: driver 4 output
-  - num:  15
-    sym:  4A
-    desc: input 4
-  - num:  16
-    sym:  V__CC1
-    desc: logic supply voltage
+  '1,2EN':
+    desc: 'enable (drivers 1 and 2)'
+  1A:
+    desc: 'input 1'
+  1Y:
+    desc: 'driver 1 output'
+  GND:
+    desc: 'ground (heat sink)'
+  2Y:
+    desc: 'driver 2 output'
+  2A:
+    desc: 'input 2'
+  'V&#95;&#95;CC2':
+    desc: 'output supply voltage'
+  '3,4EN':
+    desc: 'enable (drivers 3 and 4)'
+  3A:
+    desc: 'input 3'
+  3Y:
+    desc: 'driver 3 output'
+  4Y:
+    desc: 'driver 4 output'
+  4A:
+    desc: 'input 4'
+  'V&#95;&#95;CC1':
+    desc: 'logic supply voltage'
 specs:
-  - param: Supply voltage
-    val:   [4.5 (min), 36 (max)]
-    unit:  V
-  - param: Maximum output current per driver
-    val:   1
-    unit:  A
+  -
+    param: 'Supply voltage'
+    val:
+      - '4.5 (min)'
+      - '36 (max)'
+    unit: V
+  -
+    param: 'Maximum output current per driver'
+    val: '1'
+    unit: A
 notes:
-  - When an EN line is low, the corresponding outputs assume a high-impedance off state.
-...
-
+  - 'When an EN line is low, the corresponding outputs assume a high-impedance off state.'
+packages:
+  DIP:
+    - '1,2EN'
+    - 1A
+    - 1Y
+    - GND
+    - GND
+    - 2Y
+    - 2A
+    - 'V&#95;&#95;CC2'
+    - '3,4EN'
+    - 3A
+    - 3Y
+    - GND
+    - GND
+    - 4Y
+    - 4A
+    - 'V&#95;&#95;CC1'

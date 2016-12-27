@@ -1,57 +1,55 @@
----
-description: "Universal 4-Bit Shift Register"
-aliases:     []
-package:     DIP
-pincount:    16
-family:      "7400"
-datasheet:   "http://pdf1.alldatasheet.com/datasheet-pdf/view/131233/NSC/74195.html"
+description: 'Universal 4-Bit Shift Register'
+aliases: {  }
+family: '7400'
+datasheet: 'http://pdf1.alldatasheet.com/datasheet-pdf/view/131233/NSC/74195.html'
 pins:
-  - num:  1
-    sym:  ~MR~
-    desc: Asynchronous Master Reset (Active Low)
-  - num:  2
-    sym:  J
-    desc: First Stage J Input (Active High)
-  - num:  3
-    sym:  ~K~
-    desc: First Stage K Input (Active Low)
-  - num:  4
-    sym:  P__0
-    desc: Parallel Data Input 
-  - num:  5
-    sym:  P__1
-    desc: Parallel Data Input
-  - num:  6
-    sym:  P__2
-    desc: Parallel Data Input
-  - num:  7
-    sym:  P__3
-    desc: Parallel Data Input
-  - num:  8
-    sym:  GND
+  '&#126;MR&#126;':
+    desc: 'Asynchronous Master Reset (Active Low)'
+  J:
+    desc: 'First Stage J Input (Active High)'
+  '&#126;K&#126;':
+    desc: 'First Stage K Input (Active Low)'
+  'P&#95;&#95;0':
+    desc: 'Parallel Data Input'
+  'P&#95;&#95;1':
+    desc: 'Parallel Data Input'
+  'P&#95;&#95;2':
+    desc: 'Parallel Data Input'
+  'P&#95;&#95;3':
+    desc: 'Parallel Data Input'
+  GND:
     desc: Ground
-  - num:  9
-    sym:  ~PE~
-    desc: Parallel Enable Input (Active Low)
-  - num:  10
-    sym:  CP
-    desc: Clock Pulse Input (Active Rising Edge)
-  - num:  11
-    sym:  ~Q~__3
-    desc: Complementary Last Stage Output (Active Low)
-  - num:  12
-    sym:  Q__3
-    desc: Parallel Outputs
-  - num:  13
-    sym:  Q__2
-    desc: Parallel Outputs
-  - num:  14
-    sym:  Q__1
-    desc: Parallel Outputs
-  - num:  15
-    sym:  Q__0
-    desc: Parallel Outputs
-  - num:  16
-    sym:  VCC
+  '&#126;PE&#126;':
+    desc: 'Parallel Enable Input (Active Low)'
+  CP:
+    desc: 'Clock Pulse Input (Active Rising Edge)'
+  '&#126;Q&#126;&#95;&#95;3':
+    desc: 'Complementary Last Stage Output (Active Low)'
+  'Q&#95;&#95;3':
+    desc: 'Parallel Outputs'
+  'Q&#95;&#95;2':
+    desc: 'Parallel Outputs'
+  'Q&#95;&#95;1':
+    desc: 'Parallel Outputs'
+  'Q&#95;&#95;0':
+    desc: 'Parallel Outputs'
+  VCC:
     desc: Power
-
+packages:
+  DIP:
+    - '&#126;MR&#126;'
+    - J
+    - '&#126;K&#126;'
+    - 'P&#95;&#95;0'
+    - 'P&#95;&#95;1'
+    - 'P&#95;&#95;2'
+    - 'P&#95;&#95;3'
+    - GND
+    - '&#126;PE&#126;'
+    - CP
+    - '&#126;Q&#126;&#95;&#95;3'
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - VCC

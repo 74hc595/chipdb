@@ -1,60 +1,61 @@
----
-description:  BCD to decimal decoder (1-of-10)
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc42.74hct42.pdf"
+description: 'BCD to decimal decoder (1-of-10)'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc42.74hct42.pdf'
 pins:
-  - num:  1
-    sym:  ~Y~__0 
+  '&#126;Y&#126;&#95;&#95;0':
     desc: output
-  - num:  2
-    sym:  ~Y~__1
+  '&#126;Y&#126;&#95;&#95;1':
     desc: output
-  - num:  3
-    sym:  ~Y~__2
+  '&#126;Y&#126;&#95;&#95;2':
     desc: output
-  - num:  4
-    sym:  ~Y~__3
+  '&#126;Y&#126;&#95;&#95;3':
     desc: output
-  - num:  5
-    sym:  ~Y~__4
+  '&#126;Y&#126;&#95;&#95;4':
     desc: output
-  - num:  6
-    sym:  ~Y~__5
+  '&#126;Y&#126;&#95;&#95;5':
     desc: output
-  - num:  7
-    sym:  ~Y~__6
+  '&#126;Y&#126;&#95;&#95;6':
     desc: output
-  - num:  8
-    sym:  GND
+  GND:
     desc: ground
-  - num:  9
-    sym:  ~Y~__7
+  '&#126;Y&#126;&#95;&#95;7':
     desc: output
-  - num:  10
-    sym:  ~Y~__8
+  '&#126;Y&#126;&#95;&#95;8':
     desc: output
-  - num:  11
-    sym:  ~Y~__9
+  '&#126;Y&#126;&#95;&#95;9':
     desc: output
-  - num:  12
-    sym:  A__3
-    desc: data input
-  - num:  13
-    sym:  A__2
-    desc: data input
-  - num:  14
-    sym:  A__1
-    desc: data input
-  - num:  15
-    sym:  A__0
-    desc: data input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  'A&#95;&#95;3':
+    desc: 'data input'
+  'A&#95;&#95;2':
+    desc: 'data input'
+  'A&#95;&#95;1':
+    desc: 'data input'
+  'A&#95;&#95;0':
+    desc: 'data input'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  propagation delay, A__n to ~Y~__n
-    val:    [14 (74HC), 17 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'propagation delay, A&#95;&#95;n to &#126;Y&#126;&#95;&#95;n'
+    val:
+      - '14 (74HC)'
+      - '17 (74HCT)'
+    unit: ns
+packages:
+  DIP:
+    - '&#126;Y&#126;&#95;&#95;0'
+    - '&#126;Y&#126;&#95;&#95;1'
+    - '&#126;Y&#126;&#95;&#95;2'
+    - '&#126;Y&#126;&#95;&#95;3'
+    - '&#126;Y&#126;&#95;&#95;4'
+    - '&#126;Y&#126;&#95;&#95;5'
+    - '&#126;Y&#126;&#95;&#95;6'
+    - GND
+    - '&#126;Y&#126;&#95;&#95;7'
+    - '&#126;Y&#126;&#95;&#95;8'
+    - '&#126;Y&#126;&#95;&#95;9'
+    - 'A&#95;&#95;3'
+    - 'A&#95;&#95;2'
+    - 'A&#95;&#95;1'
+    - 'A&#95;&#95;0'
+    - Vcc

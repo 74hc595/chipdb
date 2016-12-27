@@ -1,62 +1,59 @@
----
-description: "1-to-64 bit variable length shift register"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4557b.pdf"
+description: '1-to-64 bit variable length shift register'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4557b.pdf'
 pins:
-  - num:  1
-    sym:  L__2
-    desc: length control input
-  - num:  2
-    sym:  L__1
-    desc: length control input
-  - num:  3
-    sym:  MR
-    desc: asynchronous master reset
-  - num:  4
-    sym:  CP__0 
-    desc: clock input (low-to-high edge-triggered)
-  - num:  5
-    sym:  ~CP~__1
-    desc: clock input (high-to-low edge-triggered)
-  - num:  6
-    sym:  D__B
-    desc: data input
-  - num:  7
-    sym:  D__A
-    desc: data input
-  - num:  8
-    sym:  GND
+  'L&#95;&#95;2':
+    desc: 'length control input'
+  'L&#95;&#95;1':
+    desc: 'length control input'
+  MR:
+    desc: 'asynchronous master reset'
+  'CP&#95;&#95;0':
+    desc: 'clock input (low-to-high edge-triggered)'
+  '&#126;CP&#126;&#95;&#95;1':
+    desc: 'clock input (high-to-low edge-triggered)'
+  'D&#95;&#95;B':
+    desc: 'data input'
+  'D&#95;&#95;A':
+    desc: 'data input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  A/~B
-    desc: select data input
-  - num:  10
-    sym:  Q
+  'A/&#126;B':
+    desc: 'select data input'
+  Q:
     desc: output
-  - num:  11
-    sym:  ~Q
-    desc: complementary output
-  - num:  12
-    sym:  L__32
-    desc: length input
-  - num:  13
-    sym:  L__16
-    desc: length input
-  - num:  14
-    sym:  L__8
-    desc: length input
-  - num:  15
-    sym:  L__4
-    desc: length input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  '&#126;Q':
+    desc: 'complementary output'
+  'L&#95;&#95;32':
+    desc: 'length input'
+  'L&#95;&#95;16':
+    desc: 'length input'
+  'L&#95;&#95;8':
+    desc: 'length input'
+  'L&#95;&#95;4':
+    desc: 'length input'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - The length of the shift register is determined by the sum of the length inputs (L__1, L__2, L__4, L__8, L__16, L__32) plus one.
-  - Data is shifted in on the low-to-high transition of CP__0 when ~CP~__1 is low, or the high-to-low transition of ~CP~__1 when CP__0 is high.
-  - When A/~B is high, a clock pulse shifts in data from D__A. When low, a clock pulse shifts in data from D__B.
-  - When MR is high, the register is reset, Q is forced low, and ~Q is forced high.
-...
-
+  - 'The length of the shift register is determined by the sum of the length inputs (L&#95;&#95;1, L&#95;&#95;2, L&#95;&#95;4, L&#95;&#95;8, L&#95;&#95;16, L&#95;&#95;32) plus one.'
+  - 'Data is shifted in on the low-to-high transition of CP&#95;&#95;0 when &#126;CP&#126;&#95;&#95;1 is low, or the high-to-low transition of &#126;CP&#126;&#95;&#95;1 when CP&#95;&#95;0 is high.'
+  - 'When A/&#126;B is high, a clock pulse shifts in data from D&#95;&#95;A. When low, a clock pulse shifts in data from D&#95;&#95;B.'
+  - 'When MR is high, the register is reset, Q is forced low, and &#126;Q is forced high.'
+packages:
+  DIP:
+    - 'L&#95;&#95;2'
+    - 'L&#95;&#95;1'
+    - MR
+    - 'CP&#95;&#95;0'
+    - '&#126;CP&#126;&#95;&#95;1'
+    - 'D&#95;&#95;B'
+    - 'D&#95;&#95;A'
+    - GND
+    - 'A/&#126;B'
+    - Q
+    - '&#126;Q'
+    - 'L&#95;&#95;32'
+    - 'L&#95;&#95;16'
+    - 'L&#95;&#95;8'
+    - 'L&#95;&#95;4'
+    - Vcc

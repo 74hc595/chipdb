@@ -1,63 +1,73 @@
----
-description:  Dual 4-bit binary ripple counter
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc393.74hct393.pdf"
+description: 'Dual 4-bit binary ripple counter'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc393.74hct393.pdf'
 pins:
-  - num:  1
-    sym:  1~CP
-    desc: clock input (high-to-low, edge-triggered)
-  - num:  2
-    sym:  1MR
-    desc: asynchronous master reset (active high) 
-  - num:  3
-    sym:  1Q0
-    desc: flip-flop output
-  - num:  4
-    sym:  1Q1
-    desc: flip-flop output
-  - num:  5
-    sym:  1Q2
-    desc: flip-flop output
-  - num:  6
-    sym:  1Q3
-    desc: flip-flop output
-  - num:  7
-    sym:  GND
-    desc: ground 
-  - num:  8
-    sym:  2Q3
-    desc: flip-flop output
-  - num:  9
-    sym:  2Q2
-    desc: flip-flop output
-  - num:  10
-    sym:  2Q1
-    desc: flip-flop output
-  - num:  11
-    sym:  2Q0
-    desc: flip-flop output
-  - num:  12
-    sym:  2MR
-    desc: asynchronous master reset (active high) 
-  - num:  13
-    sym:  2~CP
-    desc: clock input (high-to-low, edge-triggered) 
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  '1&#126;CP':
+    desc: 'clock input (high-to-low, edge-triggered)'
+  1MR:
+    desc: 'asynchronous master reset (active high)'
+  1Q0:
+    desc: 'flip-flop output'
+  1Q1:
+    desc: 'flip-flop output'
+  1Q2:
+    desc: 'flip-flop output'
+  1Q3:
+    desc: 'flip-flop output'
+  GND:
+    desc: ground
+  2Q3:
+    desc: 'flip-flop output'
+  2Q2:
+    desc: 'flip-flop output'
+  2Q1:
+    desc: 'flip-flop output'
+  2Q0:
+    desc: 'flip-flop output'
+  2MR:
+    desc: 'asynchronous master reset (active high)'
+  '2&#126;CP':
+    desc: 'clock input (high-to-low, edge-triggered)'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, n~CP to nQ0
-    val:    [12 (74HC), 20 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, nQx to nQ(x+1)
-    val:    [5 (74HC), 6 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, nMR to nQx
-    val:    [11 (74HC), 15 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [99 (74HC), 53 (74HCT)]
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, n&#126;CP to nQ0'
+    val:
+      - '12 (74HC)'
+      - '20 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, nQx to nQ(x+1)'
+    val:
+      - '5 (74HC)'
+      - '6 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, nMR to nQx'
+    val:
+      - '11 (74HC)'
+      - '15 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '99 (74HC)'
+      - '53 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - '1&#126;CP'
+    - 1MR
+    - 1Q0
+    - 1Q1
+    - 1Q2
+    - 1Q3
+    - GND
+    - 2Q3
+    - 2Q2
+    - 2Q1
+    - 2Q0
+    - 2MR
+    - '2&#126;CP'
+    - Vcc

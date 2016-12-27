@@ -1,60 +1,57 @@
----
-description: "4-bit magnitude comparator"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4585b.pdf"
+description: '4-bit magnitude comparator'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4585b.pdf'
 pins:
-  - num:  1
-    sym:  B__2
-    desc: word B input
-  - num:  2
-    sym:  A__2
-    desc: word A input
-  - num:  3
-    sym:  Q__A=B
-    desc: A = B output
-  - num:  4
-    sym:  I__A&gt;B
-    desc: A &gt; B expansion input
-  - num:  5
-    sym:  I__A&lt;B
-    desc: A &lt; B expansion input
-  - num:  6
-    sym:  I__A=B
-    desc: A = B expansion input
-  - num:  7
-    sym:  A__1
-    desc: word A input
-  - num:  8
-    sym:  GND
+  'B&#95;&#95;2':
+    desc: 'word B input'
+  'A&#95;&#95;2':
+    desc: 'word A input'
+  'Q&#95;&#95;A=B':
+    desc: 'A = B output'
+  'I&#95;&#95;A>B':
+    desc: 'A > B expansion input'
+  'I&#95;&#95;A<B':
+    desc: 'A < B expansion input'
+  'I&#95;&#95;A=B':
+    desc: 'A = B expansion input'
+  'A&#95;&#95;1':
+    desc: 'word A input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  B__1
-    desc: word B input
-  - num:  10
-    sym:  A__0
-    desc: word A input
-  - num:  11
-    sym:  B__0
-    desc: word B input
-  - num:  12
-    sym:  Q__A&lt;B
-    desc: A &lt; B output
-  - num:  13
-    sym:  Q__A&gt;B
-    desc: A &gt; B output
-  - num:  14
-    sym:  B__3
-    desc: word B input
-  - num:  15
-    sym:  A__3
-    desc: word A input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  'B&#95;&#95;1':
+    desc: 'word B input'
+  'A&#95;&#95;0':
+    desc: 'word A input'
+  'B&#95;&#95;0':
+    desc: 'word B input'
+  'Q&#95;&#95;A<B':
+    desc: 'A < B output'
+  'Q&#95;&#95;A>B':
+    desc: 'A > B output'
+  'B&#95;&#95;3':
+    desc: 'word B input'
+  'A&#95;&#95;3':
+    desc: 'word A input'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - The least significant (or only) comparator in a chain should have I__A=B and I__A&gt;B tied high and I__A&lt;B tied low.
-  - To compare more than 4 bits, connect Q__A&lt;B and Q__A=B to the inputs of the next significant comparator. I__A&gt;B of the next significant comparator should be tied high.
-...
-
+  - 'The least significant (or only) comparator in a chain should have I&#95;&#95;A=B and I&#95;&#95;A>B tied high and I&#95;&#95;A<B tied low.'
+  - 'To compare more than 4 bits, connect Q&#95;&#95;A<B and Q&#95;&#95;A=B to the inputs of the next significant comparator. I&#95;&#95;A>B of the next significant comparator should be tied high.'
+packages:
+  DIP:
+    - 'B&#95;&#95;2'
+    - 'A&#95;&#95;2'
+    - 'Q&#95;&#95;A=B'
+    - 'I&#95;&#95;A>B'
+    - 'I&#95;&#95;A<B'
+    - 'I&#95;&#95;A=B'
+    - 'A&#95;&#95;1'
+    - GND
+    - 'B&#95;&#95;1'
+    - 'A&#95;&#95;0'
+    - 'B&#95;&#95;0'
+    - 'Q&#95;&#95;A<B'
+    - 'Q&#95;&#95;A>B'
+    - 'B&#95;&#95;3'
+    - 'A&#95;&#95;3'
+    - Vcc

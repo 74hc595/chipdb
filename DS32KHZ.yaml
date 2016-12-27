@@ -1,58 +1,92 @@
----
-name:         DS32kHz
-description:  32.768kHz temperature-compensated crystal oscillator
-package:      DIP
-pincount:     14
-family:       Maxim
-datasheet:    "http://datasheets.maxim-ic.com/en/ds/DS32kHz.pdf"
+name: DS32kHz
+description: '32.768kHz temperature-compensated crystal oscillator'
+family: Maxim
+datasheet: 'http://datasheets.maxim-ic.com/en/ds/DS32kHz.pdf'
 pins:
-  - num:  1
-    sym:  NC  
-    desc: no connection
-  - num:  2
-    sym:  ""
-    desc: no pin
-  - num:  3
-    sym:  ""
-    desc: no pin
-  - num:  4
-    sym:  GND
+  GND:
     desc: ground
-  - num:  5
-    sym:  V__BAT
-    desc: "+3V nominal backup supply voltage"
-  - num:  6
-    sym:  NC
-    desc: no connection
-  - num:  7
-    sym:  NC
-    desc: no connection
-  - num:  8
-    sym:  NC
-    desc: no connection
-  - num:  9
-    sym:  NC
-    desc: no connection
-  - num:  10
-    sym:  NC
-    desc: no connection
-  - num:  11
-    sym:  NC
-    desc: no connection
-  - num:  12
-    sym:  32kHz
-    desc: 32.768kHz push-pull output
-  - num:  13
-    sym:  Vcc
-    desc: primary supply voltage
-  - num:  14
-    sym:  NC
-    desc: no connection
+  'V&#95;&#95;BAT':
+    desc: '+3V nominal backup supply voltage'
+  32kHz:
+    desc: '32.768kHz push-pull output'
+  Vcc:
+    desc: 'primary supply voltage'
 specs:
-  - param:  "Frequency stability, 0&deg;C to +40&deg;C"
-    val:    "&plusmn;2.0"
-    unit:   ppm
-  - param:  "Frequency stability, -40&deg;C to +85&deg;C"
-    val:    "&plusmn;7.5"
-    unit:   ppm
-...
+  -
+    param: 'Frequency stability, 0&deg;C to +40&deg;C'
+    val: '&plusmn;2.0'
+    unit: ppm
+  -
+    param: 'Frequency stability, -40&deg;C to +85&deg;C'
+    val: '&plusmn;7.5'
+    unit: ppm
+packages:
+  SO:
+    - 32kHz
+    - Vcc
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - GND
+    - 'V&#95;&#95;BAT'
+    - NC
+    - NC
+  EDIP:
+    - NC
+    - 'NOT&#95;PRESENT'
+    - 'NOT&#95;PRESENT'
+    - GND
+    - 'V&#95;&#95;BAT'
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - NC
+    - 32kHz
+    - Vcc
+    - NC
+  BGA:
+    A1: GND
+    A2: GND
+    A3: GND
+    A4: V__BAT
+    A5: V__BAT
+    A6: GND
+    A7: NC
+    A8: NC
+    A9: GND
+    B1: GND
+    B2: GND
+    B3: GND
+    B4: V__BAT
+    B5: V__BAT
+    B6: GND
+    B7: NC
+    B8: NC
+    B9: GND
+    C1: GND
+    C2: Vcc
+    C3: Vcc
+    C4: 32khz
+    C5: 32khz
+    C6: GND
+    C7: NC
+    C8: NC
+    C9: GND
+    D1: GND
+    D2: Vcc
+    D3: Vcc
+    D4: 32khz
+    D5: 32khz
+    D6: GND
+    D7: NC
+    D8: NC
+    D9: GND

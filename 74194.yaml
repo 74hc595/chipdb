@@ -1,71 +1,78 @@
----
-description:  4-bit bidirectional universal shift register
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc194.74hct194.pdf"
+description: '4-bit bidirectional universal shift register'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc194.74hct194.pdf'
 pins:
-  - num:  1
-    sym:  ~MR
-    desc: asynchronous master reset (active low)
-  - num:  2
-    sym:  D__SR
-    desc: serial data input (shift right)
-  - num:  3
-    sym:  D__0
-    desc: parallel data input
-  - num:  4
-    sym:  D__1
-    desc: parallel data input
-  - num:  5
-    sym:  D__2
-    desc: parallel data input
-  - num:  6
-    sym:  D__3
-    desc: parallel data input
-  - num:  7
-    sym:  D__SL
-    desc: serial data input (shift left)
-  - num:  8
-    sym:  GND
+  '&#126;MR':
+    desc: 'asynchronous master reset (active low)'
+  'D&#95;&#95;SR':
+    desc: 'serial data input (shift right)'
+  'D&#95;&#95;0':
+    desc: 'parallel data input'
+  'D&#95;&#95;1':
+    desc: 'parallel data input'
+  'D&#95;&#95;2':
+    desc: 'parallel data input'
+  'D&#95;&#95;3':
+    desc: 'parallel data input'
+  'D&#95;&#95;SL':
+    desc: 'serial data input (shift left)'
+  GND:
     desc: ground
-  - num:  9
-    sym:  S__0
-    desc: mode control input
-  - num:  10
-    sym:  S__1
-    desc: mode control input
-  - num:  11
-    sym:  CP
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  12
-    sym:  Q__3
-    desc: parallel output
-  - num:  13
-    sym:  Q__2
-    desc: parallel output
-  - num:  14
-    sym:  Q__1
-    desc: parallel output
-  - num:  15
-    sym:  Q__0
-    desc: parallel output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  'S&#95;&#95;0':
+    desc: 'mode control input'
+  'S&#95;&#95;1':
+    desc: 'mode control input'
+  CP:
+    desc: 'clock input (low-to-high, edge-triggered)'
+  'Q&#95;&#95;3':
+    desc: 'parallel output'
+  'Q&#95;&#95;2':
+    desc: 'parallel output'
+  'Q&#95;&#95;1':
+    desc: 'parallel output'
+  'Q&#95;&#95;0':
+    desc: 'parallel output'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CP to Q__n
-    val:    [14 (74HC), 15 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~MR to Q__n
-    val:    [14 (74HC), 15 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [102 (74HC), 77 (74HCT)]
-    unit:   MHz
+  -
+    param: 'Propagation delay, CP to Q&#95;&#95;n'
+    val:
+      - '14 (74HC)'
+      - '15 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;MR to Q&#95;&#95;n'
+    val:
+      - '14 (74HC)'
+      - '15 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '102 (74HC)'
+      - '77 (74HCT)'
+    unit: MHz
 notes:
-  - S__0 and S__1 are low; hold (do nothing)
-  - S__0 low and S__1 high; shift left
-  - S__0 high and S__1 low; shift right
-  - S__0 and S__1 high; parallel load
-...
+  - 'S&#95;&#95;0 and S&#95;&#95;1 are low; hold (do nothing)'
+  - 'S&#95;&#95;0 low and S&#95;&#95;1 high; shift left'
+  - 'S&#95;&#95;0 high and S&#95;&#95;1 low; shift right'
+  - 'S&#95;&#95;0 and S&#95;&#95;1 high; parallel load'
+packages:
+  DIP:
+    - '&#126;MR'
+    - 'D&#95;&#95;SR'
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;SL'
+    - GND
+    - 'S&#95;&#95;0'
+    - 'S&#95;&#95;1'
+    - CP
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - Vcc

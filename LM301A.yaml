@@ -1,56 +1,66 @@
----
-description: Operational amplifier
-aliases:     [LM101A, LM201A]
-package:     DIP
-pincount:    8
-family:      "linear"
-datasheet:   "http://www.national.com/ds/LM/LM101A.pdf"
+description: 'Operational amplifier'
+aliases:
+  - LM101A
+  - LM201A
+family: linear
+datasheet: 'http://www.national.com/ds/LM/LM101A.pdf'
 pins:
-  - num:  1
-    sym:  BAL/COMP
+  BAL/COMP:
     desc: balance/compensation
-  - num:  2
-    sym:  IN-
-    desc: inverting input
-  - num:  3
-    sym:  IN+
-    desc: non-inverting input
-  - num:  4
-    sym:  Vss
-    desc: negative supply voltage
-  - num:  5
-    sym:  BAL
+  IN-:
+    desc: 'inverting input'
+  IN+:
+    desc: 'non-inverting input'
+  Vss:
+    desc: 'negative supply voltage'
+  BAL:
     desc: balance
-  - num:  6
-    sym:  OUT
+  OUT:
     desc: output
-  - num:  7
-    sym:  Vcc
-    desc: positive supply voltage
-  - num:  8
-    sym:  COMP
+  Vcc:
+    desc: 'positive supply voltage'
+  COMP:
     desc: compensation
 specs:
-  - param: Maximum supply voltage
-    val:   ["&plusmn;22 (LM101A/201A)", "&plusmn;18 (LM301A)"]
-    unit:  V 
-  - param: Minimum supply voltage
-    val:   10
-    unit:  V
-  - param: Input offset voltage
-    val:   [0.7 (LM101A/201A), 2 (LM301A)]
-    unit:  mV
-  - param: Gain bandwidth
-    val:   1
-    unit:  MHz
-  - param: Slew rate
-    val:   0.5
-    unit:  "V/&micro;s"
-  - param: Voltage noise
-    val:   15
-    unit:  "nV/&radic;Hz"
-  - param: Supply current
-    val:   1.8
-    unit:  mA
-...
-
+  -
+    param: 'Maximum supply voltage'
+    val:
+      - '&plusmn;22 (LM101A/201A)'
+      - '&plusmn;18 (LM301A)'
+    unit: V
+  -
+    param: 'Minimum supply voltage'
+    val: '10'
+    unit: V
+  -
+    param: 'Input offset voltage'
+    val:
+      - '0.7 (LM101A/201A)'
+      - '2 (LM301A)'
+    unit: mV
+  -
+    param: 'Gain bandwidth'
+    val: '1'
+    unit: MHz
+  -
+    param: 'Slew rate'
+    val: '0.5'
+    unit: 'V/&micro;s'
+  -
+    param: 'Voltage noise'
+    val: '15'
+    unit: 'nV/&Sqrt;Hz'
+  -
+    param: 'Supply current'
+    val: '1.8'
+    unit: mA
+packages:
+  DIP:
+    - BAL/COMP
+    - IN-
+    - IN+
+    - Vss
+    - BAL
+    - OUT
+    - Vcc
+    - COMP

@@ -1,51 +1,48 @@
----
-description: Dual D-type flip-flop with set and clear
-package:     DIP
-pincount:    14
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4013b.pdf"
+description: 'Dual D-type flip-flop with set and clear'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4013b.pdf'
 pins:
-  - num:  1
-    sym:  1Q
-    desc: true output
-  - num:  2
-    sym:  1~Q
-    desc: complement output
-  - num:  3
-    sym:  1CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  4
-    sym:  1CD
-    desc: asynchronous clear-direct input
-  - num:  5
-    sym:  1D
-    desc: data input
-  - num:  6
-    sym:  1SD
-    desc: asynchronous set-direct input
-  - num:  7
-    sym:  GND
+  1Q:
+    desc: 'true output'
+  '1&#126;Q':
+    desc: 'complement output'
+  1CP:
+    desc: 'clock input (low-to-high edge-triggered)'
+  1CD:
+    desc: 'asynchronous clear-direct input'
+  1D:
+    desc: 'data input'
+  1SD:
+    desc: 'asynchronous set-direct input'
+  GND:
     desc: ground
-  - num:  8
-    sym:  2SD
-    desc: asynchronous set-direct input
-  - num:  9
-    sym:  2D
-    desc: data input
-  - num:  10
-    sym:  2CD
-    desc: asynchronous clear-direct input
-  - num:  11
-    sym:  2CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  12
-    sym:  2~Q
-    desc: complement output
-  - num:  13
-    sym:  2Q
-    desc: true output
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  2SD:
+    desc: 'asynchronous set-direct input'
+  2D:
+    desc: 'data input'
+  2CD:
+    desc: 'asynchronous clear-direct input'
+  2CP:
+    desc: 'clock input (low-to-high edge-triggered)'
+  '2&#126;Q':
+    desc: 'complement output'
+  2Q:
+    desc: 'true output'
+  Vcc:
+    desc: 'supply voltage'
+packages:
+  DIP:
+    - 1Q
+    - '1&#126;Q'
+    - 1CP
+    - 1CD
+    - 1D
+    - 1SD
+    - GND
+    - 2SD
+    - 2D
+    - 2CD
+    - 2CP
+    - '2&#126;Q'
+    - 2Q
+    - Vcc

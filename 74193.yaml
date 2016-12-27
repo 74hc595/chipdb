@@ -1,84 +1,109 @@
----
-description:  Presettable synchronous 4-bit binary up/down counter; separate up/down clocks
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc193.74hct193.pdf"
+description: 'Presettable synchronous 4-bit binary up/down counter; separate up/down clocks'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc193.74hct193.pdf'
 pins:
-  - num:  1
-    sym:  D__1
-    desc: data input
-  - num:  2
-    sym:  Q__1
-    desc: counter output
-  - num:  3
-    sym:  Q__0
-    desc: counter output
-  - num:  4
-    sym:  CPD
-    desc: count down clock input (low-to-high, edge-triggered)
-  - num:  5
-    sym:  CPU
-    desc: count up clock input (low-to-high, edge-triggered)
-  - num:  6
-    sym:  Q__2
-    desc: counter output
-  - num:  7
-    sym:  Q__3
-    desc: counter output
-  - num:  8
-    sym:  GND
+  'D&#95;&#95;1':
+    desc: 'data input'
+  'Q&#95;&#95;1':
+    desc: 'counter output'
+  'Q&#95;&#95;0':
+    desc: 'counter output'
+  CPD:
+    desc: 'count down clock input (low-to-high, edge-triggered)'
+  CPU:
+    desc: 'count up clock input (low-to-high, edge-triggered)'
+  'Q&#95;&#95;2':
+    desc: 'counter output'
+  'Q&#95;&#95;3':
+    desc: 'counter output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  D__3
-    desc: data input
-  - num:  10
-    sym:  D__2
-    desc: data input
-  - num:  11
-    sym:  ~PL
-    desc: parallel load input (active low)
-  - num:  12
-    sym:  ~TCU
-    desc: terminal count up (carry) output (active low)
-  - num:  13
-    sym:  ~TCD
-    desc: terminal count down (borrow) output (active low)
-  - num:  14
-    sym:  MR
-    desc: asynchronous master reset (active high)
-  - num:  15
-    sym:  D__0
-    desc: data input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  'D&#95;&#95;3':
+    desc: 'data input'
+  'D&#95;&#95;2':
+    desc: 'data input'
+  '&#126;PL':
+    desc: 'parallel load input (active low)'
+  '&#126;TCU':
+    desc: 'terminal count up (carry) output (active low)'
+  '&#126;TCD':
+    desc: 'terminal count down (borrow) output (active low)'
+  MR:
+    desc: 'asynchronous master reset (active high)'
+  'D&#95;&#95;0':
+    desc: 'data input'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CPU, CPD to Q__n
-    val:    [23 (74HC), 23 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CPU to ~TCU, ~TCD
-    val:    [14 (74HC), 15 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~PL to Q__n
-    val:    [25 (74HC), 26 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, MR to Q__n
-    val:    [21 (74HC), 22 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, D__n to Q__n
-    val:    [25 (74HC), 27 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~PL to ~TCU, ~TCD
-    val:    [29 (74HC), 31 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, MR to ~TCU, ~TCD
-    val:    [27 (74HC), 29 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CPU, D__n to ~TCU, ~TCD
-    val:    [29 (74HC), 32 (74HCT)]
-    unit:   ns
-  - param:  Maximum frequency
-    val:    [41 (74HC), 43 (74HCT)]
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, CPU, CPD to Q&#95;&#95;n'
+    val:
+      - '23 (74HC)'
+      - '23 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CPU to &#126;TCU, &#126;TCD'
+    val:
+      - '14 (74HC)'
+      - '15 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;PL to Q&#95;&#95;n'
+    val:
+      - '25 (74HC)'
+      - '26 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, MR to Q&#95;&#95;n'
+    val:
+      - '21 (74HC)'
+      - '22 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, D&#95;&#95;n to Q&#95;&#95;n'
+    val:
+      - '25 (74HC)'
+      - '27 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;PL to &#126;TCU, &#126;TCD'
+    val:
+      - '29 (74HC)'
+      - '31 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, MR to &#126;TCU, &#126;TCD'
+    val:
+      - '27 (74HC)'
+      - '29 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CPU, D&#95;&#95;n to &#126;TCU, &#126;TCD'
+    val:
+      - '29 (74HC)'
+      - '32 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum frequency'
+    val:
+      - '41 (74HC)'
+      - '43 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - 'D&#95;&#95;1'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - CPD
+    - CPU
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;3'
+    - GND
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;2'
+    - '&#126;PL'
+    - '&#126;TCU'
+    - '&#126;TCD'
+    - MR
+    - 'D&#95;&#95;0'
+    - Vcc

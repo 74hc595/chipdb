@@ -1,60 +1,57 @@
----
-description: "4-bit up/down binary counter"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef40193b.pdf"
+description: '4-bit up/down binary counter'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef40193b.pdf'
 pins:
-  - num:  1
-    sym:  D1
-    desc: parallel data input
-  - num:  2
-    sym:  Q1
-    desc: count output
-  - num:  3
-    sym:  Q0
-    desc: count output
-  - num:  4
-    sym:  CPD
-    desc: count-down clock input (low-to-high edge-triggered)
-  - num:  5
-    sym:  CPU
-    desc: count-up clock input (low-to-high edge-triggered)
-  - num:  6
-    sym:  Q2
-    desc: count output
-  - num:  7
-    sym:  Q3
-    desc: count output
-  - num:  8
-    sym:  GND
+  D1:
+    desc: 'parallel data input'
+  Q1:
+    desc: 'count output'
+  Q0:
+    desc: 'count output'
+  CPD:
+    desc: 'count-down clock input (low-to-high edge-triggered)'
+  CPU:
+    desc: 'count-up clock input (low-to-high edge-triggered)'
+  Q2:
+    desc: 'count output'
+  Q3:
+    desc: 'count output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  D3
-    desc: parallel data input
-  - num:  10
-    sym:  D2
-    desc: parallel data input
-  - num:  11
-    sym:  ~PL
-    desc: parallel load (active low)
-  - num:  12
-    sym:  ~TCU
-    desc: terminal count-up (carry; active low)
-  - num:  13
-    sym:  ~TCD
-    desc: terminal count-down (borrow; active low)
-  - num:  14
-    sym:  MR
-    desc: master reset
-  - num:  15
-    sym:  D0
-    desc: parallel data input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  D3:
+    desc: 'parallel data input'
+  D2:
+    desc: 'parallel data input'
+  '&#126;PL':
+    desc: 'parallel load (active low)'
+  '&#126;TCU':
+    desc: 'terminal count-up (carry; active low)'
+  '&#126;TCD':
+    desc: 'terminal count-down (borrow; active low)'
+  MR:
+    desc: 'master reset'
+  D0:
+    desc: 'parallel data input'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - ~TCU goes low when the count is 15.
-  - ~TCD goes low when the count is 0.
-...
-
+  - '&#126;TCU goes low when the count is 15.'
+  - '&#126;TCD goes low when the count is 0.'
+packages:
+  DIP:
+    - D1
+    - Q1
+    - Q0
+    - CPD
+    - CPU
+    - Q2
+    - Q3
+    - GND
+    - D3
+    - D2
+    - '&#126;PL'
+    - '&#126;TCU'
+    - '&#126;TCD'
+    - MR
+    - D0
+    - Vcc

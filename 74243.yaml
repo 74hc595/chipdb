@@ -1,58 +1,53 @@
----
-description:  Quad bus transceiver; 3-state
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc243.pdf"
+description: 'Quad bus transceiver; 3-state'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc243.pdf'
 pins:
-  - num:  1
-    sym:  ~OE~A
-    desc: output enable (active low)
-  - num:  2
-    sym:  NC
-    desc: no connection
-  - num:  3
-    sym:  A0
-    desc: data input or output
-  - num:  4
-    sym:  A1
-    desc: data input or output
-  - num:  5
-    sym:  A2
-    desc: data input or output
-  - num:  6
-    sym:  A3
-    desc: data input or output
-  - num:  7
-    sym:  GND
+  '&#126;OE&#126;A':
+    desc: 'output enable (active low)'
+  A0:
+    desc: 'data input or output'
+  A1:
+    desc: 'data input or output'
+  A2:
+    desc: 'data input or output'
+  A3:
+    desc: 'data input or output'
+  GND:
     desc: ground
-  - num:  8
-    sym:  B3
-    desc: data output or input
-  - num:  9
-    sym:  B2
-    desc: data output or input
-  - num:  10
-    sym:  B1
-    desc: data output or input
-  - num:  11
-    sym:  B0
-    desc: data output or input
-  - num:  12
-    sym:  NC
-    desc: no connection
-  - num:  13
-    sym:  OEB
-    desc: output enable (active high)
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  B3:
+    desc: 'data output or input'
+  B2:
+    desc: 'data output or input'
+  B1:
+    desc: 'data output or input'
+  B0:
+    desc: 'data output or input'
+  OEB:
+    desc: 'output enable (active high)'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, An to Bn; Bn to An
-    val:    6 (74HC)
-    unit:   ns
+  -
+    param: 'Propagation delay, An to Bn; Bn to An'
+    val: '6 (74HC)'
+    unit: ns
 notes:
-  - When ~OE~A and OEB are low, An are inputs.
-  - When ~OE~A and OEB are high, Bn are inputs.
-  - Otherwise, An and Bn are in a high-impedance off state.
-...
+  - 'When &#126;OE&#126;A and OEB are low, An are inputs.'
+  - 'When &#126;OE&#126;A and OEB are high, Bn are inputs.'
+  - 'Otherwise, An and Bn are in a high-impedance off state.'
+packages:
+  DIP:
+    - '&#126;OE&#126;A'
+    - NC
+    - A0
+    - A1
+    - A2
+    - A3
+    - GND
+    - B3
+    - B2
+    - B1
+    - B0
+    - NC
+    - OEB
+    - Vcc

@@ -1,75 +1,77 @@
----
-description:  Octal D-type flip-flop with reset; positive-edge trigger
-package:      DIP
-pincount:     20
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc273.74hct273.pdf"
+description: 'Octal D-type flip-flop with reset; positive-edge trigger'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc273.74hct273.pdf'
 pins:
-  - num:  1
-    sym:  ~MR
-    desc: master reset input (active low)
-  - num:  2
-    sym:  Q0
-    desc: flip-flop output
-  - num:  3
-    sym:  D0
-    desc: data input
-  - num:  4
-    sym:  D1
-    desc: data input
-  - num:  5
-    sym:  Q1
-    desc: flip-flop output
-  - num:  6
-    sym:  Q2
-    desc: flip-flop output
-  - num:  7
-    sym:  D2
-    desc: data input
-  - num:  8
-    sym:  D3
-    desc: data input
-  - num:  9
-    sym:  Q3
-    desc: flip-flop output
-  - num:  10
-    sym:  GND
+  '&#126;MR':
+    desc: 'master reset input (active low)'
+  Q0:
+    desc: 'flip-flop output'
+  D0:
+    desc: 'data input'
+  D1:
+    desc: 'data input'
+  Q1:
+    desc: 'flip-flop output'
+  Q2:
+    desc: 'flip-flop output'
+  D2:
+    desc: 'data input'
+  D3:
+    desc: 'data input'
+  Q3:
+    desc: 'flip-flop output'
+  GND:
     desc: ground
-  - num:  11
-    sym:  CP
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  12
-    sym:  Q4
-    desc: flip-flop output
-  - num:  13
-    sym:  D4
-    desc: data input
-  - num:  14
-    sym:  D5
-    desc: data input
-  - num:  15
-    sym:  Q5
-    desc: flip-flop output
-  - num:  16
-    sym:  Q6
-    desc: flip-flop output
-  - num:  17
-    sym:  D6
-    desc: data input
-  - num:  18
-    sym:  D7
-    desc: data input
-  - num:  19
-    sym:  Q7
-    desc: flip-flop output
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
+  CP:
+    desc: 'clock input (low-to-high, edge-triggered)'
+  Q4:
+    desc: 'flip-flop output'
+  D4:
+    desc: 'data input'
+  D5:
+    desc: 'data input'
+  Q5:
+    desc: 'flip-flop output'
+  Q6:
+    desc: 'flip-flop output'
+  D6:
+    desc: 'data input'
+  D7:
+    desc: 'data input'
+  Q7:
+    desc: 'flip-flop output'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CP to Qn
-    val:    15 (74HC/HCT)
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [66 (74HC), 36 (74HCT)]
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, CP to Qn'
+    val: '15 (74HC/HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '66 (74HC)'
+      - '36 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - '&#126;MR'
+    - Q0
+    - D0
+    - D1
+    - Q1
+    - Q2
+    - D2
+    - D3
+    - Q3
+    - GND
+    - CP
+    - Q4
+    - D4
+    - D5
+    - Q5
+    - Q6
+    - D6
+    - D7
+    - Q7
+    - Vcc

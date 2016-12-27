@@ -1,77 +1,81 @@
----
-description:  CMOS dual 8-bit buffered multiplying DAC
-package:      DIP
-pincount:     20
-aliases:      [TLC7528]
-family:       Analog Devices
-datasheet:    "http://www.analog.com/static/imported-files/data_sheets/AD7528.pdf"
+description: 'CMOS dual 8-bit buffered multiplying DAC'
+aliases:
+  - TLC7528
+family: 'Analog Devices'
+datasheet: 'http://www.analog.com/static/imported-files/data&#95;sheets/AD7528.pdf'
 pins:
-  - num:  1
-    sym:  AGND
-    desc: analog ground
-  - num:  2
-    sym:  OUT A
-    desc: analog current output
-  - num:  3
-    sym:  R__FB A
-    desc: feedback resistor connection
-  - num:  4
-    sym:  V__REF A
-    desc: input reference voltage
-  - num:  5
-    sym:  DGND
-    desc: digital ground
-  - num:  6
-    sym:  ~DACA/DACB
-    desc: DAC select
-  - num:  7
-    sym:  (MSB) DB7
-    desc: parallel data input
-  - num:  8
-    sym:  DB6
-    desc: parallel data input
-  - num:  9
-    sym:  DB5
-    desc: parallel data input
-  - num:  10
-    sym:  DB4
-    desc: parallel data input
-  - num:  11
-    sym:  DB3
-    desc: parallel data input
-  - num:  12
-    sym:  DB2
-    desc: parallel data input
-  - num:  13
-    sym:  DB1
-    desc: parallel data input
-  - num:  14
-    sym:  DB0 (LSB)
-    desc: parallel data input
-  - num:  15
-    sym:  ~CS
-    desc: chip select (active low)
-  - num:  16
-    sym:  ~WR
-    desc: write to data register (active low)
-  - num:  17
-    sym:  V__DD
-    desc: supply voltage
-  - num:  18
-    sym:  V__REF B
-    desc: input reference voltage 
-  - num:  19
-    sym:  R__FB B
-    desc: feedback resistor connection
-  - num:  20
-    sym:  OUT B
-    desc: analog current output
+  AGND:
+    desc: 'analog ground'
+  'OUT A':
+    desc: 'analog current output'
+  'R&#95;&#95;FB A':
+    desc: 'feedback resistor connection'
+  'V&#95;&#95;REF A':
+    desc: 'input reference voltage'
+  DGND:
+    desc: 'digital ground'
+  '&#126;DACA/DACB':
+    desc: 'DAC select'
+  '(MSB) DB7':
+    desc: 'parallel data input'
+  DB6:
+    desc: 'parallel data input'
+  DB5:
+    desc: 'parallel data input'
+  DB4:
+    desc: 'parallel data input'
+  DB3:
+    desc: 'parallel data input'
+  DB2:
+    desc: 'parallel data input'
+  DB1:
+    desc: 'parallel data input'
+  'DB0 (LSB)':
+    desc: 'parallel data input'
+  '&#126;CS':
+    desc: 'chip select (active low)'
+  '&#126;WR':
+    desc: 'write to data register (active low)'
+  'V&#95;&#95;DD':
+    desc: 'supply voltage'
+  'V&#95;&#95;REF B':
+    desc: 'input reference voltage'
+  'R&#95;&#95;FB B':
+    desc: 'feedback resistor connection'
+  'OUT B':
+    desc: 'analog current output'
 specs:
-  - param:  Settling time, V__DD = 5V
-    val:    ["400 (AD7528)", "100 (TLC7528)"]
-    unit:   ns
-  - param:  Update rate, V__DD = 5V
-    val:    ["2.5 (AD7528)", "10 (TLC7528)"]
-    unit:   MHz
-...
-
+  -
+    param: 'Settling time, V&#95;&#95;DD = 5V'
+    val:
+      - '400 (AD7528)'
+      - '100 (TLC7528)'
+    unit: ns
+  -
+    param: 'Update rate, V&#95;&#95;DD = 5V'
+    val:
+      - '2.5 (AD7528)'
+      - '10 (TLC7528)'
+    unit: MHz
+packages:
+  DIP:
+    - AGND
+    - 'OUT A'
+    - 'R&#95;&#95;FB A'
+    - 'V&#95;&#95;REF A'
+    - DGND
+    - '&#126;DACA/DACB'
+    - '(MSB) DB7'
+    - DB6
+    - DB5
+    - DB4
+    - DB3
+    - DB2
+    - DB1
+    - 'DB0 (LSB)'
+    - '&#126;CS'
+    - '&#126;WR'
+    - 'V&#95;&#95;DD'
+    - 'V&#95;&#95;REF B'
+    - 'R&#95;&#95;FB B'
+    - 'OUT B'

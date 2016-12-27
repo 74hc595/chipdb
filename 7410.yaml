@@ -1,54 +1,55 @@
----
-description:  Triple 3-input NAND gate
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://www.nxp.com/acrobat_download/datasheets/74HC_HCT10_CNV_2.pdf"
+description: 'Triple 3-input NAND gate'
+family: '7400'
+datasheet: 'http://www.nxp.com/acrobat&#95;download/datasheets/74HC&#95;HCT10&#95;CNV&#95;2.pdf'
 pins:
-  - num:  1
-    sym:  1A
-    desc: data input
-  - num:  2
-    sym:  1B
-    desc: data input
-  - num:  3
-    sym:  2A
-    desc: data input
-  - num:  4
-    sym:  2B
-    desc: data input
-  - num:  5
-    sym:  2C
-    desc: data input
-  - num:  6
-    sym:  2Y
-    desc: data output
-  - num:  7
-    sym:  GND
+  1A:
+    desc: 'data input'
+  1B:
+    desc: 'data input'
+  2A:
+    desc: 'data input'
+  2B:
+    desc: 'data input'
+  2C:
+    desc: 'data input'
+  2Y:
+    desc: 'data output'
+  GND:
     desc: ground
-  - num:  8
-    sym:  3Y
-    desc: data output
-  - num:  9
-    sym:  3A
-    desc: data input
-  - num:  10
-    sym:  3B
-    desc: data input
-  - num:  11
-    sym:  3C
-    desc: data input
-  - num:  12
-    sym:  1Y
-    desc: data output
-  - num:  13
-    sym:  1C
-    desc: data input
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  3Y:
+    desc: 'data output'
+  3A:
+    desc: 'data input'
+  3B:
+    desc: 'data input'
+  3C:
+    desc: 'data input'
+  1Y:
+    desc: 'data output'
+  1C:
+    desc: 'data input'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, nA, nB, nC to nY
-    val:    [9 (74HC), 11 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, nA, nB, nC to nY'
+    val:
+      - '9 (74HC)'
+      - '11 (74HCT)'
+    unit: ns
+packages:
+  DIP:
+    - 1A
+    - 1B
+    - 2A
+    - 2B
+    - 2C
+    - 2Y
+    - GND
+    - 3Y
+    - 3A
+    - 3B
+    - 3C
+    - 1Y
+    - 1C
+    - Vcc

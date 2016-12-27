@@ -1,70 +1,71 @@
----
-description:  3-to-8 line decoder/demultiplexer with address latches; inverting
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc137.pdf"
+description: '3-to-8 line decoder/demultiplexer with address latches; inverting'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc137.pdf'
 pins:
-  - num:  1
-    sym:  A0
-    desc: data input 0
-  - num:  2
-    sym:  A1
-    desc: data input 1
-  - num:  3
-    sym:  A2
-    desc: data input 2
-  - num:  4
-    sym:  ~LE
-    desc: latch enable input (active low)
-  - num:  5
-    sym:  ~E~1
-    desc: data enable input 1 (active low)
-  - num:  6
-    sym:  E2
-    desc: data enable input 2 (active high)
-  - num:  7
-    sym:  ~Y~7
-    desc: output 7
-  - num:  8
-    sym:  GND
+  A0:
+    desc: 'data input 0'
+  A1:
+    desc: 'data input 1'
+  A2:
+    desc: 'data input 2'
+  '&#126;LE':
+    desc: 'latch enable input (active low)'
+  '&#126;E&#126;1':
+    desc: 'data enable input 1 (active low)'
+  E2:
+    desc: 'data enable input 2 (active high)'
+  '&#126;Y&#126;7':
+    desc: 'output 7'
+  GND:
     desc: ground
-  - num:  9
-    sym:  ~Y~6
-    desc: output 6
-  - num:  10
-    sym:  ~Y~5
-    desc: output 5
-  - num:  11
-    sym:  ~Y~4
-    desc: output 4
-  - num:  12
-    sym:  ~Y~3
-    desc: output 3
-  - num:  13
-    sym:  ~Y~2
-    desc: output 2
-  - num:  14
-    sym:  ~Y~1
-    desc: output 1
-  - num:  15
-    sym:  ~Y~0
-    desc: output 0
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  '&#126;Y&#126;6':
+    desc: 'output 6'
+  '&#126;Y&#126;5':
+    desc: 'output 5'
+  '&#126;Y&#126;4':
+    desc: 'output 4'
+  '&#126;Y&#126;3':
+    desc: 'output 3'
+  '&#126;Y&#126;2':
+    desc: 'output 2'
+  '&#126;Y&#126;1':
+    desc: 'output 1'
+  '&#126;Y&#126;0':
+    desc: 'output 0'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param: Propagation delay, An to ~Y~n
-    val:  18 (74HC)
+  -
+    param: 'Propagation delay, An to &#126;Y&#126;n'
+    val: '18 (74HC)'
     unit: ns
-  - param: Propagation delay, ~LE to ~Y~n
-    val:  17 (74HC)
+  -
+    param: 'Propagation delay, &#126;LE to &#126;Y&#126;n'
+    val: '17 (74HC)'
     unit: ns
-  - param: Propagation delay, ~E~1 to ~Y~n
-    val:  15 (74HC)
+  -
+    param: 'Propagation delay, &#126;E&#126;1 to &#126;Y&#126;n'
+    val: '15 (74HC)'
     unit: ns
-  - param: Propagation delay, E2 to ~Y~n
-    val:  15 (74HC)
+  -
+    param: 'Propagation delay, E2 to &#126;Y&#126;n'
+    val: '15 (74HC)'
     unit: ns
-
-...
+packages:
+  DIP:
+    - A0
+    - A1
+    - A2
+    - '&#126;LE'
+    - '&#126;E&#126;1'
+    - E2
+    - '&#126;Y&#126;7'
+    - GND
+    - '&#126;Y&#126;6'
+    - '&#126;Y&#126;5'
+    - '&#126;Y&#126;4'
+    - '&#126;Y&#126;3'
+    - '&#126;Y&#126;2'
+    - '&#126;Y&#126;1'
+    - '&#126;Y&#126;0'
+    - Vcc

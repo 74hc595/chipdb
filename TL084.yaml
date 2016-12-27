@@ -1,80 +1,99 @@
----
-description: Quad JFET-input operational amplifier
-aliases:     [TL064, TL074]
-package:     DIP
-pincount:    14
-family:      linear
-datasheet:   "http://focus.ti.com/lit/ds/symlink/tl081a.pdf"
+description: 'Quad JFET-input operational amplifier'
+aliases:
+  - TL064
+  - TL074
+family: linear
+datasheet: 'http://focus.ti.com/lit/ds/symlink/tl081a.pdf'
 pins:
-  - num:  1
-    sym:  1OUT
-    desc: output 1
-  - num:  2
-    sym:  1IN-
-    desc: inverting input 1
-  - num:  3
-    sym:  1IN+
-    desc: non-inverting input 1
-  - num:  4
-    sym:  V__CC+
-    desc: positive supply voltage
-  - num:  5
-    sym:  2IN+
-    desc: non-inverting input 2
-  - num:  6
-    sym:  2IN-
-    desc: inverting input 2
-  - num:  7
-    sym:  2OUT
-    desc: output 2
-  - num:  8
-    sym:  3OUT
-    desc: output 3
-  - num:  9
-    sym:  3IN-
-    desc: inverting input 3
-  - num:  10
-    sym:  3IN+
-    desc: non-inverting input 3
-  - num:  11
-    sym:  V__CC-
-    desc: negative supply voltage
-  - num:  12
-    sym:  4IN+
-    desc: non-inverting input 4
-  - num:  13
-    sym:  4IN-
-    desc: inverting input 4
-  - num:  14
-    sym:  4OUT
-    desc: output 4
+  1OUT:
+    desc: 'output 1'
+  1IN-:
+    desc: 'inverting input 1'
+  1IN+:
+    desc: 'non-inverting input 1'
+  'V&#95;&#95;CC+':
+    desc: 'positive supply voltage'
+  2IN+:
+    desc: 'non-inverting input 2'
+  2IN-:
+    desc: 'inverting input 2'
+  2OUT:
+    desc: 'output 2'
+  3OUT:
+    desc: 'output 3'
+  3IN-:
+    desc: 'inverting input 3'
+  3IN+:
+    desc: 'non-inverting input 3'
+  'V&#95;&#95;CC-':
+    desc: 'negative supply voltage'
+  4IN+:
+    desc: 'non-inverting input 4'
+  4IN-:
+    desc: 'inverting input 4'
+  4OUT:
+    desc: 'output 4'
 specs:
-  - param: Maximum supply voltage
-    val:   "&plusmn;18"
-    unit:  V
-  - param: Offset voltage
-    val:   3
-    unit:  mV
-  - param: Unity-gain bandwidth
-    val:   3
-    unit:  MHz
-  - param: Slew rate at unity gain
-    val:   13
-    unit:  "V/&micro;s"
-  - param: Rise time
-    val:   [0.2 (TL06x), 0.1 (TL07x), 0.05 (TL08x)]
-    unit:  "&micro;s"
-  - param: Overshoot factor
-    val:   [10 (TL061x, 20 (TL07x), 20 (TL08x)]
-    unit:  "%"
-  - param: "Equivalent input noise voltage at f = 1 kHz"
-    val:   [42 (TL06x), 18 (TL07x), 18 (TL08x)]
-    unit:  "nV/&radic;Hz"
-  - param: "Supply current (each amplifier)"
-    val:   [0.2 (TL06x), 1.4 (TL07x), 1.4 (TL08x)]
-    unit:  mA
+  -
+    param: 'Maximum supply voltage'
+    val: '&plusmn;18'
+    unit: V
+  -
+    param: 'Offset voltage'
+    val: '3'
+    unit: mV
+  -
+    param: 'Unity-gain bandwidth'
+    val: '3'
+    unit: MHz
+  -
+    param: 'Slew rate at unity gain'
+    val: '13'
+    unit: 'V/&micro;s'
+  -
+    param: 'Rise time'
+    val:
+      - '0.2 (TL06x)'
+      - '0.1 (TL07x)'
+      - '0.05 (TL08x)'
+    unit: '&micro;s'
+  -
+    param: 'Overshoot factor'
+    val:
+      - '10 (TL061x'
+      - '20 (TL07x)'
+      - '20 (TL08x)'
+    unit: '%'
+  -
+    param: 'Equivalent input noise voltage at f = 1 kHz'
+    val:
+      - '42 (TL06x)'
+      - '18 (TL07x)'
+      - '18 (TL08x)'
+    unit: 'nV/&Sqrt;Hz'
+  -
+    param: 'Supply current (each amplifier)'
+    val:
+      - '0.2 (TL06x)'
+      - '1.4 (TL07x)'
+      - '1.4 (TL08x)'
+    unit: mA
 notes:
-  - The TL06x series are low-power versions of the TL08x series.
-  - The TL07x series are low-noise versions of the TL08x series.
-...
-
+  - 'The TL06x series are low-power versions of the TL08x series.'
+  - 'The TL07x series are low-noise versions of the TL08x series.'
+packages:
+  DIP:
+    - 1OUT
+    - 1IN-
+    - 1IN+
+    - 'V&#95;&#95;CC+'
+    - 2IN+
+    - 2IN-
+    - 2OUT
+    - 3OUT
+    - 3IN-
+    - 3IN+
+    - 'V&#95;&#95;CC-'
+    - 4IN+
+    - 4IN-
+    - 4OUT

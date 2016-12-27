@@ -1,63 +1,67 @@
----
-description:  Dual 2-to-4 line decoder/demultiplexer
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc139.74hct139.pdf"
+description: 'Dual 2-to-4 line decoder/demultiplexer'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc139.74hct139.pdf'
 pins:
-  - num:  1
-    sym:  1~E
-    desc: enable input (active low)
-  - num:  2
-    sym:  1A__0
-    desc: address input
-  - num:  3
-    sym:  1A__1
-    desc: address input
-  - num:  4
-    sym:  1~Y~__0
-    desc: output (active low)
-  - num:  5
-    sym:  1~Y~__1
-    desc: output (active low)
-  - num:  6
-    sym:  1~Y~__2
-    desc: output (active low)
-  - num:  7
-    sym:  1~Y~__3
-    desc: output (active low)
-  - num:  8
-    sym:  GND
+  '1&#126;E':
+    desc: 'enable input (active low)'
+  '1A&#95;&#95;0':
+    desc: 'address input'
+  '1A&#95;&#95;1':
+    desc: 'address input'
+  '1&#126;Y&#126;&#95;&#95;0':
+    desc: 'output (active low)'
+  '1&#126;Y&#126;&#95;&#95;1':
+    desc: 'output (active low)'
+  '1&#126;Y&#126;&#95;&#95;2':
+    desc: 'output (active low)'
+  '1&#126;Y&#126;&#95;&#95;3':
+    desc: 'output (active low)'
+  GND:
     desc: ground
-  - num:  9
-    sym:  2~Y~__3
-    desc: output (active low)
-  - num:  10
-    sym:  2~Y~__2
-    desc: output (active low)
-  - num:  11
-    sym:  2~Y~__1
-    desc: output (active low)
-  - num:  12
-    sym:  2~Y~__0
-    desc: output (active low)
-  - num:  13
-    sym:  2A__1
-    desc: address input
-  - num:  14
-    sym:  2A__0
-    desc: address input
-  - num:  15
-    sym:  2~E
-    desc: enable input (active low)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  '2&#126;Y&#126;&#95;&#95;3':
+    desc: 'output (active low)'
+  '2&#126;Y&#126;&#95;&#95;2':
+    desc: 'output (active low)'
+  '2&#126;Y&#126;&#95;&#95;1':
+    desc: 'output (active low)'
+  '2&#126;Y&#126;&#95;&#95;0':
+    desc: 'output (active low)'
+  '2A&#95;&#95;1':
+    desc: 'address input'
+  '2A&#95;&#95;0':
+    desc: 'address input'
+  '2&#126;E':
+    desc: 'enable input (active low)'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param: Propagation delay, nA__n to n~Y~__n
-    val:  [11 (74HC), 13 (74HCT)]
+  -
+    param: 'Propagation delay, nA&#95;&#95;n to n&#126;Y&#126;&#95;&#95;n'
+    val:
+      - '11 (74HC)'
+      - '13 (74HCT)'
     unit: ns
-  - param: Propagation delay, n~E to n~Y~__n
-    val:  [10 (74HC), 13 (74HCT)]
+  -
+    param: 'Propagation delay, n&#126;E to n&#126;Y&#126;&#95;&#95;n'
+    val:
+      - '10 (74HC)'
+      - '13 (74HCT)'
     unit: ns
-...
+packages:
+  DIP:
+    - '1&#126;E'
+    - '1A&#95;&#95;0'
+    - '1A&#95;&#95;1'
+    - '1&#126;Y&#126;&#95;&#95;0'
+    - '1&#126;Y&#126;&#95;&#95;1'
+    - '1&#126;Y&#126;&#95;&#95;2'
+    - '1&#126;Y&#126;&#95;&#95;3'
+    - GND
+    - '2&#126;Y&#126;&#95;&#95;3'
+    - '2&#126;Y&#126;&#95;&#95;2'
+    - '2&#126;Y&#126;&#95;&#95;1'
+    - '2&#126;Y&#126;&#95;&#95;0'
+    - '2A&#95;&#95;1'
+    - '2A&#95;&#95;0'
+    - '2&#126;E'
+    - Vcc

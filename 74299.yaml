@@ -1,86 +1,96 @@
----
-description:  8-bit universal shift register; 3-state
-package:      DIP
-pincount:     20
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc299.74hct299.pdf" 
+description: '8-bit universal shift register; 3-state'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc299.74hct299.pdf'
 pins:
-  - num:  1
-    sym:  S0
-    desc: mode select input
-  - num:  2
-    sym:  ~OE~1
-    desc: output enable (active low)
-  - num:  3
-    sym:  ~OE~2
-    desc: output enable (active low)
-  - num:  4
-    sym:  I/O6
-    desc: parallel data input/output
-  - num:  5
-    sym:  I/O4
-    desc: parallel data input/output
-  - num:  6
-    sym:  I/O2
-    desc: parallel data input/output
-  - num:  7
-    sym:  I/O0
-    desc: parallel data input/output
-  - num:  8
-    sym:  Q0
-    desc: serial output (standard output)
-  - num:  9
-    sym:  ~MR
-    desc: asynchronous master reset (active low)
-  - num:  10
-    sym:  GND
+  S0:
+    desc: 'mode select input'
+  '&#126;OE&#126;1':
+    desc: 'output enable (active low)'
+  '&#126;OE&#126;2':
+    desc: 'output enable (active low)'
+  I/O6:
+    desc: 'parallel data input/output'
+  I/O4:
+    desc: 'parallel data input/output'
+  I/O2:
+    desc: 'parallel data input/output'
+  I/O0:
+    desc: 'parallel data input/output'
+  Q0:
+    desc: 'serial output (standard output)'
+  '&#126;MR':
+    desc: 'asynchronous master reset (active low)'
+  GND:
     desc: ground
-  - num:  11
-    sym:  DSR
-    desc: serial data shift-right input
-  - num:  12
-    sym:  CP
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  13
-    sym:  I/O1
-    desc: parallel data input/output
-  - num:  14
-    sym:  I/O3
-    desc: parallel data input/output
-  - num:  15
-    sym:  I/O5
-    desc: parallel data input/output
-  - num:  16
-    sym:  I/O7
-    desc: parallel data input/output
-  - num:  17
-    sym:  Q7
-    desc: serial output (standard output)
-  - num:  18
-    sym:  DSL
-    desc: serial data shift-left input
-  - num:  19
-    sym:  S1
-    desc: mode select input
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
+  DSR:
+    desc: 'serial data shift-right input'
+  CP:
+    desc: 'clock input (low-to-high, edge-triggered)'
+  I/O1:
+    desc: 'parallel data input/output'
+  I/O3:
+    desc: 'parallel data input/output'
+  I/O5:
+    desc: 'parallel data input/output'
+  I/O7:
+    desc: 'parallel data input/output'
+  Q7:
+    desc: 'serial output (standard output)'
+  DSL:
+    desc: 'serial data shift-left input'
+  S1:
+    desc: 'mode select input'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CP to Q0, Q7
-    val:    [20 (74HC), 19 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CP to I/On
-    val:    [20 (74HC), 19 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~MR to Q0, Q7, I/On
-    val:    [20 (74HC), 23 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [50 (74HC), 46 (74HCT)]
-    unit:   MHz
+  -
+    param: 'Propagation delay, CP to Q0, Q7'
+    val:
+      - '20 (74HC)'
+      - '19 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CP to I/On'
+    val:
+      - '20 (74HC)'
+      - '19 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;MR to Q0, Q7, I/On'
+    val:
+      - '20 (74HC)'
+      - '23 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '50 (74HC)'
+      - '46 (74HCT)'
+    unit: MHz
 notes:
-  - S1 and S0 are low; hold (do nothing)
-  - "S1 is high and S0 is low; shift left (DSL &rarr; Q7, Q7 &rarr; Q6...)"
-  - "S1 is low and S0 is high; shift right (DSR &rarr; Q0, Q0 &rarr; Q1...)"
-  - "S1 and S0 are high; parallel load (I/On &rarr; Qn)"
-...
+  - 'S1 and S0 are low; hold (do nothing)'
+  - 'S1 is high and S0 is low; shift left (DSL &srarr; Q7, Q7 &srarr; Q6...)'
+  - 'S1 is low and S0 is high; shift right (DSR &srarr; Q0, Q0 &srarr; Q1...)'
+  - 'S1 and S0 are high; parallel load (I/On &srarr; Qn)'
+packages:
+  DIP:
+    - S0
+    - '&#126;OE&#126;1'
+    - '&#126;OE&#126;2'
+    - I/O6
+    - I/O4
+    - I/O2
+    - I/O0
+    - Q0
+    - '&#126;MR'
+    - GND
+    - DSR
+    - CP
+    - I/O1
+    - I/O3
+    - I/O5
+    - I/O7
+    - Q7
+    - DSL
+    - S1
+    - Vcc

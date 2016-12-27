@@ -1,57 +1,54 @@
----
-description: 8-stage shift-and-store bus register
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4094b.pdf"
+description: '8-stage shift-and-store bus register'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4094b.pdf'
 pins:
-  - num:  1
-    sym:  STR
-    desc: strobe input (active high)
-  - num:  2
-    sym:  D
-    desc: data input
-  - num:  3
-    sym:  CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  4
-    sym:  QP0
-    desc: parallel output
-  - num:  5
-    sym:  QP1
-    desc: parallel output
-  - num:  6
-    sym:  QP2
-    desc: parallel output
-  - num:  7
-    sym:  QP3
-    desc: parallel output
-  - num:  8
-    sym:  GND
+  STR:
+    desc: 'strobe input (active high)'
+  D:
+    desc: 'data input'
+  CP:
+    desc: 'clock input (low-to-high edge-triggered)'
+  QP0:
+    desc: 'parallel output'
+  QP1:
+    desc: 'parallel output'
+  QP2:
+    desc: 'parallel output'
+  QP3:
+    desc: 'parallel output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  QS1
-    desc: serial output
-  - num:  10
-    sym:  QS2
-    desc: serial output
-  - num:  11
-    sym:  QP7
-    desc: parallel output
-  - num:  12
-    sym:  QP6
-    desc: parallel output
-  - num:  13
-    sym:  QP5
-    desc: parallel output
-  - num:  14
-    sym:  QP4
-    desc: parallel output
-  - num:  15
-    sym:  OE
-    desc: output enable
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage (active high)
-...
-
+  QS1:
+    desc: 'serial output'
+  QS2:
+    desc: 'serial output'
+  QP7:
+    desc: 'parallel output'
+  QP6:
+    desc: 'parallel output'
+  QP5:
+    desc: 'parallel output'
+  QP4:
+    desc: 'parallel output'
+  OE:
+    desc: 'output enable'
+  Vcc:
+    desc: 'supply voltage (active high)'
+packages:
+  DIP:
+    - STR
+    - D
+    - CP
+    - QP0
+    - QP1
+    - QP2
+    - QP3
+    - GND
+    - QS1
+    - QS2
+    - QP7
+    - QP6
+    - QP5
+    - QP4
+    - OE
+    - Vcc

@@ -1,81 +1,78 @@
----
-description:  Serial-input constant-current latched LED driver (16 outputs)
-package:      DIP
-pincount:     24
-family:       "Allegro"
-datasheet:    "http://www.allegromicro.com/en/Products/Part_Numbers/6278/6278.pdf"
+description: 'Serial-input constant-current latched LED driver (16 outputs)'
+family: Allegro
+datasheet: 'http://www.allegromicro.com/en/Products/Part&#95;Numbers/6278/6278.pdf'
 pins:
-  - num:  1
-    sym:  GND
+  GND:
     desc: ground
-  - num:  2
-    sym:  DATA
-    desc: serial data in
-  - num:  3
-    sym:  CLOCK
-    desc: clock input (low-to-high triggered)
-  - num:  4
-    sym:  LATCH
-    desc: data strobe input (active high)
-  - num:  5
-    sym:  OUT0
-    desc: current-sinking output
-  - num:  6
-    sym:  OUT1
-    desc: current-sinking output
-  - num:  7
-    sym:  OUT2
-    desc: current-sinking output
-  - num:  8
-    sym:  OUT3
-    desc: current-sinking output
-  - num:  9
-    sym:  OUT4
-    desc: current-sinking output
-  - num:  10
-    sym:  OUT5
-    desc: current-sinking output
-  - num:  11
-    sym:  OUT6
-    desc: current-sinking output
-  - num:  12
-    sym:  OUT7
-    desc: current-sinking output
-  - num:  13
-    sym:  OUT8
-    desc: current-sinking output
-  - num:  14
-    sym:  OUT9
-    desc: current-sinking output
-  - num:  15
-    sym:  OUT10
-    desc: current-sinking output
-  - num:  16
-    sym:  OUT11
-    desc: current-sinking output
-  - num:  17
-    sym:  OUT12
-    desc: current-sinking output
-  - num:  18
-    sym:  OUT13
-    desc: current-sinking output
-  - num:  19
-    sym:  OUT14
-    desc: current-sinking output
-  - num:  20
-    sym:  OUT15
-    desc: current-sinking output
-  - num:  21
-    sym:  ~OE
-    desc: output enable (active low)
-  - num:  22
-    sym:  DATA OUT
-    desc: serial data out, for cascading
-  - num:  23
-    sym:  REXT
-    desc: external resistor to ground (sets output current)
-  - num:  24
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  DATA:
+    desc: 'serial data in'
+  CLOCK:
+    desc: 'clock input (low-to-high triggered)'
+  LATCH:
+    desc: 'data strobe input (active high)'
+  OUT0:
+    desc: 'current-sinking output'
+  OUT1:
+    desc: 'current-sinking output'
+  OUT2:
+    desc: 'current-sinking output'
+  OUT3:
+    desc: 'current-sinking output'
+  OUT4:
+    desc: 'current-sinking output'
+  OUT5:
+    desc: 'current-sinking output'
+  OUT6:
+    desc: 'current-sinking output'
+  OUT7:
+    desc: 'current-sinking output'
+  OUT8:
+    desc: 'current-sinking output'
+  OUT9:
+    desc: 'current-sinking output'
+  OUT10:
+    desc: 'current-sinking output'
+  OUT11:
+    desc: 'current-sinking output'
+  OUT12:
+    desc: 'current-sinking output'
+  OUT13:
+    desc: 'current-sinking output'
+  OUT14:
+    desc: 'current-sinking output'
+  OUT15:
+    desc: 'current-sinking output'
+  '&#126;OE':
+    desc: 'output enable (active low)'
+  'DATA OUT':
+    desc: 'serial data out, for cascading'
+  REXT:
+    desc: 'external resistor to ground (sets output current)'
+  Vcc:
+    desc: 'supply voltage'
+packages:
+  DIP:
+    - GND
+    - DATA
+    - CLOCK
+    - LATCH
+    - OUT0
+    - OUT1
+    - OUT2
+    - OUT3
+    - OUT4
+    - OUT5
+    - OUT6
+    - OUT7
+    - OUT8
+    - OUT9
+    - OUT10
+    - OUT11
+    - OUT12
+    - OUT13
+    - OUT14
+    - OUT15
+    - '&#126;OE'
+    - 'DATA OUT'
+    - REXT
+    - Vcc

@@ -1,59 +1,63 @@
----
-name:        MCP3201
-description: "12-Bit A/D SPI interface A/D Converter"
-aliases:     []
-package:     DIP
-pincount:    8
-family:      "Microchip"
-datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/21290e.pdf"
+name: MCP3201
+description: '12-Bit A/D SPI interface A/D Converter'
+aliases: {  }
+family: Microchip
+datasheet: 'http://ww1.microchip.com/downloads/en/DeviceDoc/21290e.pdf'
 pins:
-  - num:  1
-    sym:  V__Ref
-    desc: Analog reference voltage
-  - num:  2
-    sym:  IN+
-    desc: Positive analog input
-  - num:  3
-    sym:  IN-
-    desc: Negative analog input
-  - num:  4
-    sym:  V__SS
+  'V&#95;&#95;Ref':
+    desc: 'Analog reference voltage'
+  IN+:
+    desc: 'Positive analog input'
+  IN-:
+    desc: 'Negative analog input'
+  'V&#95;&#95;SS':
     desc: Ground
-  - num:  5
-    sym:  ~CS~/SHDN
-    desc: Chip select/shutdown
-  - num:  6
-    sym:  D__OUT
-    desc: SPI data out
-  - num:  7
-    sym:  CLK
-    desc: SPI Clock
-  - num:  8
-    sym:  V__DD
-    desc: Positive supply voltage (+2.7 to 5.5V)
+  '&#126;CS&#126;/SHDN':
+    desc: 'Chip select/shutdown'
+  'D&#95;&#95;OUT':
+    desc: 'SPI data out'
+  CLK:
+    desc: 'SPI Clock'
+  'V&#95;&#95;DD':
+    desc: 'Positive supply voltage (+2.7 to 5.5V)'
 specs:
-  - param: Resolution
-    val:   12
-    unit:  bits
-  - param: Maximum sample rate (V__DD = 5V)
-    val:   100
-    unit:  ksps
-  - param: Maximum sample rate (V__DD = 2.7V)
-    val:   50
-    unit:  ksps
-  - param: Minimum operating voltage
-    val:   2.7
-    unit:  V
-  - param: Maximum operating voltage (nominal)
-    val:   5.5
-    unit:  V
-  - param: Maximum operating voltage (absolute maximum rating)
-    val:   7.0
-    unit:  V
-  - param: Maximum active current (V__DD = 5V)
-    val:   400
-    unit:  "&micro;A"
+  -
+    param: Resolution
+    val: '12'
+    unit: bits
+  -
+    param: 'Maximum sample rate (V&#95;&#95;DD = 5V)'
+    val: '100'
+    unit: ksps
+  -
+    param: 'Maximum sample rate (V&#95;&#95;DD = 2.7V)'
+    val: '50'
+    unit: ksps
+  -
+    param: 'Minimum operating voltage'
+    val: '2.7'
+    unit: V
+  -
+    param: 'Maximum operating voltage (nominal)'
+    val: '5.5'
+    unit: V
+  -
+    param: 'Maximum operating voltage (absolute maximum rating)'
+    val: '7'
+    unit: V
+  -
+    param: 'Maximum active current (V&#95;&#95;DD = 5V)'
+    val: '400'
+    unit: '&micro;A'
 notes:
-  - Also available with 2 channels (MCP3202), 4 channels (MCP3204) and 8 channels (MCP3208)
-
-
+  - 'Also available with 2 channels (MCP3202), 4 channels (MCP3204) and 8 channels (MCP3208)'
+packages:
+  DIP:
+    - 'V&#95;&#95;Ref'
+    - IN+
+    - IN-
+    - 'V&#95;&#95;SS'
+    - '&#126;CS&#126;/SHDN'
+    - 'D&#95;&#95;OUT'
+    - CLK
+    - 'V&#95;&#95;DD'

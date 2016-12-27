@@ -1,159 +1,142 @@
----
-description: "Versatile Interface Adapter"
-aliases:     [W65C22]
-package:     DIP
-pincount:    40
-family:      "MOS Technology"
-datasheet:   "http://www.westerndesigncenter.com/wdc/documentation/w65c22.pdf"
+description: 'Versatile Interface Adapter'
+aliases:
+  - W65C22
+family: 'MOS Technology'
+datasheet: 'http://www.westerndesigncenter.com/wdc/documentation/w65c22.pdf'
 pins:
-  - num:  1
-    sym:  GND
+  GND:
     desc: ground
-  - num:  2
-    sym:  PA0
-    desc: port A
-  - num:  3
-    sym:  PA1
-    desc: port A
-  - num:  4
-    sym:  PA2
-    desc: port A
-  - num:  5
-    sym:  PA3
-    desc: port A
-  - num:  6
-    sym:  PA4
-    desc: port A
-  - num:  7
-    sym:  PA5
-    desc: port A
-  - num:  8
-    sym:  PA6
-    desc: port A
-  - num:  9
-    sym:  PA7
-    desc: port A
-  - num:  10
-    sym:  PB0
-    desc: port B
-  - num:  11
-    sym:  PB1
-    desc: port B
-  - num:  12
-    sym:  PB2
-    desc: port B
-  - num:  13
-    sym:  PB3
-    desc: port B
-  - num:  14
-    sym:  PB4
-    desc: port B
-  - num:  15
-    sym:  PB5
-    desc: port B
-  - num:  16
-    sym:  PB6
-    desc: port B (pulse counting input for timer 2)
-  - num:  17
-    sym:  PB7
-    desc: port B (controllable by timer 1)
-  - num:  18
-    sym:  CB1
-    desc: port B control (shift register clock)
-  - num:  19
-    sym:  CB2
-    desc: port B control (shift register data)
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
-  - num:  21
-    sym:  ~IRQ
-    desc: interrupt request output*
-  - num:  22
-    sym:  R/~W
-    desc: read/write select
-  - num:  23
-    sym:  ~CS2
-    desc: chip select (active low)
-  - num:  24
-    sym:  CS1
-    desc: chip select (active high)
-  - num:  25
-    sym:  "&empty;2"
-    desc: phase-2 clock input
-  - num:  26
-    sym:  D7
-    desc: data bus
-  - num:  27
-    sym:  D6
-    desc: data bus
-  - num:  28
-    sym:  D5
-    desc: data bus
-  - num:  29
-    sym:  D4
-    desc: data bus
-  - num:  30
-    sym:  D3
-    desc: data bus
-  - num:  31
-    sym:  D2
-    desc: data bus
-  - num:  32
-    sym:  D1
-    desc: data bus
-  - num:  33
-    sym:  D0
-    desc: data bus
-  - num:  34
-    sym:  ~RES
-    desc: reset (active low)
-  - num:  35
-    sym:  RS3
-    desc: register select (address bus)
-  - num:  36
-    sym:  RS2
-    desc: register select (address bus)
-  - num:  37
-    sym:  RS1
-    desc: register select (address bus)
-  - num:  38
-    sym:  RS0
-    desc: register select (address bus)
-  - num:  39
-    sym:  CA2
-    desc: port A control
-  - num:  40
-    sym:  CA1
-    desc: port A control
+  PA0:
+    desc: 'port A'
+  PA1:
+    desc: 'port A'
+  PA2:
+    desc: 'port A'
+  PA3:
+    desc: 'port A'
+  PA4:
+    desc: 'port A'
+  PA5:
+    desc: 'port A'
+  PA6:
+    desc: 'port A'
+  PA7:
+    desc: 'port A'
+  PB0:
+    desc: 'port B'
+  PB1:
+    desc: 'port B'
+  PB2:
+    desc: 'port B'
+  PB3:
+    desc: 'port B'
+  PB4:
+    desc: 'port B'
+  PB5:
+    desc: 'port B'
+  PB6:
+    desc: 'port B (pulse counting input for timer 2)'
+  PB7:
+    desc: 'port B (controllable by timer 1)'
+  CB1:
+    desc: 'port B control (shift register clock)'
+  CB2:
+    desc: 'port B control (shift register data)'
+  Vcc:
+    desc: 'supply voltage'
+  '&#126;IRQ':
+    desc: 'interrupt request output*'
+  'R/&#126;W':
+    desc: 'read/write select'
+  '&#126;CS2':
+    desc: 'chip select (active low)'
+  CS1:
+    desc: 'chip select (active high)'
+  '&empty;2':
+    desc: 'phase-2 clock input'
+  D7:
+    desc: 'data bus'
+  D6:
+    desc: 'data bus'
+  D5:
+    desc: 'data bus'
+  D4:
+    desc: 'data bus'
+  D3:
+    desc: 'data bus'
+  D2:
+    desc: 'data bus'
+  D1:
+    desc: 'data bus'
+  D0:
+    desc: 'data bus'
+  '&#126;RES':
+    desc: 'reset (active low)'
+  RS3:
+    desc: 'register select (address bus)'
+  RS2:
+    desc: 'register select (address bus)'
+  RS1:
+    desc: 'register select (address bus)'
+  RS0:
+    desc: 'register select (address bus)'
+  CA2:
+    desc: 'port A control'
+  CA1:
+    desc: 'port A control'
 specs:
-  - param: "Maximum clock frequency"
-    val:   [1 (NMOS), 14 (W65C22)]
-    unit:  MHz
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '1 (NMOS)'
+      - '14 (W65C22)'
+    unit: MHz
 notes:
-  - * In older chips, ~IRQ was an open drain output. In the W65C22S, it is fully driven.
-  - "Registers:
-<table>
-<tr><td>$00</td><td>Output register B (write), input register B (read)</td></tr>
-<tr><td>$01</td><td>Output register A (write), input register A (read)</td></tr>
-<tr><td>$02</td><td>Data direction register B</td></tr>
-<tr><td>$03</td><td>Data direction register A</td></tr>
-<tr><td>$04</td><td>Timer 1 latch LSB (write), timer 1 counter LSB (read)</td></tr>
-<tr><td>$05</td><td>Timer 1 counter MSB</td></tr>
-<tr><td>$06</td><td>Timer 1 latch LSB</td></tr>
-<tr><td>$07</td><td>Timer 1 latch MSB</td></tr>
-<tr><td>$08</td><td>Timer 2 latch LSB (write), timer 2 counter LSB (read)</td></tr>
-<tr><td>$09</td><td>Timer 2 counter MSB</td></tr>
-<tr><td>$0A</td><td>Shift register</td></tr>
-<tr><td>$0B</td><td>Auxiliary control register</td></tr>
-<tr><td>$0C</td><td>Peripheral control register</td></tr>
-<tr><td>$0D</td><td>Interrupt flag register</td></tr>
-<tr><td>$0E</td><td>Interrupt enable register</td></tr>
-<tr><td>$0F</td><td>Same as register $01, but with no effect on handshake</td></tr>
-</table>"
-  - Timer 1 can operate in one-shot mode or free-running mode (square wave).
-  - Timer 2 can operate in one-shot mode or pulse-counting mode (counts negative pulses on PB6).
-  - "Counters for timers in one-shot or free-running mode decrement at the &empty;2 clock rate."
-  - The shift register is 8 bits wide, can shift in or out, and can generate its own clock or shift under the control of an external clock on CB1.
-...
-
+  - 'In older chips, &#126;IRQ was an open drain output. In the W65C22S, it is fully driven.'
+  - 'Registers:&NewLine;<table>&NewLine;<tr><td>$00</td><td>Output register B (write), input register B (read)</td></tr>&NewLine;<tr><td>$01</td><td>Output register A (write), input register A (read)</td></tr>&NewLine;<tr><td>$02</td><td>Data direction register B</td></tr>&NewLine;<tr><td>$03</td><td>Data direction register A</td></tr>&NewLine;<tr><td>$04</td><td>Timer 1 latch LSB (write), timer 1 counter LSB (read)</td></tr>&NewLine;<tr><td>$05</td><td>Timer 1 counter MSB</td></tr>&NewLine;<tr><td>$06</td><td>Timer 1 latch LSB</td></tr>&NewLine;<tr><td>$07</td><td>Timer 1 latch MSB</td></tr>&NewLine;<tr><td>$08</td><td>Timer 2 latch LSB (write), timer 2 counter LSB (read)</td></tr>&NewLine;<tr><td>$09</td><td>Timer 2 counter MSB</td></tr>&NewLine;<tr><td>$0A</td><td>Shift register</td></tr>&NewLine;<tr><td>$0B</td><td>Auxiliary control register</td></tr>&NewLine;<tr><td>$0C</td><td>Peripheral control register</td></tr>&NewLine;<tr><td>$0D</td><td>Interrupt flag register</td></tr>&NewLine;<tr><td>$0E</td><td>Interrupt enable register</td></tr>&NewLine;<tr><td>$0F</td><td>Same as register $01, but with no effect on handshake</td></tr>&NewLine;</table>'
+  - 'Timer 1 can operate in one-shot mode or free-running mode (square wave).'
+  - 'Timer 2 can operate in one-shot mode or pulse-counting mode (counts negative pulses on PB6).'
+  - 'Counters for timers in one-shot or free-running mode decrement at the &empty;2 clock rate.'
+  - 'The shift register is 8 bits wide, can shift in or out, and can generate its own clock or shift under the control of an external clock on CB1.'
+packages:
+  DIP:
+    - GND
+    - PA0
+    - PA1
+    - PA2
+    - PA3
+    - PA4
+    - PA5
+    - PA6
+    - PA7
+    - PB0
+    - PB1
+    - PB2
+    - PB3
+    - PB4
+    - PB5
+    - PB6
+    - PB7
+    - CB1
+    - CB2
+    - Vcc
+    - '&#126;IRQ'
+    - 'R/&#126;W'
+    - '&#126;CS2'
+    - CS1
+    - '&empty;2'
+    - D7
+    - D6
+    - D5
+    - D4
+    - D3
+    - D2
+    - D1
+    - D0
+    - '&#126;RES'
+    - RS3
+    - RS2
+    - RS1
+    - RS0
+    - CA2
+    - CA1

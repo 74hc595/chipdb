@@ -1,46 +1,49 @@
----
-description: "Dual channel 10-bit ADC with SPI interface"
-package:     DIP
-pincount:    8
-family:      Microchip
-datasheet:   "http://ww1.microchip.com/downloads/en/DeviceDoc/21294d.pdf"
+description: 'Dual channel 10-bit ADC with SPI interface'
+family: Microchip
+datasheet: 'http://ww1.microchip.com/downloads/en/DeviceDoc/21294d.pdf'
 pins:
-  - num:  1
-    sym:  ~CS~/SHDN
-    desc: chip select/shutdown
-  - num:  2
-    sym:  CH0
-    desc: channel 0 analog input
-  - num:  3
-    sym:  CH1
-    desc: channel 1 analog input
-  - num:  4
-    sym:  GND
+  '&#126;CS&#126;/SHDN':
+    desc: 'chip select/shutdown'
+  CH0:
+    desc: 'channel 0 analog input'
+  CH1:
+    desc: 'channel 1 analog input'
+  GND:
     desc: ground
-  - num:  5
-    sym:  D__IN
-    desc: serial data in
-  - num:  6
-    sym:  D__OUT
-    desc: serial data out
-  - num:  7
-    sym:  CLK
-    desc: serial clock
-  - num:  8
-    sym:  V__CC/V__REF
-    desc: +2.7V to 5.5V supply/reference voltage
+  'D&#95;&#95;IN':
+    desc: 'serial data in'
+  'D&#95;&#95;OUT':
+    desc: 'serial data out'
+  CLK:
+    desc: 'serial clock'
+  'V&#95;&#95;CC/V&#95;&#95;REF':
+    desc: '+2.7V to 5.5V supply/reference voltage'
 specs:
-  - param: Maximum sampling rate
-    val:   [200 (Vcc = 5V), 75 (Vcc = 2.7V)]
-    unit:  ksps
-  - param: Differential nonlinearity
-    val:   "&plusmn;1"
-    unit:  LSB
-  - param: Integral nonlinearity
-    val:   "&plusmn;1"
-    unit:  LSB
-  - param: Typical active current
-    val:   375
-    unit:  "&micro;A"
-...
-
+  -
+    param: 'Maximum sampling rate'
+    val:
+      - '200 (Vcc = 5V)'
+      - '75 (Vcc = 2.7V)'
+    unit: ksps
+  -
+    param: 'Differential nonlinearity'
+    val: '&plusmn;1'
+    unit: LSB
+  -
+    param: 'Integral nonlinearity'
+    val: '&plusmn;1'
+    unit: LSB
+  -
+    param: 'Typical active current'
+    val: '375'
+    unit: '&micro;A'
+packages:
+  DIP:
+    - '&#126;CS&#126;/SHDN'
+    - CH0
+    - CH1
+    - GND
+    - 'D&#95;&#95;IN'
+    - 'D&#95;&#95;OUT'
+    - CLK
+    - 'V&#95;&#95;CC/V&#95;&#95;REF'

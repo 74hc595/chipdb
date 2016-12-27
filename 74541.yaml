@@ -1,72 +1,73 @@
----
-description:  Octal buffer/line driver; 3-state; non-inverting
-package:      DIP
-pincount:     20
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc541.74hct541.pdf"
+description: 'Octal buffer/line driver; 3-state; non-inverting'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc541.74hct541.pdf'
 pins:
-  - num:  1
-    sym:  ~OE~1
-    desc: output enable (active low)
-  - num:  2
-    sym:  A__0
-    desc: data input
-  - num:  3
-    sym:  A__1
-    desc: data input
-  - num:  4
-    sym:  A__2
-    desc: data input
-  - num:  5
-    sym:  A__3
-    desc: data input
-  - num:  6
-    sym:  A__4
-    desc: data input
-  - num:  7
-    sym:  A__5
-    desc: data input
-  - num:  8
-    sym:  A__6
-    desc: data input
-  - num:  9
-    sym:  A__7
-    desc: data input
-  - num:  10
-    sym:  GND
+  '&#126;OE&#126;1':
+    desc: 'output enable (active low)'
+  'A&#95;&#95;0':
+    desc: 'data input'
+  'A&#95;&#95;1':
+    desc: 'data input'
+  'A&#95;&#95;2':
+    desc: 'data input'
+  'A&#95;&#95;3':
+    desc: 'data input'
+  'A&#95;&#95;4':
+    desc: 'data input'
+  'A&#95;&#95;5':
+    desc: 'data input'
+  'A&#95;&#95;6':
+    desc: 'data input'
+  'A&#95;&#95;7':
+    desc: 'data input'
+  GND:
     desc: ground
-  - num:  11
-    sym:  Y__7
-    desc: bus output 
-  - num:  12
-    sym:  Y__6
-    desc: bus output
-  - num:  13
-    sym:  Y__5
-    desc: bus output
-  - num:  14
-    sym:  Y__4
-    desc: bus output
-  - num:  15
-    sym:  Y__3
-    desc: bus output
-  - num:  16
-    sym:  Y__2
-    desc: bus output
-  - num:  17
-    sym:  Y__1
-    desc: bus output
-  - num:  18
-    sym:  Y__0
-    desc: bus output
-  - num:  19
-    sym:  ~OE~__2
-    desc: output enable (active low)
-  - num:  20
-    sym:  Vcc
-    desc: supply voltage
+  'Y&#95;&#95;7':
+    desc: 'bus output'
+  'Y&#95;&#95;6':
+    desc: 'bus output'
+  'Y&#95;&#95;5':
+    desc: 'bus output'
+  'Y&#95;&#95;4':
+    desc: 'bus output'
+  'Y&#95;&#95;3':
+    desc: 'bus output'
+  'Y&#95;&#95;2':
+    desc: 'bus output'
+  'Y&#95;&#95;1':
+    desc: 'bus output'
+  'Y&#95;&#95;0':
+    desc: 'bus output'
+  '&#126;OE&#126;&#95;&#95;2':
+    desc: 'output enable (active low)'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, A__n to Y__n
-    val:    [10 (74HC), 12 (74HCT)]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, A&#95;&#95;n to Y&#95;&#95;n'
+    val:
+      - '10 (74HC)'
+      - '12 (74HCT)'
+    unit: ns
+packages:
+  DIP:
+    - '&#126;OE&#126;1'
+    - 'A&#95;&#95;0'
+    - 'A&#95;&#95;1'
+    - 'A&#95;&#95;2'
+    - 'A&#95;&#95;3'
+    - 'A&#95;&#95;4'
+    - 'A&#95;&#95;5'
+    - 'A&#95;&#95;6'
+    - 'A&#95;&#95;7'
+    - GND
+    - 'Y&#95;&#95;7'
+    - 'Y&#95;&#95;6'
+    - 'Y&#95;&#95;5'
+    - 'Y&#95;&#95;4'
+    - 'Y&#95;&#95;3'
+    - 'Y&#95;&#95;2'
+    - 'Y&#95;&#95;1'
+    - 'Y&#95;&#95;0'
+    - '&#126;OE&#126;&#95;&#95;2'
+    - Vcc

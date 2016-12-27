@@ -1,60 +1,59 @@
----
-description:  4 by 4 register file; 3-state
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc670.74hct670.pdf"
+description: '4 by 4 register file; 3-state'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc670.74hct670.pdf'
 pins:
-  - num:  1
-    sym:  D__1
-    desc: data input
-  - num:  2
-    sym:  D__2
-    desc: data input
-  - num:  3
-    sym:  D__3
-    desc: data input
-  - num:  4
-    sym:  R__B
-    desc: read address input
-  - num:  5
-    sym:  R__A
-    desc: read address input
-  - num:  6
-    sym:  Q__3
-    desc: data output
-  - num:  7
-    sym:  Q__2
-    desc: data output
-  - num:  8
-    sym:  GND
+  'D&#95;&#95;1':
+    desc: 'data input'
+  'D&#95;&#95;2':
+    desc: 'data input'
+  'D&#95;&#95;3':
+    desc: 'data input'
+  'R&#95;&#95;B':
+    desc: 'read address input'
+  'R&#95;&#95;A':
+    desc: 'read address input'
+  'Q&#95;&#95;3':
+    desc: 'data output'
+  'Q&#95;&#95;2':
+    desc: 'data output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  Q__1
-    desc: data output
-  - num:  10
-    sym:  Q__0
-    desc: data output
-  - num:  11
-    sym:  ~RE
-    desc: 3-state output read enable (active low)
-  - num:  12
-    sym:  ~WE
-    desc: write enable (active low)
-  - num:  13
-    sym:  W__B
-    desc: write address input
-  - num:  14
-    sym:  W__A
-    desc: write address input
-  - num:  15
-    sym:  D__0
-    desc: data input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  'Q&#95;&#95;1':
+    desc: 'data output'
+  'Q&#95;&#95;0':
+    desc: 'data output'
+  '&#126;RE':
+    desc: '3-state output read enable (active low)'
+  '&#126;WE':
+    desc: 'write enable (active low)'
+  'W&#95;&#95;B':
+    desc: 'write address input'
+  'W&#95;&#95;A':
+    desc: 'write address input'
+  'D&#95;&#95;0':
+    desc: 'data input'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, D__n to Q__n
-    val:    23 (74HC/HCT]
-    unit:   ns
-...
+  -
+    param: 'Propagation delay, D&#95;&#95;n to Q&#95;&#95;n'
+    val: '23 (74HC/HCT]'
+    unit: ns
+packages:
+  DIP:
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'R&#95;&#95;B'
+    - 'R&#95;&#95;A'
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;2'
+    - GND
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - '&#126;RE'
+    - '&#126;WE'
+    - 'W&#95;&#95;B'
+    - 'W&#95;&#95;A'
+    - 'D&#95;&#95;0'
+    - Vcc

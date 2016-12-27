@@ -1,69 +1,79 @@
----
-description:  8-bit shift register with input flip-flops
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc597.74hct597.pdf"
+description: '8-bit shift register with input flip-flops'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc597.74hct597.pdf'
 pins:
-  - num:  1
-    sym:  D__1
-    desc: parallel data input
-  - num:  2
-    sym:  D__2
-    desc: parallel data input
-  - num:  3
-    sym:  D__3
-    desc: parallel data input
-  - num:  4
-    sym:  D__4
-    desc: parallel data input
-  - num:  5
-    sym:  D__5
-    desc: parallel data input
-  - num:  6
-    sym:  D__6
-    desc: parallel data input
-  - num:  7
-    sym:  D__7
-    desc: parallel data input
-  - num:  8
-    sym:  GND
+  'D&#95;&#95;1':
+    desc: 'parallel data input'
+  'D&#95;&#95;2':
+    desc: 'parallel data input'
+  'D&#95;&#95;3':
+    desc: 'parallel data input'
+  'D&#95;&#95;4':
+    desc: 'parallel data input'
+  'D&#95;&#95;5':
+    desc: 'parallel data input'
+  'D&#95;&#95;6':
+    desc: 'parallel data input'
+  'D&#95;&#95;7':
+    desc: 'parallel data input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  Q
-    desc: serial data output
-  - num:  10
-    sym:  ~MR
-    desc: asynchronous master reset (active low)
-  - num:  11
-    sym:  SH__CP
-    desc: shift clock input (low-to-high, edge-triggered)
-  - num:  12
-    sym:  ST__CP
-    desc: storage clock input (low-to-high, edge-triggered)
-  - num:  13
-    sym:  ~PL
-    desc: parallel load input (active low)
-  - num:  14
-    sym:  D__S
-    desc: serial data input
-  - num:  15
-    sym:  D__0
-    desc: parallel data input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  Q:
+    desc: 'serial data output'
+  '&#126;MR':
+    desc: 'asynchronous master reset (active low)'
+  'SH&#95;&#95;CP':
+    desc: 'shift clock input (low-to-high, edge-triggered)'
+  'ST&#95;&#95;CP':
+    desc: 'storage clock input (low-to-high, edge-triggered)'
+  '&#126;PL':
+    desc: 'parallel load input (active low)'
+  'D&#95;&#95;S':
+    desc: 'serial data input'
+  'D&#95;&#95;0':
+    desc: 'parallel data input'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  "Propagation delay, SH__CP to Q"
-    val:    [17 (74HC), 20 (74HCT)]
-    unit:   ns
-  - param:  "Propagation delay, ST__CP to Q"
-    val:    [25 (74HC), 29 (74HCT)]
-    unit:   ns
-  - param:  "Propagation delay, ~PL to Q"
-    val:    [21 (74HC), 26 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency, SH__CP
-    val:    [96 (74HC), 83 (74HCT)]
-    unit:   MHz  
-...
+  -
+    param: 'Propagation delay, SH&#95;&#95;CP to Q'
+    val:
+      - '17 (74HC)'
+      - '20 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, ST&#95;&#95;CP to Q'
+    val:
+      - '25 (74HC)'
+      - '29 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;PL to Q'
+    val:
+      - '21 (74HC)'
+      - '26 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency, SH&#95;&#95;CP'
+    val:
+      - '96 (74HC)'
+      - '83 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - 'D&#95;&#95;4'
+    - 'D&#95;&#95;5'
+    - 'D&#95;&#95;6'
+    - 'D&#95;&#95;7'
+    - GND
+    - Q
+    - '&#126;MR'
+    - 'SH&#95;&#95;CP'
+    - 'ST&#95;&#95;CP'
+    - '&#126;PL'
+    - 'D&#95;&#95;S'
+    - 'D&#95;&#95;0'
+    - Vcc

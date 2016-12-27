@@ -1,52 +1,49 @@
----
-description: Dual timer
-package:     DIP
-pincount:    14
-datasheet:   "http://www.national.com/ds/LM/LM556.pdf"
+description: 'Dual timer'
+datasheet: 'http://www.national.com/ds/LM/LM556.pdf'
 pins:
-  - num:  1
-    sym:  DIS 1
-    desc: discharge (timer 1)
-  - num:  2
-    sym:  THR 1
-    desc: threshold (timer 1)
-  - num:  3
-    sym:  CV 1
-    desc: control voltage (timer 1)
-  - num:  4
-    sym:  ~RESET~ 1
-    desc: reset (active low, timer 1)
-  - num:  5
-    sym:  OUT 1
-    desc: output (timer 1)
-  - num:  6
-    sym:  TRIG 1
-    desc: trigger (timer 1)
-  - num:  7
-    sym:  GND
+  'DIS 1':
+    desc: 'discharge (timer 1)'
+  'THR 1':
+    desc: 'threshold (timer 1)'
+  'CV 1':
+    desc: 'control voltage (timer 1)'
+  '&#126;RESET&#126; 1':
+    desc: 'reset (active low, timer 1)'
+  'OUT 1':
+    desc: 'output (timer 1)'
+  'TRIG 1':
+    desc: 'trigger (timer 1)'
+  GND:
     desc: ground
-  - num:  8
-    sym:  TRIG 2
-    desc: trigger (timer 2)
-  - num:  9
-    sym:  OUT 2
-    desc: output (timer 2)
-  - num:  10
-    sym:  ~RESET~ 2
-    desc: reset (active low, timer 2)
-  - num:  11
-    sym:  CV 2
-    desc: control voltage (timer 2)
-  - num:  12
-    sym:  THR 2
-    desc: threshold (timer 2)
-  - num:  13
-    sym:  DIS 2
-    desc: discharge (timer 2)
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  'TRIG 2':
+    desc: 'trigger (timer 2)'
+  'OUT 2':
+    desc: 'output (timer 2)'
+  '&#126;RESET&#126; 2':
+    desc: 'reset (active low, timer 2)'
+  'CV 2':
+    desc: 'control voltage (timer 2)'
+  'THR 2':
+    desc: 'threshold (timer 2)'
+  'DIS 2':
+    desc: 'discharge (timer 2)'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - The 556 contains two 555 timers.
-...
-
+  - 'The 556 contains two 555 timers.'
+packages:
+  DIP:
+    - 'DIS 1'
+    - 'THR 1'
+    - 'CV 1'
+    - '&#126;RESET&#126; 1'
+    - 'OUT 1'
+    - 'TRIG 1'
+    - GND
+    - 'TRIG 2'
+    - 'OUT 2'
+    - '&#126;RESET&#126; 2'
+    - 'CV 2'
+    - 'THR 2'
+    - 'DIS 2'
+    - Vcc

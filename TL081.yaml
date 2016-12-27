@@ -1,62 +1,79 @@
----
-description: "JFET-input operational amplifier"
-aliases:     [TL061, TL071]
-package:     DIP
-pincount:    8
-family:      linear
-datasheet:   "http://focus.ti.com/lit/ds/symlink/tl08a.pdf"
+description: 'JFET-input operational amplifier'
+aliases:
+  - TL061
+  - TL071
+family: linear
+datasheet: 'http://focus.ti.com/lit/ds/symlink/tl08a.pdf'
 pins:
-  - num:  1
-    sym:  OFFSET N1
+  'OFFSET N1':
     desc: offset
-  - num:  2
-    sym:  IN-
-    desc: inverting input
-  - num:  3
-    sym:  IN+
-    desc: non-inverting input
-  - num:  4
-    sym:  V__CC-
-    desc: negative supply voltage
-  - num:  5
-    sym:  OFFSET N2
-    desc: offset 
-  - num:  6
-    sym:  OUT
+  IN-:
+    desc: 'inverting input'
+  IN+:
+    desc: 'non-inverting input'
+  'V&#95;&#95;CC-':
+    desc: 'negative supply voltage'
+  'OFFSET N2':
+    desc: offset
+  OUT:
     desc: output
-  - num:  7
-    sym:  V__CC+
-    desc: positive supply voltage
-  - num:  8
-    sym:  NC
-    desc: no connection
+  'V&#95;&#95;CC+':
+    desc: 'positive supply voltage'
 specs:
-  - param: Maximum supply voltage
-    val:   "&plusmn;18"
-    unit:  V
-  - param: Offset voltage
-    val:   3
-    unit:  mV
-  - param: Unity-gain bandwidth
-    val:   3
-    unit:  MHz
-  - param: Slew rate at unity gain
-    val:   13
-    unit:  "V/&micro;s"
-  - param: Rise time
-    val:   [0.2 (TL06x), 0.1 (TL07x), 0.05 (TL08x)]
-    unit:  "&micro;s"
-  - param: Overshoot factor
-    val:   [10 (TL061x, 20 (TL07x), 20 (TL08x)]
-    unit:  "%"
-  - param: "Equivalent input noise voltage at f = 1 kHz"
-    val:   [42 (TL06x), 18 (TL07x), 18 (TL08x)]
-    unit:  "nV/&radic;~Hz~"
-  - param: "Supply current (each amplifier)"
-    val:   [0.2 (TL06x), 1.4 (TL07x), 1.4 (TL08x)]
+  -
+    param: 'Maximum supply voltage'
+    val: '&plusmn;18'
+    unit: V
+  -
+    param: 'Offset voltage'
+    val: '3'
+    unit: mV
+  -
+    param: 'Unity-gain bandwidth'
+    val: '3'
+    unit: MHz
+  -
+    param: 'Slew rate at unity gain'
+    val: '13'
+    unit: 'V/&micro;s'
+  -
+    param: 'Rise time'
+    val:
+      - '0.2 (TL06x)'
+      - '0.1 (TL07x)'
+      - '0.05 (TL08x)'
+    unit: '&micro;s'
+  -
+    param: 'Overshoot factor'
+    val:
+      - '10 (TL061x'
+      - '20 (TL07x)'
+      - '20 (TL08x)'
+    unit: '%'
+  -
+    param: 'Equivalent input noise voltage at f = 1 kHz'
+    val:
+      - '42 (TL06x)'
+      - '18 (TL07x)'
+      - '18 (TL08x)'
+    unit: 'nV/&Sqrt;&#126;Hz&#126;'
+  -
+    param: 'Supply current (each amplifier)'
+    val:
+      - '0.2 (TL06x)'
+      - '1.4 (TL07x)'
+      - '1.4 (TL08x)'
     unit: mA
 notes:
-  - The TL06x series are low-power versions of the TL08x series.
-  - The TL07x series are low-noise versions of the TL08x series.
-...
-
+  - 'The TL06x series are low-power versions of the TL08x series.'
+  - 'The TL07x series are low-noise versions of the TL08x series.'
+packages:
+  DIP:
+    - 'OFFSET N1'
+    - IN-
+    - IN+
+    - 'V&#95;&#95;CC-'
+    - 'OFFSET N2'
+    - OUT
+    - 'V&#95;&#95;CC+'
+    - NC

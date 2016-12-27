@@ -1,75 +1,91 @@
----
-description:  Presettable synchronous 4-bit binary counter; asynchronous reset
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc161.74hct161.pdf"
+description: 'Presettable synchronous 4-bit binary counter; asynchronous reset'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc161.74hct161.pdf'
 pins:
-  - num:  1
-    sym:  ~MR
-    desc: asynchronous master reset (active low)
-  - num:  2
-    sym:  CP
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  3
-    sym:  D__0
-    desc: data input
-  - num:  4
-    sym:  D__1
-    desc: data input
-  - num:  5
-    sym:  D__2
-    desc: data input
-  - num:  6
-    sym:  D__3
-    desc: data input
-  - num:  7
-    sym:  CEP
-    desc: count enable input
-  - num:  8
-    sym:  GND
+  '&#126;MR':
+    desc: 'asynchronous master reset (active low)'
+  CP:
+    desc: 'clock input (low-to-high, edge-triggered)'
+  'D&#95;&#95;0':
+    desc: 'data input'
+  'D&#95;&#95;1':
+    desc: 'data input'
+  'D&#95;&#95;2':
+    desc: 'data input'
+  'D&#95;&#95;3':
+    desc: 'data input'
+  CEP:
+    desc: 'count enable input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  ~PE
-    desc: parallel load enable input (active low)
-  - num:  10
-    sym:  CET
-    desc: count enable carry output
-  - num:  11
-    sym:  Q__3
-    desc: counter output
-  - num:  12
-    sym:  Q__2
-    desc: counter output
-  - num:  13
-    sym:  Q__1
-    desc: counter output
-  - num:  14
-    sym:  Q__0
-    desc: counter output
-  - num:  15
-    sym:  TC
-    desc: terminal count output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  '&#126;PE':
+    desc: 'parallel load enable input (active low)'
+  CET:
+    desc: 'count enable carry output'
+  'Q&#95;&#95;3':
+    desc: 'counter output'
+  'Q&#95;&#95;2':
+    desc: 'counter output'
+  'Q&#95;&#95;1':
+    desc: 'counter output'
+  'Q&#95;&#95;0':
+    desc: 'counter output'
+  TC:
+    desc: 'terminal count output'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CP to Q__n
-    val:    [19 (74HC), 20 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CP to TC
-    val:    [21 (74HC), 24 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~MR to Q__n
-    val:    [20 (74HC), 25 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~MR to TC
-    val:    [20 (74HC), 26 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, CET to TC
-    val:    [10 (74HC), 14 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [44 (74HC), 45 (74HCT)]
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, CP to Q&#95;&#95;n'
+    val:
+      - '19 (74HC)'
+      - '20 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CP to TC'
+    val:
+      - '21 (74HC)'
+      - '24 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;MR to Q&#95;&#95;n'
+    val:
+      - '20 (74HC)'
+      - '25 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;MR to TC'
+    val:
+      - '20 (74HC)'
+      - '26 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, CET to TC'
+    val:
+      - '10 (74HC)'
+      - '14 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '44 (74HC)'
+      - '45 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - '&#126;MR'
+    - CP
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'D&#95;&#95;3'
+    - CEP
+    - GND
+    - '&#126;PE'
+    - CET
+    - 'Q&#95;&#95;3'
+    - 'Q&#95;&#95;2'
+    - 'Q&#95;&#95;1'
+    - 'Q&#95;&#95;0'
+    - TC
+    - Vcc

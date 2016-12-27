@@ -1,57 +1,54 @@
----
-description: "Hex gate (four inverters, one 2-input NOR gate, one 2-input NAND gate)"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://focus.ti.com/lit/ds/symlink/cd4572ub.pdf"
+description: 'Hex gate (four inverters, one 2-input NOR gate, one 2-input NAND gate)'
+family: '4000'
+datasheet: 'http://focus.ti.com/lit/ds/symlink/cd4572ub.pdf'
 pins:
-  - num:  1
-    sym:  ~A
-    desc: inverter 1 output
-  - num:  2
-    sym:  A
-    desc: inverter 1 input
-  - num:  3
-    sym:  ~B
-    desc: inverter 2 output
-  - num:  4
-    sym:  B
-    desc: inverter 2 input
-  - num:  5
-    sym:  C NOR D
-    desc: NOR gate output
-  - num:  6
-    sym:  C
-    desc: NOR gate input
-  - num:  7
-    sym:  D
-    desc: NOR gate input
-  - num:  8
-    sym:  GND
+  '&#126;A':
+    desc: 'inverter 1 output'
+  A:
+    desc: 'inverter 1 input'
+  '&#126;B':
+    desc: 'inverter 2 output'
+  B:
+    desc: 'inverter 2 input'
+  'C NOR D':
+    desc: 'NOR gate output'
+  C:
+    desc: 'NOR gate input'
+  D:
+    desc: 'NOR gate input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  ~E
-    desc: inverter 3 output
-  - num:  10
-    sym:  E
-    desc: inverter 3 input
-  - num:  11
-    sym:  ~F
-    desc: inverter 4 output
-  - num:  12
-    sym:  F
-    desc: inverter 4 input
-  - num:  13
-    sym:  G NAND H
-    desc: NAND gate output
-  - num:  14
-    sym:  G
-    desc: NAND gate input
-  - num:  15
-    sym:  H
-    desc: NAND gate input
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  '&#126;E':
+    desc: 'inverter 3 output'
+  E:
+    desc: 'inverter 3 input'
+  '&#126;F':
+    desc: 'inverter 4 output'
+  F:
+    desc: 'inverter 4 input'
+  'G NAND H':
+    desc: 'NAND gate output'
+  G:
+    desc: 'NAND gate input'
+  H:
+    desc: 'NAND gate input'
+  Vcc:
+    desc: 'supply voltage'
+packages:
+  DIP:
+    - '&#126;A'
+    - A
+    - '&#126;B'
+    - B
+    - 'C NOR D'
+    - C
+    - D
+    - GND
+    - '&#126;E'
+    - E
+    - '&#126;F'
+    - F
+    - 'G NAND H'
+    - G
+    - H
+    - Vcc

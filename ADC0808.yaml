@@ -1,124 +1,138 @@
----
-description: "8-bit A/D converter with 8-channel multiplexer"
-aliases:     [ADC0809]
-package:     DIP
-pincount:    28
-family:      "National Semiconductor"
-datasheet:   "http://www.national.com/ds/DC/ADC0808.pdf"
+description: '8-bit A/D converter with 8-channel multiplexer'
+aliases:
+  - ADC0809
+family: 'National Semiconductor'
+datasheet: 'http://www.national.com/ds/DC/ADC0808.pdf'
 pins:
-  - num:  1
-    sym:  IN3
-    desc: analog input 3
-  - num:  2
-    sym:  IN4
-    desc: analog input 4
-  - num:  3
-    sym:  IN5
-    desc: analog input 5
-  - num:  4
-    sym:  IN6
-    desc: analog input 6
-  - num:  5
-    sym:  IN7
-    desc: analog input 7
-  - num:  6
-    sym:  START
-    desc: start conversion (active high)
-  - num:  7
-    sym:  EOC
-    desc: end of conversion (active high)
-  - num:  8
-    sym:  D3
-    desc: data bus
-  - num:  9
-    sym:  OUTPUT ENABLE
-    desc: data output enable
-  - num:  10
-    sym:  CLOCK
-    desc: clock input
-  - num:  11
-    sym:  V__CC
-    desc: supply voltage
-  - num:  12
-    sym:  V__REF(+)
-    desc: positive voltage reference
-  - num:  13
-    sym:  GND
+  IN3:
+    desc: 'analog input 3'
+  IN4:
+    desc: 'analog input 4'
+  IN5:
+    desc: 'analog input 5'
+  IN6:
+    desc: 'analog input 6'
+  IN7:
+    desc: 'analog input 7'
+  START:
+    desc: 'start conversion (active high)'
+  EOC:
+    desc: 'end of conversion (active high)'
+  D3:
+    desc: 'data bus'
+  'OUTPUT ENABLE':
+    desc: 'data output enable'
+  CLOCK:
+    desc: 'clock input'
+  'V&#95;&#95;CC':
+    desc: 'supply voltage'
+  'V&#95;&#95;REF(+)':
+    desc: 'positive voltage reference'
+  GND:
     desc: ground
-  - num:  14
-    sym:  D1
-    desc: data bus
-  - num:  15
-    sym:  D2
-    desc: data bus
-  - num:  16
-    sym:  V__REF(-)
-    desc: negative voltage reference
-  - num:  17
-    sym:  D0
-    desc: data bus (LSB)
-  - num:  18
-    sym:  D4
-    desc: data bus
-  - num:  19
-    sym:  D5
-    desc: data bus
-  - num:  20
-    sym:  D6
-    desc: data bus
-  - num:  21
-    sym:  D7
-    desc: data bus (MSB)
-  - num:  22
-    sym:  ALE
-    desc: address latch enable (positive-edge trigger)
-  - num:  23
-    sym:  A2
-    desc: channel select (MSB)
-  - num:  24
-    sym:  A1
-    desc: channel select
-  - num:  25
-    sym:  A0
-    desc: channel select (LSB)
-  - num:  26
-    sym:  IN0
-    desc: analog channel 0
-  - num:  27
-    sym:  IN1
-    desc: analog channel 1
-  - num:  28
-    sym:  IN2
-    desc: analog channel 2
+  D1:
+    desc: 'data bus'
+  D2:
+    desc: 'data bus'
+  'V&#95;&#95;REF(-)':
+    desc: 'negative voltage reference'
+  D0:
+    desc: 'data bus (LSB)'
+  D4:
+    desc: 'data bus'
+  D5:
+    desc: 'data bus'
+  D6:
+    desc: 'data bus'
+  D7:
+    desc: 'data bus (MSB)'
+  ALE:
+    desc: 'address latch enable (positive-edge trigger)'
+  A2:
+    desc: 'channel select (MSB)'
+  A1:
+    desc: 'channel select'
+  A0:
+    desc: 'channel select (LSB)'
+  IN0:
+    desc: 'analog channel 0'
+  IN1:
+    desc: 'analog channel 1'
+  IN2:
+    desc: 'analog channel 2'
 specs:
-  - param: "Supply voltage V__CC"
-    val:   5
-    unit:  V
-  - param: "Total unadjusted error"
-    val:   ["&plusmn;1/2 (ADC0808)", "&plusmn;1 (ADC0809)"]
-    unit:  LSB
-  - param: "Input resistance, V__REF(+) to V__REF(-)"
-    val:   2.5
-    unit:  "k&Omega;"
-  - param: "Analog input voltage range"
-    val:   ["GND-0.10 (min)", "Vcc+0.10 (max)"]
-    unit:  V
-  - param: "Minimum START pulse width"
-    val:   100
-    unit:  ns
-  - param: "Minimum ALE pulse width"
-    val:   100
-    unit:  ns
-  - param: "Analog mux delay time from ALE"
-    val:   1
-    unit:  "&micro;s"
-  - param: "Conversion time (640 kHz clock frequency)"
-    val:   100
-    unit:  "&micro;s"
-  - param: "Clock frequency"
-    val:   ["10 (min)", "640 (typical)", "1280 (max)"]
-    unit:  kHz
+  -
+    param: 'Supply voltage V&#95;&#95;CC'
+    val: '5'
+    unit: V
+  -
+    param: 'Total unadjusted error'
+    val:
+      - '&plusmn;1/2 (ADC0808)'
+      - '&plusmn;1 (ADC0809)'
+    unit: LSB
+  -
+    param: 'Input resistance, V&#95;&#95;REF(+) to V&#95;&#95;REF(-)'
+    val: '2.5'
+    unit: 'k&Omega;'
+  -
+    param: 'Analog input voltage range'
+    val:
+      - 'GND-0.10 (min)'
+      - 'Vcc+0.10 (max)'
+    unit: V
+  -
+    param: 'Minimum START pulse width'
+    val: '100'
+    unit: ns
+  -
+    param: 'Minimum ALE pulse width'
+    val: '100'
+    unit: ns
+  -
+    param: 'Analog mux delay time from ALE'
+    val: '1'
+    unit: '&micro;s'
+  -
+    param: 'Conversion time (640 kHz clock frequency)'
+    val: '100'
+    unit: '&micro;s'
+  -
+    param: 'Clock frequency'
+    val:
+      - '10 (min)'
+      - '640 (typical)'
+      - '1280 (max)'
+    unit: kHz
 notes:
-  - The ADC0808 is a more accurate version of the ADC0809.
-...
-
+  - 'The ADC0808 is a more accurate version of the ADC0809.'
+packages:
+  DIP:
+    - IN3
+    - IN4
+    - IN5
+    - IN6
+    - IN7
+    - START
+    - EOC
+    - D3
+    - 'OUTPUT ENABLE'
+    - CLOCK
+    - 'V&#95;&#95;CC'
+    - 'V&#95;&#95;REF(+)'
+    - GND
+    - D1
+    - D2
+    - 'V&#95;&#95;REF(-)'
+    - D0
+    - D4
+    - D5
+    - D6
+    - D7
+    - ALE
+    - A2
+    - A1
+    - A0
+    - IN0
+    - IN1
+    - IN2

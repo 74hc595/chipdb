@@ -1,66 +1,73 @@
----
-description:  Hex D-type flip-flop with reset; positive-edge trigger
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc174.74hct174.pdf"
+description: 'Hex D-type flip-flop with reset; positive-edge trigger'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc174.74hct174.pdf'
 pins:
-  - num:  1
-    sym:  ~MR
-    desc: asynchronous master reset (active low)
-  - num:  2
-    sym:  Q__0
-    desc: flip-flop output
-  - num:  3
-    sym:  D__0
-    desc: data input
-  - num:  4
-    sym:  D__1
-    desc: data input
-  - num:  5
-    sym:  Q__1
-    desc: flip-flop output
-  - num:  6
-    sym:  D__2
-    desc: data input
-  - num:  7
-    sym:  Q__2
-    desc: flip-flop output
-  - num:  8
-    sym:  GND
+  '&#126;MR':
+    desc: 'asynchronous master reset (active low)'
+  'Q&#95;&#95;0':
+    desc: 'flip-flop output'
+  'D&#95;&#95;0':
+    desc: 'data input'
+  'D&#95;&#95;1':
+    desc: 'data input'
+  'Q&#95;&#95;1':
+    desc: 'flip-flop output'
+  'D&#95;&#95;2':
+    desc: 'data input'
+  'Q&#95;&#95;2':
+    desc: 'flip-flop output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  CP
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  10
-    sym:  Q__3
-    desc: flip-flop output
-  - num:  11
-    sym:  D__3
-    desc: data input
-  - num:  12
-    sym:  Q__4
-    desc: flip-flop output
-  - num:  13
-    sym:  D__4
-    desc: data input
-  - num:  14
-    sym:  D__5
-    desc: data input
-  - num:  15
-    sym:  Q__5
-    desc: flip-flop output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  CP:
+    desc: 'clock input (low-to-high, edge-triggered)'
+  'Q&#95;&#95;3':
+    desc: 'flip-flop output'
+  'D&#95;&#95;3':
+    desc: 'data input'
+  'Q&#95;&#95;4':
+    desc: 'flip-flop output'
+  'D&#95;&#95;4':
+    desc: 'data input'
+  'D&#95;&#95;5':
+    desc: 'data input'
+  'Q&#95;&#95;5':
+    desc: 'flip-flop output'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CP to Q__n
-    val:    [17 (74HC), 18 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~MR to Q__n
-    val:    [13 (74HC), 17 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [99 (74HC), 69 (74HCT)]
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, CP to Q&#95;&#95;n'
+    val:
+      - '17 (74HC)'
+      - '18 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;MR to Q&#95;&#95;n'
+    val:
+      - '13 (74HC)'
+      - '17 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '99 (74HC)'
+      - '69 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - '&#126;MR'
+    - 'Q&#95;&#95;0'
+    - 'D&#95;&#95;0'
+    - 'D&#95;&#95;1'
+    - 'Q&#95;&#95;1'
+    - 'D&#95;&#95;2'
+    - 'Q&#95;&#95;2'
+    - GND
+    - CP
+    - 'Q&#95;&#95;3'
+    - 'D&#95;&#95;3'
+    - 'Q&#95;&#95;4'
+    - 'D&#95;&#95;4'
+    - 'D&#95;&#95;5'
+    - 'Q&#95;&#95;5'
+    - Vcc

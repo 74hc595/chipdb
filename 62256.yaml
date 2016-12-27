@@ -1,100 +1,95 @@
----
-description: "32K x 8 static RAM"
-aliases:     []
-package:     DIP
-pincount:    28
-family:      "memory"
-datasheet:   "http://web.mit.edu/6.115/www/datasheets/62256.pdf"
+description: '32K x 8 static RAM'
+aliases: {  }
+family: memory
+datasheet: 'http://web.mit.edu/6.115/www/datasheets/62256.pdf'
 pins:
-  - num:  1
-    sym:  A__14
-    desc: address input
-  - num:  2
-    sym:  A__12
-    desc: address input
-  - num:  3
-    sym:  A__7
-    desc: address input
-  - num:  4
-    sym:  A__6
-    desc: address input
-  - num:  5
-    sym:  A__5
-    desc: address input
-  - num:  6
-    sym:  A__4
-    desc: address input
-  - num:  7
-    sym:  A__3
-    desc: address input
-  - num:  8
-    sym:  A__2
-    desc: address input
-  - num:  9
-    sym:  A__1
-    desc: address input
-  - num:  10
-    sym:  A__0
-    desc: address input
-  - num:  11
-    sym:  I/O__0
-    desc: data input/output
-  - num:  12
-    sym:  I/O__1
-    desc: data input/output
-  - num:  13
-    sym:  I/O__2
-    desc: data input/output
-  - num:  14
-    sym:  GND
+  'A&#95;&#95;14':
+    desc: 'address input'
+  'A&#95;&#95;12':
+    desc: 'address input'
+  'A&#95;&#95;7':
+    desc: 'address input'
+  'A&#95;&#95;6':
+    desc: 'address input'
+  'A&#95;&#95;5':
+    desc: 'address input'
+  'A&#95;&#95;4':
+    desc: 'address input'
+  'A&#95;&#95;3':
+    desc: 'address input'
+  'A&#95;&#95;2':
+    desc: 'address input'
+  'A&#95;&#95;1':
+    desc: 'address input'
+  'A&#95;&#95;0':
+    desc: 'address input'
+  'I/O&#95;&#95;0':
+    desc: 'data input/output'
+  'I/O&#95;&#95;1':
+    desc: 'data input/output'
+  'I/O&#95;&#95;2':
+    desc: 'data input/output'
+  GND:
     desc: ground
-  - num:  15
-    sym:  I/O__3
-    desc: data input/output
-  - num:  16
-    sym:  I/O__4
-    desc: data input/output
-  - num:  17
-    sym:  I/O__5
-    desc: data input/output
-  - num:  18
-    sym:  I/O__6
-    desc: data input/output
-  - num:  19
-    sym:  I/O__7
-    desc: data input/output
-  - num:  20
-    sym:  ~CE
-    desc: chip enable (active low)
-  - num:  21
-    sym:  A__10
-    desc: address input
-  - num:  22
-    sym:  ~OE
-    desc: output enable (active low)
-  - num:  23
-    sym:  A__11
-    desc: address input
-  - num:  24
-    sym:  A__9
-    desc: address input
-  - num:  25
-    sym:  A__8
-    desc: address input
-  - num:  26
-    sym:  A__13
-    desc: address input
-  - num:  27
-    sym:  ~WE
-    desc: write enable (active low)
-  - num:  28
-    sym:  Vcc
-    desc: supply voltage
+  'I/O&#95;&#95;3':
+    desc: 'data input/output'
+  'I/O&#95;&#95;4':
+    desc: 'data input/output'
+  'I/O&#95;&#95;5':
+    desc: 'data input/output'
+  'I/O&#95;&#95;6':
+    desc: 'data input/output'
+  'I/O&#95;&#95;7':
+    desc: 'data input/output'
+  '&#126;CE':
+    desc: 'chip enable (active low)'
+  'A&#95;&#95;10':
+    desc: 'address input'
+  '&#126;OE':
+    desc: 'output enable (active low)'
+  'A&#95;&#95;11':
+    desc: 'address input'
+  'A&#95;&#95;9':
+    desc: 'address input'
+  'A&#95;&#95;8':
+    desc: 'address input'
+  'A&#95;&#95;13':
+    desc: 'address input'
+  '&#126;WE':
+    desc: 'write enable (active low)'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - Data is written when ~CE is low and ~WE is low.
-  - Data is read when ~CE is low, ~OE is low, and ~WE is high.
-  - The input/output pins assume a high-impedance state if ~CE is high.
-...
-
-
-
+  - 'Data is written when &#126;CE is low and &#126;WE is low.'
+  - 'Data is read when &#126;CE is low, &#126;OE is low, and &#126;WE is high.'
+  - 'The input/output pins assume a high-impedance state if &#126;CE is high.'
+packages:
+  DIP:
+    - 'A&#95;&#95;14'
+    - 'A&#95;&#95;12'
+    - 'A&#95;&#95;7'
+    - 'A&#95;&#95;6'
+    - 'A&#95;&#95;5'
+    - 'A&#95;&#95;4'
+    - 'A&#95;&#95;3'
+    - 'A&#95;&#95;2'
+    - 'A&#95;&#95;1'
+    - 'A&#95;&#95;0'
+    - 'I/O&#95;&#95;0'
+    - 'I/O&#95;&#95;1'
+    - 'I/O&#95;&#95;2'
+    - GND
+    - 'I/O&#95;&#95;3'
+    - 'I/O&#95;&#95;4'
+    - 'I/O&#95;&#95;5'
+    - 'I/O&#95;&#95;6'
+    - 'I/O&#95;&#95;7'
+    - '&#126;CE'
+    - 'A&#95;&#95;10'
+    - '&#126;OE'
+    - 'A&#95;&#95;11'
+    - 'A&#95;&#95;9'
+    - 'A&#95;&#95;8'
+    - 'A&#95;&#95;13'
+    - '&#126;WE'
+    - Vcc

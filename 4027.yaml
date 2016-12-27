@@ -1,57 +1,54 @@
----
-description: Dual J-K flip-flop with set and clear
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4027b.pdf"
+description: 'Dual J-K flip-flop with set and clear'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4027b.pdf'
 pins:
-  - num:  1
-    sym:  2Q
-    desc: true output
-  - num:  2
-    sym:  2~Q
-    desc: complement output
-  - num:  3
-    sym:  2CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  4
-    sym:  2CD
-    desc: asynchronous clear-direct input
-  - num:  5
-    sym:  2K
-    desc: synchronous input
-  - num:  6
-    sym:  2J
-    desc: synchronous input
-  - num:  7
-    sym:  2SD
-    desc: asynchronous set-direct input
-  - num:  8
-    sym:  GND
+  2Q:
+    desc: 'true output'
+  '2&#126;Q':
+    desc: 'complement output'
+  2CP:
+    desc: 'clock input (low-to-high edge-triggered)'
+  2CD:
+    desc: 'asynchronous clear-direct input'
+  2K:
+    desc: 'synchronous input'
+  2J:
+    desc: 'synchronous input'
+  2SD:
+    desc: 'asynchronous set-direct input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  1SD
-    desc: asynchronous set-direct input
-  - num:  10
-    sym:  1J
-    desc: asynchronous input
-  - num:  11
-    sym:  1K
-    desc: asynchronous input
-  - num:  12
-    sym:  1CD
-    desc: asynchronous clear-direct input
-  - num:  13
-    sym:  1CP
-    desc: clock input (low-to-high edge-triggered)
-  - num:  14
-    sym:  1~Q
-    desc: complement output
-  - num:  15
-    sym:  1Q
-    desc: true output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  1SD:
+    desc: 'asynchronous set-direct input'
+  1J:
+    desc: 'asynchronous input'
+  1K:
+    desc: 'asynchronous input'
+  1CD:
+    desc: 'asynchronous clear-direct input'
+  1CP:
+    desc: 'clock input (low-to-high edge-triggered)'
+  '1&#126;Q':
+    desc: 'complement output'
+  1Q:
+    desc: 'true output'
+  Vcc:
+    desc: 'supply voltage'
+packages:
+  DIP:
+    - 2Q
+    - '2&#126;Q'
+    - 2CP
+    - 2CD
+    - 2K
+    - 2J
+    - 2SD
+    - GND
+    - 1SD
+    - 1J
+    - 1K
+    - 1CD
+    - 1CP
+    - '1&#126;Q'
+    - 1Q
+    - Vcc

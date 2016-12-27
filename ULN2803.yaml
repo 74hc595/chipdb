@@ -1,76 +1,77 @@
----
-description: "Eight darlington array"
-package:     DIP
-pincount:    18
-family:      "TI"
-datasheet:   "http://focus.ti.com/lit/ds/symlink/uln2803a.pdf"
+description: 'Eight darlington array'
+family: TI
+datasheet: 'http://focus.ti.com/lit/ds/symlink/uln2803a.pdf'
 pins:
-  - num:  1
-    sym:  1B
-    desc: base 1
-  - num:  2
-    sym:  2B
-    desc: base 2
-  - num:  3
-    sym:  3B
-    desc: base 3
-  - num:  4
-    sym:  4B
-    desc: base 4
-  - num:  5
-    sym:  5B
-    desc: base 5
-  - num:  6
-    sym:  6B
-    desc: base 6
-  - num:  7
-    sym:  7B
-    desc: base 7
-  - num:  8
-    sym:  8B
-    desc: base 8
-  - num:  9
-    sym:  GND
+  1B:
+    desc: 'base 1'
+  2B:
+    desc: 'base 2'
+  3B:
+    desc: 'base 3'
+  4B:
+    desc: 'base 4'
+  5B:
+    desc: 'base 5'
+  6B:
+    desc: 'base 6'
+  7B:
+    desc: 'base 7'
+  8B:
+    desc: 'base 8'
+  GND:
     desc: ground
-  - num:  10
-    sym:  COM
+  COM:
     desc: common
-  - num:  11
-    sym:  8C
-    desc: collector 8
-  - num:  12
-    sym:  7C
-    desc: collector 7
-  - num:  13
-    sym:  6C
-    desc: collector 6
-  - num:  14
-    sym:  5C
-    desc: collector 5
-  - num:  15
-    sym:  4C
-    desc: collector 4
-  - num:  16
-    sym:  3C
-    desc: collector 3
-  - num:  17
-    sym:  2C
-    desc: collector 2
-  - num:  18
-    sym:  1C
-    desc: collector 1
+  8C:
+    desc: 'collector 8'
+  7C:
+    desc: 'collector 7'
+  6C:
+    desc: 'collector 6'
+  5C:
+    desc: 'collector 5'
+  4C:
+    desc: 'collector 4'
+  3C:
+    desc: 'collector 3'
+  2C:
+    desc: 'collector 2'
+  1C:
+    desc: 'collector 1'
 specs:
-  - param: Series resistance at bases
-    val:   2.7
-    unit:  "k&Omega;"
-  - param: Maximum collector-emitter voltage
-    val:   50
-    unit:  V
-  - param: Maximum input voltage
-    val:   30
-    unit:  V
-  - param: Maximum continuous collector current
-    val:   500
-    unit:  mA
-...
-
+  -
+    param: 'Series resistance at bases'
+    val: '2.7'
+    unit: 'k&Omega;'
+  -
+    param: 'Maximum collector-emitter voltage'
+    val: '50'
+    unit: V
+  -
+    param: 'Maximum input voltage'
+    val: '30'
+    unit: V
+  -
+    param: 'Maximum continuous collector current'
+    val: '500'
+    unit: mA
+packages:
+  DIP:
+    - 1B
+    - 2B
+    - 3B
+    - 4B
+    - 5B
+    - 6B
+    - 7B
+    - 8B
+    - GND
+    - COM
+    - 8C
+    - 7C
+    - 6C
+    - 5C
+    - 4C
+    - 3C
+    - 2C
+    - 1C

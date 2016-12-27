@@ -1,63 +1,59 @@
----
-description: "Programmable 4-bit binary down counter"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4526b.pdf"
+description: 'Programmable 4-bit binary down counter'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4526b.pdf'
 pins:
-  - num:  1
-    sym:  Q3
-    desc: count output
-  - num:  2
-    sym:  P3
-    desc: parallel input
-  - num:  3
-    sym:  PL
-    desc: parallel load (active high)
-  - num:  4
-    sym:  ~CP~1
-    desc: clock input (high-to-low triggered)
-  - num:  5
-    sym:  P0
-    desc: parallel input
-  - num:  6
-    sym:  CP0
-    desc: clock input (low-to-high triggered)
-  - num:  7
-    sym:  Q0
-    desc: count output
-  - num:  8
-    sym:  GND
+  Q3:
+    desc: 'count output'
+  P3:
+    desc: 'parallel input'
+  PL:
+    desc: 'parallel load (active high)'
+  '&#126;CP&#126;1':
+    desc: 'clock input (high-to-low triggered)'
+  P0:
+    desc: 'parallel input'
+  CP0:
+    desc: 'clock input (low-to-high triggered)'
+  Q0:
+    desc: 'count output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  Q1
-    desc: count output
-  - num:  10
-    sym:  MR
-    desc: asynchronous master reset (active high)
-  - num:  11
-    sym:  P1
-    desc: parallel input
-  - num:  12
-    sym:  TC
-    desc: terminal count output
-  - num:  13
-    sym:  CF
-    desc: cascade feedback input
-  - num:  14
-    sym:  P2
-    desc: parallel input
-  - num:  15
-    sym:  Q2
-    desc: count output
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
-
+  Q1:
+    desc: 'count output'
+  MR:
+    desc: 'asynchronous master reset (active high)'
+  P1:
+    desc: 'parallel input'
+  TC:
+    desc: 'terminal count output'
+  CF:
+    desc: 'cascade feedback input'
+  P2:
+    desc: 'parallel input'
+  Q2:
+    desc: 'count output'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - When ~CP~1 is low, the counter advances on a low-to-high transition of CP0.
-  - When CP0 is high, the counter advances on a high-to-low transition of ~CP~1.
-  - TC goes high when the count is 0, CF is high, and PL is low.
-  - For a single-stage divide-by-n circuit, connect the TC output to PL and set the P0-P3 inputs to n.
-...
-
+  - 'When &#126;CP&#126;1 is low, the counter advances on a low-to-high transition of CP0.'
+  - 'When CP0 is high, the counter advances on a high-to-low transition of &#126;CP&#126;1.'
+  - 'TC goes high when the count is 0, CF is high, and PL is low.'
+  - 'For a single-stage divide-by-n circuit, connect the TC output to PL and set the P0-P3 inputs to n.'
+packages:
+  DIP:
+    - Q3
+    - P3
+    - PL
+    - '&#126;CP&#126;1'
+    - P0
+    - CP0
+    - Q0
+    - GND
+    - Q1
+    - MR
+    - P1
+    - TC
+    - CF
+    - P2
+    - Q2
+    - Vcc

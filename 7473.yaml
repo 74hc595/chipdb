@@ -1,63 +1,65 @@
----
-description:  Dual J-K flip-flop with reset; negative-edge trigger
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc73.pdf"
+description: 'Dual J-K flip-flop with reset; negative-edge trigger'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc73.pdf'
 pins:
-  - num:  1
-    sym:  1~CP
-    desc: clock input (high-to-low edge-triggered)
-  - num:  2
-    sym:  1~R
-    desc: asynchronous reset (active low)
-  - num:  3
-    sym:  1K
-    desc: synchronous K input
-  - num:  4
-    sym:  Vcc
-    desc: supply voltage
-  - num:  5
-    sym:  2~CP
-    desc: clock input (high-to-low edge-triggered)
-  - num:  6
-    sym:  2~R
-    desc: asynchronous reset (active low)
-  - num:  7
-    sym:  2J
-    desc: synchronous J input
-  - num:  8
-    sym:  2~Q
-    desc: complement output
-  - num:  9
-    sym:  2Q
-    desc: true output
-  - num:  10
-    sym:  2K
-    desc: synchronous K input
-  - num:  11
-    sym:  GND
+  '1&#126;CP':
+    desc: 'clock input (high-to-low edge-triggered)'
+  '1&#126;R':
+    desc: 'asynchronous reset (active low)'
+  1K:
+    desc: 'synchronous K input'
+  Vcc:
+    desc: 'supply voltage'
+  '2&#126;CP':
+    desc: 'clock input (high-to-low edge-triggered)'
+  '2&#126;R':
+    desc: 'asynchronous reset (active low)'
+  2J:
+    desc: 'synchronous J input'
+  '2&#126;Q':
+    desc: 'complement output'
+  2Q:
+    desc: 'true output'
+  2K:
+    desc: 'synchronous K input'
+  GND:
     desc: ground
-  - num:  12
-    sym:  1Q
-    desc: true output
-  - num:  13
-    sym:  1~Q
-    desc: complement output
-  - num:  14
-    sym:  1J
-    desc: synchronous J input
+  1Q:
+    desc: 'true output'
+  '1&#126;Q':
+    desc: 'complement output'
+  1J:
+    desc: 'synchronous J input'
 specs:
-  - param:  Propagation delay, n~CP to nQ
-    val:    16 (74HC)
-    unit:   ns
-  - param:  Propagation delay, n~CP to n~Q
-    val:    16 (74HC)
-    unit:   ns
-  - param:  Propagation delay, n~R to nQ, n~Q
-    val:    15 (74HC)
-    unit:   ns
-  - param:  Maximum frequency
-    val:    77 (74HC)
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, n&#126;CP to nQ'
+    val: '16 (74HC)'
+    unit: ns
+  -
+    param: 'Propagation delay, n&#126;CP to n&#126;Q'
+    val: '16 (74HC)'
+    unit: ns
+  -
+    param: 'Propagation delay, n&#126;R to nQ, n&#126;Q'
+    val: '15 (74HC)'
+    unit: ns
+  -
+    param: 'Maximum frequency'
+    val: '77 (74HC)'
+    unit: MHz
+packages:
+  DIP:
+    - '1&#126;CP'
+    - '1&#126;R'
+    - 1K
+    - Vcc
+    - '2&#126;CP'
+    - '2&#126;R'
+    - 2J
+    - '2&#126;Q'
+    - 2Q
+    - 2K
+    - GND
+    - 1Q
+    - '1&#126;Q'
+    - 1J

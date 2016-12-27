@@ -1,52 +1,46 @@
----
-description:  4-bit decade counter
-package:      DIP
-pincount:     14
-family:       "7400"
-datasheet:    "http://focus.ti.com/lit/ds/symlink/sn74ls90.pdf"
+description: '4-bit decade counter'
+family: '7400'
+datasheet: 'http://focus.ti.com/lit/ds/symlink/sn74ls90.pdf'
 pins:
-  - num:  1
-    sym:  CKB
-    desc: clock input
-  - num:  2
-    sym:  R0(1)
-    desc: reset to 0
-  - num:  3
-    sym:  R0(2)
-    desc: reset to 0
-  - num:  4
-    sym:  NC
-    desc: no connection
-  - num:  5
-    sym:  Vcc
-    desc: supply voltage
-  - num:  6
-    sym:  R9(1)
-    desc: reset to 9
-  - num:  7
-    sym:  R9(2)
-    desc: reset to 9
-  - num:  8
-    sym:  Q__C
-    desc: counter output
-  - num:  9
-    sym:  Q__B
-    desc: counter output
-  - num:  10
-    sym:  GND
+  CKB:
+    desc: 'clock input'
+  R0(1):
+    desc: 'reset to 0'
+  R0(2):
+    desc: 'reset to 0'
+  Vcc:
+    desc: 'supply voltage'
+  R9(1):
+    desc: 'reset to 9'
+  R9(2):
+    desc: 'reset to 9'
+  'Q&#95;&#95;C':
+    desc: 'counter output'
+  'Q&#95;&#95;B':
+    desc: 'counter output'
+  GND:
     desc: ground
-  - num:  11
-    sym:  Q__D
-    desc: counter output
-  - num:  12
-    sym:  Q__A
-    desc: counter output
-  - num:  13
-    sym:  NC
-    desc: no connection
-  - num:  14
-    sym:  CKA
-    desc: clock input
+  'Q&#95;&#95;D':
+    desc: 'counter output'
+  'Q&#95;&#95;A':
+    desc: 'counter output'
+  CKA:
+    desc: 'clock input'
 notes:
-  - For maximum count length, connect CKB to Q__A and apply input pulses to CKA.
-...
+  - 'For maximum count length, connect CKB to Q&#95;&#95;A and apply input pulses to CKA.'
+packages:
+  DIP:
+    - CKB
+    - R0(1)
+    - R0(2)
+    - NC
+    - Vcc
+    - R9(1)
+    - R9(2)
+    - 'Q&#95;&#95;C'
+    - 'Q&#95;&#95;B'
+    - GND
+    - 'Q&#95;&#95;D'
+    - 'Q&#95;&#95;A'
+    - NC
+    - CKA

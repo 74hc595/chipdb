@@ -1,84 +1,81 @@
----
-description: "1-of-16 decoder/demultiplexer with input latches"
-package:     DIP
-pincount:    24
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4514b.pdf"
+description: '1-of-16 decoder/demultiplexer with input latches'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4514b.pdf'
 pins:
-  - num:  1
-    sym:  LE
-    desc: latch enable (active high)
-  - num:  2
-    sym:  A0
-    desc: address input
-  - num:  3
-    sym:  A1
-    desc: address input
-  - num:  4
-    sym:  Q7
+  LE:
+    desc: 'latch enable (active high)'
+  A0:
+    desc: 'address input'
+  A1:
+    desc: 'address input'
+  Q7:
     desc: output
-  - num:  5
-    sym:  Q6
+  Q6:
     desc: output
-  - num:  6
-    sym:  Q5
+  Q5:
     desc: output
-  - num:  7
-    sym:  Q4
+  Q4:
     desc: output
-  - num:  8
-    sym:  Q3
+  Q3:
     desc: output
-  - num:  9
-    sym:  Q1
+  Q1:
     desc: output
-  - num:  10
-    sym:  Q2
+  Q2:
     desc: output
-  - num:  11
-    sym:  Q0
+  Q0:
     desc: output
-  - num:  12
-    sym:  GND
+  GND:
     desc: ground
-  - num:  13
-    sym:  Q13
+  Q13:
     desc: output
-  - num:  14
-    sym:  Q12
+  Q12:
     desc: output
-  - num:  15
-    sym:  Q15
+  Q15:
     desc: output
-  - num:  16
-    sym:  Q14
+  Q14:
     desc: output
-  - num:  17
-    sym:  Q9
+  Q9:
     desc: output
-  - num:  18
-    sym:  Q8
+  Q8:
     desc: output
-  - num:  19
-    sym:  Q11
+  Q11:
     desc: output
-  - num:  20
-    sym:  Q10
+  Q10:
     desc: output
-  - num:  21
-    sym:  A2
-    desc: address input
-  - num:  22
-    sym:  A3
-    desc: address input
-  - num:  23
-    sym:  ~E
-    desc: enable (active low)
-  - num:  24
-    sym:  Vcc
-    desc: supply voltage
+  A2:
+    desc: 'address input'
+  A3:
+    desc: 'address input'
+  '&#126;E':
+    desc: 'enable (active low)'
+  Vcc:
+    desc: 'supply voltage'
 notes:
-  - Outputs are mutually exclusive active high.
-  - When ~E is high, all outputs are low.
-...
-
+  - 'Outputs are mutually exclusive active high.'
+  - 'When &#126;E is high, all outputs are low.'
+packages:
+  DIP:
+    - LE
+    - A0
+    - A1
+    - Q7
+    - Q6
+    - Q5
+    - Q4
+    - Q3
+    - Q1
+    - Q2
+    - Q0
+    - GND
+    - Q13
+    - Q12
+    - Q15
+    - Q14
+    - Q9
+    - Q8
+    - Q11
+    - Q10
+    - A2
+    - A3
+    - '&#126;E'
+    - Vcc

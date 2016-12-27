@@ -1,61 +1,58 @@
----
-description: "8-channel analog multiplexer/demultiplexer"
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4051b.pdf"
+description: '8-channel analog multiplexer/demultiplexer'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4051b.pdf'
 pins:
-  - num:  1
-    sym:  Y4
-    desc: independent input/output
-  - num:  2
-    sym:  Y6
-    desc: independent input/output
-  - num:  3
-    sym:  Z
-    desc: common input/output
-  - num:  4
-    sym:  Y7
-    desc: independent input/output
-  - num:  5
-    sym:  Y5
-    desc: independent input/output
-  - num:  6
-    sym:  ~E
-    desc: enable input (active low)
-  - num:  7
-    sym:  V__EE
-    desc: switch negative supply voltage
-  - num:  8
-    sym:  GND
+  Y4:
+    desc: 'independent input/output'
+  Y6:
+    desc: 'independent input/output'
+  Z:
+    desc: 'common input/output'
+  Y7:
+    desc: 'independent input/output'
+  Y5:
+    desc: 'independent input/output'
+  '&#126;E':
+    desc: 'enable input (active low)'
+  'V&#95;&#95;EE':
+    desc: 'switch negative supply voltage'
+  GND:
     desc: ground
-  - num:  9
-    sym:  A2
-    desc: address input
-  - num:  10
-    sym:  A1
-    desc: address input
-  - num:  11
-    sym:  A0
-    desc: address input
-  - num:  12
-    sym:  Y3
-    desc: independent input/output
-  - num:  13
-    sym:  Y0
-    desc: independent input/output
-  - num:  14
-    sym:  Y1
-    desc: independent input/output
-  - num:  15
-    sym:  Y2
-    desc: independent input/output
-  - num:  16
-    sym:  V__CC
-    desc: supply voltage
+  A2:
+    desc: 'address input'
+  A1:
+    desc: 'address input'
+  A0:
+    desc: 'address input'
+  Y3:
+    desc: 'independent input/output'
+  Y0:
+    desc: 'independent input/output'
+  Y1:
+    desc: 'independent input/output'
+  Y2:
+    desc: 'independent input/output'
+  'V&#95;&#95;CC':
+    desc: 'supply voltage'
 notes:
-  - The device contains eight bidirectional analog switches.
-  - The analog inputs/outputs can swing between V__CC and V__EE.
-  - When ~E is high, all switches are in a high-impedance off state.
-...
-
+  - 'The device contains eight bidirectional analog switches.'
+  - 'The analog inputs/outputs can swing between V&#95;&#95;CC and V&#95;&#95;EE.'
+  - 'When &#126;E is high, all switches are in a high-impedance off state.'
+packages:
+  DIP:
+    - Y4
+    - Y6
+    - Z
+    - Y7
+    - Y5
+    - '&#126;E'
+    - 'V&#95;&#95;EE'
+    - GND
+    - A2
+    - A1
+    - A0
+    - Y3
+    - Y0
+    - Y1
+    - Y2
+    - 'V&#95;&#95;CC'

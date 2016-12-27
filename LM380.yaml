@@ -1,76 +1,65 @@
----
-description: "2.5W audio power amplifier"
-package:     DIP
-pincount:    14
-family:      "linear"
-datasheet:   "http://www.national.com/ds/LM/LM380.pdf"
+description: '2.5W audio power amplifier'
+family: linear
+datasheet: 'http://www.national.com/ds/LM/LM380.pdf'
 pins:
-  - num:  1
-    sym:  BYPASS
+  BYPASS:
     desc: bypass
-  - num:  2
-    sym:  IN+
-    desc: non-inverting input
-  - num:  3
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  4
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  5
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  6
-    sym:  IN-
-    desc: inverting input
-  - num:  7
-    sym:  GND
-    desc: ground
-  - num:  8
-    sym:  OUT
+  IN+:
+    desc: 'non-inverting input'
+  GND:
+    desc: 'ground (heat sink)'
+  IN-:
+    desc: 'inverting input'
+  OUT:
     desc: output
-  - num:  9
-    sym:  NC
-    desc: no connection
-  - num:  10
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  11
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  12
-    sym:  GND
-    desc: ground (heat sink)
-  - num:  13
-    sym:  NC
-    desc: no connection
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param: Maximum supply voltage
-    val:   22
-    unit:  V
-  - param: Maximum peak current
-    val:   1.3
-    unit:  A
-  - param: Maximum input voltage
-    val:   "&plusmn;0.5"
-    unit:  V
-  - param: Output power
-    val:   2.5
-    unit:  W
-  - param: Quiescent power drain
-    val:   0.13
-    unit:  W
-  - param: Bandwidth
-    val:   100
-    unit:  kHz
-  - param: Gain
-    val:   50
-    unit:  V/V
-  - param: Input impedance
-    val:   150
-    unit:  "k&Omega;"
-...
-
+  -
+    param: 'Maximum supply voltage'
+    val: '22'
+    unit: V
+  -
+    param: 'Maximum peak current'
+    val: '1.3'
+    unit: A
+  -
+    param: 'Maximum input voltage'
+    val: '&plusmn;0.5'
+    unit: V
+  -
+    param: 'Output power'
+    val: '2.5'
+    unit: W
+  -
+    param: 'Quiescent power drain'
+    val: '0.13'
+    unit: W
+  -
+    param: Bandwidth
+    val: '100'
+    unit: kHz
+  -
+    param: Gain
+    val: '50'
+    unit: V/V
+  -
+    param: 'Input impedance'
+    val: '150'
+    unit: 'k&Omega;'
+packages:
+  DIP:
+    - BYPASS
+    - IN+
+    - GND
+    - GND
+    - GND
+    - IN-
+    - GND
+    - OUT
+    - NC
+    - GND
+    - GND
+    - GND
+    - NC
+    - Vcc

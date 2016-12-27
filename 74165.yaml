@@ -1,72 +1,82 @@
----
-description:  8-bit parallel-in/serial-out shift register
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc165.74hct165.pdf"
+description: '8-bit parallel-in/serial-out shift register'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc165.74hct165.pdf'
 pins:
-  - num:  1
-    sym:  ~PL
-    desc: asynchronous parallel load input (active low)
-  - num:  2
-    sym:  CP
-    desc: clock input (low-to-high, edge-triggered)
-  - num:  3
-    sym:  D4
-    desc: parallel data input
-  - num:  4
-    sym:  D5
-    desc: parallel data input
-  - num:  5
-    sym:  D6
-    desc: parallel data input
-  - num:  6
-    sym:  D7
-    desc: parallel data input
-  - num:  7
-    sym:  ~Q~7
-    desc: complementary output from the last stage
-  - num:  8
-    sym:  GND
+  '&#126;PL':
+    desc: 'asynchronous parallel load input (active low)'
+  CP:
+    desc: 'clock input (low-to-high, edge-triggered)'
+  D4:
+    desc: 'parallel data input'
+  D5:
+    desc: 'parallel data input'
+  D6:
+    desc: 'parallel data input'
+  D7:
+    desc: 'parallel data input'
+  '&#126;Q&#126;7':
+    desc: 'complementary output from the last stage'
+  GND:
     desc: ground
-  - num:  9
-    sym:  Q7
-    desc: serial output from the last stage
-  - num:  10
-    sym:  DS
-    desc: serial data input
-  - num:  11
-    sym:  D0
-    desc: parallel data input
-  - num:  12
-    sym:  D1
-    desc: parallel data input
-  - num:  13
-    sym:  D2
-    desc: parallel data input
-  - num:  14
-    sym:  D3
-    desc: parallel data input
-  - num:  15
-    sym:  ~CE
-    desc: clock enable input (active low)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  Q7:
+    desc: 'serial output from the last stage'
+  DS:
+    desc: 'serial data input'
+  D0:
+    desc: 'parallel data input'
+  D1:
+    desc: 'parallel data input'
+  D2:
+    desc: 'parallel data input'
+  D3:
+    desc: 'parallel data input'
+  '&#126;CE':
+    desc: 'clock enable input (active low)'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, CP, ~CE to Q7, ~Q~7
-    val:    [16 (74HC), 14 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, ~PL to Q7, ~Q~7
-    val:    [15 (74HC), 17 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, D7 to Q7, ~Q~7
-    val:    [11 (74HC), 11 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [56 (74HC), 48 (74HCT)]
-    unit:   MHz
+  -
+    param: 'Propagation delay, CP, &#126;CE to Q7, &#126;Q&#126;7'
+    val:
+      - '16 (74HC)'
+      - '14 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, &#126;PL to Q7, &#126;Q&#126;7'
+    val:
+      - '15 (74HC)'
+      - '17 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, D7 to Q7, &#126;Q&#126;7'
+    val:
+      - '11 (74HC)'
+      - '11 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '56 (74HC)'
+      - '48 (74HCT)'
+    unit: MHz
 notes:
-  - The low-to-high transition of input ~CE should only take place while CP is high for predictable operation.
-  - Either CP or ~CE should be high before the low-to-high transition of ~PL to prevent shifting the data when ~PL is activated.
-...
+  - 'The low-to-high transition of input &#126;CE should only take place while CP is high for predictable operation.'
+  - 'Either CP or &#126;CE should be high before the low-to-high transition of &#126;PL to prevent shifting the data when &#126;PL is activated.'
+packages:
+  DIP:
+    - '&#126;PL'
+    - CP
+    - D4
+    - D5
+    - D6
+    - D7
+    - '&#126;Q&#126;7'
+    - GND
+    - Q7
+    - DS
+    - D0
+    - D1
+    - D2
+    - D3
+    - '&#126;CE'
+    - Vcc

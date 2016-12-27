@@ -1,69 +1,79 @@
----
-description:  Dual J-K flip-flop with set and reset; negative-edge trigger
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.standardics.nxp.com/products/hc/datasheet/74hc112.74hct112.pdf"
+description: 'Dual J-K flip-flop with set and reset; negative-edge trigger'
+family: '7400'
+datasheet: 'http://www.standardics.nxp.com/products/hc/datasheet/74hc112.74hct112.pdf'
 pins:
-  - num:  1
-    sym:  1~CP
-    desc: clock input (high-to-low, edge-triggered)
-  - num:  2
-    sym:  1K
-    desc: synchronous input
-  - num:  3
-    sym:  1J
-    desc: synchronous input
-  - num:  4
-    sym:  1~S~__D
-    desc: asynchronous set; direct input (active low)
-  - num:  5
-    sym:  1Q
-    desc: true output
-  - num:  6
-    sym:  1~Q
-    desc: complement output
-  - num:  7
-    sym:  2~Q
-    desc: complement output
-  - num:  8
-    sym:  GND
+  '1&#126;CP':
+    desc: 'clock input (high-to-low, edge-triggered)'
+  1K:
+    desc: 'synchronous input'
+  1J:
+    desc: 'synchronous input'
+  '1&#126;S&#126;&#95;&#95;D':
+    desc: 'asynchronous set; direct input (active low)'
+  1Q:
+    desc: 'true output'
+  '1&#126;Q':
+    desc: 'complement output'
+  '2&#126;Q':
+    desc: 'complement output'
+  GND:
     desc: ground
-  - num:  9
-    sym:  2Q
-    desc: true output
-  - num:  10
-    sym:  2~S~__D
-    desc: asynchronous set; direct input (active low)
-  - num:  11
-    sym:  2J
-    desc: synchronous input
-  - num:  12
-    sym:  2K
-    desc: synchronous input
-  - num:  13
-    sym:  2~CP
-    desc: clock input (high-to-low, edge-triggered)
-  - num:  14
-    sym:  2~R~__D
-    desc: asynchronous reset; direct input (active low)
-  - num:  15
-    sym:  1~R~__D
-    desc: asynchronous reset; direct input (active low)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  2Q:
+    desc: 'true output'
+  '2&#126;S&#126;&#95;&#95;D':
+    desc: 'asynchronous set; direct input (active low)'
+  2J:
+    desc: 'synchronous input'
+  2K:
+    desc: 'synchronous input'
+  '2&#126;CP':
+    desc: 'clock input (high-to-low, edge-triggered)'
+  '2&#126;R&#126;&#95;&#95;D':
+    desc: 'asynchronous reset; direct input (active low)'
+  '1&#126;R&#126;&#95;&#95;D':
+    desc: 'asynchronous reset; direct input (active low)'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, n~CP to nQ, n~Q
-    val:    [17 (74HC), 19 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, n~S~__D to nQ, n~Q
-    val:    [15 (74HC), 15 (74HCT)]
-    unit:   ns
-  - param:  Propagation delay, n~R~__D to nQ, n~Q
-    val:    [18 (74HC), 19 (74HCT)]
-    unit:   ns
-  - param:  Maximum clock frequency
-    val:    [66 (74HC), 70 (74HCT)]
-    unit:   MHz
-...
+  -
+    param: 'Propagation delay, n&#126;CP to nQ, n&#126;Q'
+    val:
+      - '17 (74HC)'
+      - '19 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, n&#126;S&#126;&#95;&#95;D to nQ, n&#126;Q'
+    val:
+      - '15 (74HC)'
+      - '15 (74HCT)'
+    unit: ns
+  -
+    param: 'Propagation delay, n&#126;R&#126;&#95;&#95;D to nQ, n&#126;Q'
+    val:
+      - '18 (74HC)'
+      - '19 (74HCT)'
+    unit: ns
+  -
+    param: 'Maximum clock frequency'
+    val:
+      - '66 (74HC)'
+      - '70 (74HCT)'
+    unit: MHz
+packages:
+  DIP:
+    - '1&#126;CP'
+    - 1K
+    - 1J
+    - '1&#126;S&#126;&#95;&#95;D'
+    - 1Q
+    - '1&#126;Q'
+    - '2&#126;Q'
+    - GND
+    - 2Q
+    - '2&#126;S&#126;&#95;&#95;D'
+    - 2J
+    - 2K
+    - '2&#126;CP'
+    - '2&#126;R&#126;&#95;&#95;D'
+    - '1&#126;R&#126;&#95;&#95;D'
+    - Vcc

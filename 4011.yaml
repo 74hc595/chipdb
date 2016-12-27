@@ -1,51 +1,48 @@
----
-description: Quad 2-input NAND gate
-package:     DIP
-pincount:    14
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4011b.pdf"
+description: 'Quad 2-input NAND gate'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4011b.pdf'
 pins:
-  - num:  1
-    sym:  1A
-    desc: data input
-  - num:  2
-    sym:  1B
-    desc: data input
-  - num:  3
-    sym:  1Y
-    desc: data output
-  - num:  4
-    sym:  2Y
-    desc: data output
-  - num:  5
-    sym:  2A
-    desc: data input
-  - num:  6
-    sym:  2B
-    desc: data input
-  - num:  7
-    sym:  GND
+  1A:
+    desc: 'data input'
+  1B:
+    desc: 'data input'
+  1Y:
+    desc: 'data output'
+  2Y:
+    desc: 'data output'
+  2A:
+    desc: 'data input'
+  2B:
+    desc: 'data input'
+  GND:
     desc: ground
-  - num:  8
-    sym:  3A
-    desc: data input
-  - num:  9
-    sym:  3B
-    desc: data input
-  - num:  10
-    sym:  3Y
-    desc: data output
-  - num:  11
-    sym:  4Y
-    desc: data output
-  - num:  12
-    sym:  4A
-    desc: data input
-  - num:  13
-    sym:  4B
-    desc: data input
-  - num:  14
-    sym:  Vcc
-    desc: supply voltage
-...
-
+  3A:
+    desc: 'data input'
+  3B:
+    desc: 'data input'
+  3Y:
+    desc: 'data output'
+  4Y:
+    desc: 'data output'
+  4A:
+    desc: 'data input'
+  4B:
+    desc: 'data input'
+  Vcc:
+    desc: 'supply voltage'
+packages:
+  DIP:
+    - 1A
+    - 1B
+    - 1Y
+    - 2Y
+    - 2A
+    - 2B
+    - GND
+    - 3A
+    - 3B
+    - 3Y
+    - 4Y
+    - 4A
+    - 4B
+    - Vcc

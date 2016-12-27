@@ -1,58 +1,50 @@
----
-description: Hex non-inverting buffer
-package:     DIP
-pincount:    16
-family:      "4000"
-datasheet:   "http://www.standardics.nxp.com/products/hef/datasheet/hef4050b.pdf"
+description: 'Hex non-inverting buffer'
+family: '4000'
+datasheet: 'http://www.standardics.nxp.com/products/hef/datasheet/hef4050b.pdf'
 pins:
-  - num:  1
-    sym:  Vcc
-    desc: supply voltage
-  - num:  2
-    sym:  1Y
-    desc: data output
-  - num:  3
-    sym:  1A
-    desc: data input
-  - num:  4
-    sym:  2Y
-    desc: data output
-  - num:  5
-    sym:  2A
-    desc: data input
-  - num:  6
-    sym:  3Y
-    desc: data output
-  - num:  7
-    sym:  3A
-    desc: data input
-  - num:  8
-    sym:  GND
+  Vcc:
+    desc: 'supply voltage'
+  1Y:
+    desc: 'data output'
+  1A:
+    desc: 'data input'
+  2Y:
+    desc: 'data output'
+  2A:
+    desc: 'data input'
+  3Y:
+    desc: 'data output'
+  3A:
+    desc: 'data input'
+  GND:
     desc: ground
-  - num:  9
-    sym:  4A
-    desc: data input
-  - num:  10
-    sym:  4Y
-    desc: data output
-  - num:  11
-    sym:  5A
-    desc: data input
-  - num:  12
-    sym:  5Y
-    desc: data output
-  - num:  13
-    sym:  NC
-    desc: no connection
-  - num:  14
-    sym:  6A
-    desc: data input
-  - num:  15
-    sym:  6Y
-    desc: data output
-  - num:  16
-    sym:  NC
-    desc: no connection
-...
-
-
+  4A:
+    desc: 'data input'
+  4Y:
+    desc: 'data output'
+  5A:
+    desc: 'data input'
+  5Y:
+    desc: 'data output'
+  6A:
+    desc: 'data input'
+  6Y:
+    desc: 'data output'
+packages:
+  DIP:
+    - Vcc
+    - 1Y
+    - 1A
+    - 2Y
+    - 2A
+    - 3Y
+    - 3A
+    - GND
+    - 4A
+    - 4Y
+    - 5A
+    - 5Y
+    - NC
+    - 6A
+    - 6Y
+    - NC

@@ -1,65 +1,65 @@
----
-description:  8-to-3 line priority encoder
-package:      DIP
-pincount:     16
-family:       "7400"
-datasheet:    "http://www.ti.com/lit/ds/scls109g/scls109g.pdf"
+description: '8-to-3 line priority encoder'
+family: '7400'
+datasheet: 'http://www.ti.com/lit/ds/scls109g/scls109g.pdf'
 pins:
-  - num:  1
-    sym:  4
-    desc: decimal data input (active low)
-  - num:  2
-    sym:  5
-    desc: decimal data input (active low)
-  - num:  3
-    sym:  6
-    desc: decimal data input (active low)
-  - num:  4
-    sym:  7
-    desc: decimal data input (active low)
-  - num:  5
-    sym:  EI
-    desc: enable input (active low)
-  - num:  6
-    sym:  A2
-    desc: binary address output (active low)
-  - num:  7
-    sym:  A1
-    desc: BCD address output (active low)
-  - num:  8
-    sym:  GND
+  4:
+    desc: 'decimal data input (active low)'
+  5:
+    desc: 'decimal data input (active low)'
+  6:
+    desc: 'decimal data input (active low)'
+  7:
+    desc: 'decimal data input (active low)'
+  EI:
+    desc: 'enable input (active low)'
+  A2:
+    desc: 'binary address output (active low)'
+  A1:
+    desc: 'BCD address output (active low)'
+  GND:
     desc: ground
-  - num:  9
-    sym:  A0
-    desc: binary address output (active low)
-  - num:  10
-    sym:  0 
-    desc: decimal data input (active low)
-  - num:  11
-    sym:  1 
-    desc: decimal data input (active low)
-  - num:  12
-    sym:  2
-    desc: decimal data input (active low)
-  - num:  13
-    sym:  3 
-    desc: decimal data input (active low)
-  - num:  14
-    sym:  GS
-    desc: goes low when EI is low and any input is low
-  - num:  15
-    sym:  EO
-    desc: goes high when EI is low and any input is low (EO = ~GS~)
-  - num:  16
-    sym:  Vcc
-    desc: supply voltage
+  A0:
+    desc: 'binary address output (active low)'
+  0:
+    desc: 'decimal data input (active low)'
+  1:
+    desc: 'decimal data input (active low)'
+  2:
+    desc: 'decimal data input (active low)'
+  3:
+    desc: 'decimal data input (active low)'
+  GS:
+    desc: 'goes low when EI is low and any input is low'
+  EO:
+    desc: 'goes high when EI is low and any input is low (EO = &#126;GS&#126;)'
+  Vcc:
+    desc: 'supply voltage'
 specs:
-  - param:  Propagation delay, n to An 
-    val:    [16 (74HC)]
-    unit:   ns
+  -
+    param: 'Propagation delay, n to An'
+    val:
+      - '16 (74HC)'
+    unit: ns
 notes:
-  - When two or more inputs are simultaneously active, the input with the highest priority is represented on the output.
-  - Input 7 has the highest priority.
-  - When all eight data inputs are high, all three outputs are high.
-  - Multiple 74148s can be cascaded by connecting EO of the high priority chip to EI of the low priority chip (see datasheet).
-...
+  - 'When two or more inputs are simultaneously active, the input with the highest priority is represented on the output.'
+  - 'Input 7 has the highest priority.'
+  - 'When all eight data inputs are high, all three outputs are high.'
+  - 'Multiple 74148s can be cascaded by connecting EO of the high priority chip to EI of the low priority chip (see datasheet).'
+packages:
+  DIP:
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - EI
+    - A2
+    - A1
+    - GND
+    - A0
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - GS
+    - EO
+    - Vcc
