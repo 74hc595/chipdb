@@ -21,11 +21,9 @@ Required. A one-line description of the part, such as: `"8-bit shift register wi
 
 #### `package`
 
-Required. This field was intended to indicate how the pin diagram of this part should be drawn. The only value used in the original database was `DIP`.
-
-#### `pincount`
-
-Required. The total number of pins.
+Required.
+This field was intended to indicate how the pin diagram of this part should be drawn.
+The only value used in the original database was `DIP`.
 
 #### `family`
 
@@ -41,7 +39,9 @@ Optional. If similar parts share this pinout, you can specify an array of their 
 
 #### `pins`
 
-Required. An array of pin definitions. The number of elements must match the indicated `pincount`. See the section "Pin definitions."
+Required.
+An dictionary of pin definitions.
+See the section "Pin definitions."
 
 #### `specs`
 
@@ -51,17 +51,29 @@ Optional. An array of spec definitions. See the section "Spec definitions".
 
 Optional. An array of additional explanatory notes.
 
+
+## Package definitions
+
+Required.
+Array of packages.
+Packages contain a pin-mapping (array or dictionary).
+For more detail see [packages.md](packages.md).
+
+
 ## Pin definitions
 
-Each pin definition is a dictionary with three fields:
+Each pin definition is a dictionary with a key and currently one field:
 
-#### `num`
+#### key
 
-Required. The pin number. I suppose this is redundant, but it could theoretically be used to specify a non-numeric pin number. (lol)
-
-#### `sym`
-
-Required. The pin symbol. Typically all-uppercase. In the case of a single-supply part, the supply pin should be `Vcc` and the ground pin should be `GND`. Unused pins should be written as `NC` for "no connection." May contain spaces, and subscript/overbar characters. See "Subscripts and overbars."
+Required.
+The pin symbol.
+Typically all-uppercase.
+In the case of a single-supply part, the supply pin should be `Vcc` and the ground pin should be `GND`.
+Unused pins should be written as `NC` for "no connection" or "do not connect".
+Not present pins should be written as `NOT_PRESENT` for missing leads.
+May contain spaces, and subscript/overbar characters.
+See "Subscripts and overbars."
 
 #### `desc`
 
