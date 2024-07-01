@@ -43,7 +43,7 @@ pins:
     desc: ground
   - num:  13
     sym:  CP
-    desc: clock input (lot to high transition)
+    desc: clock input (low to high transition)
   - num:  14
     sym:  ~EN
     desc: clock enable (active low)
