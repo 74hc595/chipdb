@@ -103,7 +103,7 @@ specs:
     val:    [50 (27C128-12), 50 (27C128-15), 50 (27C128-17), 55 (27C128-20), 60 (27C128-25)]
     unit:   ns
   - param:  Program Pulse Width
-    val:    [85 to 105]
+    val:    [95 to 105]
     unit:   "&micro;s"
   - param:  Data Valid from OE
     val:    [100]
