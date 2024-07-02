@@ -104,7 +104,7 @@ specs:
     unit:   ns
   - param:  Program Pulse Width
     val:    [85 to 105]
-    unit:   &micro;s
+    unit:   "&micro;s"
   - param:  Data Valid from OE
     val:    [100]
     unit:   ns
