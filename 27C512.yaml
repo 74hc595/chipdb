@@ -1,5 +1,5 @@
 ---
-description:  128K (16kb x 8) 200ns CMOS EPROM
+description:  512K (64K x 8) CMOS EPROM
 package:      DIP
 pincount:     28
 family:       "memory"
