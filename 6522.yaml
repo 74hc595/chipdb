@@ -131,7 +131,7 @@ specs:
     val:   [1 (NMOS), 14 (W65C22)]
     unit:  MHz
 notes:
-  - * In older chips, ~IRQ was an open drain output. In the W65C22S, it is fully driven.
+  - "* In older chips, ~IRQ was an open drain output. In the W65C22S, it is fully driven."
   - "Registers:
 <table>
 <tr><td>$00</td><td>Output register B (write), input register B (read)</td></tr>
