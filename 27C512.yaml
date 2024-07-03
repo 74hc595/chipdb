@@ -1,0 +1,111 @@
+---
+description:  512K (64K x 8) CMOS EPROM
+package:      DIP
+pincount:     28
+family:       "memory"
+datasheet:    https://www.jaapsch.net/psion/pdffiles/Eprom064k_datasheet_27C512.pdf
+pins:
+  - num:  1
+    sym:  A__15
+    desc: Address input
+  - num:  2
+    sym:  A__12
+    desc: Address input
+  - num:  3
+    sym:  A__7
+    desc: Address input
+  - num:  4
+    sym:  A__6
+    desc: Address input
+  - num:  5
+    sym:  A__5
+    desc: Address input
+  - num:  6
+    sym:  A__4
+    desc: Address input
+  - num:  7
+    sym:  A__3
+    desc: Address input
+  - num:  8
+    sym:  A__2
+    desc: Address input
+  - num:  9
+    sym:  A__1
+    desc: Address input
+  - num:  10
+    sym:  A__0
+    desc: Address input
+  - num:  11
+    sym:  O__0
+    desc: Data input/output
+  - num:  12
+    sym:  O__1
+    desc: Data input/output
+  - num:  13
+    sym:  O__2
+    desc: Data input/output
+  - num:  14
+    sym:  V__SS
+    desc: Ground
+  - num:  15
+    sym:  O__3
+    desc: Data input/output
+  - num:  16
+    sym:  O__4
+    desc: Data input/output
+  - num:  17
+    sym:  O__5
+    desc: Data input/output
+  - num:  18
+    sym:  O__6
+    desc: Data input/output
+  - num:  19
+    sym:  O__7
+    desc: Data input/output
+  - num:  20
+    sym:  ~CE
+    desc: Chip enable (active low)
+  - num:  21
+    sym:  A__10
+    desc: Address input
+  - num:  22
+    sym:  ~OE/V__PP
+    desc: Output enable (active low)/Programming Voltage
+  - num:  23
+    sym:  A__11
+    desc: Address input
+  - num:  24
+    sym:  A__9
+    desc: Address input
+  - num:  25  
+    sym:  A__8
+    desc: Address input
+  - num:  26
+    sym:  A__13
+    desc: Address input
+  - num:  27
+    sym:  A__14
+    desc: Address input
+  - num:  28
+    sym:  V__CC
+    desc: positive supply voltage
+specs:
+  - param:  Address to Output Delay
+    val:    [90 (27C256-90), 100 (27C256-10), 120 (27C256-12), 150 (27C256-15)]
+    unit:   ns
+  - param:  CE to Output Delay
+    val:    [90 (27C256-90), 100 (27C256-10), 120 (27C256-12), 150 (27C256-15)]
+    unit:   ns
+  - param:  OE to Output Delay
+    val:    [40 (27C256-90), 40 (27C256-10), 50 (27C256-12), 60 (27C256-15)]
+    unit:   ns
+  - param:  OE to Output High Impedance
+    val:    [35 (27C256-90), 35 (27C256-10), 40 (27C256-12), 45 (27C256-15)]
+    unit:   ns
+  - param:  Program Pulse Width
+    val:    [95 to 105]
+    unit:   "&micro;s"
+  - param:  OE /VPP Rise Time During Programming
+    val:    [50]
+    unit:   ns
+   

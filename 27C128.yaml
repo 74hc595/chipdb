@@ -1,0 +1,111 @@
+---
+description:  128K (16kb x 8) 200ns CMOS EPROM
+package:      DIP
+pincount:     28
+family:       "memory"
+datasheet:    https://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf
+pins:
+  - num:  1
+    sym:  V___PP
+    desc: Programming Supply
+  - num:  2
+    sym:  A__12
+    desc: Address input
+  - num:  3
+    sym:  A__7
+    desc: Address input
+  - num:  4
+    sym:  A__6
+    desc: Address input
+  - num:  5
+    sym:  A__5
+    desc: Address input
+  - num:  6
+    sym:  A__4
+    desc: Address input
+  - num:  7
+    sym:  A__3
+    desc: Address input
+  - num:  8
+    sym:  A__2
+    desc: Address input
+  - num:  9
+    sym:  A__1
+    desc: Address input
+  - num:  10
+    sym:  A__0
+    desc: Address input
+  - num:  11
+    sym:  O__0
+    desc: Data input/output
+  - num:  12
+    sym:  O__1
+    desc: Data input/output
+  - num:  13
+    sym:  O__2
+    desc: Data input/output
+  - num:  14
+    sym:  V__SS
+    desc: Ground
+  - num:  15
+    sym:  O__3
+    desc: Data input/output
+  - num:  16
+    sym:  O__4
+    desc: Data input/output
+  - num:  17
+    sym:  O__5
+    desc: Data input/output
+  - num:  18
+    sym:  O__6
+    desc: Data input/output
+  - num:  19
+    sym:  O__7
+    desc: Data input/output
+  - num:  20
+    sym:  ~CE
+    desc: Chip enable (active low)
+  - num:  21
+    sym:  A__10
+    desc: Address input
+  - num:  22
+    sym:  ~OE
+    desc: Output enable (active low)
+  - num:  23
+    sym:  A__11
+    desc: Address input
+  - num:  24
+    sym:  A__9
+    desc: Address input
+  - num:  25  
+    sym:  A__8
+    desc: Address input
+  - num:  26
+    sym:  A__13
+    desc: Address input
+  - num:  27
+    sym:  ~PGM
+    desc: Program enable (active low)
+  - num:  28
+    sym:  V__CC
+    desc: positive supply voltage
+specs:
+  - param:  Address to Output Delay
+    val:    [120 (27C128-12), 150 (27C128-15), 170 (27C128-17), 200 (27C128-20), 250 (27C128-25)]
+    unit:   ns
+  - param:  CE to Output Delay
+    val:    [120 (27C128-12), 150 (27C128-15), 170 (27C128-17), 200 (27C128-20), 250 (27C128-25)]
+    unit:   ns
+  - param:  OE to Output Delay
+    val:    [65 (27C128-12), 70 (27C128-15), 70 (27C128-17), 75 (27C128-20), 100 (27C128-25)]
+    unit:   ns
+  - param:  CE or OE to O/P High Impedance
+    val:    [50 (27C128-12), 50 (27C128-15), 50 (27C128-17), 55 (27C128-20), 60 (27C128-25)]
+    unit:   ns
+  - param:  Program Pulse Width
+    val:    [95 to 105]
+    unit:   "&micro;s"
+  - param:  Data Valid from OE
+    val:    [100]
+    unit:   ns
+   
