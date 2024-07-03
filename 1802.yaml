@@ -4,7 +4,7 @@ aliases:     [ "CDP1802A", "CDP1802AC", "CDP1802BC" ]
 package:     DIP
 pincount:    40
 family:      "RCA"
-datasheet:   "pdf_datasheet_url"
+datasheet:   "http://www.cosmacelf.com/publications/data-sheets/cdp1802.pdf"
 pins:
   - num:  1
     sym:  CLOCK
