@@ -140,7 +140,7 @@ specs:
   - param: Programmable I/O lines
     val:   32
 notes:
-  - * ICP3, OC3A, OC3B present on ATmega1284P only
+  - "* ICP3, OC3A, OC3B present on ATmega1284P only"
 ...
 
 
