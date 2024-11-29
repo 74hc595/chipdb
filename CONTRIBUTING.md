@@ -76,7 +76,7 @@ The `specs` array can be used to define a small table of basic specifications. E
 
 Required. Parameter name, such as `"Supply voltage"` or `"Slew rate"`.
 
-#### `value`
+#### `val`
 
 Required. Parameter value. An array can be used to specify multiple values, like a minimum and maximum, e.g. `[8 (min), 36 (max)]`
 
@@ -100,3 +100,19 @@ Tildes can be used to add overbars to characters. If a sequence of non-whitespac
 To add an overbar to a portion of a word, surround it with tildes. Example: `~RESET~/SYNC` becomes <span style="text-decoration: overline;">RESET</span>/SYNC, and `~CP~__0` becomes <span style="text-decoration: overline;">CP</span><sub>0</sub>
 
 To include a literal tilde in the definition, use the HTML entity `&#126;`. If for some bizarre reason you want two or more literal underscores next to each other, use the HTML entity for underscore: `&#95;`.
+
+
+## Writing conventions
+
+There are some rules for better maintanence.
+
+- File starts with `---`, ends with an empty line after `...`.
+- Line ends with CRLF.
+- Indentation depth is 2 (space only).
+- Use line-by-line dictionary and array format, not JSON-like `{...}` and `[...]`. This makes the code good for both human readability and merging with difftools. `aliases` is the only exception because it is an array of just strings.
+- If a value is neither a dictionary or an array, avoid using multiple lines with block literals(`|` or `>`) even if it exceeds the limit of your editor software.
+- `name` field is recommended.
+- Avoid quoted strings. `datasheet` field might be an exception if it causes error.
+- Top keys are aligned by 14 characters.
+- Keys under `pins` definition is aligned by 6 characters.
+- Keys under `specs` definition is aligned by 8 characters.
